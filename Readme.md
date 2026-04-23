@@ -475,7 +475,7 @@ Phase 1 and Phase 2 outputs from the Berlin spy thriller prompt are included in 
 
 ## 📄 License
 
-MIT License — see [LICENSE](LICENSE) for details.
+MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
