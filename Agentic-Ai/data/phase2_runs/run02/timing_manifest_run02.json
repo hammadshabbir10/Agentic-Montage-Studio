@@ -1,0 +1,221 @@
+{
+  "workflow_id": "workflow_20260423_230404",
+  "run_tag": "run02",
+  "total_duration_ms": 124000,
+  "scenes": [
+    {
+      "scene_id": 1,
+      "location": "CIA SAFEHOUSE",
+      "audio_dir": "data\\phase2_runs\\run02\\audio\\scene1",
+      "bgm_file": "data\\phase2_runs\\run02\\audio\\scene1\\scene1_bgm.mp3",
+      "start_ms": 0,
+      "end_ms": 37000,
+      "duration_ms": 37000,
+      "lines": [
+        {
+          "speaker": "JACK",
+          "voice": "en-US-GuyNeural",
+          "line": "\"We can't keep her here for much longer, Rachel. The KGB will find her.\"",
+          "visual_cue": "Medium shot of JACK, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run02\\audio\\scene1\\JACK_line1.mp3",
+          "start_ms": 0,
+          "end_ms": 7163,
+          "duration_ms": 7163
+        },
+        {
+          "speaker": "RACHEL",
+          "voice": "en-US-JennyNeural",
+          "line": "\"We'll get her out, Jack. We always do.\"",
+          "visual_cue": "Close-up of JACK, his eyes darting between the documents on the table, a hint of frustration on his face.",
+          "audio_file": "data\\phase2_runs\\run02\\audio\\scene1\\RACHEL_line2.mp3",
+          "start_ms": 7163,
+          "end_ms": 11599,
+          "duration_ms": 4436
+        },
+        {
+          "speaker": "JACK",
+          "voice": "en-US-GuyNeural",
+          "line": "\"Easy for you to say, Rachel. You're not the one who has to deal with the KGB on a daily basis.\"",
+          "visual_cue": "Close-up of RACHEL, a resolute look on her face, her eyes shining with determination.",
+          "audio_file": "data\\phase2_runs\\run02\\audio\\scene1\\JACK_line3.mp3",
+          "start_ms": 11599,
+          "end_ms": 21944,
+          "duration_ms": 10345
+        },
+        {
+          "speaker": "RACHEL",
+          "voice": "en-US-JennyNeural",
+          "line": "\"That's not the point, Jack. The point is we have a chance to defect a high-ranking Soviet official. We can't let it slip through our fingers.\"",
+          "visual_cue": "Medium shot of JACK, his shoulders tensed, his jaw clenched in anger.",
+          "audio_file": "data\\phase2_runs\\run02\\audio\\scene1\\RACHEL_line4.mp3",
+          "start_ms": 21944,
+          "end_ms": 34562,
+          "duration_ms": 12618
+        }
+      ]
+    },
+    {
+      "scene_id": 2,
+      "location": "CIA SAFEHOUSE",
+      "audio_dir": "data\\phase2_runs\\run02\\audio\\scene2",
+      "bgm_file": "data\\phase2_runs\\run02\\audio\\scene2\\scene2_bgm.mp3",
+      "start_ms": 37000,
+      "end_ms": 72000,
+      "duration_ms": 35000,
+      "lines": [
+        {
+          "speaker": "VLADIMIR",
+          "voice": "en-US-AndrewNeural",
+          "line": "\"I don't know if I can trust you. I've been warned about the CIA's tactics.\"",
+          "visual_cue": "Medium shot of VLADIMIR, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run02\\audio\\scene2\\VLADIMIR_line1.mp3",
+          "start_ms": 37000,
+          "end_ms": 44618,
+          "duration_ms": 7618
+        },
+        {
+          "speaker": "JACK",
+          "voice": "en-US-GuyNeural",
+          "line": "\"Vladimir, we're here to help you. We'll get you out of Berlin and set you up with a new identity.\"",
+          "visual_cue": "Close-up of VLADIMIR, his eyes darting between JACK and RACHEL, a look of vulnerability on his face.",
+          "audio_file": "data\\phase2_runs\\run02\\audio\\scene2\\JACK_line2.mp3",
+          "start_ms": 44618,
+          "end_ms": 54508,
+          "duration_ms": 9890
+        },
+        {
+          "speaker": "RACHEL",
+          "voice": "en-US-JennyNeural",
+          "line": "\"But first, you have to tell us what you know. About the Soviet Union's plans for Eastern Europe.\"",
+          "visual_cue": "Close-up of JACK, a reassuring smile on his face, his eyes locked on VLADIMIR.",
+          "audio_file": "data\\phase2_runs\\run02\\audio\\scene2\\RACHEL_line3.mp3",
+          "start_ms": 54508,
+          "end_ms": 63489,
+          "duration_ms": 8981
+        },
+        {
+          "speaker": "VLADIMIR",
+          "voice": "en-US-AndrewNeural",
+          "line": "\"I'll tell you everything. But you have to promise me one thing.\"",
+          "visual_cue": "Close-up of RACHEL, her eyes locked on VLADIMIR, a hint of steel in her voice.",
+          "audio_file": "data\\phase2_runs\\run02\\audio\\scene2\\VLADIMIR_line4.mp3",
+          "start_ms": 63489,
+          "end_ms": 69743,
+          "duration_ms": 6254
+        }
+      ]
+    },
+    {
+      "scene_id": 3,
+      "location": "CIA SAFEHOUSE",
+      "audio_dir": "data\\phase2_runs\\run02\\audio\\scene3",
+      "bgm_file": "data\\phase2_runs\\run02\\audio\\scene3\\scene3_bgm.mp3",
+      "start_ms": 72000,
+      "end_ms": 96000,
+      "duration_ms": 24000,
+      "lines": [
+        {
+          "speaker": "ALEXANDRA",
+          "voice": "en-US-AriaNeural",
+          "line": "\"Jack, we have a problem. One of our own team members has been compromised. The KGB has a mole within the CIA.\"",
+          "visual_cue": "Medium shot of ALEXANDRA, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run02\\audio\\scene3\\ALEXANDRA_line1.mp3",
+          "start_ms": 72000,
+          "end_ms": 82800,
+          "duration_ms": 10800
+        },
+        {
+          "speaker": "JACK",
+          "voice": "en-US-GuyNeural",
+          "line": "\"What are you talking about? Who is it?\"",
+          "visual_cue": "Close-up of ALEXANDRA, her eyes locked on JACK, a look of concern etched on her face.",
+          "audio_file": "data\\phase2_runs\\run02\\audio\\scene3\\JACK_line2.mp3",
+          "start_ms": 82800,
+          "end_ms": 87236,
+          "duration_ms": 4436
+        },
+        {
+          "speaker": "ALEXANDRA",
+          "voice": "en-US-AriaNeural",
+          "line": "\"I'm not sure yet. But I think it's someone close to you, Jack.\"",
+          "visual_cue": "Close-up of JACK, his eyes narrowed, a hint of anger on his face.",
+          "audio_file": "data\\phase2_runs\\run02\\audio\\scene3\\ALEXANDRA_line3.mp3",
+          "start_ms": 87236,
+          "end_ms": 93945,
+          "duration_ms": 6709
+        }
+      ]
+    },
+    {
+      "scene_id": 4,
+      "location": "CIA SAFEHOUSE",
+      "audio_dir": "data\\phase2_runs\\run02\\audio\\scene4",
+      "bgm_file": "data\\phase2_runs\\run02\\audio\\scene4\\scene4_bgm.mp3",
+      "start_ms": 96000,
+      "end_ms": 124000,
+      "duration_ms": 28000,
+      "lines": [
+        {
+          "speaker": "RACHEL",
+          "voice": "en-US-JennyNeural",
+          "line": "\"Hello, darling! I'll be right there.\"",
+          "visual_cue": "Medium shot of RACHEL, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run02\\audio\\scene4\\RACHEL_line1.mp3",
+          "start_ms": 96000,
+          "end_ms": 99527,
+          "duration_ms": 3527
+        },
+        {
+          "speaker": "JACK",
+          "voice": "en-US-GuyNeural",
+          "line": "\"Who is it?\"",
+          "visual_cue": "Close-up of RACHEL, a look of happiness on her face, her eyes sparkling with delight.",
+          "audio_file": "data\\phase2_runs\\run02\\audio\\scene4\\JACK_line2.mp3",
+          "start_ms": 99527,
+          "end_ms": 101690,
+          "duration_ms": 2163
+        },
+        {
+          "speaker": "RACHEL",
+          "voice": "en-US-JennyNeural",
+          "line": "\"It's my husband. He's on his way to the safehouse.\"",
+          "visual_cue": "Close-up of JACK, a look of concern on his face, his eyes locked on RACHEL.",
+          "audio_file": "data\\phase2_runs\\run02\\audio\\scene4\\RACHEL_line3.mp3",
+          "start_ms": 101690,
+          "end_ms": 107035,
+          "duration_ms": 5345
+        },
+        {
+          "speaker": "JACK",
+          "voice": "en-US-GuyNeural",
+          "line": "\"Rachel, I don't think that's a good idea.\"",
+          "visual_cue": "Close-up of RACHEL, a look of excitement on her face, her eyes shining with anticipation.",
+          "audio_file": "data\\phase2_runs\\run02\\audio\\scene4\\JACK_line4.mp3",
+          "start_ms": 107035,
+          "end_ms": 111471,
+          "duration_ms": 4436
+        },
+        {
+          "speaker": "RACHEL",
+          "voice": "en-US-JennyNeural",
+          "line": "\"Why not, Jack? He's my husband. I trust him.\"",
+          "visual_cue": "Close-up of JACK, a look of warning on his face, his eyes locked on RACHEL.",
+          "audio_file": "data\\phase2_runs\\run02\\audio\\scene4\\RACHEL_line5.mp3",
+          "start_ms": 111471,
+          "end_ms": 116361,
+          "duration_ms": 4890
+        },
+        {
+          "speaker": "JACK",
+          "voice": "en-US-GuyNeural",
+          "line": "\"Because, Rachel, we don't know who we can trust anymore.\"",
+          "visual_cue": "Close-up of RACHEL, a look of determination on her face, her eyes locked on JACK.",
+          "audio_file": "data\\phase2_runs\\run02\\audio\\scene4\\JACK_line6.mp3",
+          "start_ms": 116361,
+          "end_ms": 121706,
+          "duration_ms": 5345
+        }
+      ]
+    }
+  ]
+}

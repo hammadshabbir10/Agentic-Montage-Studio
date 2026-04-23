@@ -1,0 +1,49 @@
+{
+  "workflow_id": "workflow_20260423_165820",
+  "timestamp": "2026-04-23T16:58:20.462750",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "location": "UNIVERSITY LAB",
+      "dialogue": [
+        {
+          "speaker": "ALINA",
+          "line": "The model is stable.",
+          "visual_cue": "wide shot, clean lab benches and blue monitor glow"
+        },
+        {
+          "speaker": "DR. KHAN",
+          "line": "Good. Let us test the workflow.",
+          "visual_cue": "Default visual cue."
+        }
+      ],
+      "characters": [
+        "ALINA",
+        "DR. KHAN"
+      ],
+      "duration": 10
+    },
+    {
+      "scene_id": 2,
+      "location": "CAMPUS COURTYARD",
+      "dialogue": [
+        {
+          "speaker": "ALINA",
+          "line": "We have visual confirmation.",
+          "visual_cue": "aerial shot, sunlit courtyard, long shadows"
+        },
+        {
+          "speaker": "DR. KHAN",
+          "line": "Proceed to capture.",
+          "visual_cue": "Default visual cue."
+        }
+      ],
+      "characters": [
+        "ALINA",
+        "DR. KHAN"
+      ],
+      "duration": 10
+    }
+  ],
+  "total_scenes": 2
+}

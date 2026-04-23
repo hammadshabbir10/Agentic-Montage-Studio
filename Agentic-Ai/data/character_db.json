@@ -1,0 +1,17 @@
+{
+  "characters": [
+    {
+      "id": "char_1",
+      "name": "JACK",
+      "traits": [
+        "consistent",
+        "focused"
+      ],
+      "appearance": "Describe appearance based on story context.",
+      "reference_style": "cinematic concept art",
+      "visual_refs": [
+        "data\\image_assets\\JACK.svg"
+      ]
+    }
+  ]
+}

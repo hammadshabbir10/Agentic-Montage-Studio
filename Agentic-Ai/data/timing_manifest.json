@@ -1,0 +1,114 @@
+[
+  {
+    "scene_id": 1,
+    "audio_file": "data\\audio\\scene1\\JASON_line1.mp3",
+    "speaker": "JASON",
+    "start_ms": 0,
+    "end_ms": 3000
+  },
+  {
+    "scene_id": 1,
+    "audio_file": "data\\audio\\scene1\\SARITA_line2.mp3",
+    "speaker": "SARITA",
+    "start_ms": 3000,
+    "end_ms": 6000
+  },
+  {
+    "scene_id": 1,
+    "audio_file": "data\\audio\\scene1\\VLAD_line3.mp3",
+    "speaker": "VLAD",
+    "start_ms": 6000,
+    "end_ms": 9000
+  },
+  {
+    "scene_id": 1,
+    "audio_file": "data\\audio\\scene1\\JASON_line4.mp3",
+    "speaker": "JASON",
+    "start_ms": 9000,
+    "end_ms": 12000
+  },
+  {
+    "scene_id": 1,
+    "audio_file": "data\\audio\\scene1\\SARITA_line5.mp3",
+    "speaker": "SARITA",
+    "start_ms": 12000,
+    "end_ms": 15000
+  },
+  {
+    "scene_id": 2,
+    "audio_file": "data\\audio\\scene2\\VLAD_line1.mp3",
+    "speaker": "VLAD",
+    "start_ms": 0,
+    "end_ms": 3000
+  },
+  {
+    "scene_id": 2,
+    "audio_file": "data\\audio\\scene2\\JASON_line2.mp3",
+    "speaker": "JASON",
+    "start_ms": 3000,
+    "end_ms": 6000
+  },
+  {
+    "scene_id": 2,
+    "audio_file": "data\\audio\\scene2\\VLAD_line3.mp3",
+    "speaker": "VLAD",
+    "start_ms": 6000,
+    "end_ms": 9000
+  },
+  {
+    "scene_id": 3,
+    "audio_file": "data\\audio\\scene3\\SARITA_line1.mp3",
+    "speaker": "SARITA",
+    "start_ms": 0,
+    "end_ms": 3000
+  },
+  {
+    "scene_id": 3,
+    "audio_file": "data\\audio\\scene3\\JASON_line2.mp3",
+    "speaker": "JASON",
+    "start_ms": 3000,
+    "end_ms": 6000
+  },
+  {
+    "scene_id": 3,
+    "audio_file": "data\\audio\\scene3\\SARITA_line3.mp3",
+    "speaker": "SARITA",
+    "start_ms": 6000,
+    "end_ms": 9000
+  },
+  {
+    "scene_id": 3,
+    "audio_file": "data\\audio\\scene3\\VLAD_line4.mp3",
+    "speaker": "VLAD",
+    "start_ms": 9000,
+    "end_ms": 12000
+  },
+  {
+    "scene_id": 3,
+    "audio_file": "data\\audio\\scene3\\JASON_line5.mp3",
+    "speaker": "JASON",
+    "start_ms": 12000,
+    "end_ms": 15000
+  },
+  {
+    "scene_id": 4,
+    "audio_file": "data\\audio\\scene4\\VLAD_line1.mp3",
+    "speaker": "VLAD",
+    "start_ms": 0,
+    "end_ms": 3000
+  },
+  {
+    "scene_id": 4,
+    "audio_file": "data\\audio\\scene4\\JASON_line2.mp3",
+    "speaker": "JASON",
+    "start_ms": 3000,
+    "end_ms": 6000
+  },
+  {
+    "scene_id": 4,
+    "audio_file": "data\\audio\\scene4\\VLAD_line3.mp3",
+    "speaker": "VLAD",
+    "start_ms": 6000,
+    "end_ms": 9000
+  }
+]

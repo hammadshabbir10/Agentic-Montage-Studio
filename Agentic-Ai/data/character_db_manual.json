@@ -1,0 +1,29 @@
+{
+  "workflow_id": "workflow_20260423_165820",
+  "timestamp": "2026-04-23T16:58:20.465869",
+  "characters": [
+    {
+      "name": "ALINA",
+      "personality": "Mysterious and determined character",
+      "appearance": "Cinematic appearance with distinctive features",
+      "style_reference": "Cyberpunk cinematic",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        "The model is stable.",
+        "We have visual confirmation."
+      ]
+    },
+    {
+      "name": "DR. KHAN",
+      "personality": "Mysterious and determined character",
+      "appearance": "Cinematic appearance with distinctive features",
+      "style_reference": "Cyberpunk cinematic",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        "Good. Let us test the workflow.",
+        "Proceed to capture."
+      ]
+    }
+  ],
+  "total_characters": 2
+}

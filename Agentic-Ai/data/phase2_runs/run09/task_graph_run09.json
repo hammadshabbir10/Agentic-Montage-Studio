@@ -1,0 +1,130 @@
+{
+  "tasks": [
+    {
+      "scene_id": 1,
+      "location": "CIA SAFEHOUSE",
+      "dialogue": [
+        {
+          "speaker": "JACK",
+          "line": "\"We can't keep her here for much longer, Rachel. The KGB will find her.\"",
+          "visual_cue": "Medium shot of JACK, expression intense and focused."
+        },
+        {
+          "speaker": "RACHEL",
+          "line": "\"We'll get her out, Jack. We always do.\"",
+          "visual_cue": "Close-up of JACK, his eyes darting between the documents on the table, a hint of frustration on his face."
+        },
+        {
+          "speaker": "JACK",
+          "line": "\"Easy for you to say, Rachel. You're not the one who has to deal with the KGB on a daily basis.\"",
+          "visual_cue": "Close-up of RACHEL, a resolute look on her face, her eyes shining with determination."
+        },
+        {
+          "speaker": "RACHEL",
+          "line": "\"That's not the point, Jack. The point is we have a chance to defect a high-ranking Soviet official. We can't let it slip through our fingers.\"",
+          "visual_cue": "Medium shot of JACK, his shoulders tensed, his jaw clenched in anger."
+        }
+      ],
+      "characters": [
+        "JACK",
+        "RACHEL"
+      ]
+    },
+    {
+      "scene_id": 2,
+      "location": "CIA SAFEHOUSE",
+      "dialogue": [
+        {
+          "speaker": "VLADIMIR",
+          "line": "\"I don't know if I can trust you. I've been warned about the CIA's tactics.\"",
+          "visual_cue": "Medium shot of VLADIMIR, expression intense and focused."
+        },
+        {
+          "speaker": "JACK",
+          "line": "\"Vladimir, we're here to help you. We'll get you out of Berlin and set you up with a new identity.\"",
+          "visual_cue": "Close-up of VLADIMIR, his eyes darting between JACK and RACHEL, a look of vulnerability on his face."
+        },
+        {
+          "speaker": "RACHEL",
+          "line": "\"But first, you have to tell us what you know. About the Soviet Union's plans for Eastern Europe.\"",
+          "visual_cue": "Close-up of JACK, a reassuring smile on his face, his eyes locked on VLADIMIR."
+        },
+        {
+          "speaker": "VLADIMIR",
+          "line": "\"I'll tell you everything. But you have to promise me one thing.\"",
+          "visual_cue": "Close-up of RACHEL, her eyes locked on VLADIMIR, a hint of steel in her voice."
+        }
+      ],
+      "characters": [
+        "VLADIMIR",
+        "JACK",
+        "RACHEL"
+      ]
+    },
+    {
+      "scene_id": 3,
+      "location": "CIA SAFEHOUSE",
+      "dialogue": [
+        {
+          "speaker": "ALEXANDRA",
+          "line": "\"Jack, we have a problem. One of our own team members has been compromised. The KGB has a mole within the CIA.\"",
+          "visual_cue": "Medium shot of ALEXANDRA, expression intense and focused."
+        },
+        {
+          "speaker": "JACK",
+          "line": "\"What are you talking about? Who is it?\"",
+          "visual_cue": "Close-up of ALEXANDRA, her eyes locked on JACK, a look of concern etched on her face."
+        },
+        {
+          "speaker": "ALEXANDRA",
+          "line": "\"I'm not sure yet. But I think it's someone close to you, Jack.\"",
+          "visual_cue": "Close-up of JACK, his eyes narrowed, a hint of anger on his face."
+        }
+      ],
+      "characters": [
+        "ALEXANDRA",
+        "JACK"
+      ]
+    },
+    {
+      "scene_id": 4,
+      "location": "CIA SAFEHOUSE",
+      "dialogue": [
+        {
+          "speaker": "RACHEL",
+          "line": "\"Hello, darling! I'll be right there.\"",
+          "visual_cue": "Medium shot of RACHEL, expression intense and focused."
+        },
+        {
+          "speaker": "JACK",
+          "line": "\"Who is it?\"",
+          "visual_cue": "Close-up of RACHEL, a look of happiness on her face, her eyes sparkling with delight."
+        },
+        {
+          "speaker": "RACHEL",
+          "line": "\"It's my husband. He's on his way to the safehouse.\"",
+          "visual_cue": "Close-up of JACK, a look of concern on his face, his eyes locked on RACHEL."
+        },
+        {
+          "speaker": "JACK",
+          "line": "\"Rachel, I don't think that's a good idea.\"",
+          "visual_cue": "Close-up of RACHEL, a look of excitement on her face, her eyes shining with anticipation."
+        },
+        {
+          "speaker": "RACHEL",
+          "line": "\"Why not, Jack? He's my husband. I trust him.\"",
+          "visual_cue": "Close-up of JACK, a look of warning on his face, his eyes locked on RACHEL."
+        },
+        {
+          "speaker": "JACK",
+          "line": "\"Because, Rachel, we don't know who we can trust anymore.\"",
+          "visual_cue": "Close-up of RACHEL, a look of determination on her face, her eyes locked on JACK."
+        }
+      ],
+      "characters": [
+        "RACHEL",
+        "JACK"
+      ]
+    }
+  ]
+}

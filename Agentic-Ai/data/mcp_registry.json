@@ -1,0 +1,35 @@
+{
+  "tools": [
+    {
+      "name": "groq_generate_script_segment",
+      "capability": "generate_script_segment",
+      "type": "groq_llm",
+      "config": {
+        "model": "llama-3.1-8b-instant",
+        "temperature": 0.7
+      }
+    },
+    {
+      "name": "memory_commit",
+      "capability": "commit_memory",
+      "type": "memory_commit"
+    },
+    {
+      "name": "query_stock_footage",
+      "capability": "query_stock_footage",
+      "type": "local_stub"
+    },
+    {
+      "name": "generate_character_image",
+      "capability": "generate_character_image",
+      "type": "stability_image",
+      "config": {
+        "engine_id": "stable-diffusion-xl-1024-v1-0",
+        "width": 1024,
+        "height": 1024,
+        "steps": 30,
+        "cfg_scale": 7
+      }
+    }
+  ]
+}
