@@ -1,2 +1,0 @@
-file 'C:/Users/Haider/Desktop/Agentic/Agentic-Montage-Studio/Agentic-Ai/data/phase3_runs/run02/composed/scene_01_composed.mp4'
-file 'C:/Users/Haider/Desktop/Agentic/Agentic-Montage-Studio/Agentic-Ai/data/phase3_runs/run02/composed/scene_02_composed.mp4'

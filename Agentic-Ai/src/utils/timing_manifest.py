@@ -47,6 +47,8 @@ import subprocess
 from pathlib import Path
 from typing import Dict, List
 
+from src.io.pydantic_schemas import validate_timing_manifest_payload
+
 
 def _probe_duration_ms(path: str) -> int:
     """Read media duration with ffprobe; fallback to file-size estimate."""
@@ -168,6 +170,7 @@ def build(
         "total_duration_ms": cursor_ms,
         "scenes": scenes_out,
     }
+    manifest = validate_timing_manifest_payload(manifest)
 
     out_path = Path(out_dir) / f"timing_manifest_{run_tag}.json"
     out_path.parent.mkdir(parents=True, exist_ok=True)

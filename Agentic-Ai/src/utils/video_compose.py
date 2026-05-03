@@ -126,18 +126,20 @@ def ken_burns_clip(
     total_frames = max(int(duration_sec * fps), fps * 2)
     width, height = profile.width, profile.height
 
-    # zoompan needs an integer total frames per `d`
+    # Keep zoom subtle to avoid over-zoom/blurry output.
+    max_zoom = 1.06
+    zoom_step = 0.00012
     if direction == "out":
-        z_expr = "if(eq(on,1),1.20,zoom-0.0009)"
+        z_expr = f"if(eq(on,1),{max_zoom:.3f},max(1.0,zoom-{zoom_step:.6f}))"
     else:
-        z_expr = "min(zoom+0.0009,1.20)"
+        z_expr = f"min(zoom+{zoom_step:.6f},{max_zoom:.3f})"
 
-    # Pre-scale image to a higher canvas to avoid jitter, then zoompan to target
-    base_w = width * 2
-    base_h = height * 2
+    # Use only a slight overscan margin (not 2x upscale) to preserve sharpness.
+    base_w = int(width * 1.12)
+    base_h = int(height * 1.12)
 
     vf = (
-        f"scale={base_w}:{base_h}:force_original_aspect_ratio=increase,"
+        f"scale={base_w}:{base_h}:force_original_aspect_ratio=increase:flags=lanczos,"
         f"crop={base_w}:{base_h},"
         f"zoompan=z='{z_expr}':d={total_frames}:"
         f"x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':"
@@ -261,6 +263,122 @@ def concat_scenes(
     return str(out_path)
 
 
+def build_scene_clip_from_line_images(
+    scene_id: int,
+    line_images: List[Dict[str, Any]],
+    out_path: Path,
+    profile: QualityProfile,
+    log_path: Optional[Path] = None,
+) -> str:
+    """
+    Build a per-scene video clip from speaker-focused line images.
+    Each line image gets its own short Ken Burns clip, then all are concatenated.
+    """
+    if not line_images:
+        raise ValueError(f"scene {scene_id}: no line_images provided")
+
+    tmp_dir = out_path.parent / f"scene_{scene_id:02d}_line_clips"
+    tmp_dir.mkdir(parents=True, exist_ok=True)
+    line_clips: List[str] = []
+    for item in line_images:
+        idx = int(item.get("line_index", 0))
+        duration_ms = int(item.get("duration_ms", 0))
+        duration_sec = max(0.3, duration_ms / 1000.0)
+        image_path = str(item.get("image_path", ""))
+        if not image_path or not Path(image_path).exists():
+            continue
+        clip_path = tmp_dir / f"line_{idx:03d}.mp4"
+        direction = "in" if idx % 2 == 1 else "out"
+        ken_burns_clip(
+            image_path=image_path,
+            out_path=clip_path,
+            duration_sec=duration_sec,
+            profile=profile,
+            direction=direction,
+            log_path=log_path,
+        )
+        line_clips.append(str(clip_path))
+
+    if not line_clips:
+        raise RuntimeError(f"scene {scene_id}: failed to build any line clips")
+    if len(line_clips) == 1:
+        Path(out_path).write_bytes(Path(line_clips[0]).read_bytes())
+        return str(out_path)
+
+    return concat_scenes(line_clips, out_path=out_path, log_path=log_path)
+
+
+def concat_scenes_with_crossfade(
+    scene_clips: List[str],
+    out_path: Path,
+    profile: QualityProfile,
+    transition_sec: float = 0.35,
+    log_path: Optional[Path] = None,
+) -> str:
+    """
+    Concatenate scene clips with video xfade + audio acrossfade transitions.
+    Re-encodes output (required for transition filters).
+    """
+    if not scene_clips:
+        raise ValueError("concat_scenes_with_crossfade: scene_clips is empty")
+    if len(scene_clips) == 1 or transition_sec <= 0:
+        return concat_scenes(scene_clips, out_path, log_path=log_path)
+
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+
+    durations = [probe_duration_sec(p) for p in scene_clips]
+    # Ensure offsets are valid; degrade gracefully if very short clips.
+    transition_sec = max(0.1, float(transition_sec))
+    for d in durations:
+        if d > 0:
+            transition_sec = min(transition_sec, max(0.1, d * 0.25))
+
+    args: List[str] = []
+    for clip in scene_clips:
+        args.extend(["-i", clip])
+
+    filter_parts: List[str] = []
+    prev_v = "[0:v]"
+    prev_a = "[0:a]"
+    cumulative = durations[0] if durations and durations[0] > 0 else 0.0
+
+    for idx in range(1, len(scene_clips)):
+        next_v = f"[{idx}:v]"
+        next_a = f"[{idx}:a]"
+        out_v = f"[v{idx}]"
+        out_a = f"[a{idx}]"
+        offset = max(0.0, cumulative - transition_sec)
+        filter_parts.append(
+            f"{prev_v}{next_v}xfade=transition=fade:duration={transition_sec:.3f}:offset={offset:.3f}{out_v}"
+        )
+        filter_parts.append(
+            f"{prev_a}{next_a}acrossfade=d={transition_sec:.3f}:c1=tri:c2=tri{out_a}"
+        )
+        prev_v = out_v
+        prev_a = out_a
+        dur = durations[idx] if idx < len(durations) else 0.0
+        cumulative = cumulative + max(dur, 0.0) - transition_sec
+
+    filter_complex = ";".join(filter_parts)
+    args.extend(
+        [
+            "-filter_complex", filter_complex,
+            "-map", prev_v,
+            "-map", prev_a,
+            "-c:v", "libx264",
+            "-preset", profile.preset,
+            "-crf", str(profile.crf),
+            "-r", str(profile.fps),
+            "-pix_fmt", "yuv420p",
+            "-c:a", "aac",
+            "-b:a", "192k",
+            str(out_path),
+        ]
+    )
+    _run_ffmpeg(args, log_path=log_path, label=f"concat_crossfade {out_path.name}")
+    return str(out_path)
+
+
 # ── 4. Subtitles ────────────────────────────────────────────────────────────
 
 def _ms_to_srt(ms: int) -> str:
@@ -275,7 +393,11 @@ def _ms_to_srt(ms: int) -> str:
     return f"{hours:02d}:{minutes:02d}:{seconds:02d},{millis:03d}"
 
 
-def build_srt(timing_manifest: Dict[str, Any], out_path: Path) -> str:
+def build_srt(
+    timing_manifest: Dict[str, Any],
+    out_path: Path,
+    scene_transition_sec: float = 0.0,
+) -> str:
     """
     Build an .srt from the Phase 2 timing manifest.
     Uses each line's absolute start_ms / end_ms.
@@ -283,10 +405,16 @@ def build_srt(timing_manifest: Dict[str, Any], out_path: Path) -> str:
     out_path.parent.mkdir(parents=True, exist_ok=True)
     lines: List[str] = []
     counter = 1
-    for scene in timing_manifest.get("scenes", []):
+    prev_end = 0
+    transition_ms = max(0, int(scene_transition_sec * 1000))
+    for scene_idx, scene in enumerate(timing_manifest.get("scenes", [])):
+        scene_shift = scene_idx * transition_ms
         for line in scene.get("lines", []):
-            start = int(line.get("start_ms", 0))
-            end = int(line.get("end_ms", start + 1500))
+            start = max(0, int(line.get("start_ms", 0)) - scene_shift)
+            end = max(start + 1, int(line.get("end_ms", start + 1500)) - scene_shift)
+            if start < prev_end:
+                start = prev_end
+                end = max(start + 80, end)
             speaker = (line.get("speaker") or "").strip()
             text = (line.get("line") or "").strip().strip('"').strip()
             if not text:
@@ -297,6 +425,7 @@ def build_srt(timing_manifest: Dict[str, Any], out_path: Path) -> str:
             lines.append(display)
             lines.append("")
             counter += 1
+            prev_end = end
     out_path.write_text("\n".join(lines), encoding="utf-8")
     return str(out_path)
 

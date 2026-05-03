@@ -80,8 +80,8 @@ python -m src.main --mode auto `
 # 3. Phase 2 — generate audio, BGM and timing manifest
 python -m src.main_phase2
 
-# 4. Phase 3 — generate visuals and composite the final MP4
-python -m src.main_phase3 --quality balanced --enable-subtitles
+# 4. Phase 3 — generate visuals and composite the final MP4 (with crossfades)
+python -m src.main_phase3 --quality balanced --transition-sec 0.35 --enable-subtitles
 ```
 
 The final MP4 will be at `data/phase3_runs/runXX/final_output_runXX.mp4` (or `..._subbed.mp4` when subtitles are burned in).
@@ -106,6 +106,8 @@ python -m src.main_phase3 [flags]
   --scene-id        Partial rerun: regenerate only this scene id
 
   --enable-subtitles  Burn dialogue subtitles into the final MP4
+  --transition-sec    Crossfade duration in seconds (default: 0.35, 0 disables fades)
+  --scene-image-only  Disable speaker-focused line images and use one still per scene
 ```
 
 ### Quality profiles
@@ -137,6 +139,7 @@ The Phase 3 run tag is **aligned to the Phase 2 run** by default (e.g. Phase 2 `
 ### Demo-friendly tricks
 
 - `--seed 42 --backend pollinations` → deterministic, key-free demo run.
+- Default mode is speaker-focused (one image per spoken line); use `--scene-image-only` for old behavior.
 - `--scene-id 3` → re-render only scene 3 after editing; previous scenes are reused.
 - Cached images: identical prompt + size + seed reuses the on-disk image, saving API calls.
 - `image_prompts_runXX.json` shows exactly which backend produced each frame (`hf:<model>`, `pollinations`, or `cache`).
@@ -208,6 +211,15 @@ End-to-end smoke test (runs the real Phase 3 pipeline against existing Phase 2 o
 python scripts\smoke_phase3.py --backend pollinations --quality fast
 ```
 
+Subtitle timing QA (checks timing manifest vs SRT vs final video envelope):
+
+```powershell
+python scripts\subtitle_timing_qa.py `
+  --timing data\phase2_runs\run03\timing_manifest_run03.json `
+  --srt data\phase3_runs\run03\subtitles_run03.srt `
+  --video data\phase3_runs\run03\final_output_run03_subbed.mp4
+```
+
 ---
 
 ## Phase 3 Rubric Mapping
@@ -219,7 +231,7 @@ python scripts\smoke_phase3.py --backend pollinations --quality fast
 | Light animation (zoom/pan/Ken Burns) via FFmpeg       | `src/utils/video_compose.py::ken_burns_clip`                                          |
 | A/V sync using timing manifest                         | `compose_node` reads `audio_file` + `bgm_file` + `duration_ms` from timing manifest   |
 | Subtitle overlay (optional)                           | `--enable-subtitles` ⇒ `build_srt` + `burn_subtitles`                                |
-| Compositing scenes with transitions into final MP4    | `concat_scenes` (concat demuxer with shared codec/profile per scene)                  |
+| Compositing scenes with transitions into final MP4    | `concat_scenes_with_crossfade` using ffmpeg `xfade` + `acrossfade`                    |
 | Final MP4 export                                      | `data/phase3_runs/runXX/final_output_runXX.mp4`                                       |
 | Phase-level unit tests                                | `tests/test_phase3.py` (15 tests, including fallback + cache + SRT correctness)       |
 | Reproducible run artifacts                            | `phase3_state_*.json`, `phase3_outputs_*.json`, `image_prompts_*.json`, ffmpeg log    |

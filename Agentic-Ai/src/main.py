@@ -3,7 +3,10 @@ import json
 import re
 from pathlib import Path
 from dotenv import load_dotenv
+from pydantic import ValidationError
 from src.io.script_ingest import parse_script_to_manifest
+from src.io.consistency import enforce_phase1_character_consistency
+from src.io.pydantic_schemas import validate_phase1_payloads
 from src.mcp.tool_client import ToolClient
 from src.mcp.tool_registry import ToolRegistry
 from src.memory.vector_store import MemoryStore
@@ -116,20 +119,49 @@ def main() -> None:
         print("Script not approved. Exiting.")
         raise SystemExit(1)
 
+    story_manifest = result.get("story_manifest", {})
+    scene_manifest = result.get("manifest", {})
+    character_db = result.get("character_db", {})
+
+    # Reduce drift: keep story protagonist/antagonist aligned to actual scene characters.
+    story_manifest, scene_manifest, character_db, consistency_warnings = (
+        enforce_phase1_character_consistency(
+            story_manifest=story_manifest,
+            scene_manifest=scene_manifest,
+            character_db=character_db,
+        )
+    )
+    if consistency_warnings:
+        print("Consistency adjustments:")
+        for warning in consistency_warnings:
+            print(f"  - {warning}")
+
+    # Strict schema enforcement with Pydantic before writing outputs.
+    try:
+        story_manifest, scene_manifest, character_db = validate_phase1_payloads(
+            story_manifest=story_manifest,
+            scene_manifest=scene_manifest,
+            character_db=character_db,
+        )
+    except ValidationError as exc:
+        print("Phase 1 schema validation failed:")
+        print(exc)
+        raise SystemExit(2)
+
     mode_suffix = args.mode
 
     # --- Save outputs ---
     _write_json(
         Path(f"data/story_manifest_{mode_suffix}.json"),
-        result.get("story_manifest", {}),
+        story_manifest,
     )
     _write_json(
         Path(f"data/scene_manifest_{mode_suffix}.json"),
-        result.get("manifest", {}),
+        scene_manifest,
     )
     _write_json(
         Path(f"data/character_db_{mode_suffix}.json"),
-        result.get("character_db", {}),
+        character_db,
     )
     if result.get("script_text"):
         _write_text(

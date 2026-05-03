@@ -95,6 +95,10 @@ def main() -> None:
                         help="Partial rerun: regenerate only this scene id")
     parser.add_argument("--enable-subtitles", action="store_true",
                         help="Burn dialogue subtitles into the final MP4")
+    parser.add_argument("--transition-sec", type=float, default=0.35,
+                        help="Crossfade duration between scenes in seconds (0 disables fades)")
+    parser.add_argument("--scene-image-only", action="store_true",
+                        help="Use one image per scene (disable speaker-focused line images)")
     args = parser.parse_args()
 
     _print_banner("PHASE 3 — Video Generation & Composition  [STARTING]")
@@ -123,7 +127,11 @@ def main() -> None:
     run_info = get_next_phase3_run(scene_ids, align_to_phase2_run=align_tag or None)
     print(f"[Phase 3] Run tag : {run_info['run_tag'].upper()}  (aligned to Phase 2: {align_tag or 'no'})")
     print(f"[Phase 3] Run dir : {run_info['run_dir']}")
-    print(f"[Phase 3] Backend : {args.backend}    Quality : {args.quality}    Seed : {args.seed}")
+    print(
+        f"[Phase 3] Backend : {args.backend}    Quality : {args.quality}    "
+        f"Seed : {args.seed}    Transition : {args.transition_sec:.2f}s    "
+        f"SpeakerFocus : {not args.scene_image_only}"
+    )
 
     # Infrastructure
     registry     = ToolRegistry()
@@ -161,6 +169,8 @@ def main() -> None:
         "seed":             args.seed,
         "only_scene_id":    args.scene_id,
         "enable_subtitles": bool(args.enable_subtitles),
+        "transition_sec":   max(0.0, args.transition_sec),
+        "speaker_focus":    (not args.scene_image_only),
     }
 
     graph = build_graph()
@@ -184,6 +194,8 @@ def main() -> None:
             "seed":             args.seed,
             "only_scene_id":    args.scene_id,
             "enable_subtitles": bool(args.enable_subtitles),
+            "transition_sec":   max(0.0, args.transition_sec),
+            "speaker_focus":    (not args.scene_image_only),
         },
         "inputs": {
             "scene_manifest":   args.manifest,

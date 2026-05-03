@@ -1,0 +1,131 @@
+{
+  "workflow_id": "phase2_run01",
+  "timestamp": "2026-05-04T01:40:42.202049",
+  "run_tag": "run01",
+  "total_duration_ms": 55704,
+  "scenes": [
+    {
+      "scene_id": 1,
+      "audio_file": "data\\phase2_runs\\run01\\audio\\scene_01_run01.mp3",
+      "bgm_file": "data\\phase2_runs\\run01\\bgm\\action_scene01_freesound.mp3",
+      "mood": "action",
+      "start_ms": 0,
+      "end_ms": 17952,
+      "duration_ms": 17952,
+      "lines": [
+        {
+          "speaker": "ERIKA VALENTINA",
+          "line": "Jason, I'm telling you, this is the breakthrough we've been waiting for.",
+          "start_ms": 0,
+          "end_ms": 4680,
+          "duration_ms": 4680,
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Medium shot of ERIKA VALENTINA, expression intense and focused."
+        },
+        {
+          "speaker": "JASON RYDER",
+          "line": "I know, Erika, but we need to run more tests. We can't send a human through time without being absolutely sure.",
+          "start_ms": 4680,
+          "end_ms": 12719,
+          "duration_ms": 8039,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of ERIKA VALENTINA, her eyes shining with excitement."
+        },
+        {
+          "speaker": "ERIKA VALENTINA",
+          "line": "We've run countless simulations. The technology is sound.",
+          "start_ms": 12719,
+          "end_ms": 17952,
+          "duration_ms": 5233,
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Close-up of JASON RYDER, his brow furrowed in concern."
+        }
+      ]
+    },
+    {
+      "scene_id": 2,
+      "audio_file": "data\\phase2_runs\\run01\\audio\\scene_02_run01.mp3",
+      "bgm_file": "data\\phase2_runs\\run01\\bgm\\tense_scene02_freesound.mp3",
+      "mood": "tense",
+      "start_ms": 17952,
+      "end_ms": 36552,
+      "duration_ms": 18600,
+      "lines": [
+        {
+          "speaker": "LUCIA FIORENTINA",
+          "line": "Leo, I've been thinking... maybe it's time we took a closer look at this temporal anomaly.",
+          "start_ms": 17952,
+          "end_ms": 23712,
+          "duration_ms": 5760,
+          "voice": "en-US-AriaNeural",
+          "visual_cue": "Medium shot of LUCIA FIORENTINA, expression intense and focused."
+        },
+        {
+          "speaker": "LEO",
+          "line": "What do you mean? We're not going to mess with the timeline again, are we?",
+          "start_ms": 23712,
+          "end_ms": 27456,
+          "duration_ms": 3744,
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Medium shot of LUCIA FIORENTINA, her expression thoughtful."
+        },
+        {
+          "speaker": "LUCIA FIORENTINA",
+          "line": "No, no, nothing like that. I just want to understand what's happening. It could be a game-changer for our research.",
+          "start_ms": 27456,
+          "end_ms": 36552,
+          "duration_ms": 9096,
+          "voice": "en-US-AriaNeural",
+          "visual_cue": "Close-up of LEO, his eyes wide with worry."
+        }
+      ]
+    },
+    {
+      "scene_id": 3,
+      "audio_file": "data\\phase2_runs\\run01\\audio\\scene_03_run01.mp3",
+      "bgm_file": "data\\phase2_runs\\run01\\bgm\\tense_scene03_freesound.mp3",
+      "mood": "tense",
+      "start_ms": 36552,
+      "end_ms": 55704,
+      "duration_ms": 19152,
+      "lines": [
+        {
+          "speaker": "ERIKA VALENTINA",
+          "line": "Alright, Jason, the time is now. Are you ready?",
+          "start_ms": 36552,
+          "end_ms": 41352,
+          "duration_ms": 4800,
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Medium shot of ERIKA VALENTINA, expression intense and focused."
+        },
+        {
+          "speaker": "JASON RYDER",
+          "line": "I'm as ready as I'll ever be.",
+          "start_ms": 41352,
+          "end_ms": 44064,
+          "duration_ms": 2712,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Close-up of ERIKA VALENTINA, her eyes fixed on the screen."
+        },
+        {
+          "speaker": "LUCIA FIORENTINA",
+          "line": "Wait, Erika, I don't think this is a good idea. We're not prepared for the consequences.",
+          "start_ms": 44064,
+          "end_ms": 50952,
+          "duration_ms": 6888,
+          "voice": "en-US-AriaNeural",
+          "visual_cue": "Medium shot of JASON RYDER, his hand on the console."
+        },
+        {
+          "speaker": "ERIKA VALENTINA",
+          "line": "It's too late now, Lucia. The clock is ticking.",
+          "start_ms": 50952,
+          "end_ms": 55704,
+          "duration_ms": 4752,
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Wide shot of LUCIA FIORENTINA, her voice carrying across the room."
+        }
+      ]
+    }
+  ]
+}
