@@ -103,6 +103,11 @@ def scene_parser_node(state: Phase3State) -> Phase3State:
 
     print(f"[Phase 3] scene_parser: {len(plans)} scene plan(s) ready.")
     for p in plans:
+        # Safety: prefer real audio duration over possibly stale timing manifest
+        # so final video never cuts early even if Phase 2 timing is inaccurate.
+        real_audio_ms = int(video_compose.probe_duration_sec(p.audio_file) * 1000)
+        if real_audio_ms > 0 and abs(real_audio_ms - p.duration_ms) > 250:
+            p.duration_ms = real_audio_ms
         print(f"           Scene {p.scene_id:02d}  {p.duration_sec:6.2f}s "
               f"mood={p.mood:11s} speakers={p.speakers}")
     return state

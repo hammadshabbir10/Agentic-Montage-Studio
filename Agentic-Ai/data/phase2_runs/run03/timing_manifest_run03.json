@@ -1,0 +1,102 @@
+{
+  "workflow_id": "phase2_run03",
+  "timestamp": "2026-05-03T21:22:36.372835",
+  "run_tag": "run03",
+  "total_duration_ms": 50472,
+  "scenes": [
+    {
+      "scene_id": 1,
+      "audio_file": "data\\phase2_runs\\run03\\audio\\scene_01_run03.mp3",
+      "bgm_file": "data\\phase2_runs\\run03\\bgm\\hopeful_scene01_freesound.mp3",
+      "mood": "hopeful",
+      "start_ms": 0,
+      "end_ms": 16992,
+      "duration_ms": 16992,
+      "lines": [
+        {
+          "speaker": "DR. VALANCIA",
+          "voice": "en-US-JennyNeural",
+          "line": "I knew it! I knew I had it somewhere.",
+          "visual_cue": "Medium shot of DR. VALANCIA, expression intense and focused.",
+          "start_ms": 0,
+          "end_ms": 3864,
+          "duration_ms": 3864
+        },
+        {
+          "speaker": "DR. REED",
+          "voice": "en-US-GuyNeural",
+          "line": "Sofia, what's going on? We need to talk.",
+          "visual_cue": "Close-up of Dr. Valencia, her eyes scanning the papers with a mix of excitement and desperation.",
+          "start_ms": 3864,
+          "end_ms": 8400,
+          "duration_ms": 4536
+        },
+        {
+          "speaker": "DR. VALANCIA",
+          "voice": "en-US-JennyNeural",
+          "line": "I've finally figured it out. The time loop, it's not a natural phenomenon. It's being caused by something else.",
+          "visual_cue": "Medium shot of Dr. Reed, his expression a mix of worry and authority.",
+          "start_ms": 8400,
+          "end_ms": 16992,
+          "duration_ms": 8592
+        }
+      ]
+    },
+    {
+      "scene_id": 2,
+      "audio_file": "data\\phase2_runs\\run03\\audio\\scene_02_run03.mp3",
+      "bgm_file": "data\\phase2_runs\\run03\\bgm\\mysterious_scene02_freesound.mp3",
+      "mood": "mysterious",
+      "start_ms": 16992,
+      "end_ms": 50472,
+      "duration_ms": 33480,
+      "lines": [
+        {
+          "speaker": "DR. REED",
+          "voice": "en-US-GuyNeural",
+          "line": "Sofia, we need to be careful. We don't know what we're dealing with here.",
+          "visual_cue": "Medium shot of DR. REED, expression intense and focused.",
+          "start_ms": 16992,
+          "end_ms": 22632,
+          "duration_ms": 5640
+        },
+        {
+          "speaker": "DR. VALANCIA",
+          "voice": "en-US-JennyNeural",
+          "line": "Careful? We're not going to be careful. We're going to fix this. We're going to break the cycle and restore the timeline.",
+          "visual_cue": "Over-the-shoulder shot of Dr. Reed, his expression serious and cautious.",
+          "start_ms": 22632,
+          "end_ms": 32232,
+          "duration_ms": 9600
+        },
+        {
+          "speaker": "DR. KOSTA",
+          "voice": "en-US-AriaNeural",
+          "line": "Ah, Sofia. Liam. I see you've finally figured it out. Congratulations.",
+          "visual_cue": "Close-up of Dr. Valencia, her eyes blazing with determination.",
+          "start_ms": 32232,
+          "end_ms": 40584,
+          "duration_ms": 8352
+        },
+        {
+          "speaker": "DR. REED",
+          "voice": "en-US-GuyNeural",
+          "line": "What do you know about this, Maya?",
+          "visual_cue": "Close-up of Dr. Kosta, her expression enigmatic and slightly sinister.",
+          "start_ms": 40584,
+          "end_ms": 43416,
+          "duration_ms": 2832
+        },
+        {
+          "speaker": "DR. KOSTA",
+          "voice": "en-US-AriaNeural",
+          "line": "Let's just say I've been watching you two for a while now. And I think I can help you... for a price.",
+          "visual_cue": "Medium shot of Dr. Kosta, her eyes glinting with a hint of mischief.",
+          "start_ms": 43416,
+          "end_ms": 50472,
+          "duration_ms": 7056
+        }
+      ]
+    }
+  ]
+}

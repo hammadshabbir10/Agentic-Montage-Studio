@@ -42,19 +42,39 @@ of 300 ms per character.
 
 import datetime
 import json
+import shutil
+import subprocess
 from pathlib import Path
 from typing import Dict, List
 
 
-def _estimate_mp3_duration_ms(path: str) -> int:
-    """
-    Best-effort MP3 duration from file size.
-    Assumes ~128 kbps CBR → 16 000 bytes/second.
-    Falls back to 3000 ms if file is missing.
-    """
+def _probe_duration_ms(path: str) -> int:
+    """Read media duration with ffprobe; fallback to file-size estimate."""
+    ffprobe = shutil.which("ffprobe")
+    if ffprobe:
+        try:
+            result = subprocess.run(
+                [
+                    ffprobe,
+                    "-v", "error",
+                    "-show_entries", "format=duration",
+                    "-of", "default=noprint_wrappers=1:nokey=1",
+                    path,
+                ],
+                check=False,
+                capture_output=True,
+                text=True,
+            )
+            duration_s = float((result.stdout or "0").strip() or "0")
+            if duration_s > 0:
+                return int(duration_s * 1000)
+        except Exception:
+            pass
+
+    # Last resort fallback for environments without ffprobe.
     try:
         size = Path(path).stat().st_size
-        return int(size / 16000 * 1000)  # 128 kbps
+        return int(size / 16000 * 1000)
     except Exception:
         return 3000
 
@@ -87,16 +107,27 @@ def build(
         audio_file = result.get("path", "")
         segments = result.get("segments", [])
 
-        scene_duration_ms = _estimate_mp3_duration_ms(audio_file)
-        total_bytes = sum(s.get("byte_length", 1) for s in segments) or 1
+        scene_duration_ms = _probe_duration_ms(audio_file)
 
         music_info = music_map.get(scene_id, {})
 
         lines_out = []
         line_cursor_ms = cursor_ms
+        line_durations = []
         for seg in segments:
-            frac = seg.get("byte_length", 1) / total_bytes
-            seg_ms = max(200, int(frac * scene_duration_ms))
+            seg_audio_path = seg.get("audio_file", "")
+            seg_ms = _probe_duration_ms(seg_audio_path) if seg_audio_path else 0
+            if seg_ms <= 0:
+                seg_ms = 800
+            line_durations.append(seg_ms)
+
+        summed_line_ms = sum(line_durations)
+        if summed_line_ms <= 0:
+            summed_line_ms = 1
+        scale = scene_duration_ms / summed_line_ms
+
+        for idx, seg in enumerate(segments):
+            seg_ms = max(200, int(line_durations[idx] * scale))
             lines_out.append({
                 "speaker":     seg.get("speaker", ""),
                 "voice":       seg.get("voice", ""),
@@ -107,6 +138,15 @@ def build(
                 "duration_ms": seg_ms,
             })
             line_cursor_ms += seg_ms
+
+        # Force final line end to match exact scene end for perfect subtitle sync.
+        if lines_out:
+            scene_end = cursor_ms + scene_duration_ms
+            lines_out[-1]["end_ms"] = scene_end
+            lines_out[-1]["duration_ms"] = max(
+                200,
+                scene_end - lines_out[-1]["start_ms"],
+            )
 
         scenes_out.append({
             "scene_id":    scene_id,
