@@ -204,12 +204,12 @@ def build_global_voice_map(manifest: Dict) -> Dict[str, str]:
     }
 
     # Print assignment table
-    print("[Voice] Character voice assignments (canonical → voice):")
+    print("[Voice] Character voice assignments (canonical -> voice):")
     for canon, voice in by_canonical.items():
         gender = "F" if _is_female(canonical_to_raws[canon][0]) else "M"
         aliases = canonical_to_raws[canon]
         alias_str = ", ".join(aliases) if len(aliases) > 1 else aliases[0]
-        print(f"  [{gender}] {canon:20s} → {voice:30s}  (raw: {alias_str})")
+        print(f"  [{gender}] {canon:20s} -> {voice:30s}  (raw: {alias_str})")
 
     return {"by_canonical": by_canonical, "by_raw": by_raw}
 
@@ -304,8 +304,8 @@ async def _synthesize_scene_async(
         return str(silence), []
 
     # ── Synthesise all lines concurrently ─────────────────────────────────────
-    print(f"[Phase 2] voice_synth: scene {scene_id} – synthesising "
-          f"{len(clean_lines)} line(s) concurrently…")
+    print(f"[Phase 2] voice_synth: scene {scene_id} - synthesising "
+          f"{len(clean_lines)} line(s) concurrently...")
 
     await asyncio.gather(*[
         _synth_segment(line, voice, path)

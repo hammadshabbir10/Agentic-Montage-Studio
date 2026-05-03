@@ -3,3 +3,4 @@ chromadb
 groq
 python-dotenv
 requests
+edge-tts

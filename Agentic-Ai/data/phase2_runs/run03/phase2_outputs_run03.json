@@ -1,0 +1,102 @@
+{
+  "audio": [
+    {
+      "scene_id": 1,
+      "path": "data\\phase2_runs\\run03\\audio\\scene_01_run03.mp3",
+      "segments": [
+        {
+          "speaker": "DR. VALANCIA",
+          "line": "I knew it! I knew I had it somewhere.",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Medium shot of DR. VALANCIA, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run03\\audio\\scene1\\DR_VALANCIA_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 23184
+        },
+        {
+          "speaker": "DR. REED",
+          "line": "Sofia, what's going on? We need to talk.",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Close-up of Dr. Valencia, her eyes scanning the papers with a mix of excitement and desperation.",
+          "audio_file": "data\\phase2_runs\\run03\\audio\\scene1\\DR_REED_line002.mp3",
+          "byte_offset": 23184,
+          "byte_length": 27216
+        },
+        {
+          "speaker": "DR. VALANCIA",
+          "line": "I've finally figured it out. The time loop, it's not a natural phenomenon. It's being caused by something else.",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Medium shot of Dr. Reed, his expression a mix of worry and authority.",
+          "audio_file": "data\\phase2_runs\\run03\\audio\\scene1\\DR_VALANCIA_line003.mp3",
+          "byte_offset": 50400,
+          "byte_length": 51552
+        }
+      ]
+    },
+    {
+      "scene_id": 2,
+      "path": "data\\phase2_runs\\run03\\audio\\scene_02_run03.mp3",
+      "segments": [
+        {
+          "speaker": "DR. REED",
+          "line": "Sofia, we need to be careful. We don't know what we're dealing with here.",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of DR. REED, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run03\\audio\\scene2\\DR_REED_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 33840
+        },
+        {
+          "speaker": "DR. VALANCIA",
+          "line": "Careful? We're not going to be careful. We're going to fix this. We're going to break the cycle and restore the timeline.",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Over-the-shoulder shot of Dr. Reed, his expression serious and cautious.",
+          "audio_file": "data\\phase2_runs\\run03\\audio\\scene2\\DR_VALANCIA_line002.mp3",
+          "byte_offset": 33840,
+          "byte_length": 57600
+        },
+        {
+          "speaker": "DR. KOSTA",
+          "line": "Ah, Sofia. Liam. I see you've finally figured it out. Congratulations.",
+          "voice": "en-US-AriaNeural",
+          "visual_cue": "Close-up of Dr. Valencia, her eyes blazing with determination.",
+          "audio_file": "data\\phase2_runs\\run03\\audio\\scene2\\DR_KOSTA_line003.mp3",
+          "byte_offset": 91440,
+          "byte_length": 50112
+        },
+        {
+          "speaker": "DR. REED",
+          "line": "What do you know about this, Maya?",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Close-up of Dr. Kosta, her expression enigmatic and slightly sinister.",
+          "audio_file": "data\\phase2_runs\\run03\\audio\\scene2\\DR_REED_line004.mp3",
+          "byte_offset": 141552,
+          "byte_length": 16992
+        },
+        {
+          "speaker": "DR. KOSTA",
+          "line": "Let's just say I've been watching you two for a while now. And I think I can help you... for a price.",
+          "voice": "en-US-AriaNeural",
+          "visual_cue": "Medium shot of Dr. Kosta, her eyes glinting with a hint of mischief.",
+          "audio_file": "data\\phase2_runs\\run03\\audio\\scene2\\DR_KOSTA_line005.mp3",
+          "byte_offset": 158544,
+          "byte_length": 42336
+        }
+      ]
+    }
+  ],
+  "music": [
+    {
+      "scene_id": 1,
+      "mood": "hopeful",
+      "bgm_path": "data\\phase2_runs\\run03\\bgm\\hopeful_scene01_freesound.mp3",
+      "bgm_source": "freesound"
+    },
+    {
+      "scene_id": 2,
+      "mood": "mysterious",
+      "bgm_path": "data\\phase2_runs\\run03\\bgm\\mysterious_scene02_freesound.mp3",
+      "bgm_source": "freesound"
+    }
+  ]
+}

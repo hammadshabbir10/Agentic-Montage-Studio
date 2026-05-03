@@ -1,0 +1,18 @@
+[
+  {
+    "scene_id": 1,
+    "prompt": "Location: Abandoned Research Facility | Mood: hopeful | Shot: Medium shot of DR. VALANCIA, expression intense and focused. | Characters \u2014 Dr. Valancia: A middle-aged woman with a worn, yet intelligent look, Dr. Valencia's attire is practical and functional, reflecting her role in a scientific setting; Dr. Reed: DR. REED is a middle-aged man with a rugged, worn appearance, fitting for a character working in an abandoned research facility. He wears practical clothing suitable for the environment, possibly including a lab coat and safety goggles | cinematic still, high detail, dramatic lighting, depth of field, film grain, 35mm photography, color graded",
+    "backend": "pollinations",
+    "image_path": "data\\phase3_runs\\run03\\images\\scene_01_4d561a8991d3.png",
+    "width": 1024,
+    "height": 1024
+  },
+  {
+    "scene_id": 2,
+    "prompt": "Location: Abandoned Research Facility | Mood: mysterious | Shot: Medium shot of DR. REED, expression intense and focused. | Characters \u2014 Dr. Reed: DR. REED is a middle-aged man with a rugged, worn appearance, fitting for a character working in an abandoned research facility. He wears practical clothing suitable for the environment, possibly including a lab coat and safety goggles; Dr. Valancia: A middle-aged woman with a worn, yet intelligent look, Dr. Valencia's attire is practical and functional, reflecting her role in a scientific setting; Dr. Kosta: DR. KOSTA likely dresses in a professional yet slightly disheveled attire, reflecting a mix of academia and neglect, with a hint of sophistication | cinematic still, high detail, dramatic lighting, depth of field, film grain, 35mm photography, color graded",
+    "backend": "pollinations",
+    "image_path": "data\\phase3_runs\\run03\\images\\scene_02_02b20afaf25e.png",
+    "width": 1024,
+    "height": 1024
+  }
+]

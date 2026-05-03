@@ -1,42 +1,42 @@
 {
-  "workflow_id": "workflow_20260423_230401",
-  "timestamp": "2026-04-23T23:04:01.689899",
+  "workflow_id": "workflow_20260503_011444",
+  "timestamp": "2026-05-03T01:14:44.570902",
   "story": {
-    "title": "Berlin Divide",
-    "logline": "As a CIA operative in 1960s Berlin navigates the treacherous landscape of espionage, he must extract a Soviet defector and uncover the double agent within his own team before the KGB closes in.",
-    "genre": "Cold War Thriller",
-    "tone": "tense and gritty",
-    "setting": "Divided Berlin, Germany",
-    "time_period": "1960s Cold War Era",
+    "title": "Timeless Horizon",
+    "logline": "When brilliant physicist Alessandra discovers a way to communicate with her past self, she must navigate the consequences of altering her own timeline before a ruthless time smuggler named Ryker erases her from existence.",
+    "genre": "Sci-Fi Thriller",
+    "tone": "tense and gripping",
+    "setting": "a futuristic, high-tech research facility",
+    "time_period": "near-future",
     "themes": [
-      "Loyalty",
-      "Deception",
-      "Survival"
+      "identity",
+      "causality",
+      "self-discovery"
     ],
     "acts": [
       {
         "act": 1,
         "label": "Introduction",
-        "description": "We meet CIA operative Ethan Ryder, working undercover in Berlin, where he must navigate the complex web of espionage to extract Soviet defector Igor Petrov before the KGB discovers their plan. Ryder's team consists of his trusted colleagues, Sofia Santos, and agent Alexei Kuznetsov, but Ryder's growing unease suggests that something is amiss within the team."
+        "description": "We meet our protagonist, Alessandra, a brilliant physicist who has spent her life studying the mysteries of time. She finally discovers a way to communicate with her past self, but soon realizes that this innovation has catastrophic consequences."
       },
       {
         "act": 2,
-        "label": "Escalation",
-        "description": "As Ryder's extraction plan goes awry, he discovers that a double agent has infiltrated his team. Kuznetsov's loyalty is called into question, and Ryder must use all his skills to uncover the truth and stay one step ahead of the KGB. Meanwhile, Sofia's presence becomes increasingly crucial to the mission, but her motivations remain unclear."
+        "label": "Rising Action",
+        "description": "As Alessandra tries to understand the implications of her discovery, she is pursued by a ruthless time smuggler named Ryker who seeks to exploit her technology for his own gain. Alessandra must outwit Ryker and his henchmen to protect her research."
       },
       {
         "act": 3,
         "label": "Climax",
-        "description": "Ryder, with the help of Sofia, must put an end to the double agent's plans before it's too late. The tension builds as they navigate the treacherous landscape of Berlin, with the KGB closing in on their every move. The fate of the mission and the lives of Ryder's team members hang in the balance."
+        "description": "Alessandra faces a desperate choice: use her technology to alter her own timeline or risk everything to protect the integrity of the timestream. Meanwhile, Ryker's true intentions are revealed, and Alessandra must stop him before it's too late."
       },
       {
         "act": 4,
         "label": "Resolution",
-        "description": "In the aftermath of the mission, Ryder must come to terms with the consequences of his actions and the secrets he's uncovered. The true extent of the double agent's betrayal is revealed, and Ryder must decide where his allegiances truly lie."
+        "description": "The consequences of Alessandra's decision are revealed, and she must come to terms with the new reality she has created. Ryker's fate is sealed, and Alessandra must find a way to live with the knowledge of the choices she has made."
       }
     ],
-    "protagonist": "Ethan Ryder",
-    "antagonist": "Unknown double agent within Ryder's team",
-    "world": "In a city divided by the Berlin Wall, espionage and counter-espionage are a way of life, and loyalty is a luxury few can afford."
+    "protagonist": "Alessandra, a brilliant and determined physicist",
+    "antagonist": "Ryker, a ruthless and cunning time smuggler",
+    "world": "In the near-future, humanity has developed advanced technology that allows for time travel, but at a terrible cost: the timestream is fragile and prone to catastrophic disruptions."
   }
 }
