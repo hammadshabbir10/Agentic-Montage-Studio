@@ -1,14 +1,15 @@
 """
-tool_client.py  –  Unified MCP Tool Client (Phase 1 + Phase 2)
+tool_client.py  –  Unified MCP Tool Client (Phase 1 + Phase 2 + Phase 3)
 Handles:
-  - Groq LLM          (script generation, story, character design)
-  - Image stubs       (SVG placeholders)
-  - Stability AI      (real character portraits)
-  - Edge TTS          (per-line audio synthesis)
-  - ElevenLabs TTS    (cloud TTS alternative)
-  - Music commit      (BGM stub writing)
-  - Memory commit     (vector store persistence)
-Video generation tools have been removed.
+  - Groq LLM             (script generation, story, character design)
+  - Image stubs          (SVG placeholders)
+  - Stability AI         (paid; legacy)
+  - Hugging Face image   (free, primary for Phase 3)
+  - Pollinations image   (free, fallback for Phase 3)
+  - Edge TTS             (per-line audio synthesis)
+  - ElevenLabs TTS       (cloud TTS alternative)
+  - Music commit         (BGM stub writing)
+  - Memory commit        (vector store persistence)
 """
 
 import asyncio
@@ -17,6 +18,7 @@ import json
 import os
 import re
 import time
+import urllib.parse
 import wave
 from pathlib import Path
 from typing import Any, Dict, Optional
@@ -60,6 +62,10 @@ class ToolClient:
             return self._invoke_image_stub(tool, payload)
         if tool_type == "stability_image":
             return self._invoke_stability_image(tool, payload)
+        if tool_type == "hf_image":
+            return self._invoke_hf_image(tool, payload)
+        if tool_type == "pollinations_image":
+            return self._invoke_pollinations_image(tool, payload)
         if tool_type == "edge_tts":
             return self._invoke_edge_tts(tool, payload)
         if tool_type == "elevenlabs_tts":
@@ -207,6 +213,101 @@ class ToolClient:
             raise ValueError("Stability API artifact missing base64 image")
         file_path.write_bytes(base64.b64decode(image_b64))
         return {"path": str(file_path)}
+
+    # ── Hugging Face Inference (free, primary for Phase 3) ───────────────────
+
+    def _invoke_hf_image(
+        self, tool: Dict[str, Any], payload: Dict[str, Any]
+    ) -> Dict[str, Any]:
+        api_key = os.getenv("HF_TOKEN", "").strip()
+        if not api_key:
+            raise ValueError("HF_TOKEN is required for hf_image")
+
+        config = tool.get("config", {})
+        model = (
+            payload.get("model")
+            or os.getenv(config.get("model_env", "HF_IMAGE_MODEL"), "").strip()
+            or config.get("default_model", "black-forest-labs/FLUX.1-schnell")
+        )
+        prompt = payload.get("prompt") or payload.get("description") or payload.get("name", "")
+        width  = int(payload.get("width", config.get("width", 1024)))
+        height = int(payload.get("height", config.get("height", 1024)))
+        seed   = payload.get("seed")
+
+        out_path = self._resolve_image_out_path(payload)
+
+        url = f"https://api-inference.huggingface.co/models/{model}"
+        headers = {
+            "Authorization": f"Bearer {api_key}",
+            "Accept": "image/png",
+            "Content-Type": "application/json",
+        }
+        params: Dict[str, Any] = {"width": width, "height": height}
+        if seed is not None:
+            params["seed"] = int(seed)
+
+        body = {"inputs": prompt, "parameters": params}
+
+        for attempt in range(2):
+            response = requests.post(url, headers=headers, json=body, timeout=90)
+            if response.status_code == 200 and response.content:
+                out_path.write_bytes(response.content)
+                return {"path": str(out_path), "backend": f"hf:{model}"}
+            if response.status_code == 503:
+                wait = 8.0
+                try:
+                    wait = float(response.json().get("estimated_time", 8))
+                except Exception:
+                    pass
+                time.sleep(min(max(wait, 4.0), 25.0))
+                continue
+            raise ValueError(
+                f"HF inference error {response.status_code}: {response.text[:200]}"
+            )
+
+        raise ValueError("HF inference: model still loading after retries")
+
+    # ── Pollinations.ai (free, fallback) ─────────────────────────────────────
+
+    def _invoke_pollinations_image(
+        self, tool: Dict[str, Any], payload: Dict[str, Any]
+    ) -> Dict[str, Any]:
+        config = tool.get("config", {})
+        prompt = payload.get("prompt") or payload.get("description") or payload.get("name", "")
+        width  = int(payload.get("width", config.get("width", 1024)))
+        height = int(payload.get("height", config.get("height", 1024)))
+        seed   = payload.get("seed")
+
+        out_path = self._resolve_image_out_path(payload)
+
+        encoded = urllib.parse.quote(prompt, safe="")
+        params: Dict[str, Any] = {"width": width, "height": height}
+        if config.get("nologo"):
+            params["nologo"] = "true"
+        if seed is not None:
+            params["seed"] = int(seed)
+
+        url = f"https://image.pollinations.ai/prompt/{encoded}"
+        response = requests.get(url, params=params, timeout=120)
+        if response.status_code != 200 or not response.content:
+            raise ValueError(
+                f"Pollinations error {response.status_code}: {response.text[:200]}"
+            )
+        out_path.write_bytes(response.content)
+        return {"path": str(out_path), "backend": "pollinations"}
+
+    def _resolve_image_out_path(self, payload: Dict[str, Any]) -> Path:
+        name = payload.get("name") or payload.get("filename") or "image"
+        safe_name = re.sub(r"[^a-zA-Z0-9_]+", "_", name).strip("_") or "image"
+        if payload.get("output_path"):
+            out_path = Path(payload["output_path"])
+        else:
+            base = Path(payload["output_dir"]) if payload.get("output_dir") else self.image_dir
+            if not base:
+                raise ValueError("output_dir/output_path or image_dir is required")
+            out_path = Path(base) / f"{safe_name}.png"
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        return out_path
 
     # ── Edge TTS (single-line synthesis) ─────────────────────────────────────
 

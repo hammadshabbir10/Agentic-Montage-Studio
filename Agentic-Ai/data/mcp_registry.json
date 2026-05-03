@@ -22,13 +22,33 @@
     {
       "name": "generate_character_image",
       "capability": "generate_character_image",
-      "type": "stability_image",
+      "type": "hf_image",
       "config": {
-        "engine_id": "stable-diffusion-xl-1024-v1-0",
+        "model_env": "HF_IMAGE_MODEL",
+        "default_model": "black-forest-labs/FLUX.1-schnell",
         "width": 1024,
-        "height": 1024,
-        "steps": 30,
-        "cfg_scale": 7
+        "height": 1024
+      }
+    },
+    {
+      "name": "generate_scene_image_hf",
+      "capability": "generate_scene_image",
+      "type": "hf_image",
+      "config": {
+        "model_env": "HF_IMAGE_MODEL",
+        "default_model": "black-forest-labs/FLUX.1-schnell",
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "generate_scene_image_pollinations",
+      "capability": "generate_scene_image_fallback",
+      "type": "pollinations_image",
+      "config": {
+        "width": 1280,
+        "height": 720,
+        "nologo": true
       }
     }
   ]
