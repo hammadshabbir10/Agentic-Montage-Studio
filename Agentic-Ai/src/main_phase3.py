@@ -78,6 +78,8 @@ def main() -> None:
                         help="Path to scene_manifest JSON from Phase 1")
     parser.add_argument("--characters", type=str, default="data/character_db_auto.json",
                         help="Path to character_db JSON from Phase 1")
+    parser.add_argument("--story", type=str, default="data/story_manifest_auto.json",
+                        help="Path to story_manifest JSON from Phase 1 (used for title card)")
     parser.add_argument("--timing", type=str, default="",
                         help="Path to timing_manifest JSON from Phase 2 "
                              "(auto-detect latest if not provided)")
@@ -99,6 +101,29 @@ def main() -> None:
                         help="Crossfade duration between scenes in seconds (0 disables fades)")
     parser.add_argument("--scene-image-only", action="store_true",
                         help="Use one image per scene (disable speaker-focused line images)")
+    parser.add_argument("--disable-cinematic", action="store_true",
+                        help="Disable cinematic look (color grade + grain + vignette + letterbox)")
+    parser.add_argument("--disable-title-card", action="store_true",
+                        help="Disable the intro title card")
+    parser.add_argument("--disable-end-card", action="store_true",
+                        help="Disable the closing end card")
+    parser.add_argument("--title-card-sec", type=float, default=3.0,
+                        help="Duration of the intro title card in seconds")
+    parser.add_argument("--end-card-sec", type=float, default=3.0,
+                        help="Duration of the closing end card in seconds")
+    parser.add_argument("--motion-engine", type=str, default="auto",
+                        choices=["auto", "pil", "zoompan"],
+                        help="Ken Burns engine: auto (PIL if available), pil, or zoompan")
+    parser.add_argument(
+        "--strict-character-consistency",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help=(
+            "When enabled, enforces stronger character identity consistency "
+            "(reuses canonical speaker image per scene). Use "
+            "--no-strict-character-consistency to allow more visual variation."
+        ),
+    )
     args = parser.parse_args()
 
     _print_banner("PHASE 3 — Video Generation & Composition  [STARTING]")
@@ -116,6 +141,7 @@ def main() -> None:
     scene_manifest  = _load_json(args.manifest)
     timing_manifest = _load_json(str(timing_path))
     character_db    = _load_json(args.characters)
+    story_manifest  = _load_json(args.story) if Path(args.story).exists() else {}
 
     scenes = scene_manifest.get("scenes", [])
     if not scenes:
@@ -130,7 +156,12 @@ def main() -> None:
     print(
         f"[Phase 3] Backend : {args.backend}    Quality : {args.quality}    "
         f"Seed : {args.seed}    Transition : {args.transition_sec:.2f}s    "
-        f"SpeakerFocus : {not args.scene_image_only}"
+        f"SpeakerFocus : {not args.scene_image_only}    "
+        f"Cinematic : {not args.disable_cinematic}    "
+        f"TitleCard : {not args.disable_title_card}    "
+        f"EndCard : {not args.disable_end_card}    "
+        f"MotionEngine : {args.motion_engine}    "
+        f"StrictCharacterConsistency : {args.strict_character_consistency}"
     )
 
     # Infrastructure
@@ -147,6 +178,7 @@ def main() -> None:
         "scene_manifest":   scene_manifest,
         "timing_manifest":  timing_manifest,
         "character_db":     character_db,
+        "story_manifest":   story_manifest,
         "tool_client":      tool_client,
         "memory_store":     memory_store,
         "phase3_state":     {"status": "processing"},
@@ -171,6 +203,13 @@ def main() -> None:
         "enable_subtitles": bool(args.enable_subtitles),
         "transition_sec":   max(0.0, args.transition_sec),
         "speaker_focus":    (not args.scene_image_only),
+        "cinematic":        (not args.disable_cinematic),
+        "enable_title_card": (not args.disable_title_card),
+        "enable_end_card":   (not args.disable_end_card),
+        "title_card_sec":    max(1.0, args.title_card_sec),
+        "end_card_sec":      max(1.0, args.end_card_sec),
+        "motion_engine":     args.motion_engine,
+        "strict_character_consistency": bool(args.strict_character_consistency),
     }
 
     graph = build_graph()
@@ -196,6 +235,13 @@ def main() -> None:
             "enable_subtitles": bool(args.enable_subtitles),
             "transition_sec":   max(0.0, args.transition_sec),
             "speaker_focus":    (not args.scene_image_only),
+            "cinematic":        (not args.disable_cinematic),
+            "enable_title_card": (not args.disable_title_card),
+            "enable_end_card":   (not args.disable_end_card),
+            "title_card_sec":   max(1.0, args.title_card_sec),
+            "end_card_sec":     max(1.0, args.end_card_sec),
+            "motion_engine":    args.motion_engine,
+            "strict_character_consistency": bool(args.strict_character_consistency),
         },
         "inputs": {
             "scene_manifest":   args.manifest,

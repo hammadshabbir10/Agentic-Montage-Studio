@@ -74,6 +74,18 @@ def main() -> None:
         default=0.0,
         help="Scene transition overlap in seconds (used to compensate expected subtitle times)",
     )
+    parser.add_argument(
+        "--title-offset-sec",
+        type=float,
+        default=0.0,
+        help="Intro title-card duration prepended to the final video (shifts expected subtitle times)",
+    )
+    parser.add_argument(
+        "--end-card-sec",
+        type=float,
+        default=0.0,
+        help="Closing end-card duration appended to the final video (extends expected video length)",
+    )
     args = parser.parse_args()
 
     timing_path = Path(args.timing)
@@ -85,13 +97,15 @@ def main() -> None:
     srt_entries = _parse_srt(srt_path)
     timing_lines = []
     transition_ms = max(0, int(args.transition_sec * 1000))
+    title_offset_ms = max(0, int(args.title_offset_sec * 1000))
+    end_card_ms = max(0, int(args.end_card_sec * 1000))
     for scene_idx, scene in enumerate(timing.get("scenes", [])):
         scene_shift = scene_idx * transition_ms
         for line in scene.get("lines", []):
             timing_lines.append(
                 (
-                    max(0, int(line.get("start_ms", 0)) - scene_shift),
-                    max(0, int(line.get("end_ms", 0)) - scene_shift),
+                    max(0, int(line.get("start_ms", 0)) - scene_shift) + title_offset_ms,
+                    max(0, int(line.get("end_ms", 0)) - scene_shift) + title_offset_ms,
                     str(line.get("line", "")).strip().strip('"'),
                 )
             )
@@ -124,19 +138,25 @@ def main() -> None:
         0,
         timing_total - max(0, len(timing.get("scenes", [])) - 1) * transition_ms,
     )
-    if srt_entries and effective_timing_total > 0:
+    expected_subtitle_end = effective_timing_total + title_offset_ms
+    extra_card_transitions = (1 if title_offset_ms > 0 else 0) + (1 if end_card_ms > 0 else 0)
+    expected_video_total = (
+        expected_subtitle_end + end_card_ms - extra_card_transitions * transition_ms
+    )
+
+    if srt_entries and expected_subtitle_end > 0:
         last_end = srt_entries[-1][1]
-        if abs(last_end - effective_timing_total) > args.max_delta_ms:
+        if abs(last_end - expected_subtitle_end) > args.max_delta_ms:
             issues.append(
-                f"Final subtitle end drift {abs(last_end - effective_timing_total)}ms vs effective timing total"
+                f"Final subtitle end drift {abs(last_end - expected_subtitle_end)}ms vs expected end {expected_subtitle_end}ms"
             )
 
     if args.video:
         video_ms = _probe_duration_ms(Path(args.video))
-        if video_ms > 0 and effective_timing_total > 0:
-            if video_ms + args.max_delta_ms < effective_timing_total:
+        if video_ms > 0 and expected_video_total > 0:
+            if video_ms + args.max_delta_ms < expected_video_total:
                 issues.append(
-                    f"Video shorter than expected: video={video_ms}ms expected={effective_timing_total}ms"
+                    f"Video shorter than expected: video={video_ms}ms expected={expected_video_total}ms"
                 )
 
     print("Subtitle QA summary")
@@ -144,6 +164,9 @@ def main() -> None:
     print(f"- srt lines   : {len(srt_entries)}")
     print(f"- timing total: {timing_total} ms")
     print(f"- effective total (after transition): {effective_timing_total} ms")
+    print(f"- title offset: {title_offset_ms} ms     end-card: {end_card_ms} ms")
+    print(f"- expected subtitle end: {expected_subtitle_end} ms")
+    print(f"- expected video total : {expected_video_total} ms")
     if args.video:
         print(f"- video total : {_probe_duration_ms(Path(args.video))} ms")
 

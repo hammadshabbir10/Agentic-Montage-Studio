@@ -4,35 +4,44 @@
   "run_dir": "data\\phase2_runs\\run01",
   "bgm_dir": "data\\phase2_runs\\run01\\bgm",
   "scene_manifest": {
-    "workflow_id": "workflow_20260504_013926",
-    "timestamp": "2026-05-04T01:39:26.683442",
+    "workflow_id": "workflow_20260504_052308",
+    "timestamp": "2026-05-04T05:23:08.641462",
     "scenes": [
       {
         "scene_id": 1,
-        "location": "TEMPORAL INSTITUTE RESEARCH LAB",
+        "location": "TEMPORAL RESEARCH FACILITY",
         "dialogue": [
           {
-            "speaker": "ERIKA VALENTINA",
-            "line": "\"Jason, I'm telling you, this is the breakthrough we've been waiting for.\"",
-            "visual_cue": "Medium shot of ERIKA VALENTINA, expression intense and focused.",
+            "speaker": "VALENTINA",
+            "line": "\"We're running out of time, Julian. The anomaly is growing exponentially.\"",
+            "visual_cue": "Medium shot of VALENTINA, expression intense and focused.",
             "start_ms": null,
             "end_ms": null,
             "duration_ms": null,
             "voice": null
           },
           {
-            "speaker": "JASON RYDER",
-            "line": "\"I know, Erika, but we need to run more tests. We can't send a human through time without being absolutely sure.\"",
-            "visual_cue": "Medium shot of ERIKA VALENTINA, her eyes shining with excitement.",
+            "speaker": "JULIAN",
+            "line": "\"I know, Valentina. But we still need to pinpoint the exact location and time of the rift.\"",
+            "visual_cue": "Close-up of VALENTINA, her eyes wide with concern.",
             "start_ms": null,
             "end_ms": null,
             "duration_ms": null,
             "voice": null
           },
           {
-            "speaker": "ERIKA VALENTINA",
-            "line": "\"We've run countless simulations. The technology is sound.\"",
-            "visual_cue": "Close-up of JASON RYDER, his brow furrowed in concern.",
+            "speaker": "VALENTINA",
+            "line": "\"The data is inconsistent. I'm trying to filter it, but\u2014\"",
+            "visual_cue": "Medium shot of JULIAN, his expression calm and collected.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "JULIAN",
+            "line": "\"I'll take a look. Maybe I can find a pattern we've missed.\"",
+            "visual_cue": "Close-up of VALENTINA's hands as she frantically types on a console.",
             "start_ms": null,
             "end_ms": null,
             "duration_ms": null,
@@ -40,53 +49,8 @@
           }
         ],
         "characters": [
-          "ERIKA VALENTINA",
-          "JASON RYDER"
-        ],
-        "duration": 23,
-        "start_ms": null,
-        "end_ms": null,
-        "duration_ms": null,
-        "audio_file": null,
-        "bgm_file": null,
-        "mood": null,
-        "lines": null
-      },
-      {
-        "scene_id": 2,
-        "location": "NEW YORK CITY STREET",
-        "dialogue": [
-          {
-            "speaker": "LUCIA FIORENTINA",
-            "line": "\"Leo, I've been thinking... maybe it's time we took a closer look at this temporal anomaly.\"",
-            "visual_cue": "Medium shot of LUCIA FIORENTINA, expression intense and focused.",
-            "start_ms": null,
-            "end_ms": null,
-            "duration_ms": null,
-            "voice": null
-          },
-          {
-            "speaker": "LEO",
-            "line": "\"What do you mean? We're not going to mess with the timeline again, are we?\"",
-            "visual_cue": "Medium shot of LUCIA FIORENTINA, her expression thoughtful.",
-            "start_ms": null,
-            "end_ms": null,
-            "duration_ms": null,
-            "voice": null
-          },
-          {
-            "speaker": "LUCIA FIORENTINA",
-            "line": "\"No, no, nothing like that. I just want to understand what's happening. It could be a game-changer for our research.\"",
-            "visual_cue": "Close-up of LEO, his eyes wide with worry.",
-            "start_ms": null,
-            "end_ms": null,
-            "duration_ms": null,
-            "voice": null
-          }
-        ],
-        "characters": [
-          "LUCIA FIORENTINA",
-          "LEO"
+          "VALENTINA",
+          "JULIAN"
         ],
         "duration": 28,
         "start_ms": null,
@@ -98,40 +62,31 @@
         "lines": null
       },
       {
-        "scene_id": 3,
-        "location": "TEMPORAL INSTITUTE CONTROL ROOM",
+        "scene_id": 2,
+        "location": "ABANDONED WAREHOUSE",
         "dialogue": [
           {
-            "speaker": "ERIKA VALENTINA",
-            "line": "\"Alright, Jason, the time is now. Are you ready?\"",
-            "visual_cue": "Medium shot of ERIKA VALENTINA, expression intense and focused.",
+            "speaker": "LENA",
+            "line": "\"Kai, I've got a buyer for the new temporal drive. Meet me at the usual location tomorrow night.\"",
+            "visual_cue": "Medium shot of LENA, expression intense and focused.",
             "start_ms": null,
             "end_ms": null,
             "duration_ms": null,
             "voice": null
           },
           {
-            "speaker": "JASON RYDER",
-            "line": "\"I'm as ready as I'll ever be.\"",
-            "visual_cue": "Close-up of ERIKA VALENTINA, her eyes fixed on the screen.",
+            "speaker": "KAI",
+            "line": "\"Sounds good, Lena. But I'm not sure I like the look of this new drive. It's too... unpredictable.\"",
+            "visual_cue": "Close-up of LENA, her eyes locked on KAI's with a hint of warning.",
             "start_ms": null,
             "end_ms": null,
             "duration_ms": null,
             "voice": null
           },
           {
-            "speaker": "LUCIA FIORENTINA",
-            "line": "\"Wait, Erika, I don't think this is a good idea. We're not prepared for the consequences.\"",
-            "visual_cue": "Medium shot of JASON RYDER, his hand on the console.",
-            "start_ms": null,
-            "end_ms": null,
-            "duration_ms": null,
-            "voice": null
-          },
-          {
-            "speaker": "ERIKA VALENTINA",
-            "line": "\"It's too late now, Lucia. The clock is ticking.\"",
-            "visual_cue": "Wide shot of LUCIA FIORENTINA, her voice carrying across the room.",
+            "speaker": "LENA",
+            "line": "\"Unpredictable? That's the point, Kai. We're not just smuggling people, we're changing history.\"",
+            "visual_cue": "Close-up of KAI's face, his expression skeptical.",
             "start_ms": null,
             "end_ms": null,
             "duration_ms": null,
@@ -139,11 +94,64 @@
           }
         ],
         "characters": [
-          "ERIKA VALENTINA",
-          "JASON RYDER",
-          "LUCIA FIORENTINA"
+          "LENA",
+          "KAI"
         ],
-        "duration": 24,
+        "duration": 27,
+        "start_ms": null,
+        "end_ms": null,
+        "duration_ms": null,
+        "audio_file": null,
+        "bgm_file": null,
+        "mood": null,
+        "lines": null
+      },
+      {
+        "scene_id": 3,
+        "location": "VAULT 7",
+        "dialogue": [
+          {
+            "speaker": "VALENTINA",
+            "line": "\"I don't like this, Julian. We're playing with fire here. What if we can't control the rift?\"",
+            "visual_cue": "Medium shot of VALENTINA, expression intense and focused.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "JULIAN",
+            "line": "\"We'll be fine, Valentina. We've run the simulations. We know what we're doing.\"",
+            "visual_cue": "Close-up of VALENTINA, her eyes wide with fear.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "VALENTINA",
+            "line": "\"But what if we're wrong? What if we create a paradox?\"",
+            "visual_cue": "Close-up of JULIAN, his expression calm and reassuring.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "JULIAN",
+            "line": "\"Then we'll deal with it, Valentina. But we have to try.\"",
+            "visual_cue": "Close-up of VALENTINA's hands, her fingers gripping her gloves tightly.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          }
+        ],
+        "characters": [
+          "VALENTINA",
+          "JULIAN"
+        ],
+        "duration": 29,
         "start_ms": null,
         "end_ms": null,
         "duration_ms": null,
@@ -154,89 +162,93 @@
       }
     ],
     "total_scenes": 3,
-    "total_duration_seconds": 75
+    "total_duration_seconds": 84
   },
   "character_db": {
-    "workflow_id": "workflow_20260504_013931",
-    "timestamp": "2026-05-04T01:39:31.177366",
+    "workflow_id": "workflow_20260504_052312",
+    "timestamp": "2026-05-04T05:23:12.206212",
     "characters": [
       {
-        "name": "ERIKA VALENTINA",
-        "personality": "Erika is a determined and confident individual, driven by a sense of urgency and conviction. She is willing to take risks to achieve her goals.",
-        "appearance": "Erika is a woman in her mid-30s, with short, dark hair and piercing brown eyes. She wears a crisp, white lab coat over a fitted blouse and trousers.",
+        "name": "VALENTINA",
+        "personality": "Valentina is a driven and cautious individual who is deeply concerned about the potential consequences of her actions, often questioning the decisions made by those in charge.",
+        "appearance": "Valentina is a tall, lean woman with short, dark hair and glasses, dressed in a white lab coat and carrying a worn leather notebook.",
         "role": "supporting",
-        "style_reference": "Sci-fi thriller, high-tech laboratory setting, sterile and futuristic aesthetic.",
+        "style_reference": "Dystopian sci-fi, stark lighting, and a color palette dominated by blues and greys to reflect the cold, technological environment of the Temporal Research Facility.",
         "first_appearance": 1,
         "dialogue_samples": [
           {
-            "line": "\"Jason, I'm telling you, this is the breakthrough we've been waiting for.\"",
-            "visual_cue": "Medium shot of ERIKA VALENTINA, expression intense and focused."
+            "line": "\"We're running out of time, Julian. The anomaly is growing exponentially.\"",
+            "visual_cue": "Medium shot of VALENTINA, expression intense and focused."
           },
           {
-            "line": "\"We've run countless simulations. The technology is sound.\"",
-            "visual_cue": "Close-up of JASON RYDER, his brow furrowed in concern."
+            "line": "\"The data is inconsistent. I'm trying to filter it, but\u2014\"",
+            "visual_cue": "Medium shot of JULIAN, his expression calm and collected."
           },
           {
-            "line": "\"Alright, Jason, the time is now. Are you ready?\"",
-            "visual_cue": "Medium shot of ERIKA VALENTINA, expression intense and focused."
+            "line": "\"I don't like this, Julian. We're playing with fire here. What if we can't control the rift?\"",
+            "visual_cue": "Medium shot of VALENTINA, expression intense and focused."
           },
           {
-            "line": "\"It's too late now, Lucia. The clock is ticking.\"",
-            "visual_cue": "Wide shot of LUCIA FIORENTINA, her voice carrying across the room."
+            "line": "\"But what if we're wrong? What if we create a paradox?\"",
+            "visual_cue": "Close-up of JULIAN, his expression calm and reassuring."
           }
         ]
       },
       {
-        "name": "JASON RYDER",
-        "personality": "Jason Ryder appears to be a cautious and responsible individual driven by a desire to ensure the safety of others, particularly when dealing with complex and potentially high-risk scientific endeavors.",
-        "appearance": "Jason Ryder is likely dressed in a modern lab coat and casual attire suitable for a research environment, with a clean-cut and unassuming appearance.",
+        "name": "JULIAN",
+        "personality": "Julian appears to be a confident and determined leader, willing to take calculated risks to achieve his goals. He is also empathetic and reassuring, trying to keep his team motivated and focused.",
+        "appearance": "Julian is likely dressed in a mix of practical and futuristic attire, including a lab coat and high-tech goggles, fitting for a temporal research facility.",
         "role": "supporting",
-        "style_reference": "Contemporary science fiction, bright and sterile environment, minimalist color palette.",
+        "style_reference": "Science fiction thriller, dark and metallic color palette, emphasizing advanced technology and futuristic settings.",
         "first_appearance": 1,
         "dialogue_samples": [
           {
-            "line": "\"I know, Erika, but we need to run more tests. We can't send a human through time without being absolutely sure.\"",
-            "visual_cue": "Medium shot of ERIKA VALENTINA, her eyes shining with excitement."
+            "line": "\"I know, Valentina. But we still need to pinpoint the exact location and time of the rift.\"",
+            "visual_cue": "Close-up of VALENTINA, her eyes wide with concern."
           },
           {
-            "line": "\"I'm as ready as I'll ever be.\"",
-            "visual_cue": "Close-up of ERIKA VALENTINA, her eyes fixed on the screen."
+            "line": "\"I'll take a look. Maybe I can find a pattern we've missed.\"",
+            "visual_cue": "Close-up of VALENTINA's hands as she frantically types on a console."
+          },
+          {
+            "line": "\"We'll be fine, Valentina. We've run the simulations. We know what we're doing.\"",
+            "visual_cue": "Close-up of VALENTINA, her eyes wide with fear."
+          },
+          {
+            "line": "\"Then we'll deal with it, Valentina. But we have to try.\"",
+            "visual_cue": "Close-up of VALENTINA's hands, her fingers gripping her gloves tightly."
           }
         ]
       },
       {
-        "name": "LUCIA FIORENTINA",
-        "personality": "Lucia Fiorentina is a driven and curious scientist who is willing to take calculated risks to advance her research. She is passionate about understanding the unknown and pushing the boundaries of human knowledge.",
-        "appearance": "Lucia is a smartly dressed woman in her mid-30s with short, dark hair and glasses perched on the end of her nose, fitting in with the professional attire of a Temporal Institute researcher.",
+        "name": "LENA",
+        "personality": "Lena is a charismatic and confident individual driven by a desire for change and financial gain, willing to take risks to alter the course of history.",
+        "appearance": "She is likely dressed in functional yet stylish attire, possibly a mix of corporate and underground fashion, with a focus on versatility and comfort.",
         "role": "supporting",
-        "style_reference": "Scientific thriller, sleek laboratory settings, and futuristic tech with a hint of paranoia and tension reminiscent of classic sci-fi films.",
+        "style_reference": "Cyberpunk, dark neon, and gritty urban landscapes, with a focus on contrast and high-tech gadgetry.",
         "first_appearance": 2,
         "dialogue_samples": [
           {
-            "line": "\"Leo, I've been thinking... maybe it's time we took a closer look at this temporal anomaly.\"",
-            "visual_cue": "Medium shot of LUCIA FIORENTINA, expression intense and focused."
+            "line": "\"Kai, I've got a buyer for the new temporal drive. Meet me at the usual location tomorrow night.\"",
+            "visual_cue": "Medium shot of LENA, expression intense and focused."
           },
           {
-            "line": "\"No, no, nothing like that. I just want to understand what's happening. It could be a game-changer for our research.\"",
-            "visual_cue": "Close-up of LEO, his eyes wide with worry."
-          },
-          {
-            "line": "\"Wait, Erika, I don't think this is a good idea. We're not prepared for the consequences.\"",
-            "visual_cue": "Medium shot of JASON RYDER, his hand on the console."
+            "line": "\"Unpredictable? That's the point, Kai. We're not just smuggling people, we're changing history.\"",
+            "visual_cue": "Close-up of KAI's face, his expression skeptical."
           }
         ]
       },
       {
-        "name": "LEO",
-        "personality": "Leo appears to be cautious and risk-averse, prioritizing the integrity of the timeline over potential scientific progress.",
-        "appearance": "Leo is likely dressed in a mix of modern and futuristic attire, reflecting his work at the Temporal Institute, with a focus on clean lines and functional design.",
+        "name": "KAI",
+        "personality": "Kai is a cautious and possibly skeptical individual who values predictability, suggesting a risk-averse personality.",
+        "appearance": "Kai likely wears functional, practical clothing suitable for a research facility or warehouse environment, with a focus on utility over fashion.",
         "role": "supporting",
-        "style_reference": "Cyberpunk, neon-drenched labs and sleek futuristic architecture, with a focus on high-contrast lighting and advanced technology.",
+        "style_reference": "Cyberpunk, dimly lit environments, and industrial accents.",
         "first_appearance": 2,
         "dialogue_samples": [
           {
-            "line": "\"What do you mean? We're not going to mess with the timeline again, are we?\"",
-            "visual_cue": "Medium shot of LUCIA FIORENTINA, her expression thoughtful."
+            "line": "\"Sounds good, Lena. But I'm not sure I like the look of this new drive. It's too... unpredictable.\"",
+            "visual_cue": "Close-up of LENA, her eyes locked on KAI's with a hint of warning."
           }
         ]
       }

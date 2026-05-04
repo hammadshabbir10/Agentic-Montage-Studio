@@ -1,33 +1,42 @@
 {
-  "workflow_id": "workflow_20260504_013926",
-  "timestamp": "2026-05-04T01:39:26.683442",
+  "workflow_id": "workflow_20260504_052308",
+  "timestamp": "2026-05-04T05:23:08.641462",
   "scenes": [
     {
       "scene_id": 1,
-      "location": "TEMPORAL INSTITUTE RESEARCH LAB",
+      "location": "TEMPORAL RESEARCH FACILITY",
       "dialogue": [
         {
-          "speaker": "ERIKA VALENTINA",
-          "line": "\"Jason, I'm telling you, this is the breakthrough we've been waiting for.\"",
-          "visual_cue": "Medium shot of ERIKA VALENTINA, expression intense and focused.",
+          "speaker": "VALENTINA",
+          "line": "\"We're running out of time, Julian. The anomaly is growing exponentially.\"",
+          "visual_cue": "Medium shot of VALENTINA, expression intense and focused.",
           "start_ms": null,
           "end_ms": null,
           "duration_ms": null,
           "voice": null
         },
         {
-          "speaker": "JASON RYDER",
-          "line": "\"I know, Erika, but we need to run more tests. We can't send a human through time without being absolutely sure.\"",
-          "visual_cue": "Medium shot of ERIKA VALENTINA, her eyes shining with excitement.",
+          "speaker": "JULIAN",
+          "line": "\"I know, Valentina. But we still need to pinpoint the exact location and time of the rift.\"",
+          "visual_cue": "Close-up of VALENTINA, her eyes wide with concern.",
           "start_ms": null,
           "end_ms": null,
           "duration_ms": null,
           "voice": null
         },
         {
-          "speaker": "ERIKA VALENTINA",
-          "line": "\"We've run countless simulations. The technology is sound.\"",
-          "visual_cue": "Close-up of JASON RYDER, his brow furrowed in concern.",
+          "speaker": "VALENTINA",
+          "line": "\"The data is inconsistent. I'm trying to filter it, but\u2014\"",
+          "visual_cue": "Medium shot of JULIAN, his expression calm and collected.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "JULIAN",
+          "line": "\"I'll take a look. Maybe I can find a pattern we've missed.\"",
+          "visual_cue": "Close-up of VALENTINA's hands as she frantically types on a console.",
           "start_ms": null,
           "end_ms": null,
           "duration_ms": null,
@@ -35,53 +44,8 @@
         }
       ],
       "characters": [
-        "ERIKA VALENTINA",
-        "JASON RYDER"
-      ],
-      "duration": 23,
-      "start_ms": null,
-      "end_ms": null,
-      "duration_ms": null,
-      "audio_file": null,
-      "bgm_file": null,
-      "mood": null,
-      "lines": null
-    },
-    {
-      "scene_id": 2,
-      "location": "NEW YORK CITY STREET",
-      "dialogue": [
-        {
-          "speaker": "LUCIA FIORENTINA",
-          "line": "\"Leo, I've been thinking... maybe it's time we took a closer look at this temporal anomaly.\"",
-          "visual_cue": "Medium shot of LUCIA FIORENTINA, expression intense and focused.",
-          "start_ms": null,
-          "end_ms": null,
-          "duration_ms": null,
-          "voice": null
-        },
-        {
-          "speaker": "LEO",
-          "line": "\"What do you mean? We're not going to mess with the timeline again, are we?\"",
-          "visual_cue": "Medium shot of LUCIA FIORENTINA, her expression thoughtful.",
-          "start_ms": null,
-          "end_ms": null,
-          "duration_ms": null,
-          "voice": null
-        },
-        {
-          "speaker": "LUCIA FIORENTINA",
-          "line": "\"No, no, nothing like that. I just want to understand what's happening. It could be a game-changer for our research.\"",
-          "visual_cue": "Close-up of LEO, his eyes wide with worry.",
-          "start_ms": null,
-          "end_ms": null,
-          "duration_ms": null,
-          "voice": null
-        }
-      ],
-      "characters": [
-        "LUCIA FIORENTINA",
-        "LEO"
+        "VALENTINA",
+        "JULIAN"
       ],
       "duration": 28,
       "start_ms": null,
@@ -93,40 +57,31 @@
       "lines": null
     },
     {
-      "scene_id": 3,
-      "location": "TEMPORAL INSTITUTE CONTROL ROOM",
+      "scene_id": 2,
+      "location": "ABANDONED WAREHOUSE",
       "dialogue": [
         {
-          "speaker": "ERIKA VALENTINA",
-          "line": "\"Alright, Jason, the time is now. Are you ready?\"",
-          "visual_cue": "Medium shot of ERIKA VALENTINA, expression intense and focused.",
+          "speaker": "LENA",
+          "line": "\"Kai, I've got a buyer for the new temporal drive. Meet me at the usual location tomorrow night.\"",
+          "visual_cue": "Medium shot of LENA, expression intense and focused.",
           "start_ms": null,
           "end_ms": null,
           "duration_ms": null,
           "voice": null
         },
         {
-          "speaker": "JASON RYDER",
-          "line": "\"I'm as ready as I'll ever be.\"",
-          "visual_cue": "Close-up of ERIKA VALENTINA, her eyes fixed on the screen.",
+          "speaker": "KAI",
+          "line": "\"Sounds good, Lena. But I'm not sure I like the look of this new drive. It's too... unpredictable.\"",
+          "visual_cue": "Close-up of LENA, her eyes locked on KAI's with a hint of warning.",
           "start_ms": null,
           "end_ms": null,
           "duration_ms": null,
           "voice": null
         },
         {
-          "speaker": "LUCIA FIORENTINA",
-          "line": "\"Wait, Erika, I don't think this is a good idea. We're not prepared for the consequences.\"",
-          "visual_cue": "Medium shot of JASON RYDER, his hand on the console.",
-          "start_ms": null,
-          "end_ms": null,
-          "duration_ms": null,
-          "voice": null
-        },
-        {
-          "speaker": "ERIKA VALENTINA",
-          "line": "\"It's too late now, Lucia. The clock is ticking.\"",
-          "visual_cue": "Wide shot of LUCIA FIORENTINA, her voice carrying across the room.",
+          "speaker": "LENA",
+          "line": "\"Unpredictable? That's the point, Kai. We're not just smuggling people, we're changing history.\"",
+          "visual_cue": "Close-up of KAI's face, his expression skeptical.",
           "start_ms": null,
           "end_ms": null,
           "duration_ms": null,
@@ -134,11 +89,64 @@
         }
       ],
       "characters": [
-        "ERIKA VALENTINA",
-        "JASON RYDER",
-        "LUCIA FIORENTINA"
+        "LENA",
+        "KAI"
       ],
-      "duration": 24,
+      "duration": 27,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    },
+    {
+      "scene_id": 3,
+      "location": "VAULT 7",
+      "dialogue": [
+        {
+          "speaker": "VALENTINA",
+          "line": "\"I don't like this, Julian. We're playing with fire here. What if we can't control the rift?\"",
+          "visual_cue": "Medium shot of VALENTINA, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "JULIAN",
+          "line": "\"We'll be fine, Valentina. We've run the simulations. We know what we're doing.\"",
+          "visual_cue": "Close-up of VALENTINA, her eyes wide with fear.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "VALENTINA",
+          "line": "\"But what if we're wrong? What if we create a paradox?\"",
+          "visual_cue": "Close-up of JULIAN, his expression calm and reassuring.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "JULIAN",
+          "line": "\"Then we'll deal with it, Valentina. But we have to try.\"",
+          "visual_cue": "Close-up of VALENTINA's hands, her fingers gripping her gloves tightly.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "VALENTINA",
+        "JULIAN"
+      ],
+      "duration": 29,
       "start_ms": null,
       "end_ms": null,
       "duration_ms": null,
@@ -149,5 +157,5 @@
     }
   ],
   "total_scenes": 3,
-  "total_duration_seconds": 75
+  "total_duration_seconds": 84
 }

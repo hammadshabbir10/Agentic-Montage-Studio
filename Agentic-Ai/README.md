@@ -108,7 +108,31 @@ python -m src.main_phase3 [flags]
   --enable-subtitles  Burn dialogue subtitles into the final MP4
   --transition-sec    Crossfade duration in seconds (default: 0.35, 0 disables fades)
   --scene-image-only  Disable speaker-focused line images and use one still per scene
+
+  --story             Path to story_manifest JSON (default: data/story_manifest_auto.json)
+  --disable-cinematic    Disable cinematic look (color grade + grain + vignette + letterbox)
+  --disable-title-card   Disable the intro title card
+  --disable-end-card     Disable the closing end card
+  --title-card-sec    Duration of the intro title card in seconds (default: 3.0)
+  --end-card-sec      Duration of the closing end card in seconds (default: 3.0)
 ```
+
+### Animation upgrades (smooth Ken Burns + motion presets)
+
+- `ken_burns_clip` runs at a 2x upscaled internal canvas with linear, time-based
+  zoom expressions and a final lanczos downscale, eliminating the per-frame
+  pixel jitter of older zoompan setups.
+- A motion preset library (`push_in`, `pull_out`, `push_to_face`,
+  `pan_left_right`, `pan_right_left`, `diagonal_in`, `subtle_drift`) is selected
+  per dialogue line based on the line's visual cue and the scene mood.
+- Each scene gets a sequence of speaker-focused clips (one per line) using its
+  own motion preset, so visual variety follows the conversation.
+- Cinematic look (color grade, vignette, light film grain, 2.35:1 letterbox) is
+  baked into every Ken Burns clip; disable with `--disable-cinematic`.
+- Intro title card (story title + logline) and closing end card are produced as
+  matching short MP4s and bookended via the same crossfade pipeline.
+- Per-scene audio gets short fade-in/out so concat / crossfade boundaries never
+  click.
 
 ### Quality profiles
 
@@ -215,9 +239,10 @@ Subtitle timing QA (checks timing manifest vs SRT vs final video envelope):
 
 ```powershell
 python scripts\subtitle_timing_qa.py `
-  --timing data\phase2_runs\run03\timing_manifest_run03.json `
-  --srt data\phase3_runs\run03\subtitles_run03.srt `
-  --video data\phase3_runs\run03\final_output_run03_subbed.mp4
+  --timing data\phase2_runs\run01\timing_manifest_run01.json `
+  --srt data\phase3_runs\run01\subtitles_run01.srt `
+  --video data\phase3_runs\run01\final_output_run01_subbed.mp4 `
+  --transition-sec 0.45 --title-offset-sec 3.0 --end-card-sec 3.0
 ```
 
 ---

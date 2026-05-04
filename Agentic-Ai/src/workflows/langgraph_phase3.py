@@ -38,6 +38,7 @@ class Phase3State(TypedDict, total=False):
     scene_manifest:    Dict[str, Any]
     timing_manifest:   Dict[str, Any]
     character_db:      Dict[str, Any]
+    story_manifest:    Dict[str, Any]
 
     plans:             List[ScenePlan]
     image_results:     List[Dict[str, Any]]
@@ -45,6 +46,8 @@ class Phase3State(TypedDict, total=False):
     portrait_bank:     Dict[str, Dict[str, Any]]
     clip_results:      List[Dict[str, Any]]
     composed_results:  List[Dict[str, Any]]
+    title_card_path:   str
+    end_card_path:     str
     final_video_path:  str
     subtitles_path:    str
 
@@ -72,6 +75,13 @@ class Phase3State(TypedDict, total=False):
     enable_subtitles:  bool
     transition_sec:    float
     speaker_focus:     bool
+    cinematic:         bool
+    enable_title_card: bool
+    enable_end_card:   bool
+    title_card_sec:    float
+    end_card_sec:      float
+    motion_engine:     str  # auto | pil | zoompan
+    strict_character_consistency: bool
 
 
 def _print_section(title: str) -> None:
@@ -124,6 +134,14 @@ def image_gen_node(state: Phase3State) -> Phase3State:
     plans: List[ScenePlan] = state["plans"]
     images_dir = Path(state["images_dir"])
     portraits_dir = images_dir / "character_bank"
+    speaker_focus = bool(state.get("speaker_focus", True))
+    active_speakers: set[str] = set()
+    for plan in plans:
+        if state.get("only_scene_id") is not None and plan.scene_id != state["only_scene_id"]:
+            continue
+        for s in plan.speakers:
+            if s:
+                active_speakers.add(str(s).strip().upper())
 
     portrait_bank = scene_visualizer.generate_character_portrait_bank(
         character_db=state["character_db"],
@@ -131,22 +149,25 @@ def image_gen_node(state: Phase3State) -> Phase3State:
         backend=state.get("backend", "auto"),
         quality=state.get("quality", "balanced"),
         seed=state.get("seed"),
+        speaker_names=active_speakers,
     )
     state["portrait_bank"] = portrait_bank
 
-    results = scene_visualizer.generate_all_scene_images(
-        plans=plans,
-        character_db=state["character_db"],
-        images_dir=images_dir,
-        backend=state.get("backend", "auto"),
-        quality=state.get("quality", "balanced"),
-        seed=state.get("seed"),
-        only_scene_id=state.get("only_scene_id"),
-    )
+    results: List[Dict[str, Any]] = []
+    if not speaker_focus:
+        results = scene_visualizer.generate_all_scene_images(
+            plans=plans,
+            character_db=state["character_db"],
+            images_dir=images_dir,
+            backend=state.get("backend", "auto"),
+            quality=state.get("quality", "balanced"),
+            seed=state.get("seed"),
+            only_scene_id=state.get("only_scene_id"),
+        )
     state["image_results"] = results
     line_images_by_scene: Dict[int, List[Dict[str, Any]]] = {}
 
-    if state.get("speaker_focus", True):
+    if speaker_focus:
         for plan in plans:
             if state.get("only_scene_id") is not None and plan.scene_id != state["only_scene_id"]:
                 continue
@@ -158,6 +179,9 @@ def image_gen_node(state: Phase3State) -> Phase3State:
                 quality=state.get("quality", "balanced"),
                 seed=state.get("seed"),
                 portrait_bank=portrait_bank,
+                strict_character_consistency=bool(
+                    state.get("strict_character_consistency", True)
+                ),
             )
             line_images_by_scene[plan.scene_id] = line_images
     state["line_image_results"] = line_images_by_scene
@@ -220,6 +244,8 @@ def motion_node(state: Phase3State) -> Phase3State:
     clips_dir = Path(state["clips_dir"])
     profile = video_compose.get_profile(state.get("quality", "balanced"))
     log_path = Path(state["ffmpeg_log"])
+    cinematic = bool(state.get("cinematic", True))
+    motion_engine = str(state.get("motion_engine", "auto"))
 
     clip_results: List[Dict[str, Any]] = []
     only = state.get("only_scene_id")
@@ -233,7 +259,6 @@ def motion_node(state: Phase3State) -> Phase3State:
             raise RuntimeError(f"motion: scene {plan.scene_id} has no image")
 
         clip_path = clips_dir / f"scene_{plan.scene_id:02d}_kb.mp4"
-        direction = "in" if plan.scene_id % 2 == 1 else "out"
         line_images = line_images_by_scene.get(plan.scene_id, [])
         if speaker_focus and line_images:
             video_compose.build_scene_clip_from_line_images(
@@ -241,25 +266,39 @@ def motion_node(state: Phase3State) -> Phase3State:
                 line_images=line_images,
                 out_path=clip_path,
                 profile=profile,
+                mood=plan.mood,
+                cinematic=cinematic,
+                motion_engine=motion_engine,
                 log_path=log_path,
             )
+            preset_name = "per_line"
         else:
+            preset = video_compose.pick_motion_preset(
+                visual_cue=plan.visual_cues[0] if plan.visual_cues else "",
+                mood=plan.mood,
+                scene_id=plan.scene_id,
+                line_index=0,
+            )
             video_compose.ken_burns_clip(
                 image_path=plan.image_path,
                 out_path=clip_path,
                 duration_sec=plan.duration_sec,
                 profile=profile,
-                direction=direction,
+                motion_preset=preset,
+                cinematic=cinematic,
                 log_path=log_path,
+                engine=motion_engine,
             )
+            preset_name = preset.name
         plan.clip_path = str(clip_path)
         clip_results.append({
             "scene_id":  plan.scene_id,
             "clip_path": str(clip_path),
             "duration_sec": plan.duration_sec,
-            "direction": direction,
+            "motion_preset": preset_name,
+            "cinematic": cinematic,
         })
-        print(f"[Phase 3] motion: scene {plan.scene_id:02d} → {clip_path.name}")
+        print(f"[Phase 3] motion: scene {plan.scene_id:02d} → {clip_path.name} ({preset_name})")
 
     state["clip_results"] = clip_results
     return state
@@ -322,11 +361,61 @@ def mux_node(state: Phase3State) -> Phase3State:
             raise RuntimeError(f"mux: missing composed clip for scene {plan.scene_id}: {candidate}")
         ordered_clips.append(candidate)
 
-    final_path = Path(state["final_path"])
+    profile = video_compose.get_profile(state.get("quality", "balanced"))
     log_path = Path(state["ffmpeg_log"])
+    clips_dir = Path(state["clips_dir"])
+
+    # Tier 5: title + end cards as bookends.
+    story = state.get("story_manifest", {}).get("story", {}) if state.get("story_manifest") else {}
+    title_text = (story.get("title") or "Agentic Montage Studio").strip()
+    title_subtitle = (
+        story.get("logline")
+        or story.get("genre")
+        or "An Agentic Montage Studio Production"
+    ).strip()
+    if not title_text or title_text.lower() == "untitled story":
+        title_text = "Agentic Montage Studio"
+    if (
+        not title_subtitle
+        or "could not be parsed" in title_subtitle.lower()
+        or "details unavailable" in title_subtitle.lower()
+    ):
+        title_subtitle = "An Agentic Montage Studio Production"
+
+    title_card_path: Optional[Path] = None
+    end_card_path: Optional[Path] = None
+
+    if state.get("enable_title_card", True):
+        title_card_path = clips_dir / "title_card.mp4"
+        video_compose.build_title_card(
+            title=title_text,
+            subtitle=title_subtitle,
+            out_path=title_card_path,
+            profile=profile,
+            duration_sec=float(state.get("title_card_sec", 3.0)),
+            log_path=log_path,
+        )
+        ordered_clips.insert(0, str(title_card_path))
+        state["title_card_path"] = str(title_card_path)
+        print(f"[Phase 3] mux: title card → {title_card_path.name}")
+
+    if state.get("enable_end_card", True):
+        end_card_path = clips_dir / "end_card.mp4"
+        video_compose.build_end_card(
+            title="The End",
+            subtitle="Created with Agentic Montage Studio",
+            out_path=end_card_path,
+            profile=profile,
+            duration_sec=float(state.get("end_card_sec", 3.0)),
+            log_path=log_path,
+        )
+        ordered_clips.append(str(end_card_path))
+        state["end_card_path"] = str(end_card_path)
+        print(f"[Phase 3] mux: end card → {end_card_path.name}")
+
+    final_path = Path(state["final_path"])
     transition_sec = float(state.get("transition_sec", 0.35))
     if transition_sec > 0:
-        profile = video_compose.get_profile(state.get("quality", "balanced"))
         video_compose.concat_scenes_with_crossfade(
             ordered_clips,
             out_path=final_path,
@@ -346,13 +435,19 @@ def subtitles_node(state: Phase3State) -> Phase3State:
         return state
     _print_section("Phase 3 — Subtitle Burn-In")
     srt_path = Path(state["subtitles_save"])
+    title_offset_sec = (
+        float(state.get("title_card_sec", 3.0))
+        if state.get("enable_title_card", True)
+        else 0.0
+    )
     video_compose.build_srt(
         state["timing_manifest"],
         srt_path,
         scene_transition_sec=float(state.get("transition_sec", 0.0)),
+        global_offset_sec=title_offset_sec,
     )
     state["subtitles_path"] = str(srt_path)
-    print(f"[Phase 3] subtitles: SRT written → {srt_path}")
+    print(f"[Phase 3] subtitles: SRT written → {srt_path} (offset {title_offset_sec:.2f}s)")
 
     profile = video_compose.get_profile(state.get("quality", "balanced"))
     log_path = Path(state["ffmpeg_log"])

@@ -2,25 +2,25 @@
   "image_results": [
     {
       "scene_id": 1,
-      "image_path": "data\\phase3_runs\\run01\\images\\scene_01_fdacc836c590.png",
-      "backend": "pollinations",
-      "prompt": "Location: Temporal Institute Research Lab | Mood: action | Shot: Medium shot of ERIKA VALENTINA, expression intense and focused. | Characters \u2014 Erika Valentina: Erika is a woman in her mid-30s, with short, dark hair and piercing brown eyes. She wears a crisp, white lab coat over a fitted blouse and trousers; Jason Ryder: Jason Ryder is likely dressed in a modern lab coat and casual attire suitable for a research environment, with a clean-cut and unassuming appearance | cinematic still, high detail, dramatic lighting, depth of field, film grain, 35mm photography, color graded",
+      "image_path": "data\\phase3_runs\\run01\\images\\scene_01_1660d487bff4.png",
+      "backend": "pollinations:flux",
+      "prompt": "Location: Temporal Research Facility | Mood: action | Shot: Medium shot of VALENTINA, expression intense and focused. | Characters \u2014 Valentina: Valentina is a tall, lean woman with short, dark hair and glasses, dressed in a white lab coat and carrying a worn leather notebook; Julian: Julian is likely dressed in a mix of practical and futuristic attire, including a lab coat and high-tech goggles, fitting for a temporal research facility | cinematic still, high detail, dramatic lighting, depth of field, film grain, 35mm photography, color graded",
       "width": 1280,
       "height": 720
     },
     {
       "scene_id": 2,
-      "image_path": "data\\phase3_runs\\run01\\images\\scene_02_71e280af334e.png",
-      "backend": "pollinations",
-      "prompt": "Location: New York City Street | Mood: tense | Shot: Medium shot of LUCIA FIORENTINA, expression intense and focused. | Characters \u2014 Lucia Fiorentina: Lucia is a smartly dressed woman in her mid-30s with short, dark hair and glasses perched on the end of her nose, fitting in with the professional attire of a Temporal Institute researcher; Leo: Leo is likely dressed in a mix of modern and futuristic attire, reflecting his work at the Temporal Institute, with a focus on clean lines and functional design | cinematic still, high detail, dramatic lighting, depth of field, film grain, 35mm photography, color graded",
+      "image_path": "data\\phase3_runs\\run01\\images\\scene_02_fd9c2ab0d376.png",
+      "backend": "pollinations:flux",
+      "prompt": "Location: Abandoned Warehouse | Mood: tense | Shot: Medium shot of LENA, expression intense and focused. | Characters \u2014 Lena: She is likely dressed in functional yet stylish attire, possibly a mix of corporate and underground fashion, with a focus on versatility and comfort; Kai: Kai likely wears functional, practical clothing suitable for a research facility or warehouse environment, with a focus on utility over fashion | cinematic still, high detail, dramatic lighting, depth of field, film grain, 35mm photography, color graded",
       "width": 1280,
       "height": 720
     },
     {
       "scene_id": 3,
-      "image_path": "data\\phase3_runs\\run01\\images\\scene_03_d5155f29023e.png",
-      "backend": "pollinations",
-      "prompt": "Location: Temporal Institute Control Room | Mood: tense | Shot: Medium shot of ERIKA VALENTINA, expression intense and focused. | Characters \u2014 Erika Valentina: Erika is a woman in her mid-30s, with short, dark hair and piercing brown eyes. She wears a crisp, white lab coat over a fitted blouse and trousers; Jason Ryder: Jason Ryder is likely dressed in a modern lab coat and casual attire suitable for a research environment, with a clean-cut and unassuming appearance; Lucia Fiorentina: Lucia is a smartly dressed woman in her mid-30s with short, dark hair and glasses perched on the end of her nose, fitting in with the professional attire of a Temporal Institute researcher | cinematic still, high detail, dramatic lighting, depth of field, film grain, 35mm photography, color graded",
+      "image_path": "data\\phase3_runs\\run01\\images\\scene_03_4da0eef9d70b.png",
+      "backend": "pollinations:flux",
+      "prompt": "Location: Vault 7 | Mood: action | Shot: Medium shot of VALENTINA, expression intense and focused. | Characters \u2014 Valentina: Valentina is a tall, lean woman with short, dark hair and glasses, dressed in a white lab coat and carrying a worn leather notebook; Julian: Julian is likely dressed in a mix of practical and futuristic attire, including a lab coat and high-tech goggles, fitting for a temporal research facility | cinematic still, high detail, dramatic lighting, depth of field, film grain, 35mm photography, color graded",
       "width": 1280,
       "height": 720
     }
@@ -29,20 +29,23 @@
     {
       "scene_id": 1,
       "clip_path": "data\\phase3_runs\\run01\\clips\\scene_01_kb.mp4",
-      "duration_sec": 17.952,
-      "direction": "in"
+      "duration_sec": 22.632,
+      "motion_preset": "per_line",
+      "cinematic": true
     },
     {
       "scene_id": 2,
       "clip_path": "data\\phase3_runs\\run01\\clips\\scene_02_kb.mp4",
-      "duration_sec": 18.6,
-      "direction": "out"
+      "duration_sec": 20.928,
+      "motion_preset": "per_line",
+      "cinematic": true
     },
     {
       "scene_id": 3,
       "clip_path": "data\\phase3_runs\\run01\\clips\\scene_03_kb.mp4",
-      "duration_sec": 19.152,
-      "direction": "in"
+      "duration_sec": 24.36,
+      "motion_preset": "per_line",
+      "cinematic": true
     }
   ],
   "composed_results": [
@@ -62,7 +65,7 @@
       "scene_id": 3,
       "composed_path": "data\\phase3_runs\\run01\\composed\\scene_03_composed.mp4",
       "audio_file": "data\\phase2_runs\\run01\\audio\\scene_03_run01.mp3",
-      "bgm_file": "data\\phase2_runs\\run01\\bgm\\tense_scene03_freesound.mp3"
+      "bgm_file": "data\\phase2_runs\\run01\\bgm\\action_scene03_freesound.mp3"
     }
   ],
   "final_video_path": "data\\phase3_runs\\run01\\final_output_run01_subbed.mp4",
@@ -73,8 +76,14 @@
     "seed": null,
     "only_scene_id": null,
     "enable_subtitles": true,
-    "transition_sec": 0.35,
-    "speaker_focus": true
+    "transition_sec": 0.45,
+    "speaker_focus": true,
+    "cinematic": true,
+    "enable_title_card": true,
+    "enable_end_card": true,
+    "title_card_sec": 3.0,
+    "end_card_sec": 3.0,
+    "motion_engine": "auto"
   },
   "inputs": {
     "scene_manifest": "data/scene_manifest_auto.json",

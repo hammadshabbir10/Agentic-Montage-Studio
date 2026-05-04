@@ -30,6 +30,7 @@ Output schema (consumed by build_story_manifest):
 
 import json
 import re
+import ast
 from typing import Any, Dict, Optional
 
 
@@ -93,11 +94,30 @@ def _prompt_from_script(script_text: str) -> str:
 def _parse_story_response(text: str) -> Dict[str, Any]:
     """Robustly extract the JSON object from the LLM response."""
     clean = re.sub(r"```(?:json)?", "", text).replace("```", "").strip()
+
+    candidates = []
+    if clean:
+        candidates.append(clean)
     match = re.search(r"\{.*\}", clean, re.DOTALL)
     if match:
+        block = match.group().strip()
+        candidates.append(block)
+        # Common LLM artifact: trailing commas before close braces/brackets.
+        candidates.append(re.sub(r",\s*([}\]])", r"\1", block))
+
+    for candidate in candidates:
         try:
-            return json.loads(match.group())
+            parsed = json.loads(candidate)
+            if isinstance(parsed, dict):
+                return parsed
         except json.JSONDecodeError:
+            pass
+        try:
+            # Fallback for Python-style dict output (single quotes / None / True).
+            parsed = ast.literal_eval(candidate)
+            if isinstance(parsed, dict):
+                return parsed
+        except (SyntaxError, ValueError):
             pass
     # Fallback defaults so the pipeline never crashes
     return {
@@ -136,6 +156,8 @@ def run_from_prompt(
             "generate_script_segment", {"prompt": llm_prompt}
         )
         story = _parse_story_response(result.get("text", ""))
+        if story.get("title") == "Untitled Story" and prompt.strip():
+            story["title"] = prompt.strip()[:80]
     except Exception:
         story = _parse_story_response("")
     return story

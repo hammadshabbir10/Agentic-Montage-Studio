@@ -1,39 +1,43 @@
 1
-00:00:00,000 --> 00:00:04,680
-ERIKA VALENTINA: Jason, I'm telling you, this is the breakthrough we've been waiting for.
+00:00:03,000 --> 00:00:08,856
+VALENTINA: We're running out of time, Julian. The anomaly is growing exponentially.
 
 2
-00:00:04,680 --> 00:00:12,719
-JASON RYDER: I know, Erika, but we need to run more tests. We can't send a human through time without being absolutely sure.
+00:00:08,856 --> 00:00:15,648
+JULIAN: I know, Valentina. But we still need to pinpoint the exact location and time of the rift.
 
 3
-00:00:12,719 --> 00:00:17,952
-ERIKA VALENTINA: We've run countless simulations. The technology is sound.
+00:00:15,648 --> 00:00:20,784
+VALENTINA: The data is inconsistent. I'm trying to filter it, but-
 
 4
-00:00:17,952 --> 00:00:23,362
-LUCIA FIORENTINA: Leo, I've been thinking... maybe it's time we took a closer look at this temporal anomaly.
+00:00:20,784 --> 00:00:25,632
+JULIAN: I'll take a look. Maybe I can find a pattern we've missed.
 
 5
-00:00:23,362 --> 00:00:27,106
-LEO: What do you mean? We're not going to mess with the timeline again, are we?
+00:00:25,632 --> 00:00:32,334
+LENA: Kai, I've got a buyer for the new temporal drive. Meet me at the usual location tomorrow night.
 
 6
-00:00:27,106 --> 00:00:36,202
-LUCIA FIORENTINA: No, no, nothing like that. I just want to understand what's happening. It could be a game-changer for our research.
+00:00:32,334 --> 00:00:38,118
+KAI: Sounds good, Lena. But I'm not sure I like the look of this new drive. It's too... unpredictable.
 
 7
-00:00:36,202 --> 00:00:40,652
-ERIKA VALENTINA: Alright, Jason, the time is now. Are you ready?
+00:00:38,118 --> 00:00:46,110
+LENA: Unpredictable? That's the point, Kai. We're not just smuggling people, we're changing history.
 
 8
-00:00:40,652 --> 00:00:43,364
-JASON RYDER: I'm as ready as I'll ever be.
+00:00:46,110 --> 00:00:53,124
+VALENTINA: I don't like this, Julian. We're playing with fire here. What if we can't control the rift?
 
 9
-00:00:43,364 --> 00:00:50,252
-LUCIA FIORENTINA: Wait, Erika, I don't think this is a good idea. We're not prepared for the consequences.
+00:00:53,124 --> 00:01:00,468
+JULIAN: We'll be fine, Valentina. We've run the simulations. We know what we're doing.
 
 10
-00:00:50,252 --> 00:00:55,004
-ERIKA VALENTINA: It's too late now, Lucia. The clock is ticking.
+00:01:00,468 --> 00:01:04,980
+VALENTINA: But what if we're wrong? What if we create a paradox?
+
+11
+00:01:04,980 --> 00:01:10,020
+JULIAN: Then we'll deal with it, Valentina. But we have to try.
