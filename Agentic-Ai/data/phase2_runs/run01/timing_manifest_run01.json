@@ -1,0 +1,140 @@
+{
+  "workflow_id": "phase2_run01",
+  "timestamp": "2026-05-04T05:23:33.222981",
+  "run_tag": "run01",
+  "total_duration_ms": 67920,
+  "scenes": [
+    {
+      "scene_id": 1,
+      "audio_file": "data\\phase2_runs\\run01\\audio\\scene_01_run01.mp3",
+      "bgm_file": "data\\phase2_runs\\run01\\bgm\\action_scene01_freesound.mp3",
+      "mood": "action",
+      "start_ms": 0,
+      "end_ms": 22632,
+      "duration_ms": 22632,
+      "lines": [
+        {
+          "speaker": "VALENTINA",
+          "line": "We're running out of time, Julian. The anomaly is growing exponentially.",
+          "start_ms": 0,
+          "end_ms": 5856,
+          "duration_ms": 5856,
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Medium shot of VALENTINA, expression intense and focused."
+        },
+        {
+          "speaker": "JULIAN",
+          "line": "I know, Valentina. But we still need to pinpoint the exact location and time of the rift.",
+          "start_ms": 5856,
+          "end_ms": 12648,
+          "duration_ms": 6792,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Close-up of VALENTINA, her eyes wide with concern."
+        },
+        {
+          "speaker": "VALENTINA",
+          "line": "The data is inconsistent. I'm trying to filter it, but-",
+          "start_ms": 12648,
+          "end_ms": 17784,
+          "duration_ms": 5136,
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Medium shot of JULIAN, his expression calm and collected."
+        },
+        {
+          "speaker": "JULIAN",
+          "line": "I'll take a look. Maybe I can find a pattern we've missed.",
+          "start_ms": 17784,
+          "end_ms": 22632,
+          "duration_ms": 4848,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Close-up of VALENTINA's hands as she frantically types on a console."
+        }
+      ]
+    },
+    {
+      "scene_id": 2,
+      "audio_file": "data\\phase2_runs\\run01\\audio\\scene_02_run01.mp3",
+      "bgm_file": "data\\phase2_runs\\run01\\bgm\\tense_scene02_freesound.mp3",
+      "mood": "tense",
+      "start_ms": 22632,
+      "end_ms": 43560,
+      "duration_ms": 20928,
+      "lines": [
+        {
+          "speaker": "LENA",
+          "line": "Kai, I've got a buyer for the new temporal drive. Meet me at the usual location tomorrow night.",
+          "start_ms": 22632,
+          "end_ms": 29784,
+          "duration_ms": 7152,
+          "voice": "en-US-AriaNeural",
+          "visual_cue": "Medium shot of LENA, expression intense and focused."
+        },
+        {
+          "speaker": "KAI",
+          "line": "Sounds good, Lena. But I'm not sure I like the look of this new drive. It's too... unpredictable.",
+          "start_ms": 29784,
+          "end_ms": 35568,
+          "duration_ms": 5784,
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Close-up of LENA, her eyes locked on KAI's with a hint of warning."
+        },
+        {
+          "speaker": "LENA",
+          "line": "Unpredictable? That's the point, Kai. We're not just smuggling people, we're changing history.",
+          "start_ms": 35568,
+          "end_ms": 43560,
+          "duration_ms": 7992,
+          "voice": "en-US-AriaNeural",
+          "visual_cue": "Close-up of KAI's face, his expression skeptical."
+        }
+      ]
+    },
+    {
+      "scene_id": 3,
+      "audio_file": "data\\phase2_runs\\run01\\audio\\scene_03_run01.mp3",
+      "bgm_file": "data\\phase2_runs\\run01\\bgm\\action_scene03_freesound.mp3",
+      "mood": "action",
+      "start_ms": 43560,
+      "end_ms": 67920,
+      "duration_ms": 24360,
+      "lines": [
+        {
+          "speaker": "VALENTINA",
+          "line": "I don't like this, Julian. We're playing with fire here. What if we can't control the rift?",
+          "start_ms": 43560,
+          "end_ms": 51024,
+          "duration_ms": 7464,
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Medium shot of VALENTINA, expression intense and focused."
+        },
+        {
+          "speaker": "JULIAN",
+          "line": "We'll be fine, Valentina. We've run the simulations. We know what we're doing.",
+          "start_ms": 51024,
+          "end_ms": 58368,
+          "duration_ms": 7344,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Close-up of VALENTINA, her eyes wide with fear."
+        },
+        {
+          "speaker": "VALENTINA",
+          "line": "But what if we're wrong? What if we create a paradox?",
+          "start_ms": 58368,
+          "end_ms": 62880,
+          "duration_ms": 4512,
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Close-up of JULIAN, his expression calm and reassuring."
+        },
+        {
+          "speaker": "JULIAN",
+          "line": "Then we'll deal with it, Valentina. But we have to try.",
+          "start_ms": 62880,
+          "end_ms": 67920,
+          "duration_ms": 5040,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Close-up of VALENTINA's hands, her fingers gripping her gloves tightly."
+        }
+      ]
+    }
+  ]
+}

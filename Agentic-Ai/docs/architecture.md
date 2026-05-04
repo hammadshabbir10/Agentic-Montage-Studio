@@ -12,6 +12,8 @@ LangGraph supervisor-worker workflow.
 - **hitl**: human-in-the-loop checkpoint (or `--auto-approve`)
 - **character_node**: extracts character roster with personality and appearance
 - **image_node**: optional placeholder character images (SVG)
+- **phase1 consistency pass**: reconciles story protagonist/antagonist with actual scene characters
+- **strict schema guard**: validates story/scene/character payloads with Pydantic before writing outputs
 - **memory_commit**: persists artifacts to the vector store
 
 Outputs (root `data/`):
@@ -43,7 +45,7 @@ LangGraph DAG: `scene_parser → image_gen → motion → compose → mux → su
 - **image_gen** generates one cinematic still per scene (HF Inference API primary, Pollinations fallback) with prompt continuity across scenes (location + mood + character appearance + global style anchor) and an on-disk image cache keyed by prompt + size + seed
 - **motion** runs ffmpeg `zoompan` to produce a Ken Burns animated MP4 sized to the timing manifest's duration
 - **compose** mixes the silent clip with the per-scene voice track and BGM (BGM ducked relative to voice)
-- **mux** concatenates per-scene composed clips losslessly via the concat demuxer
+- **mux** concatenates per-scene clips with configurable crossfades (`xfade` + `acrossfade`)
 - **subtitles** (optional) builds an SRT from the timing manifest's lines and burns it into the final MP4
 - **memory_commit** persists Phase 3 outputs to the vector store
 

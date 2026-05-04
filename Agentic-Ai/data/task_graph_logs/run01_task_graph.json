@@ -4,143 +4,255 @@
   "run_dir": "data\\phase2_runs\\run01",
   "bgm_dir": "data\\phase2_runs\\run01\\bgm",
   "scene_manifest": {
-    "workflow_id": "workflow_20260503_011446",
-    "timestamp": "2026-05-03T01:14:46.449460",
+    "workflow_id": "workflow_20260504_052308",
+    "timestamp": "2026-05-04T05:23:08.641462",
     "scenes": [
       {
         "scene_id": 1,
-        "location": "ABANDONED RESEARCH FACILITY",
+        "location": "TEMPORAL RESEARCH FACILITY",
         "dialogue": [
           {
-            "speaker": "DR. VALANCIA",
-            "line": "\"I knew it! I knew I had it somewhere.\"",
-            "visual_cue": "Medium shot of DR. VALANCIA, expression intense and focused."
+            "speaker": "VALENTINA",
+            "line": "\"We're running out of time, Julian. The anomaly is growing exponentially.\"",
+            "visual_cue": "Medium shot of VALENTINA, expression intense and focused.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
           },
           {
-            "speaker": "DR. REED",
-            "line": "\"Sofia, what's going on? We need to talk.\"",
-            "visual_cue": "Close-up of Dr. Valencia, her eyes scanning the papers with a mix of excitement and desperation."
+            "speaker": "JULIAN",
+            "line": "\"I know, Valentina. But we still need to pinpoint the exact location and time of the rift.\"",
+            "visual_cue": "Close-up of VALENTINA, her eyes wide with concern.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
           },
           {
-            "speaker": "DR. VALANCIA",
-            "line": "\"I've finally figured it out. The time loop, it's not a natural phenomenon. It's being caused by something else.\"",
-            "visual_cue": "Medium shot of Dr. Reed, his expression a mix of worry and authority."
+            "speaker": "VALENTINA",
+            "line": "\"The data is inconsistent. I'm trying to filter it, but\u2014\"",
+            "visual_cue": "Medium shot of JULIAN, his expression calm and collected.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "JULIAN",
+            "line": "\"I'll take a look. Maybe I can find a pattern we've missed.\"",
+            "visual_cue": "Close-up of VALENTINA's hands as she frantically types on a console.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
           }
         ],
         "characters": [
-          "DR. VALANCIA",
-          "DR. REED"
+          "VALENTINA",
+          "JULIAN"
         ],
-        "duration": 21
+        "duration": 28,
+        "start_ms": null,
+        "end_ms": null,
+        "duration_ms": null,
+        "audio_file": null,
+        "bgm_file": null,
+        "mood": null,
+        "lines": null
       },
       {
         "scene_id": 2,
-        "location": "ABANDONED RESEARCH FACILITY",
+        "location": "ABANDONED WAREHOUSE",
         "dialogue": [
           {
-            "speaker": "DR. REED",
-            "line": "\"Sofia, we need to be careful. We don't know what we're dealing with here.\"",
-            "visual_cue": "Medium shot of DR. REED, expression intense and focused."
+            "speaker": "LENA",
+            "line": "\"Kai, I've got a buyer for the new temporal drive. Meet me at the usual location tomorrow night.\"",
+            "visual_cue": "Medium shot of LENA, expression intense and focused.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
           },
           {
-            "speaker": "DR. VALANCIA",
-            "line": "\"Careful? We're not going to be careful. We're going to fix this. We're going to break the cycle and restore the timeline.\"",
-            "visual_cue": "Over-the-shoulder shot of Dr. Reed, his expression serious and cautious."
+            "speaker": "KAI",
+            "line": "\"Sounds good, Lena. But I'm not sure I like the look of this new drive. It's too... unpredictable.\"",
+            "visual_cue": "Close-up of LENA, her eyes locked on KAI's with a hint of warning.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
           },
           {
-            "speaker": "DR. KOSTA",
-            "line": "\"Ah, Sofia. Liam. I see you've finally figured it out. Congratulations.\"",
-            "visual_cue": "Close-up of Dr. Valencia, her eyes blazing with determination."
-          },
-          {
-            "speaker": "DR. REED",
-            "line": "\"What do you know about this, Maya?\"",
-            "visual_cue": "Close-up of Dr. Kosta, her expression enigmatic and slightly sinister."
-          },
-          {
-            "speaker": "DR. KOSTA",
-            "line": "\"Let's just say I've been watching you two for a while now. And I think I can help you... for a price.\"",
-            "visual_cue": "Medium shot of Dr. Kosta, her eyes glinting with a hint of mischief."
+            "speaker": "LENA",
+            "line": "\"Unpredictable? That's the point, Kai. We're not just smuggling people, we're changing history.\"",
+            "visual_cue": "Close-up of KAI's face, his expression skeptical.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
           }
         ],
         "characters": [
-          "DR. REED",
-          "DR. VALANCIA",
-          "DR. KOSTA"
+          "LENA",
+          "KAI"
         ],
-        "duration": 41
+        "duration": 27,
+        "start_ms": null,
+        "end_ms": null,
+        "duration_ms": null,
+        "audio_file": null,
+        "bgm_file": null,
+        "mood": null,
+        "lines": null
+      },
+      {
+        "scene_id": 3,
+        "location": "VAULT 7",
+        "dialogue": [
+          {
+            "speaker": "VALENTINA",
+            "line": "\"I don't like this, Julian. We're playing with fire here. What if we can't control the rift?\"",
+            "visual_cue": "Medium shot of VALENTINA, expression intense and focused.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "JULIAN",
+            "line": "\"We'll be fine, Valentina. We've run the simulations. We know what we're doing.\"",
+            "visual_cue": "Close-up of VALENTINA, her eyes wide with fear.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "VALENTINA",
+            "line": "\"But what if we're wrong? What if we create a paradox?\"",
+            "visual_cue": "Close-up of JULIAN, his expression calm and reassuring.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "JULIAN",
+            "line": "\"Then we'll deal with it, Valentina. But we have to try.\"",
+            "visual_cue": "Close-up of VALENTINA's hands, her fingers gripping her gloves tightly.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          }
+        ],
+        "characters": [
+          "VALENTINA",
+          "JULIAN"
+        ],
+        "duration": 29,
+        "start_ms": null,
+        "end_ms": null,
+        "duration_ms": null,
+        "audio_file": null,
+        "bgm_file": null,
+        "mood": null,
+        "lines": null
       }
     ],
-    "total_scenes": 2,
-    "total_duration_seconds": 62
+    "total_scenes": 3,
+    "total_duration_seconds": 84
   },
   "character_db": {
-    "workflow_id": "workflow_20260503_011449",
-    "timestamp": "2026-05-03T01:14:49.201290",
+    "workflow_id": "workflow_20260504_052312",
+    "timestamp": "2026-05-04T05:23:12.206212",
     "characters": [
       {
-        "name": "DR. VALANCIA",
-        "personality": "Driven by determination and conviction, Dr. Valencia is a focused and resourceful individual who is willing to take risks to correct mistakes. Her strong sense of purpose and confidence in her abilities motivate her to push through challenges.",
-        "appearance": "A middle-aged woman with a worn, yet intelligent look, Dr. Valencia's attire is practical and functional, reflecting her role in a scientific setting.",
+        "name": "VALENTINA",
+        "personality": "Valentina is a driven and cautious individual who is deeply concerned about the potential consequences of her actions, often questioning the decisions made by those in charge.",
+        "appearance": "Valentina is a tall, lean woman with short, dark hair and glasses, dressed in a white lab coat and carrying a worn leather notebook.",
         "role": "supporting",
-        "style_reference": "Post-apocalyptic sci-fi, gritty tones, makeshift lab aesthetic.",
+        "style_reference": "Dystopian sci-fi, stark lighting, and a color palette dominated by blues and greys to reflect the cold, technological environment of the Temporal Research Facility.",
         "first_appearance": 1,
         "dialogue_samples": [
           {
-            "line": "\"I knew it! I knew I had it somewhere.\"",
-            "visual_cue": "Medium shot of DR. VALANCIA, expression intense and focused."
+            "line": "\"We're running out of time, Julian. The anomaly is growing exponentially.\"",
+            "visual_cue": "Medium shot of VALENTINA, expression intense and focused."
           },
           {
-            "line": "\"I've finally figured it out. The time loop, it's not a natural phenomenon. It's being caused by something else.\"",
-            "visual_cue": "Medium shot of Dr. Reed, his expression a mix of worry and authority."
+            "line": "\"The data is inconsistent. I'm trying to filter it, but\u2014\"",
+            "visual_cue": "Medium shot of JULIAN, his expression calm and collected."
           },
           {
-            "line": "\"Careful? We're not going to be careful. We're going to fix this. We're going to break the cycle and restore the timeline.\"",
-            "visual_cue": "Over-the-shoulder shot of Dr. Reed, his expression serious and cautious."
+            "line": "\"I don't like this, Julian. We're playing with fire here. What if we can't control the rift?\"",
+            "visual_cue": "Medium shot of VALENTINA, expression intense and focused."
+          },
+          {
+            "line": "\"But what if we're wrong? What if we create a paradox?\"",
+            "visual_cue": "Close-up of JULIAN, his expression calm and reassuring."
           }
         ]
       },
       {
-        "name": "DR. REED",
-        "personality": "DR. REED appears to be a cautious and concerned individual, motivated by a desire to uncover the truth and protect others. His dialogue suggests a sense of responsibility and a willingness to question authority.",
-        "appearance": "DR. REED is a middle-aged man with a rugged, worn appearance, fitting for a character working in an abandoned research facility. He wears practical clothing suitable for the environment, possibly including a lab coat and safety goggles.",
+        "name": "JULIAN",
+        "personality": "Julian appears to be a confident and determined leader, willing to take calculated risks to achieve his goals. He is also empathetic and reassuring, trying to keep his team motivated and focused.",
+        "appearance": "Julian is likely dressed in a mix of practical and futuristic attire, including a lab coat and high-tech goggles, fitting for a temporal research facility.",
         "role": "supporting",
-        "style_reference": "Creepy sci-fi horror, dimly lit corridors, and sterile laboratory aesthetics, evoking a sense of unease and foreboding.",
+        "style_reference": "Science fiction thriller, dark and metallic color palette, emphasizing advanced technology and futuristic settings.",
         "first_appearance": 1,
         "dialogue_samples": [
           {
-            "line": "\"Sofia, what's going on? We need to talk.\"",
-            "visual_cue": "Close-up of Dr. Valencia, her eyes scanning the papers with a mix of excitement and desperation."
+            "line": "\"I know, Valentina. But we still need to pinpoint the exact location and time of the rift.\"",
+            "visual_cue": "Close-up of VALENTINA, her eyes wide with concern."
           },
           {
-            "line": "\"Sofia, we need to be careful. We don't know what we're dealing with here.\"",
-            "visual_cue": "Medium shot of DR. REED, expression intense and focused."
+            "line": "\"I'll take a look. Maybe I can find a pattern we've missed.\"",
+            "visual_cue": "Close-up of VALENTINA's hands as she frantically types on a console."
           },
           {
-            "line": "\"What do you know about this, Maya?\"",
-            "visual_cue": "Close-up of Dr. Kosta, her expression enigmatic and slightly sinister."
+            "line": "\"We'll be fine, Valentina. We've run the simulations. We know what we're doing.\"",
+            "visual_cue": "Close-up of VALENTINA, her eyes wide with fear."
+          },
+          {
+            "line": "\"Then we'll deal with it, Valentina. But we have to try.\"",
+            "visual_cue": "Close-up of VALENTINA's hands, her fingers gripping her gloves tightly."
           }
         ]
       },
       {
-        "name": "DR. KOSTA",
-        "personality": "DR. KOSTA appears to be a manipulative and calculating individual who takes pleasure in the success of others, possibly driven by a sense of superiority or a hidden agenda.",
-        "appearance": "DR. KOSTA likely dresses in a professional yet slightly disheveled attire, reflecting a mix of academia and neglect, with a hint of sophistication.",
-        "role": "antagonist",
-        "style_reference": "Abandoned research facility setting, bleak and isolated atmosphere, evoking a sense of unease and foreboding.",
+        "name": "LENA",
+        "personality": "Lena is a charismatic and confident individual driven by a desire for change and financial gain, willing to take risks to alter the course of history.",
+        "appearance": "She is likely dressed in functional yet stylish attire, possibly a mix of corporate and underground fashion, with a focus on versatility and comfort.",
+        "role": "supporting",
+        "style_reference": "Cyberpunk, dark neon, and gritty urban landscapes, with a focus on contrast and high-tech gadgetry.",
         "first_appearance": 2,
         "dialogue_samples": [
           {
-            "line": "\"Ah, Sofia. Liam. I see you've finally figured it out. Congratulations.\"",
-            "visual_cue": "Close-up of Dr. Valencia, her eyes blazing with determination."
+            "line": "\"Kai, I've got a buyer for the new temporal drive. Meet me at the usual location tomorrow night.\"",
+            "visual_cue": "Medium shot of LENA, expression intense and focused."
           },
           {
-            "line": "\"Let's just say I've been watching you two for a while now. And I think I can help you... for a price.\"",
-            "visual_cue": "Medium shot of Dr. Kosta, her eyes glinting with a hint of mischief."
+            "line": "\"Unpredictable? That's the point, Kai. We're not just smuggling people, we're changing history.\"",
+            "visual_cue": "Close-up of KAI's face, his expression skeptical."
+          }
+        ]
+      },
+      {
+        "name": "KAI",
+        "personality": "Kai is a cautious and possibly skeptical individual who values predictability, suggesting a risk-averse personality.",
+        "appearance": "Kai likely wears functional, practical clothing suitable for a research facility or warehouse environment, with a focus on utility over fashion.",
+        "role": "supporting",
+        "style_reference": "Cyberpunk, dimly lit environments, and industrial accents.",
+        "first_appearance": 2,
+        "dialogue_samples": [
+          {
+            "line": "\"Sounds good, Lena. But I'm not sure I like the look of this new drive. It's too... unpredictable.\"",
+            "visual_cue": "Close-up of LENA, her eyes locked on KAI's with a hint of warning."
           }
         ]
       }
     ],
-    "total_characters": 3
+    "total_characters": 4
   }
 }

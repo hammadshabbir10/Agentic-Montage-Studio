@@ -1,0 +1,93 @@
+{
+  "image_results": [
+    {
+      "scene_id": 1,
+      "image_path": "data\\phase3_runs\\run01\\images\\scene_01_1660d487bff4.png",
+      "backend": "pollinations:flux",
+      "prompt": "Location: Temporal Research Facility | Mood: action | Shot: Medium shot of VALENTINA, expression intense and focused. | Characters \u2014 Valentina: Valentina is a tall, lean woman with short, dark hair and glasses, dressed in a white lab coat and carrying a worn leather notebook; Julian: Julian is likely dressed in a mix of practical and futuristic attire, including a lab coat and high-tech goggles, fitting for a temporal research facility | cinematic still, high detail, dramatic lighting, depth of field, film grain, 35mm photography, color graded",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "scene_id": 2,
+      "image_path": "data\\phase3_runs\\run01\\images\\scene_02_fd9c2ab0d376.png",
+      "backend": "pollinations:flux",
+      "prompt": "Location: Abandoned Warehouse | Mood: tense | Shot: Medium shot of LENA, expression intense and focused. | Characters \u2014 Lena: She is likely dressed in functional yet stylish attire, possibly a mix of corporate and underground fashion, with a focus on versatility and comfort; Kai: Kai likely wears functional, practical clothing suitable for a research facility or warehouse environment, with a focus on utility over fashion | cinematic still, high detail, dramatic lighting, depth of field, film grain, 35mm photography, color graded",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "scene_id": 3,
+      "image_path": "data\\phase3_runs\\run01\\images\\scene_03_4da0eef9d70b.png",
+      "backend": "pollinations:flux",
+      "prompt": "Location: Vault 7 | Mood: action | Shot: Medium shot of VALENTINA, expression intense and focused. | Characters \u2014 Valentina: Valentina is a tall, lean woman with short, dark hair and glasses, dressed in a white lab coat and carrying a worn leather notebook; Julian: Julian is likely dressed in a mix of practical and futuristic attire, including a lab coat and high-tech goggles, fitting for a temporal research facility | cinematic still, high detail, dramatic lighting, depth of field, film grain, 35mm photography, color graded",
+      "width": 1280,
+      "height": 720
+    }
+  ],
+  "clip_results": [
+    {
+      "scene_id": 1,
+      "clip_path": "data\\phase3_runs\\run01\\clips\\scene_01_kb.mp4",
+      "duration_sec": 22.632,
+      "motion_preset": "per_line",
+      "cinematic": true
+    },
+    {
+      "scene_id": 2,
+      "clip_path": "data\\phase3_runs\\run01\\clips\\scene_02_kb.mp4",
+      "duration_sec": 20.928,
+      "motion_preset": "per_line",
+      "cinematic": true
+    },
+    {
+      "scene_id": 3,
+      "clip_path": "data\\phase3_runs\\run01\\clips\\scene_03_kb.mp4",
+      "duration_sec": 24.36,
+      "motion_preset": "per_line",
+      "cinematic": true
+    }
+  ],
+  "composed_results": [
+    {
+      "scene_id": 1,
+      "composed_path": "data\\phase3_runs\\run01\\composed\\scene_01_composed.mp4",
+      "audio_file": "data\\phase2_runs\\run01\\audio\\scene_01_run01.mp3",
+      "bgm_file": "data\\phase2_runs\\run01\\bgm\\action_scene01_freesound.mp3"
+    },
+    {
+      "scene_id": 2,
+      "composed_path": "data\\phase3_runs\\run01\\composed\\scene_02_composed.mp4",
+      "audio_file": "data\\phase2_runs\\run01\\audio\\scene_02_run01.mp3",
+      "bgm_file": "data\\phase2_runs\\run01\\bgm\\tense_scene02_freesound.mp3"
+    },
+    {
+      "scene_id": 3,
+      "composed_path": "data\\phase3_runs\\run01\\composed\\scene_03_composed.mp4",
+      "audio_file": "data\\phase2_runs\\run01\\audio\\scene_03_run01.mp3",
+      "bgm_file": "data\\phase2_runs\\run01\\bgm\\action_scene03_freesound.mp3"
+    }
+  ],
+  "final_video_path": "data\\phase3_runs\\run01\\final_output_run01_subbed.mp4",
+  "subtitles_path": "data\\phase3_runs\\run01\\subtitles_run01.srt",
+  "options": {
+    "backend": "pollinations",
+    "quality": "balanced",
+    "seed": null,
+    "only_scene_id": null,
+    "enable_subtitles": true,
+    "transition_sec": 0.45,
+    "speaker_focus": true,
+    "cinematic": true,
+    "enable_title_card": true,
+    "enable_end_card": true,
+    "title_card_sec": 3.0,
+    "end_card_sec": 3.0,
+    "motion_engine": "auto"
+  },
+  "inputs": {
+    "scene_manifest": "data/scene_manifest_auto.json",
+    "character_db": "data/character_db_auto.json",
+    "timing_manifest": "data\\phase2_runs\\run01\\timing_manifest_run01.json"
+  }
+}

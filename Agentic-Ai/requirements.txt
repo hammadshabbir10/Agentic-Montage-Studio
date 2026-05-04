@@ -5,3 +5,5 @@ python-dotenv
 requests
 edge-tts
 flask
+pydantic
+Pillow

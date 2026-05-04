@@ -1,0 +1,4 @@
+file 'C:/Users/Haider/Desktop/Agentic/Agentic-Montage-Studio/Agentic-Ai/data/phase3_runs/run01/clips/scene_01_line_clips/line_001.mp4'
+file 'C:/Users/Haider/Desktop/Agentic/Agentic-Montage-Studio/Agentic-Ai/data/phase3_runs/run01/clips/scene_01_line_clips/line_002.mp4'
+file 'C:/Users/Haider/Desktop/Agentic/Agentic-Montage-Studio/Agentic-Ai/data/phase3_runs/run01/clips/scene_01_line_clips/line_003.mp4'
+file 'C:/Users/Haider/Desktop/Agentic/Agentic-Montage-Studio/Agentic-Ai/data/phase3_runs/run01/clips/scene_01_line_clips/line_004.mp4'

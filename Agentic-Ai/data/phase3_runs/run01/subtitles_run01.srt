@@ -1,0 +1,43 @@
+1
+00:00:03,000 --> 00:00:08,856
+VALENTINA: We're running out of time, Julian. The anomaly is growing exponentially.
+
+2
+00:00:08,856 --> 00:00:15,648
+JULIAN: I know, Valentina. But we still need to pinpoint the exact location and time of the rift.
+
+3
+00:00:15,648 --> 00:00:20,784
+VALENTINA: The data is inconsistent. I'm trying to filter it, but-
+
+4
+00:00:20,784 --> 00:00:25,632
+JULIAN: I'll take a look. Maybe I can find a pattern we've missed.
+
+5
+00:00:25,632 --> 00:00:32,334
+LENA: Kai, I've got a buyer for the new temporal drive. Meet me at the usual location tomorrow night.
+
+6
+00:00:32,334 --> 00:00:38,118
+KAI: Sounds good, Lena. But I'm not sure I like the look of this new drive. It's too... unpredictable.
+
+7
+00:00:38,118 --> 00:00:46,110
+LENA: Unpredictable? That's the point, Kai. We're not just smuggling people, we're changing history.
+
+8
+00:00:46,110 --> 00:00:53,124
+VALENTINA: I don't like this, Julian. We're playing with fire here. What if we can't control the rift?
+
+9
+00:00:53,124 --> 00:01:00,468
+JULIAN: We'll be fine, Valentina. We've run the simulations. We know what we're doing.
+
+10
+00:01:00,468 --> 00:01:04,980
+VALENTINA: But what if we're wrong? What if we create a paradox?
+
+11
+00:01:04,980 --> 00:01:10,020
+JULIAN: Then we'll deal with it, Valentina. But we have to try.

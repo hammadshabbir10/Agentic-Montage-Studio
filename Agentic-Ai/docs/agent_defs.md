@@ -8,12 +8,17 @@
 
 ### Script Validator Agent
 - Verifies scene headings and dialogue labels
+- Enforces strict output schema (Pydantic models) before artifacts are saved
 
 ### Human-in-the-Loop Agent
 - Confirms alignment with user intent before continuing
 
 ### Character Designer Agent
 - Extracts characters and maintains consistent identity metadata
+
+### Consistency Guard
+- Reconciles story protagonist/antagonist names with scene dialogue character names
+- Auto-fills missing character entries when speakers exist in scenes but not in `character_db`
 
 ### Image Synthesizer Agent
 - Generates placeholder character visuals (SVG)
@@ -45,7 +50,7 @@
 - BGM ducked relative to voice; voice always at full volume
 
 ### Final Mux Agent  (`src/utils/video_compose.py`)
-- Concatenates per-scene composed MP4s losslessly via the concat demuxer
+- Concatenates per-scene composed MP4s with configurable crossfades
 
 ### Subtitle Agent  (`src/utils/video_compose.py`)
 - Generates an SRT from the timing manifest's per-line `start_ms` / `end_ms`

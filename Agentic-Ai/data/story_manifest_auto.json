@@ -1,42 +1,41 @@
 {
-  "workflow_id": "workflow_20260504_175535",
-  "timestamp": "2026-05-04T17:55:35.538947",
+  "workflow_id": "workflow_20260504_052306",
+  "timestamp": "2026-05-04T05:23:06.876341",
   "story": {
-    "title": "Recovery",
-    "logline": "A doctor must navigate the complexities of a patient's recovery after a life-altering accident, while confronting the dark secrets of their own past.",
-    "genre": "Medical Drama",
-    "tone": "emotional and introspective",
-    "setting": "A private hospital",
-    "time_period": "present day",
+    "title": "Untitled Story",
+    "logline": "Story details could not be parsed.",
+    "genre": "Drama",
+    "tone": "Dramatic",
+    "setting": "Unknown",
+    "time_period": "Contemporary",
     "themes": [
-      "identity",
-      "healing",
-      "secrets"
+      "conflict",
+      "survival"
     ],
     "acts": [
       {
         "act": 1,
         "label": "Introduction",
-        "description": "We meet Dr. Ryder, a skilled but emotionally guarded doctor, as he checks in on his patient, Sofia Rosa, a young woman recovering from a severe accident. Sofia's injury has left her with memory loss and a deep sense of unease. As Dr. Ryder tries to connect with Sofia, we glimpse his own troubled past."
+        "description": "The story begins."
       },
       {
         "act": 2,
-        "label": "Rising Action",
-        "description": "As Sofia's memories begin to return, she reveals a shocking truth about Dr. Ryder's past, forcing him to confront the secrets he's kept hidden for so long. Meanwhile, a mysterious nurse, Natalia, seems to be watching Dr. Ryder with an air of suspicion."
+        "label": "Rising Conflict",
+        "description": "Tension escalates."
       },
       {
         "act": 3,
         "label": "Climax",
-        "description": "As tensions between Dr. Ryder and Sofia come to a head, he must make a choice between his duty as a doctor and his loyalty to his patient. Meanwhile, Natalia's true motives are revealed, adding a new layer of complexity to the story."
+        "description": "The crisis peaks."
       },
       {
         "act": 4,
         "label": "Resolution",
-        "description": "In the aftermath of the confrontation, Dr. Ryder must pick up the pieces and find a way to heal not only his patient but also himself. As Sofia begins to rebuild her life, Dr. Ryder finally finds the courage to confront his own demons."
+        "description": "The conflict resolves."
       }
     ],
-    "protagonist": "Dr. Ryder, a skilled but emotionally guarded doctor",
+    "protagonist": "VALENTINA",
     "antagonist": null,
-    "world": "The world of the story is one where the past and present collide, where secrets and lies can have devastating consequences."
+    "world": "Details unavailable."
   }
 }

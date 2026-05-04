@@ -1,0 +1,133 @@
+{
+  "tasks": [
+    {
+      "scene_id": 1,
+      "location": "TEMPORAL RESEARCH FACILITY",
+      "dialogue": [
+        {
+          "speaker": "VALENTINA",
+          "line": "\"We're running out of time, Julian. The anomaly is growing exponentially.\"",
+          "visual_cue": "Medium shot of VALENTINA, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "JULIAN",
+          "line": "\"I know, Valentina. But we still need to pinpoint the exact location and time of the rift.\"",
+          "visual_cue": "Close-up of VALENTINA, her eyes wide with concern.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "VALENTINA",
+          "line": "\"The data is inconsistent. I'm trying to filter it, but\u2014\"",
+          "visual_cue": "Medium shot of JULIAN, his expression calm and collected.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "JULIAN",
+          "line": "\"I'll take a look. Maybe I can find a pattern we've missed.\"",
+          "visual_cue": "Close-up of VALENTINA's hands as she frantically types on a console.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "VALENTINA",
+        "JULIAN"
+      ]
+    },
+    {
+      "scene_id": 2,
+      "location": "ABANDONED WAREHOUSE",
+      "dialogue": [
+        {
+          "speaker": "LENA",
+          "line": "\"Kai, I've got a buyer for the new temporal drive. Meet me at the usual location tomorrow night.\"",
+          "visual_cue": "Medium shot of LENA, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "KAI",
+          "line": "\"Sounds good, Lena. But I'm not sure I like the look of this new drive. It's too... unpredictable.\"",
+          "visual_cue": "Close-up of LENA, her eyes locked on KAI's with a hint of warning.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "LENA",
+          "line": "\"Unpredictable? That's the point, Kai. We're not just smuggling people, we're changing history.\"",
+          "visual_cue": "Close-up of KAI's face, his expression skeptical.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "LENA",
+        "KAI"
+      ]
+    },
+    {
+      "scene_id": 3,
+      "location": "VAULT 7",
+      "dialogue": [
+        {
+          "speaker": "VALENTINA",
+          "line": "\"I don't like this, Julian. We're playing with fire here. What if we can't control the rift?\"",
+          "visual_cue": "Medium shot of VALENTINA, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "JULIAN",
+          "line": "\"We'll be fine, Valentina. We've run the simulations. We know what we're doing.\"",
+          "visual_cue": "Close-up of VALENTINA, her eyes wide with fear.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "VALENTINA",
+          "line": "\"But what if we're wrong? What if we create a paradox?\"",
+          "visual_cue": "Close-up of JULIAN, his expression calm and reassuring.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "JULIAN",
+          "line": "\"Then we'll deal with it, Valentina. But we have to try.\"",
+          "visual_cue": "Close-up of VALENTINA's hands, her fingers gripping her gloves tightly.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "VALENTINA",
+        "JULIAN"
+      ]
+    }
+  ]
+}

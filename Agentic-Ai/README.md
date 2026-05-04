@@ -80,8 +80,8 @@ python -m src.main --mode auto `
 # 3. Phase 2 — generate audio, BGM and timing manifest
 python -m src.main_phase2
 
-# 4. Phase 3 — generate visuals and composite the final MP4
-python -m src.main_phase3 --quality balanced --enable-subtitles
+# 4. Phase 3 — generate visuals and composite the final MP4 (with crossfades)
+python -m src.main_phase3 --quality balanced --transition-sec 0.35 --enable-subtitles
 ```
 
 The final MP4 will be at `data/phase3_runs/runXX/final_output_runXX.mp4` (or `..._subbed.mp4` when subtitles are burned in).
@@ -106,7 +106,33 @@ python -m src.main_phase3 [flags]
   --scene-id        Partial rerun: regenerate only this scene id
 
   --enable-subtitles  Burn dialogue subtitles into the final MP4
+  --transition-sec    Crossfade duration in seconds (default: 0.35, 0 disables fades)
+  --scene-image-only  Disable speaker-focused line images and use one still per scene
+
+  --story             Path to story_manifest JSON (default: data/story_manifest_auto.json)
+  --disable-cinematic    Disable cinematic look (color grade + grain + vignette + letterbox)
+  --disable-title-card   Disable the intro title card
+  --disable-end-card     Disable the closing end card
+  --title-card-sec    Duration of the intro title card in seconds (default: 3.0)
+  --end-card-sec      Duration of the closing end card in seconds (default: 3.0)
 ```
+
+### Animation upgrades (smooth Ken Burns + motion presets)
+
+- `ken_burns_clip` runs at a 2x upscaled internal canvas with linear, time-based
+  zoom expressions and a final lanczos downscale, eliminating the per-frame
+  pixel jitter of older zoompan setups.
+- A motion preset library (`push_in`, `pull_out`, `push_to_face`,
+  `pan_left_right`, `pan_right_left`, `diagonal_in`, `subtle_drift`) is selected
+  per dialogue line based on the line's visual cue and the scene mood.
+- Each scene gets a sequence of speaker-focused clips (one per line) using its
+  own motion preset, so visual variety follows the conversation.
+- Cinematic look (color grade, vignette, light film grain, 2.35:1 letterbox) is
+  baked into every Ken Burns clip; disable with `--disable-cinematic`.
+- Intro title card (story title + logline) and closing end card are produced as
+  matching short MP4s and bookended via the same crossfade pipeline.
+- Per-scene audio gets short fade-in/out so concat / crossfade boundaries never
+  click.
 
 ### Quality profiles
 
@@ -137,6 +163,7 @@ The Phase 3 run tag is **aligned to the Phase 2 run** by default (e.g. Phase 2 `
 ### Demo-friendly tricks
 
 - `--seed 42 --backend pollinations` → deterministic, key-free demo run.
+- Default mode is speaker-focused (one image per spoken line); use `--scene-image-only` for old behavior.
 - `--scene-id 3` → re-render only scene 3 after editing; previous scenes are reused.
 - Cached images: identical prompt + size + seed reuses the on-disk image, saving API calls.
 - `image_prompts_runXX.json` shows exactly which backend produced each frame (`hf:<model>`, `pollinations`, or `cache`).
@@ -208,6 +235,16 @@ End-to-end smoke test (runs the real Phase 3 pipeline against existing Phase 2 o
 python scripts\smoke_phase3.py --backend pollinations --quality fast
 ```
 
+Subtitle timing QA (checks timing manifest vs SRT vs final video envelope):
+
+```powershell
+python scripts\subtitle_timing_qa.py `
+  --timing data\phase2_runs\run01\timing_manifest_run01.json `
+  --srt data\phase3_runs\run01\subtitles_run01.srt `
+  --video data\phase3_runs\run01\final_output_run01_subbed.mp4 `
+  --transition-sec 0.45 --title-offset-sec 3.0 --end-card-sec 3.0
+```
+
 ---
 
 ## Phase 3 Rubric Mapping
@@ -219,7 +256,7 @@ python scripts\smoke_phase3.py --backend pollinations --quality fast
 | Light animation (zoom/pan/Ken Burns) via FFmpeg       | `src/utils/video_compose.py::ken_burns_clip`                                          |
 | A/V sync using timing manifest                         | `compose_node` reads `audio_file` + `bgm_file` + `duration_ms` from timing manifest   |
 | Subtitle overlay (optional)                           | `--enable-subtitles` ⇒ `build_srt` + `burn_subtitles`                                |
-| Compositing scenes with transitions into final MP4    | `concat_scenes` (concat demuxer with shared codec/profile per scene)                  |
+| Compositing scenes with transitions into final MP4    | `concat_scenes_with_crossfade` using ffmpeg `xfade` + `acrossfade`                    |
 | Final MP4 export                                      | `data/phase3_runs/runXX/final_output_runXX.mp4`                                       |
 | Phase-level unit tests                                | `tests/test_phase3.py` (15 tests, including fallback + cache + SRT correctness)       |
 | Reproducible run artifacts                            | `phase3_state_*.json`, `phase3_outputs_*.json`, `image_prompts_*.json`, ffmpeg log    |

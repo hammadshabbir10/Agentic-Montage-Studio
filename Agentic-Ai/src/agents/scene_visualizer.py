@@ -47,9 +47,9 @@ _POLLINATIONS_URL_TEMPLATE = "https://image.pollinations.ai/prompt/{prompt}"
 
 # Resolution presets per quality profile (width, height)
 _QUALITY_RESOLUTIONS: Dict[str, Tuple[int, int]] = {
-    "fast":      (768,  768),
-    "balanced":  (1024, 1024),
-    "cinematic": (1280, 720),
+    "fast":      (960,  540),
+    "balanced":  (1280, 720),
+    "cinematic": (1920, 1080),
 }
 
 # A film-wide style anchor — ensures every scene shares an aesthetic
@@ -110,12 +110,107 @@ def build_scene_prompt(
     return " | ".join(parts)
 
 
+def build_identity_lock(character: Dict[str, Any]) -> str:
+    """
+    Build a strict, byte-identical identity lock string for a character that we
+    paste verbatim into every line prompt for that character. This is the single
+    biggest lever we have for face consistency with text-to-image backends.
+    """
+    name = str(character.get("name", "")).strip().upper()
+    appearance = str(character.get("appearance", "")).strip().rstrip(".")
+    personality = str(character.get("personality", "")).strip().rstrip(".")
+    role = str(character.get("role", "")).strip()
+    style = str(character.get("style_reference", "")).strip().rstrip(".")
+
+    parts: List[str] = [
+        f"CHARACTER ID {name}",
+        "SAME PERSON in every shot",
+        "do NOT change face, age, ethnicity, hair, skin tone or eye color between shots",
+    ]
+    if appearance:
+        parts.append(f"locked appearance: {appearance}")
+    if personality:
+        parts.append(f"signature expression: {personality}")
+    if role:
+        parts.append(f"role: {role}")
+    if style:
+        parts.append(f"visual style: {style}")
+    return ". ".join(parts) + "."
+
+
+def build_line_prompt(
+    plan: ScenePlan,
+    line: Dict[str, Any],
+    character_db: Dict[str, Any],
+    portrait_bank: Optional[Dict[str, Dict[str, Any]]] = None,
+    style_anchor: Optional[str] = None,
+) -> str:
+    """
+    Build a speaker-focused prompt with maximum identity consistency.
+
+    Strategy
+    --------
+    The first (largest) chunk is a *byte-identical* identity lock for the speaker
+    — same words across all lines for that character. The variable bits
+    (background, mood, camera direction, dialogue context) come AFTER the lock,
+    so the model treats the identity as fixed and only varies the framing.
+    Combined with a deterministic seed per character (see _speaker_seed), this
+    gives much stronger facial consistency.
+    """
+    style = style_anchor or _GLOBAL_STYLE_ANCHOR
+    speaker = str(line.get("speaker", "")).strip()
+    spoken_line = str(line.get("line", "")).strip().strip('"')
+    cue = str(line.get("visual_cue", "")).strip()
+
+    char_lookup = {
+        c.get("name", "").upper(): c
+        for c in character_db.get("characters", [])
+    }
+    char = char_lookup.get(speaker.upper(), {})
+
+    # Prefer the precomputed identity_lock from portrait_bank (it is identical
+    # across all lines for this character). Fall back to building from char_db.
+    anchor = (portrait_bank or {}).get(speaker.upper(), {})
+    identity_lock = str(anchor.get("identity_lock", "")).strip()
+    if not identity_lock and char:
+        identity_lock = build_identity_lock(char)
+    if not identity_lock:
+        identity_lock = (
+            f"CHARACTER ID {speaker.upper()}. SAME PERSON in every shot. "
+            "Do NOT change face, age, ethnicity, hair or eye color between shots."
+        )
+
+    parts: List[str] = [
+        identity_lock,
+        f"Single-character cinematic shot of {speaker}, only one person visible.",
+    ]
+    if plan.location:
+        parts.append(f"Background/setting: {plan.location.title()}")
+    if plan.mood and plan.mood != "neutral":
+        parts.append(f"Mood: {plan.mood}")
+    if cue:
+        parts.append(f"Camera direction: {cue}")
+    if spoken_line:
+        parts.append(f"Dialogue context: {spoken_line}")
+    parts.append(style)
+    return " | ".join(parts)
+
+
 # ── Prompt cache key ────────────────────────────────────────────────────────
 
 def prompt_fingerprint(prompt: str, width: int, height: int, seed: Optional[int]) -> str:
     """Stable fingerprint so identical prompts reuse cached images."""
     blob = f"{prompt}|{width}x{height}|seed={seed if seed is not None else 'none'}"
     return hashlib.sha1(blob.encode("utf-8")).hexdigest()[:12]
+
+
+def _stable_int(text: str) -> int:
+    return int(hashlib.sha1(text.encode("utf-8")).hexdigest()[:8], 16)
+
+
+def _speaker_seed(base_seed: Optional[int], speaker: str) -> int:
+    base = 0 if base_seed is None else int(base_seed)
+    return (base + (_stable_int(speaker.upper()) % 100000)) % 2_147_483_647
 
 
 # ── Backend: Hugging Face ───────────────────────────────────────────────────
@@ -192,7 +287,16 @@ def _generate_via_pollinations(
 ) -> Tuple[bool, str]:
     encoded = urllib.parse.quote(prompt, safe="")
     url = _POLLINATIONS_URL_TEMPLATE.format(prompt=encoded)
-    params: Dict[str, Any] = {"width": width, "height": height, "nologo": "true"}
+    # Pollinations: 'flux' model is the most consistent at 2026; 'enhance=true'
+    # boosts perceived quality. Both are free and need no key.
+    model = os.getenv("POLLINATIONS_MODEL", "flux").strip() or "flux"
+    params: Dict[str, Any] = {
+        "width": width,
+        "height": height,
+        "nologo": "true",
+        "enhance": "true",
+        "model": model,
+    }
     if seed is not None:
         params["seed"] = int(seed)
 
@@ -204,7 +308,7 @@ def _generate_via_pollinations(
     if resp.status_code == 200 and resp.content:
         out_path.parent.mkdir(parents=True, exist_ok=True)
         out_path.write_bytes(resp.content)
-        return True, "pollinations"
+        return True, f"pollinations:{model}"
 
     return False, f"pollinations status={resp.status_code}"
 
@@ -213,6 +317,25 @@ def _generate_via_pollinations(
 
 def resolve_resolution(quality: str) -> Tuple[int, int]:
     return _QUALITY_RESOLUTIONS.get(quality, _QUALITY_RESOLUTIONS["balanced"])
+
+
+def _generate_with_backend_order(
+    prompt: str,
+    width: int,
+    height: int,
+    out_path: Path,
+    backend: str,
+    seed: Optional[int],
+) -> Tuple[bool, str]:
+    if backend == "hf":
+        return _generate_via_hf(prompt, width, height, out_path, seed=seed)
+    if backend == "pollinations":
+        return _generate_via_pollinations(prompt, width, height, out_path, seed=seed)
+    # auto
+    ok, info = _generate_via_hf(prompt, width, height, out_path, seed=seed)
+    if ok:
+        return ok, info
+    return _generate_via_pollinations(prompt, width, height, out_path, seed=seed)
 
 
 def generate_scene_image(
@@ -255,38 +378,28 @@ def generate_scene_image(
             "height": height,
         }
 
-    # Backend selection
-    backend_order: List[str]
-    if backend == "hf":
-        backend_order = ["hf"]
-    elif backend == "pollinations":
-        backend_order = ["pollinations"]
-    else:
-        backend_order = ["hf", "pollinations"]
-
-    last_error = ""
-    for choice in backend_order:
-        if choice == "hf":
-            ok, info = _generate_via_hf(prompt, width, height, out_path, seed=seed)
-        else:
-            ok, info = _generate_via_pollinations(prompt, width, height, out_path, seed=seed)
-
-        if ok:
-            plan.image_path = str(out_path)
-            plan.image_backend = info
-            return {
-                "scene_id": plan.scene_id,
-                "image_path": str(out_path),
-                "backend": info,
-                "prompt": prompt,
-                "width": width,
-                "height": height,
-            }
-        last_error = info
-        LOGGER.warning("scene %s: backend %s failed (%s)", plan.scene_id, choice, info)
+    ok, info = _generate_with_backend_order(
+        prompt=prompt,
+        width=width,
+        height=height,
+        out_path=out_path,
+        backend=backend,
+        seed=seed,
+    )
+    if ok:
+        plan.image_path = str(out_path)
+        plan.image_backend = info
+        return {
+            "scene_id": plan.scene_id,
+            "image_path": str(out_path),
+            "backend": info,
+            "prompt": prompt,
+            "width": width,
+            "height": height,
+        }
 
     raise RuntimeError(
-        f"scene {plan.scene_id}: all image backends failed. last_error={last_error}"
+        f"scene {plan.scene_id}: all image backends failed. last_error={info}"
     )
 
 
@@ -313,3 +426,182 @@ def generate_all_scene_images(
         )
         results.append(result)
     return results
+
+
+def generate_scene_line_images(
+    plan: ScenePlan,
+    character_db: Dict[str, Any],
+    images_dir: Path,
+    backend: str = "auto",
+    quality: str = "balanced",
+    seed: Optional[int] = None,
+    use_cache: bool = True,
+    portrait_bank: Optional[Dict[str, Dict[str, Any]]] = None,
+    strict_character_consistency: bool = True,
+) -> List[Dict[str, Any]]:
+    """
+    Generate one image per dialogue line so the active speaker can be shown
+    during their own line segment in the final video.
+    """
+    width, height = resolve_resolution(quality)
+    results: List[Dict[str, Any]] = []
+    images_dir.mkdir(parents=True, exist_ok=True)
+    speaker_image_cache: Dict[str, Tuple[str, str, str]] = {}
+
+    for idx, line in enumerate(plan.lines, start=1):
+        speaker = str(line.get("speaker", "")).strip().upper()
+        prompt = build_line_prompt(
+            plan=plan,
+            line=line,
+            character_db=character_db,
+            portrait_bank=portrait_bank,
+        )
+        line_seed = _speaker_seed(seed, speaker)
+        if not strict_character_consistency:
+            line_seed = _speaker_seed(line_seed, f"{speaker}:{idx}")
+        fp = prompt_fingerprint(prompt, width, height, line_seed)
+        out_path = images_dir / f"scene_{plan.scene_id:02d}_line_{idx:03d}_{fp}.png"
+
+        # Strict identity lock + speed optimization:
+        # Generate one canonical shot per speaker per scene and reuse it for all
+        # their lines in that scene. This materially improves facial consistency
+        # and cuts generation time without lowering render resolution.
+        if strict_character_consistency and speaker and speaker in speaker_image_cache:
+            cached_path, cached_backend, cached_prompt = speaker_image_cache[speaker]
+            results.append(
+                {
+                    "scene_id": plan.scene_id,
+                    "line_index": idx,
+                    "speaker": str(line.get("speaker", "")),
+                    "start_ms": int(line.get("start_ms", 0)),
+                    "end_ms": int(line.get("end_ms", 0)),
+                    "duration_ms": int(line.get("duration_ms", 0)),
+                    "image_path": cached_path,
+                    "backend": cached_backend,
+                    "prompt": cached_prompt,
+                    "width": width,
+                    "height": height,
+                    "visual_cue": str(line.get("visual_cue", "")),
+                    "mood": plan.mood,
+                }
+            )
+            continue
+        if use_cache and out_path.exists() and out_path.stat().st_size > 0:
+            cache_backend = "cache"
+            if strict_character_consistency and speaker:
+                speaker_image_cache[speaker] = (str(out_path), cache_backend, prompt)
+            results.append(
+                {
+                    "scene_id": plan.scene_id,
+                    "line_index": idx,
+                    "speaker": str(line.get("speaker", "")),
+                    "start_ms": int(line.get("start_ms", 0)),
+                    "end_ms": int(line.get("end_ms", 0)),
+                    "duration_ms": int(line.get("duration_ms", 0)),
+                    "image_path": str(out_path),
+                    "backend": cache_backend,
+                    "prompt": prompt,
+                    "width": width,
+                    "height": height,
+                    "visual_cue": str(line.get("visual_cue", "")),
+                    "mood": plan.mood,
+                }
+            )
+            continue
+
+        ok, backend_info = _generate_with_backend_order(
+            prompt=prompt,
+            width=width,
+            height=height,
+            out_path=out_path,
+            backend=backend,
+            seed=line_seed,
+        )
+
+        if not ok:
+            raise RuntimeError(
+                f"scene {plan.scene_id} line {idx}: image generation failed: {backend_info}"
+            )
+        if strict_character_consistency and speaker:
+            speaker_image_cache[speaker] = (str(out_path), backend_info, prompt)
+
+        results.append(
+            {
+                "scene_id": plan.scene_id,
+                "line_index": idx,
+                "speaker": str(line.get("speaker", "")),
+                "start_ms": int(line.get("start_ms", 0)),
+                "end_ms": int(line.get("end_ms", 0)),
+                "duration_ms": int(line.get("duration_ms", 0)),
+                "image_path": str(out_path),
+                "backend": backend_info,
+                "prompt": prompt,
+                "width": width,
+                "height": height,
+                "visual_cue": str(line.get("visual_cue", "")),
+                "mood": plan.mood,
+            }
+        )
+    return results
+
+
+def generate_character_portrait_bank(
+    character_db: Dict[str, Any],
+    portraits_dir: Path,
+    backend: str = "auto",
+    quality: str = "balanced",
+    seed: Optional[int] = None,
+    speaker_names: Optional[set[str]] = None,
+) -> Dict[str, Dict[str, Any]]:
+    """
+    Generate one canonical portrait per character to improve identity consistency.
+    """
+    width, height = resolve_resolution(quality)
+    portraits_dir.mkdir(parents=True, exist_ok=True)
+    bank: Dict[str, Dict[str, Any]] = {}
+
+    for character in character_db.get("characters", []):
+        name = str(character.get("name", "")).strip().upper()
+        if not name:
+            continue
+        if speaker_names and name not in speaker_names:
+            continue
+        appearance = str(character.get("appearance", "")).strip()
+        personality = str(character.get("personality", "")).strip()
+        anchor_traits = "; ".join(
+            part for part in [appearance, personality] if part
+        ).strip()
+        identity_lock = build_identity_lock(character)
+        prompt = (
+            identity_lock
+            + " | Single-person character portrait. Only one person in frame. "
+            "Neutral background plate, cinematic lighting, high detail, 35mm style."
+        )
+        char_seed = _speaker_seed(seed, name)
+        fp = prompt_fingerprint(prompt, width, height, char_seed)
+        out_path = portraits_dir / f"{name.replace(' ', '_')}_{fp}.png"
+        if not out_path.exists() or out_path.stat().st_size == 0:
+            ok, info = _generate_with_backend_order(
+                prompt=prompt,
+                width=width,
+                height=height,
+                out_path=out_path,
+                backend=backend,
+                seed=char_seed,
+            )
+            if not ok:
+                raise RuntimeError(f"portrait bank failed for {name}: {info}")
+            backend_info = info
+        else:
+            backend_info = "cache"
+        bank[name] = {
+            "name": name,
+            "portrait_path": str(out_path),
+            "anchor_traits": anchor_traits,
+            "identity_lock": identity_lock,
+            "backend": backend_info,
+            "seed": char_seed,
+            "width": width,
+            "height": height,
+        }
+    return bank
