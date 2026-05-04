@@ -20,12 +20,11 @@ from __future__ import annotations
 
 import math
 import os
-import re
 import shutil
 import subprocess
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional
 
 from src.utils.logging import get_logger
 
@@ -389,7 +388,9 @@ def _ken_burns_clip_pil(
         motion_preset.name, out_path.name, total_frames, width, height,
     )
 
-    proc = subprocess.Popen(args, stdin=subprocess.PIPE, stderr=subprocess.PIPE)
+    # Use DEVNULL for stderr to avoid pipe-buffer deadlock when ffmpeg emits
+    # large amounts of log output while we are still writing frames to stdin.
+    proc = subprocess.Popen(args, stdin=subprocess.PIPE, stderr=subprocess.DEVNULL)
     try:
         for f in range(total_frames):
             t = f / denom
@@ -417,16 +418,15 @@ def _ken_burns_clip_pil(
         proc.stdin.close()
     except (BrokenPipeError, OSError) as exc:
         proc.kill()
-        stderr = (proc.stderr.read() if proc.stderr else b"").decode(errors="ignore")
+        proc.wait()
         raise RuntimeError(
-            f"ken_burns_pil pipe write failed for {out_path.name}: {exc}\n{stderr[-500:]}"
+            f"ken_burns_pil pipe write failed for {out_path.name}: {exc}"
         ) from exc
 
     rc = proc.wait()
     if rc != 0:
-        stderr = (proc.stderr.read() if proc.stderr else b"").decode(errors="ignore")
         raise RuntimeError(
-            f"ken_burns_pil ffmpeg failed (exit={rc}) for {out_path.name}\n{stderr[-500:]}"
+            f"ken_burns_pil ffmpeg failed (exit={rc}) for {out_path.name}"
         )
     return str(out_path)
 
@@ -540,6 +540,7 @@ def compose_scene(
             "-c:a", "aac",
             "-b:a", "192k",
             "-ar", "44100",
+            "-ac", "2",
             "-shortest",
             str(out_path),
         ]
@@ -565,6 +566,7 @@ def compose_scene(
             "-c:a", "aac",
             "-b:a", "192k",
             "-ar", "44100",
+            "-ac", "2",
             "-shortest",
             str(out_path),
         ]

@@ -35,3 +35,8 @@ build/
 # Misc
 *.swp
 *.bak
+
+# Phase 3 runtime artifacts (machine-specific concat lists, run counter)
+Agentic-Ai/data/run_counter.json
+Agentic-Ai/data/*.concat.txt
+Agentic-Ai/data/phase3_runs/*/clips/*.concat.txt

@@ -255,8 +255,6 @@ def motion_node(state: Phase3State) -> Phase3State:
     for plan in plans:
         if only is not None and plan.scene_id != only:
             continue
-        if not plan.image_path:
-            raise RuntimeError(f"motion: scene {plan.scene_id} has no image")
 
         clip_path = clips_dir / f"scene_{plan.scene_id:02d}_kb.mp4"
         line_images = line_images_by_scene.get(plan.scene_id, [])
@@ -273,6 +271,8 @@ def motion_node(state: Phase3State) -> Phase3State:
             )
             preset_name = "per_line"
         else:
+            if not plan.image_path:
+                raise RuntimeError(f"motion: scene {plan.scene_id} has no image")
             preset = video_compose.pick_motion_preset(
                 visual_cue=plan.visual_cues[0] if plan.visual_cues else "",
                 mood=plan.mood,
@@ -435,11 +435,16 @@ def subtitles_node(state: Phase3State) -> Phase3State:
         return state
     _print_section("Phase 3 — Subtitle Burn-In")
     srt_path = Path(state["subtitles_save"])
-    title_offset_sec = (
-        float(state.get("title_card_sec", 3.0))
-        if state.get("enable_title_card", True)
-        else 0.0
-    )
+    # When a title card is enabled, subtitles need to be offset by the net
+    # duration the title card adds to the timeline.  concat_scenes_with_crossfade
+    # overlaps the title card with scene 1 by transition_sec, so the effective
+    # offset is title_card_sec - transition_sec (when crossfades are enabled).
+    if state.get("enable_title_card", True):
+        title_card_sec = float(state.get("title_card_sec", 3.0))
+        transition_sec = float(state.get("transition_sec", 0.0))
+        title_offset_sec = max(0.0, title_card_sec - transition_sec)
+    else:
+        title_offset_sec = 0.0
     video_compose.build_srt(
         state["timing_manifest"],
         srt_path,
