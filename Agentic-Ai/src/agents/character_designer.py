@@ -73,6 +73,18 @@ def _build_profile_prompt(
     )
 
 
+def _normalize_field(value: Any) -> str:
+    """Normalize a field that might be a string or dict to a string."""
+    if isinstance(value, dict):
+        # If it's a dict, try to get the 'description' key, otherwise join all string values
+        if "description" in value:
+            return str(value["description"])
+        else:
+            return " ".join(str(v) for v in value.values() if isinstance(v, str))
+    else:
+        return str(value)
+
+
 def _parse_profile_response(text: str) -> Dict[str, str]:
     """Extract the JSON object from the LLM response robustly."""
     # Strip markdown code fences if present
@@ -138,8 +150,8 @@ def run(manifest: Dict[str, Any], tool_client) -> List[Dict[str, Any]]:
 
         characters.append({
             "name": name,
-            "personality": profile.get("personality", "Unknown"),
-            "appearance": profile.get("appearance", "Unknown"),
+            "personality": _normalize_field(profile.get("personality", "Unknown")),
+            "appearance": _normalize_field(profile.get("appearance", "Unknown")),
             "role": profile.get("role", "supporting"),
             "style_reference": profile.get("style_reference", "Cinematic"),
             "first_appearance": data["first_appearance"],

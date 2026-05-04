@@ -86,7 +86,11 @@ def build_scene_prompt(
         char = char_lookup.get(speaker.upper())
         if not char:
             continue
-        appearance = char.get("appearance", "").strip().rstrip(".")
+        appearance_raw = char.get("appearance", "")
+        if isinstance(appearance_raw, dict):
+            appearance = appearance_raw.get("description", "").strip().rstrip(".")
+        else:
+            appearance = str(appearance_raw).strip().rstrip(".")
         if appearance:
             char_descriptors.append(f"{speaker.title()}: {appearance}")
 

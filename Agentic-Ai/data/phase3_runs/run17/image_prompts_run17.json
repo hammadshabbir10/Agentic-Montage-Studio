@@ -1,0 +1,26 @@
+[
+  {
+    "scene_id": 1,
+    "prompt": "Location: Rainy City Street | Mood: sad | Shot: Medium shot of JAXON, expression intense and focused. | Characters \u2014 Jaxon: Jaxon has a rugged, worn appearance, possibly with a few scars or stubble, fitting for a city detective or investigator; Luna: Luna is a practical and no-nonsense woman, dressed in functional yet stylish attire suitable for a detective or investigator, with an air of quiet confidence and a sharp mind | cinematic still, high detail, dramatic lighting, depth of field, film grain, 35mm photography, color graded",
+    "backend": "pollinations",
+    "image_path": "data\\phase3_runs\\run17\\images\\scene_01_e5d0f94badab.png",
+    "width": 1024,
+    "height": 1024
+  },
+  {
+    "scene_id": 2,
+    "prompt": "Location: Abandoned Warehouse | Mood: tense | Shot: Medium shot of KIARA, expression intense and focused. | Characters \u2014 Kiara: Kiara is likely dressed in contemporary streetwear, possibly in muted colors to reflect the rainy city atmosphere, with a casual yet expressive hairstyle; Victor: Victor is likely dressed in a formal, yet worn and possibly outdated, business attire, fitting for a character in a gritty, urban setting | cinematic still, high detail, dramatic lighting, depth of field, film grain, 35mm photography, color graded",
+    "backend": "pollinations",
+    "image_path": "data\\phase3_runs\\run17\\images\\scene_02_fbac43c78371.png",
+    "width": 1024,
+    "height": 1024
+  },
+  {
+    "scene_id": 3,
+    "prompt": "Location: Jaxon'S Office | Mood: tense | Shot: Medium shot of LUNA, expression intense and focused. | Characters \u2014 Luna: Luna is a practical and no-nonsense woman, dressed in functional yet stylish attire suitable for a detective or investigator, with an air of quiet confidence and a sharp mind; Jaxon: Jaxon has a rugged, worn appearance, possibly with a few scars or stubble, fitting for a city detective or investigator | cinematic still, high detail, dramatic lighting, depth of field, film grain, 35mm photography, color graded",
+    "backend": "pollinations",
+    "image_path": "data\\phase3_runs\\run17\\images\\scene_03_a26f47903729.png",
+    "width": 1024,
+    "height": 1024
+  }
+]

@@ -1,0 +1,43 @@
+1
+00:00:00,000 --> 00:00:03,264
+DR. THOMPSON: How's our patient doing today, Sofia?
+
+2
+00:00:03,264 --> 00:00:08,352
+NURSE VALENCIA: Stable, doctor. The patient's vitals are looking good.
+
+3
+00:00:08,352 --> 00:00:14,256
+DR. THOMPSON: Excellent. Let's take a look at the scans and see how the injury is healing.
+
+4
+00:00:14,256 --> 00:00:15,720
+JAXON REED: What...what happened?
+
+5
+00:00:15,720 --> 00:00:20,352
+NURSE VALENCIA: You were in an accident, Jaxon. You're safe now.
+
+6
+00:00:20,352 --> 00:00:22,872
+JAXON REED: An accident? I don't remember anything.
+
+7
+00:00:22,872 --> 00:00:30,360
+DR. THOMPSON: Don't worry, Jaxon. You've been through a lot. We'll get you back on your feet in no time.
+
+8
+00:00:30,360 --> 00:00:34,872
+JAXON REED: I had a dream...I was driving, and then...and then something happened.
+
+9
+00:00:34,872 --> 00:00:39,360
+NURSE VALENCIA: Try to relax, Jaxon. You're safe here.
+
+10
+00:00:39,360 --> 00:00:43,944
+DR. THOMPSON: We'll do some more tests in the morning, and we'll get to the bottom of this.
+
+11
+00:00:43,944 --> 00:00:45,792
+JAXON REED: I just want to go home...please.

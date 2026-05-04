@@ -1,0 +1,167 @@
+{
+  "workflow_id": "phase2_run12",
+  "timestamp": "2026-05-04T16:59:16.453214",
+  "run_tag": "run12",
+  "total_duration_ms": 71208,
+  "scenes": [
+    {
+      "scene_id": 1,
+      "audio_file": "data\\phase2_runs\\run12\\audio\\scene_01_run12.mp3",
+      "bgm_file": "data\\phase2_runs\\run12\\bgm\\sad_scene01_freesound.mp3",
+      "mood": "sad",
+      "start_ms": 0,
+      "end_ms": 23664,
+      "duration_ms": 23664,
+      "lines": [
+        {
+          "speaker": "JAX",
+          "voice": "en-US-GuyNeural",
+          "line": "Alright, VEDA, what've we got on the latest case?",
+          "visual_cue": "Medium shot of JAX, expression intense and focused.",
+          "start_ms": 0,
+          "end_ms": 4104,
+          "duration_ms": 4104
+        },
+        {
+          "speaker": "VEDA",
+          "voice": "en-US-JennyNeural",
+          "line": "Looks like another high-society type's gone missing, Jax. This one's got connections to the upper echelons.",
+          "visual_cue": "Medium shot of VEDA, expression intense and focused.",
+          "start_ms": 4104,
+          "end_ms": 11808,
+          "duration_ms": 7704
+        },
+        {
+          "speaker": "VEDA",
+          "voice": "en-US-JennyNeural",
+          "line": "I've got a list of suspects, but nothing concrete. Whoever did this is good.",
+          "visual_cue": "Close-up of JAX, eyes narrowing behind his mirrored shades.",
+          "start_ms": 11808,
+          "end_ms": 17976,
+          "duration_ms": 6168
+        },
+        {
+          "speaker": "JAX",
+          "voice": "en-US-GuyNeural",
+          "line": "Good doesn't cut it in this town. Get me everything you've got on the victim.",
+          "visual_cue": "Medium shot of JAX, expression intense and focused.",
+          "start_ms": 17976,
+          "end_ms": 23664,
+          "duration_ms": 5688
+        }
+      ]
+    },
+    {
+      "scene_id": 2,
+      "audio_file": "data\\phase2_runs\\run12\\audio\\scene_02_run12.mp3",
+      "bgm_file": "data\\phase2_runs\\run12\\bgm\\mysterious_scene02_freesound.mp3",
+      "mood": "mysterious",
+      "start_ms": 23664,
+      "end_ms": 52944,
+      "duration_ms": 29280,
+      "lines": [
+        {
+          "speaker": "JAX",
+          "voice": "en-US-GuyNeural",
+          "line": "I've got a bad feeling about this, Veda.",
+          "visual_cue": "Medium shot of JAX, expression intense and focused.",
+          "start_ms": 23664,
+          "end_ms": 27072,
+          "duration_ms": 3408
+        },
+        {
+          "speaker": "VEDA",
+          "voice": "en-US-JennyNeural",
+          "line": "Just what I need, your intuition. Let's focus on the facts.",
+          "visual_cue": "Medium shot of VEDA, expression intense and focused.",
+          "start_ms": 27072,
+          "end_ms": 32376,
+          "duration_ms": 5304
+        },
+        {
+          "speaker": "JAX",
+          "voice": "en-US-GuyNeural",
+          "line": "You're not seeing the big picture, Veda. This is more than just another missing person.",
+          "visual_cue": "Medium shot of JAX, expression intense and focused.",
+          "start_ms": 32376,
+          "end_ms": 38616,
+          "duration_ms": 6240
+        },
+        {
+          "speaker": "VEDA",
+          "voice": "en-US-JennyNeural",
+          "line": "I am seeing it, Jax. That's why I want to get in and out. We can't just barge in without a plan.",
+          "visual_cue": "Close-up of JAX, looking up at the warehouse with a mix of caution and curiosity.",
+          "start_ms": 38616,
+          "end_ms": 46536,
+          "duration_ms": 7920
+        },
+        {
+          "speaker": "JAX",
+          "voice": "en-US-GuyNeural",
+          "line": "Fine. Let's get moving. But if anyone gets hurt, it's on you.",
+          "visual_cue": "Medium shot of JAX, expression intense and focused.",
+          "start_ms": 46536,
+          "end_ms": 52944,
+          "duration_ms": 6408
+        }
+      ]
+    },
+    {
+      "scene_id": 3,
+      "audio_file": "data\\phase2_runs\\run12\\audio\\scene_03_run12.mp3",
+      "bgm_file": "data\\phase2_runs\\run12\\bgm\\mysterious_scene03_freesound.mp3",
+      "mood": "mysterious",
+      "start_ms": 52944,
+      "end_ms": 71208,
+      "duration_ms": 18264,
+      "lines": [
+        {
+          "speaker": "VEDA",
+          "voice": "en-US-JennyNeural",
+          "line": "This is it, Jax. This is where they took him.",
+          "visual_cue": "Medium shot of VEDA, expression intense and focused.",
+          "start_ms": 52944,
+          "end_ms": 57456,
+          "duration_ms": 4512
+        },
+        {
+          "speaker": "JAX",
+          "voice": "en-US-GuyNeural",
+          "line": "I don't see anything.",
+          "visual_cue": "Medium shot of JAX, expression intense and focused.",
+          "start_ms": 57456,
+          "end_ms": 59688,
+          "duration_ms": 2232
+        },
+        {
+          "speaker": "VEDA",
+          "voice": "en-US-JennyNeural",
+          "line": "Look closer. There's a hidden compartment behind that crate.",
+          "visual_cue": "Medium shot of VEDA, expression intense and focused.",
+          "start_ms": 59688,
+          "end_ms": 64728,
+          "duration_ms": 5040
+        },
+        {
+          "speaker": "JAX",
+          "voice": "en-US-GuyNeural",
+          "line": "You're a genius, Veda. But what's inside?",
+          "visual_cue": "Medium shot of JAX, expression intense and focused.",
+          "start_ms": 64728,
+          "end_ms": 69288,
+          "duration_ms": 4560
+        },
+        {
+          "speaker": "VEDA",
+          "voice": "en-US-JennyNeural",
+          "line": "Let's find out.",
+          "visual_cue": "Medium shot of VEDA, expression intense and focused.",
+          "start_ms": 69288,
+          "end_ms": 71208,
+          "duration_ms": 1920
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "scene_id": 1,
+    "prompt": "Location: Cyberpunk Detective Agency | Mood: sad | Shot: Medium shot of JAX, expression intense and focused. | Characters \u2014 Jax: Jax likely wears functional and durable clothing, possibly with a mix of leather and synthetic materials, reflecting his occupation as a cyberpunk detective in a gritty urban environment. His attire may also incorporate elements of a utilitarian aesthetic, such as tactical gear or cybernetic enhancements; Veda: Veda wears a mix of high-tech and functional clothing, possibly with a hint of elegance, fitting her background as a cyberpunk detective agency's lead investigator | cinematic still, high detail, dramatic lighting, depth of field, film grain, 35mm photography, color graded",
+    "backend": "pollinations",
+    "image_path": "data\\phase3_runs\\run12\\images\\scene_01_fbce1d703a1d.png",
+    "width": 1024,
+    "height": 1024
+  },
+  {
+    "scene_id": 2,
+    "prompt": "Location: Abandoned Warehouse | Mood: mysterious | Shot: Medium shot of JAX, expression intense and focused. | Characters \u2014 Jax: Jax likely wears functional and durable clothing, possibly with a mix of leather and synthetic materials, reflecting his occupation as a cyberpunk detective in a gritty urban environment. His attire may also incorporate elements of a utilitarian aesthetic, such as tactical gear or cybernetic enhancements; Veda: Veda wears a mix of high-tech and functional clothing, possibly with a hint of elegance, fitting her background as a cyberpunk detective agency's lead investigator | cinematic still, high detail, dramatic lighting, depth of field, film grain, 35mm photography, color graded",
+    "backend": "pollinations",
+    "image_path": "data\\phase3_runs\\run12\\images\\scene_02_e4be83ae8c1c.png",
+    "width": 1024,
+    "height": 1024
+  },
+  {
+    "scene_id": 3,
+    "prompt": "Location: Abandoned Warehouse | Mood: mysterious | Shot: Medium shot of VEDA, expression intense and focused. | Characters \u2014 Veda: Veda wears a mix of high-tech and functional clothing, possibly with a hint of elegance, fitting her background as a cyberpunk detective agency's lead investigator; Jax: Jax likely wears functional and durable clothing, possibly with a mix of leather and synthetic materials, reflecting his occupation as a cyberpunk detective in a gritty urban environment. His attire may also incorporate elements of a utilitarian aesthetic, such as tactical gear or cybernetic enhancements | cinematic still, high detail, dramatic lighting, depth of field, film grain, 35mm photography, color graded",
+    "backend": "pollinations",
+    "image_path": "data\\phase3_runs\\run12\\images\\scene_03_d5104cefc60f.png",
+    "width": 1024,
+    "height": 1024
+  }
+]

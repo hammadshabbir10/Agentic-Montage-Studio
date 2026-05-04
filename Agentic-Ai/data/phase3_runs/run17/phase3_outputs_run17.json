@@ -1,0 +1,82 @@
+{
+  "image_results": [
+    {
+      "scene_id": 1,
+      "image_path": "data\\phase3_runs\\run17\\images\\scene_01_e5d0f94badab.png",
+      "backend": "pollinations",
+      "prompt": "Location: Rainy City Street | Mood: sad | Shot: Medium shot of JAXON, expression intense and focused. | Characters \u2014 Jaxon: Jaxon has a rugged, worn appearance, possibly with a few scars or stubble, fitting for a city detective or investigator; Luna: Luna is a practical and no-nonsense woman, dressed in functional yet stylish attire suitable for a detective or investigator, with an air of quiet confidence and a sharp mind | cinematic still, high detail, dramatic lighting, depth of field, film grain, 35mm photography, color graded",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "scene_id": 2,
+      "image_path": "data\\phase3_runs\\run17\\images\\scene_02_fbac43c78371.png",
+      "backend": "pollinations",
+      "prompt": "Location: Abandoned Warehouse | Mood: tense | Shot: Medium shot of KIARA, expression intense and focused. | Characters \u2014 Kiara: Kiara is likely dressed in contemporary streetwear, possibly in muted colors to reflect the rainy city atmosphere, with a casual yet expressive hairstyle; Victor: Victor is likely dressed in a formal, yet worn and possibly outdated, business attire, fitting for a character in a gritty, urban setting | cinematic still, high detail, dramatic lighting, depth of field, film grain, 35mm photography, color graded",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "scene_id": 3,
+      "image_path": "data\\phase3_runs\\run17\\images\\scene_03_a26f47903729.png",
+      "backend": "pollinations",
+      "prompt": "Location: Jaxon'S Office | Mood: tense | Shot: Medium shot of LUNA, expression intense and focused. | Characters \u2014 Luna: Luna is a practical and no-nonsense woman, dressed in functional yet stylish attire suitable for a detective or investigator, with an air of quiet confidence and a sharp mind; Jaxon: Jaxon has a rugged, worn appearance, possibly with a few scars or stubble, fitting for a city detective or investigator | cinematic still, high detail, dramatic lighting, depth of field, film grain, 35mm photography, color graded",
+      "width": 1024,
+      "height": 1024
+    }
+  ],
+  "clip_results": [
+    {
+      "scene_id": 1,
+      "clip_path": "data\\phase3_runs\\run17\\clips\\scene_01_kb.mp4",
+      "duration_sec": 20.064,
+      "direction": "in"
+    },
+    {
+      "scene_id": 2,
+      "clip_path": "data\\phase3_runs\\run17\\clips\\scene_02_kb.mp4",
+      "duration_sec": 8.183,
+      "direction": "out"
+    },
+    {
+      "scene_id": 3,
+      "clip_path": "data\\phase3_runs\\run17\\clips\\scene_03_kb.mp4",
+      "duration_sec": 21.0,
+      "direction": "in"
+    }
+  ],
+  "composed_results": [
+    {
+      "scene_id": 1,
+      "composed_path": "data\\phase3_runs\\run17\\composed\\scene_01_composed.mp4",
+      "audio_file": "data\\phase2_runs\\run17\\audio\\scene_01_run17.mp3",
+      "bgm_file": "data\\phase2_runs\\run17\\bgm\\sad_scene01_freesound.mp3"
+    },
+    {
+      "scene_id": 2,
+      "composed_path": "data\\phase3_runs\\run17\\composed\\scene_02_composed.mp4",
+      "audio_file": "data\\phase2_runs\\run17\\audio\\scene_02_run17.mp3",
+      "bgm_file": "data\\phase2_runs\\run17\\bgm\\tense_scene02_freesound.mp3"
+    },
+    {
+      "scene_id": 3,
+      "composed_path": "data\\phase3_runs\\run17\\composed\\scene_03_composed.mp4",
+      "audio_file": "data\\phase2_runs\\run17\\audio\\scene_03_run17.mp3",
+      "bgm_file": "data\\phase2_runs\\run17\\bgm\\tense_scene03_freesound.mp3"
+    }
+  ],
+  "final_video_path": "data\\phase3_runs\\run17\\final_output_run17_subbed.mp4",
+  "subtitles_path": "data\\phase3_runs\\run17\\subtitles_run17.srt",
+  "options": {
+    "backend": "pollinations",
+    "quality": "balanced",
+    "seed": null,
+    "only_scene_id": null,
+    "enable_subtitles": true
+  },
+  "inputs": {
+    "scene_manifest": "data/scene_manifest_auto.json",
+    "character_db": "data/character_db_auto.json",
+    "timing_manifest": "data\\phase2_runs\\run17\\timing_manifest_run17.json"
+  }
+}

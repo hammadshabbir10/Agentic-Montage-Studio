@@ -1,0 +1,11 @@
+{
+  "status": "completed",
+  "audio": [
+    "data\\phase2_runs\\run08\\audio\\scene_01_run08.mp3",
+    "data\\phase2_runs\\run08\\audio\\scene_02_run08.mp3"
+  ],
+  "bgm": [
+    "data\\phase2_runs\\run08\\bgm\\sad_scene01_freesound.mp3",
+    "data\\phase2_runs\\run08\\bgm\\tense_scene02_freesound.mp3"
+  ]
+}

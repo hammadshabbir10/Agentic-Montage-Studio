@@ -1,0 +1,26 @@
+[
+  {
+    "scene_id": 1,
+    "prompt": "Location: Detective Agency | Mood: sad | Shot: Medium shot of KAI, expression intense and focused. | Characters \u2014 Kai: Kai is a ruggedly dressed, mid-30s male with a worn expression, likely wearing a suit and tie, reflecting a no-nonsense, detective persona; Zara: Zara has a no-nonsense, street-smart appearance with a sharp jawline and piercing eyes, dressed in functional yet stylish attire suitable for a detective agency | cinematic still, high detail, dramatic lighting, depth of field, film grain, 35mm photography, color graded",
+    "backend": "cache",
+    "image_path": "data\\phase3_runs\\run16\\images\\scene_01_ee29bc5f9232.png",
+    "width": 1024,
+    "height": 1024
+  },
+  {
+    "scene_id": 2,
+    "prompt": "Location: Nightclub | Mood: tense | Shot: Medium shot of KAI, expression intense and focused. | Characters \u2014 Kai: Kai is a ruggedly dressed, mid-30s male with a worn expression, likely wearing a suit and tie, reflecting a no-nonsense, detective persona; Ryker: Ryker is likely dressed in a suit and tie, with a well-groomed appearance that suggests a high level of sophistication and attention to detail | cinematic still, high detail, dramatic lighting, depth of field, film grain, 35mm photography, color graded",
+    "backend": "cache",
+    "image_path": "data\\phase3_runs\\run16\\images\\scene_02_d1535cc661a3.png",
+    "width": 1024,
+    "height": 1024
+  },
+  {
+    "scene_id": 3,
+    "prompt": "Location: Detective Agency | Mood: mysterious | Shot: Medium shot of KAI, expression intense and focused. | Characters \u2014 Kai: Kai is a ruggedly dressed, mid-30s male with a worn expression, likely wearing a suit and tie, reflecting a no-nonsense, detective persona; Zara: Zara has a no-nonsense, street-smart appearance with a sharp jawline and piercing eyes, dressed in functional yet stylish attire suitable for a detective agency | cinematic still, high detail, dramatic lighting, depth of field, film grain, 35mm photography, color graded",
+    "backend": "cache",
+    "image_path": "data\\phase3_runs\\run16\\images\\scene_03_95f101c5b964.png",
+    "width": 1024,
+    "height": 1024
+  }
+]

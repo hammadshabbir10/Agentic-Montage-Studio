@@ -1,0 +1,46 @@
+{
+  "tasks": [
+    {
+      "scene_id": 1,
+      "location": "DETECTIVE AGENCY",
+      "dialogue": [
+        {
+          "speaker": "LENA",
+          "line": "\"I've been trying to track the signal, but it's like they're ghosting us.\"",
+          "visual_cue": "Close-up of DETECTIVE Kael, eyes narrowed in frustration."
+        }
+      ],
+      "characters": [
+        "LENA"
+      ]
+    },
+    {
+      "scene_id": 2,
+      "location": "ABANDONED WAREHOUSE",
+      "dialogue": [
+        {
+          "speaker": "LENA",
+          "line": "\"I've found something.\"",
+          "visual_cue": "Over-the-shoulder shot of DETECTIVE Kael, his eyes scanning the area."
+        }
+      ],
+      "characters": [
+        "LENA"
+      ]
+    },
+    {
+      "scene_id": 3,
+      "location": "CITY STREET",
+      "dialogue": [
+        {
+          "speaker": "DETECTIVE KAEL",
+          "line": "\"Sounds like a trap to me.\"",
+          "visual_cue": "Wide shot of LENA, the city lights reflecting off her eyes."
+        }
+      ],
+      "characters": [
+        "DETECTIVE KAEL"
+      ]
+    }
+  ]
+}

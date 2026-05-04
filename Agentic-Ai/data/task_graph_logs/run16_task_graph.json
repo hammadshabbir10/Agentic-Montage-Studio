@@ -1,0 +1,246 @@
+{
+  "run_tag": "run16",
+  "run_number": 16,
+  "run_dir": "data\\phase2_runs\\run16",
+  "bgm_dir": "data\\phase2_runs\\run16\\bgm",
+  "scene_manifest": {
+    "workflow_id": "workflow_20260504_173635",
+    "timestamp": "2026-05-04T17:36:35.650555",
+    "scenes": [
+      {
+        "scene_id": 1,
+        "location": "DETECTIVE AGENCY",
+        "dialogue": [
+          {
+            "speaker": "KAI",
+            "line": "\"I'm telling you, ZARA, this case is going cold. We've got nothing but dead ends.\"",
+            "visual_cue": "Medium shot of KAI, expression intense and focused."
+          },
+          {
+            "speaker": "ZARA",
+            "line": "\"That's not true, Kai. We've got a lead on the nightclub owner, Ryker.\"",
+            "visual_cue": "Medium shot of ZARA, expression intense and focused."
+          },
+          {
+            "speaker": "KAI",
+            "line": "\"Ryker's been in the system for years. He's not our guy.\"",
+            "visual_cue": "Close-up of ZARA, her eyes narrow with determination."
+          },
+          {
+            "speaker": "ZARA",
+            "line": "\"Maybe not, but he's got connections to the underground. We need to dig deeper.\"",
+            "visual_cue": "Close-up of KAI, his eyes clouded with skepticism."
+          },
+          {
+            "speaker": "KAI",
+            "line": "\"I'll take the lead on Ryker. You work on tracking down the source of the encrypted files.\"",
+            "visual_cue": "Medium shot of ZARA, her hands gesturing animatedly."
+          },
+          {
+            "speaker": "ZARA",
+            "line": "\"I'm on it. I'll have something by morning.\"",
+            "visual_cue": "Medium shot of ZARA, expression intense and focused."
+          }
+        ],
+        "characters": [
+          "KAI",
+          "ZARA"
+        ],
+        "duration": 42
+      },
+      {
+        "scene_id": 2,
+        "location": "NIGHTCLUB",
+        "dialogue": [
+          {
+            "speaker": "KAI",
+            "line": "\"Ryker, we need to talk.\"",
+            "visual_cue": "Medium shot of KAI, expression intense and focused."
+          },
+          {
+            "speaker": "RYKER",
+            "line": "\"Ah, Detective Kai. What can I do for you?\"",
+            "visual_cue": "Medium shot of RYKER, expression intense and focused."
+          },
+          {
+            "speaker": "KAI",
+            "line": "\"I'm investigating a string of cybercrimes. I hear you're involved.\"",
+            "visual_cue": "Close-up of RYKER, his eyes sparkle with charm."
+          },
+          {
+            "speaker": "RYKER",
+            "line": "\"Cybercrimes? Me? I'm a businessman, Detective. I don't get involved in that sort of thing.\"",
+            "visual_cue": "Medium shot of RYKER, expression intense and focused."
+          },
+          {
+            "speaker": "KAI",
+            "line": "\"Save it, Ryker. I know all about your connections to the underground. You're hiding something.\"",
+            "visual_cue": "Medium shot of RYKER, his hands gesturing innocently."
+          },
+          {
+            "speaker": "RYKER",
+            "line": "\"I'm not hiding anything, Detective. But I'll make you a deal. If you can find what you're looking for, I'll give you a piece of the action.\"",
+            "visual_cue": "Medium shot of RYKER, expression intense and focused."
+          }
+        ],
+        "characters": [
+          "KAI",
+          "RYKER"
+        ],
+        "duration": 44
+      },
+      {
+        "scene_id": 3,
+        "location": "DETECTIVE AGENCY",
+        "dialogue": [
+          {
+            "speaker": "KAI",
+            "line": "\"I think I found the source of the encrypted files. It's a private server, hidden deep in the underground.\"",
+            "visual_cue": "Medium shot of KAI, expression intense and focused."
+          },
+          {
+            "speaker": "ZARA",
+            "line": "\"Get us access to the server. We need to dig through the files.\"",
+            "visual_cue": "Medium shot of ZARA, expression intense and focused."
+          },
+          {
+            "speaker": "KAI",
+            "line": "\"Already on it. But I've got a bad feeling about this, Zara. Ryker's not what he seems.\"",
+            "visual_cue": "Medium shot of KAI, expression intense and focused."
+          },
+          {
+            "speaker": "ZARA",
+            "line": "\"I know. I've been digging into his past. He's got a lot of connections to the shadow net. We're dealing with something big.\"",
+            "visual_cue": "Medium shot of ZARA, expression intense and focused."
+          },
+          {
+            "speaker": "KAI",
+            "line": "\"Let's gear up. We're going in.\"",
+            "visual_cue": "Close-up of ZARA, her eyes scanning the data stream with a mixture of focus and concern."
+          },
+          {
+            "speaker": "ZARA",
+            "line": "\"Time to take down Ryker and uncover the truth.\"",
+            "visual_cue": "Medium shot of ZARA, expression intense and focused."
+          }
+        ],
+        "characters": [
+          "KAI",
+          "ZARA"
+        ],
+        "duration": 46
+      }
+    ],
+    "total_scenes": 3,
+    "total_duration_seconds": 132
+  },
+  "character_db": {
+    "workflow_id": "workflow_20260504_173638",
+    "timestamp": "2026-05-04T17:36:38.358412",
+    "characters": [
+      {
+        "name": "KAI",
+        "personality": "Kai is a determined and skeptical individual driven by a desire to solve cases, but also prone to frustration and doubt.",
+        "appearance": "Kai is a ruggedly dressed, mid-30s male with a worn expression, likely wearing a suit and tie, reflecting a no-nonsense, detective persona.",
+        "role": "supporting",
+        "style_reference": "Gritty, modern crime drama with a focus on atmospheric lighting and dark colors, inspired by the works of David Fincher.",
+        "first_appearance": 1,
+        "dialogue_samples": [
+          {
+            "line": "\"I'm telling you, ZARA, this case is going cold. We've got nothing but dead ends.\"",
+            "visual_cue": "Medium shot of KAI, expression intense and focused."
+          },
+          {
+            "line": "\"Ryker's been in the system for years. He's not our guy.\"",
+            "visual_cue": "Close-up of ZARA, her eyes narrow with determination."
+          },
+          {
+            "line": "\"I'll take the lead on Ryker. You work on tracking down the source of the encrypted files.\"",
+            "visual_cue": "Medium shot of ZARA, her hands gesturing animatedly."
+          },
+          {
+            "line": "\"Ryker, we need to talk.\"",
+            "visual_cue": "Medium shot of KAI, expression intense and focused."
+          },
+          {
+            "line": "\"I'm investigating a string of cybercrimes. I hear you're involved.\"",
+            "visual_cue": "Close-up of RYKER, his eyes sparkle with charm."
+          },
+          {
+            "line": "\"Save it, Ryker. I know all about your connections to the underground. You're hiding something.\"",
+            "visual_cue": "Medium shot of RYKER, his hands gesturing innocently."
+          },
+          {
+            "line": "\"I think I found the source of the encrypted files. It's a private server, hidden deep in the underground.\"",
+            "visual_cue": "Medium shot of KAI, expression intense and focused."
+          },
+          {
+            "line": "\"Already on it. But I've got a bad feeling about this, Zara. Ryker's not what he seems.\"",
+            "visual_cue": "Medium shot of KAI, expression intense and focused."
+          },
+          {
+            "line": "\"Let's gear up. We're going in.\"",
+            "visual_cue": "Close-up of ZARA, her eyes scanning the data stream with a mixture of focus and concern."
+          }
+        ]
+      },
+      {
+        "name": "ZARA",
+        "personality": "Zara is a determined and resourceful individual who prioritizes action over diplomacy, driven by a desire to uncover the truth.",
+        "appearance": "Zara has a no-nonsense, street-smart appearance with a sharp jawline and piercing eyes, dressed in functional yet stylish attire suitable for a detective agency.",
+        "role": "supporting",
+        "style_reference": "Modern crime thriller, dark and gritty urban aesthetic with a focus on neon-lit cityscapes and high-tech gadgetry.",
+        "first_appearance": 1,
+        "dialogue_samples": [
+          {
+            "line": "\"That's not true, Kai. We've got a lead on the nightclub owner, Ryker.\"",
+            "visual_cue": "Medium shot of ZARA, expression intense and focused."
+          },
+          {
+            "line": "\"Maybe not, but he's got connections to the underground. We need to dig deeper.\"",
+            "visual_cue": "Close-up of KAI, his eyes clouded with skepticism."
+          },
+          {
+            "line": "\"I'm on it. I'll have something by morning.\"",
+            "visual_cue": "Medium shot of ZARA, expression intense and focused."
+          },
+          {
+            "line": "\"Get us access to the server. We need to dig through the files.\"",
+            "visual_cue": "Medium shot of ZARA, expression intense and focused."
+          },
+          {
+            "line": "\"I know. I've been digging into his past. He's got a lot of connections to the shadow net. We're dealing with something big.\"",
+            "visual_cue": "Medium shot of ZARA, expression intense and focused."
+          },
+          {
+            "line": "\"Time to take down Ryker and uncover the truth.\"",
+            "visual_cue": "Medium shot of ZARA, expression intense and focused."
+          }
+        ]
+      },
+      {
+        "name": "RYKER",
+        "personality": "Ryker appears to be a smooth-talking, self-assured individual who is likely involved in illicit activities, but attempts to maintain a veneer of legitimacy. He is confident in his ability to manipulate situations to his advantage.",
+        "appearance": "Ryker is likely dressed in a suit and tie, with a well-groomed appearance that suggests a high level of sophistication and attention to detail.",
+        "role": "antagonist",
+        "style_reference": "Neo-noir, dark and gritty, with a focus on shadows and neon lights to create a sense of unease and moral ambiguity.",
+        "first_appearance": 2,
+        "dialogue_samples": [
+          {
+            "line": "\"Ah, Detective Kai. What can I do for you?\"",
+            "visual_cue": "Medium shot of RYKER, expression intense and focused."
+          },
+          {
+            "line": "\"Cybercrimes? Me? I'm a businessman, Detective. I don't get involved in that sort of thing.\"",
+            "visual_cue": "Medium shot of RYKER, expression intense and focused."
+          },
+          {
+            "line": "\"I'm not hiding anything, Detective. But I'll make you a deal. If you can find what you're looking for, I'll give you a piece of the action.\"",
+            "visual_cue": "Medium shot of RYKER, expression intense and focused."
+          }
+        ]
+      }
+    ],
+    "total_characters": 3
+  }
+}

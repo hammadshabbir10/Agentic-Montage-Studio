@@ -42,7 +42,7 @@ def scene_parser_node(state: GraphState) -> GraphState:
     print("\n" + "=" * 60)
     print("  PHASE 2 — Audio Generation & Integration")
     print("=" * 60)
-    print("[Phase 2] scene_parser: extracting scene tasks…")
+    print("[Phase 2] scene_parser: extracting scene tasks...")
 
     manifest = state.get("manifest", {})
     scenes   = manifest.get("scenes", [])
@@ -64,7 +64,7 @@ def scene_parser_node(state: GraphState) -> GraphState:
     print("[Phase 2] scene_parser: global voice assignments:")
     for name, voice in global_voice_map.items():
         gender = "F" if voice_synthesizer._is_female(name) else "M"
-        print(f"           [{gender}] {name:40s} → {voice}")
+        print(f"           [{gender}] {name:40s} -> {voice}")
 
     state["task_graph"]       = tasks
     state["global_voice_map"] = global_voice_map
@@ -75,7 +75,7 @@ def scene_parser_node(state: GraphState) -> GraphState:
 
 
 def voice_synth_node(state: GraphState) -> GraphState:
-    print("\n[Phase 2] ── Voice Synthesis ──────────────────────────────")
+    print("\n[Phase 2] -- Voice Synthesis ------------------------------")
     output_dirs      = state.get("output_dirs", {})
     audio_dir        = output_dirs.get("audio", "data/audio")
     run_tag          = state.get("run_tag")
@@ -85,7 +85,7 @@ def voice_synth_node(state: GraphState) -> GraphState:
 
     for task in state.get("task_graph", []):
         sid = task["scene_id"]
-        print(f"[Phase 2] voice_synth: processing scene {sid}…")
+        print(f"[Phase 2] voice_synth: processing scene {sid}...")
         result = voice_synthesizer.run(
             task,
             state["tool_client"],
@@ -104,7 +104,7 @@ def voice_synth_node(state: GraphState) -> GraphState:
 
 
 def music_select_node(state: GraphState) -> GraphState:
-    print("\n[Phase 2] ── BGM Selection ─────────────────────────────────")
+    print("\n[Phase 2] -- BGM Selection ---------------------------------")
     output_dirs = state.get("output_dirs", {})
     run_dir     = state.get("run_dir", output_dirs.get("audio", "data/audio"))
     bgm_out_dir = str(run_dir) + "/bgm" if run_dir else "data/audio/bgm"
@@ -124,7 +124,7 @@ def music_select_node(state: GraphState) -> GraphState:
         print(
             f"[Phase 2] music_select: scene {sid} "
             f"mood={result['mood']!r} source={result.get('bgm_source','?')!r} "
-            f"→ {result['bgm_path']}"
+            f"-> {result['bgm_path']}"
         )
 
     state["music_results"] = music_results
@@ -137,7 +137,7 @@ def music_select_node(state: GraphState) -> GraphState:
 def timing_build_node(state: GraphState) -> GraphState:
     from src.utils.timing_manifest import build as build_timing
 
-    print("\n[Phase 2] ── Timing Manifest ───────────────────────────────")
+    print("\n[Phase 2] -- Timing Manifest -------------------------------")
     output_dirs = state.get("output_dirs", {})
     run_tag     = state.get("run_tag", "run00")
     out_dir     = state.get("run_dir", output_dirs.get("audio", "data/audio"))
@@ -149,12 +149,12 @@ def timing_build_node(state: GraphState) -> GraphState:
         out_dir=out_dir,
     )
     state["timing_manifest_path"] = timing_path
-    print(f"[Phase 2] timing_build: manifest written → {timing_path}")
+    print(f"[Phase 2] timing_build: manifest written -> {timing_path}")
     return state
 
 
 def memory_commit_node(state: GraphState) -> GraphState:
-    print("\n[Phase 2] ── Memory Commit ─────────────────────────────────")
+    print("\n[Phase 2] -- Memory Commit ---------------------------------")
     payload = {
         "manifest":             state.get("manifest", {}),
         "audio_results":        state.get("audio_results", []),

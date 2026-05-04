@@ -1,0 +1,82 @@
+{
+  "tasks": [
+    {
+      "scene_id": 1,
+      "location": "HOSPITAL ROOM",
+      "dialogue": [
+        {
+          "speaker": "ETHAN",
+          "line": "How's he doing, Sophia?",
+          "visual_cue": "Medium shot of ETHAN, expression intense and focused."
+        },
+        {
+          "speaker": "SOPHIA",
+          "line": "His vitals are stable, but I'm a bit worried about his fever.",
+          "visual_cue": "Over-the-shoulder shot of ETHAN, concern visible in his expression."
+        },
+        {
+          "speaker": "JASON",
+          "line": "Just... make it stop.",
+          "visual_cue": "Close-up of SOPHIA, her brow furrowed in concern."
+        }
+      ],
+      "characters": [
+        "ETHAN",
+        "SOPHIA",
+        "JASON"
+      ]
+    },
+    {
+      "scene_id": 2,
+      "location": "HOSPITAL ROOM",
+      "dialogue": [
+        {
+          "speaker": "ETHAN",
+          "line": "I think it's time we ran some more tests.",
+          "visual_cue": "Medium shot of ETHAN, expression intense and focused."
+        },
+        {
+          "speaker": "SOPHIA",
+          "line": "I agree, but we need to be careful not to overmedicate him.",
+          "visual_cue": "Medium shot of ETHAN, his eyes scanning the medical charts."
+        },
+        {
+          "speaker": "JASON",
+          "line": "What's happening to me?",
+          "visual_cue": "Close-up of SOPHIA, her voice calm and reassuring."
+        }
+      ],
+      "characters": [
+        "ETHAN",
+        "SOPHIA",
+        "JASON"
+      ]
+    },
+    {
+      "scene_id": 3,
+      "location": "HOSPITAL ROOM",
+      "dialogue": [
+        {
+          "speaker": "ETHAN",
+          "line": "It looks like he has a rare infection.",
+          "visual_cue": "Medium shot of ETHAN, expression intense and focused."
+        },
+        {
+          "speaker": "SOPHIA",
+          "line": "We'll need to get him to an isolation room ASAP.",
+          "visual_cue": "Close-up of ETHAN, a mix of concern and determination on his face."
+        },
+        {
+          "speaker": "JASON",
+          "line": "Is... is it going to be okay?",
+          "visual_cue": "Wide shot of SOPHIA, her eyes scanning the room for any signs of contamination."
+        }
+      ],
+      "characters": [
+        "ETHAN",
+        "SOPHIA",
+        "JASON"
+      ]
+    }
+  ]
+}

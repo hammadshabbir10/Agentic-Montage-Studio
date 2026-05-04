@@ -1,0 +1,186 @@
+{
+  "audio": [
+    {
+      "scene_id": 1,
+      "path": "data\\phase2_runs\\run19\\audio\\scene_01_run19.mp3",
+      "segments": [
+        {
+          "speaker": "ISABELLA MARINA",
+          "line": "Jenny, sweetie, can you hear me?",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Medium shot of ISABELLA MARINA, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run19\\audio\\scene1\\ISABELLA_MARINA_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 17424
+        },
+        {
+          "speaker": "JENNY TORRES",
+          "line": "M...mom...",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Close-up of ISABELLA MARINA, concern etched on her face as she looks at her daughter.",
+          "audio_file": "data\\phase2_runs\\run19\\audio\\scene1\\JENNY_TORRES_line002.mp3",
+          "byte_offset": 17424,
+          "byte_length": 11952
+        },
+        {
+          "speaker": "ISABELLA MARINA",
+          "line": "Oh, baby, I'm here. I'm not going anywhere.",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Close-up of JENNY TORRES, her voice barely audible as she tries to speak.",
+          "audio_file": "data\\phase2_runs\\run19\\audio\\scene1\\ISABELLA_MARINA_line003.mp3",
+          "byte_offset": 29376,
+          "byte_length": 28944
+        },
+        {
+          "speaker": "DR. LUCAS BRODY",
+          "line": "Hi, Isabella. How's Jenny doing today?",
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Wide shot of the room, showing ISABELLA MARINA's determined expression as she holds her daughter's hand.",
+          "audio_file": "data\\phase2_runs\\run19\\audio\\scene1\\DR_LUCAS_BRODY_line004.mp3",
+          "byte_offset": 58320,
+          "byte_length": 16704
+        },
+        {
+          "speaker": "ISABELLA MARINA",
+          "line": "She's been...stable. But I'm worried about her brain activity. It's been fluctuating.",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Medium shot of DR. LUCAS BRODY, his eyes scanning the room as he listens to ISABELLA MARINA's response.",
+          "audio_file": "data\\phase2_runs\\run19\\audio\\scene1\\ISABELLA_MARINA_line005.mp3",
+          "byte_offset": 75024,
+          "byte_length": 42912
+        },
+        {
+          "speaker": "DR. LUCAS BRODY",
+          "line": "I see. Well, we'll run some more tests and see if we can pinpoint the cause. In the meantime, let's keep her comfortable and...",
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Close-up of ISABELLA MARINA, her brow furrowed in concern as she speaks.",
+          "audio_file": "data\\phase2_runs\\run19\\audio\\scene1\\DR_LUCAS_BRODY_line006.mp3",
+          "byte_offset": 117936,
+          "byte_length": 46224
+        },
+        {
+          "speaker": "JENNY TORRES",
+          "line": "Water...",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Close-up of DR. LUCAS BRODY, his expression thoughtful as he trails off.",
+          "audio_file": "data\\phase2_runs\\run19\\audio\\scene1\\JENNY_TORRES_line007.mp3",
+          "byte_offset": 164160,
+          "byte_length": 9504
+        },
+        {
+          "speaker": "ISABELLA MARINA",
+          "line": "Oh, baby, you want water? I can get you some.",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Close-up of JENNY TORRES, her eyes locked on DR. LUCAS BRODY as she tries to speak.",
+          "audio_file": "data\\phase2_runs\\run19\\audio\\scene1\\ISABELLA_MARINA_line008.mp3",
+          "byte_offset": 173664,
+          "byte_length": 29088
+        }
+      ]
+    },
+    {
+      "scene_id": 2,
+      "path": "data\\phase2_runs\\run19\\audio\\scene_02_run19.mp3",
+      "segments": [
+        {
+          "speaker": "DR. LUCAS BRODY",
+          "line": "Okay, Isabella, we've got the test results. And it looks like...",
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Medium shot of DR. LUCAS BRODY, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run19\\audio\\scene2\\DR_LUCAS_BRODY_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 25488
+        },
+        {
+          "speaker": "ISABELLA MARINA",
+          "line": "What is it, Doctor? Is she going to be okay?",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Close-up of DR. LUCAS BRODY, his eyes scanning the chart as he prepares to deliver the news.",
+          "audio_file": "data\\phase2_runs\\run19\\audio\\scene2\\ISABELLA_MARINA_line002.mp3",
+          "byte_offset": 25488,
+          "byte_length": 26496
+        },
+        {
+          "speaker": "DR. LUCAS BRODY",
+          "line": "It's a bit complicated, but...Jenny's condition is not as severe as we thought. She's going to need some physical therapy to regain her strength, but...",
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Close-up of ISABELLA MARINA, her eyes locked on DR. LUCAS BRODY's face, her expression tense with worry.",
+          "audio_file": "data\\phase2_runs\\run19\\audio\\scene2\\DR_LUCAS_BRODY_line003.mp3",
+          "byte_offset": 51984,
+          "byte_length": 51408
+        },
+        {
+          "speaker": "JENNY TORRES",
+          "line": "Mom...",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Close-up of DR. LUCAS BRODY, a hopeful expression on his face as he delivers the news.",
+          "audio_file": "data\\phase2_runs\\run19\\audio\\scene2\\JENNY_TORRES_line004.mp3",
+          "byte_offset": 103392,
+          "byte_length": 9648
+        },
+        {
+          "speaker": "ISABELLA MARINA",
+          "line": "Oh, baby, I'm so proud of you.",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Close-up of JENNY TORRES, a faint smile on her face as she looks at her mother.",
+          "audio_file": "data\\phase2_runs\\run19\\audio\\scene2\\ISABELLA_MARINA_line005.mp3",
+          "byte_offset": 113040,
+          "byte_length": 19008
+        }
+      ]
+    },
+    {
+      "scene_id": 3,
+      "path": "data\\phase2_runs\\run19\\audio\\scene_03_run19.mp3",
+      "segments": [
+        {
+          "speaker": "MARCO TORRES",
+          "line": "Hey, how's Jenny doing?",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of MARCO TORRES, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run19\\audio\\scene3\\MARCO_TORRES_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 14976
+        },
+        {
+          "speaker": "ISABELLA MARINA",
+          "line": "She's going to be okay. The doctor says she'll need some therapy, but...",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Medium shot of MARCO TORRES, his eyes scanning ISABELLA MARINA's face as he waits for her response.",
+          "audio_file": "data\\phase2_runs\\run19\\audio\\scene3\\ISABELLA_MARINA_line002.mp3",
+          "byte_offset": 14976,
+          "byte_length": 34272
+        },
+        {
+          "speaker": "MARCO TORRES",
+          "line": "That's fantastic news. I'm so glad to hear it.",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Close-up of ISABELLA MARINA, her eyes shining with tears of joy as she delivers the news.",
+          "audio_file": "data\\phase2_runs\\run19\\audio\\scene3\\MARCO_TORRES_line003.mp3",
+          "byte_offset": 49248,
+          "byte_length": 28224
+        }
+      ]
+    }
+  ],
+  "music": [
+    {
+      "scene_id": 1,
+      "mood": "action",
+      "bgm_path": "data\\phase2_runs\\run19\\bgm\\action_scene01_freesound.mp3",
+      "bgm_source": "freesound"
+    },
+    {
+      "scene_id": 2,
+      "mood": "hopeful",
+      "bgm_path": "data\\phase2_runs\\run19\\bgm\\hopeful_scene02_freesound.mp3",
+      "bgm_source": "freesound"
+    },
+    {
+      "scene_id": 3,
+      "mood": "tense",
+      "bgm_path": "data\\phase2_runs\\run19\\bgm\\tense_scene03_freesound.mp3",
+      "bgm_source": "freesound"
+    }
+  ]
+}

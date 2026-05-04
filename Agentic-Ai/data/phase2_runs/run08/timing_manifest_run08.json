@@ -1,0 +1,57 @@
+{
+  "workflow_id": "phase2_run08",
+  "timestamp": "2026-05-04T00:34:38.845441",
+  "run_tag": "run08",
+  "total_duration_ms": 5904,
+  "scenes": [
+    {
+      "scene_id": 1,
+      "audio_file": "data\\phase2_runs\\run08\\audio\\scene_01_run08.mp3",
+      "bgm_file": "data\\phase2_runs\\run08\\bgm\\sad_scene01_freesound.mp3",
+      "mood": "sad",
+      "start_ms": 0,
+      "end_ms": 2205,
+      "duration_ms": 2205,
+      "lines": [
+        {
+          "speaker": "DREK",
+          "voice": "en-US-GuyNeural",
+          "line": "I've got a new case for you, Kaida. Some rich socialite's daughter is missing.",
+          "visual_cue": "Medium shot of DREK, expression intense and focused.",
+          "start_ms": 0,
+          "end_ms": 2205,
+          "duration_ms": 2205
+        }
+      ]
+    },
+    {
+      "scene_id": 2,
+      "audio_file": "data\\phase2_runs\\run08\\audio\\scene_02_run08.mp3",
+      "bgm_file": "data\\phase2_runs\\run08\\bgm\\tense_scene02_freesound.mp3",
+      "mood": "tense",
+      "start_ms": 2205,
+      "end_ms": 5904,
+      "duration_ms": 3699,
+      "lines": [
+        {
+          "speaker": "KAIDA",
+          "voice": "en-US-JennyNeural",
+          "line": "You're telling me this girl was here last night, and now she's gone?",
+          "visual_cue": "Medium shot of KAIDA, expression intense and focused.",
+          "start_ms": 2205,
+          "end_ms": 3771,
+          "duration_ms": 1566
+        },
+        {
+          "speaker": "BENJAMIN",
+          "voice": "en-US-AndrewNeural",
+          "line": "That's right. She was with some friends, dancing and having a good time. But then she vanished.",
+          "visual_cue": "Medium shot of BENJAMIN, expression intense and focused.",
+          "start_ms": 3771,
+          "end_ms": 5904,
+          "duration_ms": 2133
+        }
+      ]
+    }
+  ]
+}

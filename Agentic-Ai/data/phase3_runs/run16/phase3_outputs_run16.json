@@ -1,0 +1,82 @@
+{
+  "image_results": [
+    {
+      "scene_id": 1,
+      "image_path": "data\\phase3_runs\\run16\\images\\scene_01_ee29bc5f9232.png",
+      "backend": "cache",
+      "prompt": "Location: Detective Agency | Mood: sad | Shot: Medium shot of KAI, expression intense and focused. | Characters \u2014 Kai: Kai is a ruggedly dressed, mid-30s male with a worn expression, likely wearing a suit and tie, reflecting a no-nonsense, detective persona; Zara: Zara has a no-nonsense, street-smart appearance with a sharp jawline and piercing eyes, dressed in functional yet stylish attire suitable for a detective agency | cinematic still, high detail, dramatic lighting, depth of field, film grain, 35mm photography, color graded",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "scene_id": 2,
+      "image_path": "data\\phase3_runs\\run16\\images\\scene_02_d1535cc661a3.png",
+      "backend": "cache",
+      "prompt": "Location: Nightclub | Mood: tense | Shot: Medium shot of KAI, expression intense and focused. | Characters \u2014 Kai: Kai is a ruggedly dressed, mid-30s male with a worn expression, likely wearing a suit and tie, reflecting a no-nonsense, detective persona; Ryker: Ryker is likely dressed in a suit and tie, with a well-groomed appearance that suggests a high level of sophistication and attention to detail | cinematic still, high detail, dramatic lighting, depth of field, film grain, 35mm photography, color graded",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "scene_id": 3,
+      "image_path": "data\\phase3_runs\\run16\\images\\scene_03_95f101c5b964.png",
+      "backend": "cache",
+      "prompt": "Location: Detective Agency | Mood: mysterious | Shot: Medium shot of KAI, expression intense and focused. | Characters \u2014 Kai: Kai is a ruggedly dressed, mid-30s male with a worn expression, likely wearing a suit and tie, reflecting a no-nonsense, detective persona; Zara: Zara has a no-nonsense, street-smart appearance with a sharp jawline and piercing eyes, dressed in functional yet stylish attire suitable for a detective agency | cinematic still, high detail, dramatic lighting, depth of field, film grain, 35mm photography, color graded",
+      "width": 1024,
+      "height": 1024
+    }
+  ],
+  "clip_results": [
+    {
+      "scene_id": 1,
+      "clip_path": "data\\phase3_runs\\run16\\clips\\scene_01_kb.mp4",
+      "duration_sec": 33.288,
+      "direction": "in"
+    },
+    {
+      "scene_id": 2,
+      "clip_path": "data\\phase3_runs\\run16\\clips\\scene_02_kb.mp4",
+      "duration_sec": 31.584,
+      "direction": "out"
+    },
+    {
+      "scene_id": 3,
+      "clip_path": "data\\phase3_runs\\run16\\clips\\scene_03_kb.mp4",
+      "duration_sec": 36.816,
+      "direction": "in"
+    }
+  ],
+  "composed_results": [
+    {
+      "scene_id": 1,
+      "composed_path": "data\\phase3_runs\\run16\\composed\\scene_01_composed.mp4",
+      "audio_file": "data\\phase2_runs\\run16\\audio\\scene_01_run16.mp3",
+      "bgm_file": "data\\phase2_runs\\run16\\bgm\\sad_scene01_freesound.mp3"
+    },
+    {
+      "scene_id": 2,
+      "composed_path": "data\\phase3_runs\\run16\\composed\\scene_02_composed.mp4",
+      "audio_file": "data\\phase2_runs\\run16\\audio\\scene_02_run16.mp3",
+      "bgm_file": "data\\phase2_runs\\run16\\bgm\\tense_scene02_freesound.mp3"
+    },
+    {
+      "scene_id": 3,
+      "composed_path": "data\\phase3_runs\\run16\\composed\\scene_03_composed.mp4",
+      "audio_file": "data\\phase2_runs\\run16\\audio\\scene_03_run16.mp3",
+      "bgm_file": "data\\phase2_runs\\run16\\bgm\\mysterious_scene03_freesound.mp3"
+    }
+  ],
+  "final_video_path": "data\\phase3_runs\\run16\\final_output_run16_subbed.mp4",
+  "subtitles_path": "data\\phase3_runs\\run16\\subtitles_run16.srt",
+  "options": {
+    "backend": "pollinations",
+    "quality": "balanced",
+    "seed": null,
+    "only_scene_id": null,
+    "enable_subtitles": true
+  },
+  "inputs": {
+    "scene_manifest": "data/scene_manifest_auto.json",
+    "character_db": "data/character_db_auto.json",
+    "timing_manifest": "data\\phase2_runs\\run16\\timing_manifest_run16.json"
+  }
+}

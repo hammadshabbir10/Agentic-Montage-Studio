@@ -1,0 +1,164 @@
+{
+  "run_tag": "run05",
+  "run_number": 5,
+  "run_dir": "data\\phase2_runs\\run05",
+  "bgm_dir": "data\\phase2_runs\\run05\\bgm",
+  "scene_manifest": {
+    "workflow_id": "workflow_20260504_001756",
+    "timestamp": "2026-05-04T00:17:56.438644",
+    "scenes": [
+      {
+        "scene_id": 1,
+        "location": "DETECTIVE'S OFFICE",
+        "dialogue": [
+          {
+            "speaker": "LENA VESPA",
+            "line": "\"Jax, I'm telling you, this one's different. The victim's eyes... they were frozen, like someone scared the life out of them.\"",
+            "visual_cue": "Close-up of Detective JAX, frustration etched on face."
+          },
+          {
+            "speaker": "JAX",
+            "line": "\"Frozen? What are you talking about?\"",
+            "visual_cue": "Medium shot of Lena VESPA, leaning against the desk with a mix of concern and curiosity."
+          },
+          {
+            "speaker": "LENA VESPA",
+            "line": "\"I'm saying... I've seen that look before. In the eyes of a person who's seen something they can't unsee.\"",
+            "visual_cue": "Over-the-shoulder shot of JAX, looking at Lena with skepticism."
+          }
+        ],
+        "characters": [
+          "LENA VESPA",
+          "JAX"
+        ],
+        "duration": 25
+      },
+      {
+        "scene_id": 2,
+        "location": "POLICE STATION",
+        "dialogue": [
+          {
+            "speaker": "JAX",
+            "line": "\"Alright, VESPA, what've you got for me?\"",
+            "visual_cue": "Medium shot of JAX, expression intense and focused."
+          },
+          {
+            "speaker": "LENA VESPA",
+            "line": "\"I think our killer's not just targeting anyone. I think they're searching for something specific.\"",
+            "visual_cue": "Over-the-shoulder shot of JAX, coffee in hand, gazing at the photo."
+          },
+          {
+            "speaker": "JAX",
+            "line": "\"What, like a treasure map or something?\"",
+            "visual_cue": "Close-up of Lena VESPA, brow furrowed in concentration."
+          },
+          {
+            "speaker": "LENA VESPA",
+            "line": "\"No, Jax, I think they're after something much more valuable. Something that'll get them the power they crave.\"",
+            "visual_cue": "Medium shot of JAX, rolling his eyes good-naturedly."
+          }
+        ],
+        "characters": [
+          "JAX",
+          "LENA VESPA"
+        ],
+        "duration": 27
+      },
+      {
+        "scene_id": 3,
+        "location": "ABANDONED WAREHOUSE",
+        "dialogue": [
+          {
+            "speaker": "JAX",
+            "line": "\"Looks like we're not the only ones looking for this treasure.\"",
+            "visual_cue": "Medium shot of JAX, expression intense and focused."
+          },
+          {
+            "speaker": "LENA VESPA",
+            "line": "\"It's a puzzle, Jax. A puzzle that'll lead us straight into the heart of the darkness.\"",
+            "visual_cue": "Over-the-shoulder shot of JAX, eyes scanning the holographic display."
+          },
+          {
+            "speaker": "JAX",
+            "line": "\"Well, let's solve it then. Before things get any more complicated.\"",
+            "visual_cue": "Close-up of Lena VESPA, eyes locked on the holographic display, a mix of fear and determination visible."
+          }
+        ],
+        "characters": [
+          "JAX",
+          "LENA VESPA"
+        ],
+        "duration": 22
+      }
+    ],
+    "total_scenes": 3,
+    "total_duration_seconds": 74
+  },
+  "character_db": {
+    "workflow_id": "workflow_20260504_001759",
+    "timestamp": "2026-05-04T00:17:59.760132",
+    "characters": [
+      {
+        "name": "LENA VESPA",
+        "personality": "Lena Vespa is a determined and intuitive detective driven by a strong sense of justice, with a deep emotional connection to the victims she investigates.",
+        "appearance": "Lena is a stylish and sharp-dressed woman from the 1950s, likely sporting a fitted suit, a statement hat, and heels.",
+        "role": "supporting",
+        "style_reference": "Film Noir, high-contrast shadows, and a hint of femme fatale mystique",
+        "first_appearance": 1,
+        "dialogue_samples": [
+          {
+            "line": "\"Jax, I'm telling you, this one's different. The victim's eyes... they were frozen, like someone scared the life out of them.\"",
+            "visual_cue": "Close-up of Detective JAX, frustration etched on face."
+          },
+          {
+            "line": "\"I'm saying... I've seen that look before. In the eyes of a person who's seen something they can't unsee.\"",
+            "visual_cue": "Over-the-shoulder shot of JAX, looking at Lena with skepticism."
+          },
+          {
+            "line": "\"I think our killer's not just targeting anyone. I think they're searching for something specific.\"",
+            "visual_cue": "Over-the-shoulder shot of JAX, coffee in hand, gazing at the photo."
+          },
+          {
+            "line": "\"No, Jax, I think they're after something much more valuable. Something that'll get them the power they crave.\"",
+            "visual_cue": "Medium shot of JAX, rolling his eyes good-naturedly."
+          },
+          {
+            "line": "\"It's a puzzle, Jax. A puzzle that'll lead us straight into the heart of the darkness.\"",
+            "visual_cue": "Over-the-shoulder shot of JAX, eyes scanning the holographic display."
+          }
+        ]
+      },
+      {
+        "name": "JAX",
+        "personality": "Jax appears to be a resourceful and determined individual, driven by a mix of curiosity and possibly a hint of recklessness, as evidenced by his willingness to ask blunt questions and explore unconventional leads.",
+        "appearance": "Jax's appearance is rugged and practical, fitting for a detective, with a worn and weathered look that suggests a life spent on the streets and in the shadows.",
+        "role": "supporting/protagonist",
+        "style_reference": "Gritty neo-noir, high contrast, and a sense of gritty realism, with a focus on practical and muted color palette.",
+        "first_appearance": 1,
+        "dialogue_samples": [
+          {
+            "line": "\"Frozen? What are you talking about?\"",
+            "visual_cue": "Medium shot of Lena VESPA, leaning against the desk with a mix of concern and curiosity."
+          },
+          {
+            "line": "\"Alright, VESPA, what've you got for me?\"",
+            "visual_cue": "Medium shot of JAX, expression intense and focused."
+          },
+          {
+            "line": "\"What, like a treasure map or something?\"",
+            "visual_cue": "Close-up of Lena VESPA, brow furrowed in concentration."
+          },
+          {
+            "line": "\"Looks like we're not the only ones looking for this treasure.\"",
+            "visual_cue": "Medium shot of JAX, expression intense and focused."
+          },
+          {
+            "line": "\"Well, let's solve it then. Before things get any more complicated.\"",
+            "visual_cue": "Close-up of Lena VESPA, eyes locked on the holographic display, a mix of fear and determination visible."
+          }
+        ]
+      }
+    ],
+    "total_characters": 2
+  }
+}

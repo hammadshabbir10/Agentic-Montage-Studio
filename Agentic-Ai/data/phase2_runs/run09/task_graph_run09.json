@@ -1,0 +1,89 @@
+{
+  "tasks": [
+    {
+      "scene_id": 1,
+      "location": "CYBERPUNK BAR",
+      "dialogue": [
+        {
+          "speaker": "KAEL",
+          "line": "\"I'm looking for information on a girl named Kaida. She's been missing for three days.\"",
+          "visual_cue": "Medium shot of KAEL, expression intense and focused."
+        },
+        {
+          "speaker": "VIKTOR",
+          "line": "\"Never heard of her. What's the story?\"",
+          "visual_cue": "Close-up of Kael, his eyes scanning the bar with a mix of desperation and determination."
+        },
+        {
+          "speaker": "KAEL",
+          "line": "\"She was last seen at this bar. I'm thinking she might have gotten mixed up with the wrong crowd.\"",
+          "visual_cue": "Close-up of Viktor, his face a map of wrinkles and scars."
+        },
+        {
+          "speaker": "VIKTOR",
+          "line": "\"You're looking for trouble, detective. This city's got more problems than just one missing girl.\"",
+          "visual_cue": "Medium shot of Kael, his eyes narrowing as he leans in closer to Viktor."
+        }
+      ],
+      "characters": [
+        "KAEL",
+        "VIKTOR"
+      ]
+    },
+    {
+      "scene_id": 2,
+      "location": "CITY STREET",
+      "dialogue": [
+        {
+          "speaker": "KAEL",
+          "line": "\"Kaida? Is that you?\"",
+          "visual_cue": "Medium shot of KAEL, expression intense and focused."
+        },
+        {
+          "speaker": "KAIDA",
+          "line": "\"Kael. I thought I was done with you. What do you want?\"",
+          "visual_cue": "Close-up of Kael, his voice firm but concerned as he approaches the young woman."
+        },
+        {
+          "speaker": "KAEL",
+          "line": "\"I just want to know what happened to you, Kaida. You were one of my best leads on this case.\"",
+          "visual_cue": "Close-up of Kaida, her eyes flashing with anger as she crosses her arms over her chest."
+        },
+        {
+          "speaker": "KAIDA",
+          "line": "\"I got pulled into something bigger than I ever could have imagined. And now I'm in deep.\"",
+          "visual_cue": "Medium shot of Kaida, her expression softening slightly as she looks at Kael."
+        }
+      ],
+      "characters": [
+        "KAEL",
+        "KAIDA"
+      ]
+    },
+    {
+      "scene_id": 3,
+      "location": "ABANDONED WAREHOUSE",
+      "dialogue": [
+        {
+          "speaker": "KAIDA",
+          "line": "\"I was working with a guy named Axel. He said he could help me get out of the system, but it was all just a ruse. He's been using me to get to this girl, Elara.\"",
+          "visual_cue": "Medium shot of KAIDA, expression intense and focused."
+        },
+        {
+          "speaker": "KAEL",
+          "line": "\"We need to find Axel and stop him. We can't let him get away with this.\"",
+          "visual_cue": "Close-up of Kaida, her voice barely above a whisper as she looks at Kael with a mix of fear and determination."
+        },
+        {
+          "speaker": "KAIDA",
+          "line": "\"I'll help you, Kael. We can do this.\"",
+          "visual_cue": "Medium shot of Kael, his eyes locked on Kaida as he nods in agreement."
+        }
+      ],
+      "characters": [
+        "KAIDA",
+        "KAEL"
+      ]
+    }
+  ]
+}

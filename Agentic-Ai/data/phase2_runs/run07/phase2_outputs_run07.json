@@ -1,0 +1,141 @@
+{
+  "audio": [
+    {
+      "scene_id": 1,
+      "path": "data\\phase2_runs\\run07\\audio\\scene_01_run07.mp3",
+      "segments": [
+        {
+          "speaker": "KAI",
+          "line": "I'm telling you, VICTORIA, this case stinks of corporate cover-up.",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of KAI, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run07\\audio\\scene1\\KAI_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 27648
+        },
+        {
+          "speaker": "VICTORIA",
+          "line": "Kai, we can't just jump to conclusions. We need concrete evidence.",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Medium shot of VICTORIA, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run07\\audio\\scene1\\VICTORIA_line002.mp3",
+          "byte_offset": 27648,
+          "byte_length": 34416
+        },
+        {
+          "speaker": "KAI",
+          "line": "You're not seeing the big picture, VICTORIA. This is bigger than just a simple murder.",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Close-up of VICTORIA, her brow furrowed in concern.",
+          "audio_file": "data\\phase2_runs\\run07\\audio\\scene1\\KAI_line003.mp3",
+          "byte_offset": 62064,
+          "byte_length": 39312
+        },
+        {
+          "speaker": "VICTORIA",
+          "line": "Okay, Kai, but we need to tread carefully. One misstep and our licenses are revoked.",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Wide shot of KAI, his eyes flashing with intensity.",
+          "audio_file": "data\\phase2_runs\\run07\\audio\\scene1\\VICTORIA_line004.mp3",
+          "byte_offset": 101376,
+          "byte_length": 40752
+        }
+      ]
+    },
+    {
+      "scene_id": 2,
+      "path": "data\\phase2_runs\\run07\\audio\\scene_02_run07.mp3",
+      "segments": [
+        {
+          "speaker": "KAI",
+          "line": "I've managed to hack into the victim's comms records. Something's not right.",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of KAI, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run07\\audio\\scene2\\KAI_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 34992
+        },
+        {
+          "speaker": "VICTORIA",
+          "line": "What do you mean?",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Close-up of KAI, his eyes fixed on the holographic display in front of him.",
+          "audio_file": "data\\phase2_runs\\run07\\audio\\scene2\\VICTORIA_line002.mp3",
+          "byte_offset": 34992,
+          "byte_length": 10656
+        },
+        {
+          "speaker": "KAI",
+          "line": "The victim was involved in some shady dealings. I think we're looking at a conspiracy.",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Over-the-shoulder shot of VICTORIA, her eyes locked on KAI.",
+          "audio_file": "data\\phase2_runs\\run07\\audio\\scene2\\KAI_line003.mp3",
+          "byte_offset": 45648,
+          "byte_length": 37872
+        }
+      ]
+    },
+    {
+      "scene_id": 3,
+      "path": "data\\phase2_runs\\run07\\audio\\scene_03_run07.mp3",
+      "segments": [
+        {
+          "speaker": "VICTORIA",
+          "line": "Alright, Kai, what's the plan?",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Medium shot of VICTORIA, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run07\\audio\\scene3\\VICTORIA_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 18288
+        },
+        {
+          "speaker": "KAI",
+          "line": "We sneak in, gather evidence, and get out. Simple.",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Close-up of VICTORIA, her eyes scanning the darkness.",
+          "audio_file": "data\\phase2_runs\\run07\\audio\\scene3\\KAI_line002.mp3",
+          "byte_offset": 18288,
+          "byte_length": 29952
+        },
+        {
+          "speaker": "VICTORIA",
+          "line": "And if we get caught?",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Medium shot of KAI, his hand on the grip of his pistol.",
+          "audio_file": "data\\phase2_runs\\run07\\audio\\scene3\\VICTORIA_line003.mp3",
+          "byte_offset": 48240,
+          "byte_length": 12528
+        },
+        {
+          "speaker": "KAI",
+          "line": "We improvise. We always do.",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Close-up of VICTORIA, a hint of fear in her eyes.",
+          "audio_file": "data\\phase2_runs\\run07\\audio\\scene3\\KAI_line004.mp3",
+          "byte_offset": 60768,
+          "byte_length": 23040
+        }
+      ]
+    }
+  ],
+  "music": [
+    {
+      "scene_id": 1,
+      "mood": "sad",
+      "bgm_path": "data\\phase2_runs\\run07\\bgm\\sad_scene01_freesound.mp3",
+      "bgm_source": "freesound"
+    },
+    {
+      "scene_id": 2,
+      "mood": "tense",
+      "bgm_path": "data\\phase2_runs\\run07\\bgm\\tense_scene02_freesound.mp3",
+      "bgm_source": "freesound"
+    },
+    {
+      "scene_id": 3,
+      "mood": "mysterious",
+      "bgm_path": "data\\phase2_runs\\run07\\bgm\\mysterious_scene03_freesound.mp3",
+      "bgm_source": "freesound"
+    }
+  ]
+}

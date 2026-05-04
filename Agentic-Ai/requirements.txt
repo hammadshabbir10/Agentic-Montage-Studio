@@ -6,3 +6,4 @@ requests
 edge-tts
 pydantic
 Pillow
+flask
