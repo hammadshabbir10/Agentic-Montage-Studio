@@ -1,0 +1,35 @@
+1
+00:00:00,000 --> 00:00:03,600
+BARISTA: Welcome to The Daily Grind, can I get you a drink?
+
+2
+00:00:03,600 --> 00:00:09,408
+JASPER: Just a black coffee, please. And a table by the window if it's available.
+
+3
+00:00:09,408 --> 00:00:14,592
+BARISTA: Coming right up. That'll be $2.50 please.
+
+4
+00:00:14,592 --> 00:00:17,304
+JASPER: Mind if I join you for a minute?
+
+5
+00:00:17,304 --> 00:00:23,064
+AURORA: Not at all. I'm Aurora. I'm waiting for a friend.
+
+6
+00:00:23,064 --> 00:00:29,760
+JASPER: I'm Jasper. Nice to meet you, Aurora. You look like an artist.
+
+7
+00:00:29,760 --> 00:00:36,624
+AURORA: I love to paint the cityscape. There's something about the energy of the streets that just speaks to me.
+
+8
+00:00:36,624 --> 00:00:41,424
+JASPER: I can see that. You have a real eye for light and color.
+
+9
+00:00:41,424 --> 00:00:45,120
+LUNA: *whispers to herself* "I wonder what they're talking about.

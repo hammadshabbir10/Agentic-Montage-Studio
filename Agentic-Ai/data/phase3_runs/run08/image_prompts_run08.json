@@ -1,0 +1,18 @@
+[
+  {
+    "scene_id": 1,
+    "prompt": "Location: Detective Agency | Mood: sad | Shot: Medium shot of DREK, expression intense and focused. | Characters \u2014 Drek: Kaida is likely dressed in modern, stylish attire suitable for a detective, possibly in dark colors, with a hint of sophistication reflecting their involvement with high-society cases | cinematic still, high detail, dramatic lighting, depth of field, film grain, 35mm photography, color graded",
+    "backend": "pollinations",
+    "image_path": "data\\phase3_runs\\run08\\images\\scene_01_dc50393fdaab.png",
+    "width": 1024,
+    "height": 1024
+  },
+  {
+    "scene_id": 2,
+    "prompt": "Location: Nightclub | Mood: tense | Shot: Medium shot of KAIDA, expression intense and focused. | Characters \u2014 Kaida: A no-nonsense, professional attire fitting for a detective or investigator, possibly with slightly worn or weathered details; Benjamin: Benjamin is likely dressed in attire fitting of a detective agency owner or investigator, perhaps in a 1940s or 1950s-inspired style, with suit, tie, and a hint of a rugged demeanor | cinematic still, high detail, dramatic lighting, depth of field, film grain, 35mm photography, color graded",
+    "backend": "pollinations",
+    "image_path": "data\\phase3_runs\\run08\\images\\scene_02_b58920e012ae.png",
+    "width": 1024,
+    "height": 1024
+  }
+]

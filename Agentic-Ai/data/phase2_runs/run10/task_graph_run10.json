@@ -1,0 +1,90 @@
+{
+  "tasks": [
+    {
+      "scene_id": 1,
+      "location": "DETECTIVE AGENCY",
+      "dialogue": [
+        {
+          "speaker": "MAX",
+          "line": "\"I need you to look into the disappearance of Kaida, a high-ranking exec at Omicron Innovations.\"",
+          "visual_cue": "Medium shot of MAX, expression intense and focused."
+        },
+        {
+          "speaker": "LUNA",
+          "line": "\"What makes you think she's involved in something shady?\"",
+          "visual_cue": "Close-up of MAX, his eyes squinting in focus."
+        },
+        {
+          "speaker": "MAX",
+          "line": "\"A cryptic message from her comms device hinted at a corporate conspiracy. I need someone with your... particular skills to help me dig deeper.\"",
+          "visual_cue": "Medium shot of LUNA, her brow furrowed in concern."
+        },
+        {
+          "speaker": "LUNA",
+          "line": "\"What kind of skills?\"",
+          "visual_cue": "Over-the-shoulder shot of MAX, his eyes scanning the room for potential listeners."
+        }
+      ],
+      "characters": [
+        "MAX",
+        "LUNA"
+      ]
+    },
+    {
+      "scene_id": 2,
+      "location": "OMICRON INNOVATIONS",
+      "dialogue": [
+        {
+          "speaker": "MAX",
+          "line": "\"According to the rumors, Kaida uncovered something about Omicron's latest project \u2013 codenamed 'Eclipse'. I'm guessing it's more than just a fancy new AI.\"",
+          "visual_cue": "Medium shot of MAX, expression intense and focused."
+        },
+        {
+          "speaker": "LUNA",
+          "line": "\"You think it's connected to her disappearance?\"",
+          "visual_cue": "Close-up of MAX, his voice hushed but urgent."
+        },
+        {
+          "speaker": "VORON",
+          "line": "\"What brings you two to our humble abode?\"",
+          "visual_cue": "Medium shot of LUNA, her eyes scanning the surroundings."
+        },
+        {
+          "speaker": "LUNA",
+          "line": "\"Just passing through, enjoying the... ambiance.\"",
+          "visual_cue": "Close-up of VORON, his smile faltering for a split second before regaining its composure."
+        }
+      ],
+      "characters": [
+        "MAX",
+        "LUNA",
+        "VORON"
+      ]
+    },
+    {
+      "scene_id": 3,
+      "location": "ABANDONED WAREHOUSE",
+      "dialogue": [
+        {
+          "speaker": "LUNA",
+          "line": "\"This is it. The Eclipse project \u2013 it's not just AI, it's a neural network that can predict and manipulate human behavior.\"",
+          "visual_cue": "Medium shot of LUNA, expression intense and focused."
+        },
+        {
+          "speaker": "MAX",
+          "line": "\"This changes everything. We need to get this info to the right people \u2013 people who can take down Omicron.\"",
+          "visual_cue": "Close-up of LUNA, her fingers flying across the keyboard."
+        },
+        {
+          "speaker": "LUNA",
+          "line": "\"And what about Kaida? Do we even know if she's still alive?\"",
+          "visual_cue": "Close-up of MAX, his jaw set in determination."
+        }
+      ],
+      "characters": [
+        "LUNA",
+        "MAX"
+      ]
+    }
+  ]
+}

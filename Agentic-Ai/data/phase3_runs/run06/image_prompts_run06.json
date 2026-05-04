@@ -1,0 +1,26 @@
+[
+  {
+    "scene_id": 1,
+    "prompt": "Location: Detective Agency | Mood: action | Shot: Medium shot of RYKER, expression intense and focused. | Characters \u2014 Ryker: A ruggedly handsome man in his mid-30s, dressed in a worn leather jacket and jeans, with a hint of fatigue around his eyes; Kalida: Ryker is likely dressed in worn, practical clothing, possibly with a hint of ruggedness, reflecting his occupation and lifestyle | cinematic still, high detail, dramatic lighting, depth of field, film grain, 35mm photography, color graded",
+    "backend": "pollinations",
+    "image_path": "data\\phase3_runs\\run06\\images\\scene_01_74fdb7750f5b.png",
+    "width": 1024,
+    "height": 1024
+  },
+  {
+    "scene_id": 2,
+    "prompt": "Location: Abandoned Warehouse | Mood: sad | Shot: Medium shot of RYKER, expression intense and focused. | Characters \u2014 Ryker: A ruggedly handsome man in his mid-30s, dressed in a worn leather jacket and jeans, with a hint of fatigue around his eyes; Kalida: Ryker is likely dressed in worn, practical clothing, possibly with a hint of ruggedness, reflecting his occupation and lifestyle | cinematic still, high detail, dramatic lighting, depth of field, film grain, 35mm photography, color graded",
+    "backend": "pollinations",
+    "image_path": "data\\phase3_runs\\run06\\images\\scene_02_9efba61a1a6e.png",
+    "width": 1024,
+    "height": 1024
+  },
+  {
+    "scene_id": 3,
+    "prompt": "Location: Abandoned Warehouse | Mood: tense | Shot: Medium shot of KALIDA, expression intense and focused. | Characters \u2014 Kalida: Ryker is likely dressed in worn, practical clothing, possibly with a hint of ruggedness, reflecting his occupation and lifestyle; Ryker: A ruggedly handsome man in his mid-30s, dressed in a worn leather jacket and jeans, with a hint of fatigue around his eyes | cinematic still, high detail, dramatic lighting, depth of field, film grain, 35mm photography, color graded",
+    "backend": "pollinations",
+    "image_path": "data\\phase3_runs\\run06\\images\\scene_03_a1927b9dc1e1.png",
+    "width": 1024,
+    "height": 1024
+  }
+]

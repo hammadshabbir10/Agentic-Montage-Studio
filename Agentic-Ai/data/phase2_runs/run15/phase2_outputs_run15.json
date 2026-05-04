@@ -1,0 +1,105 @@
+{
+  "audio": [
+    {
+      "scene_id": 1,
+      "path": "data\\phase2_runs\\run15\\audio\\scene_01_run15.mp3",
+      "segments": [
+        {
+          "speaker": "KAEL",
+          "line": "I don't get it, ARIA. The data's encrypted, and I need your expertise to crack it.",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of KAEL, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run15\\audio\\scene1\\KAEL_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 37728
+        },
+        {
+          "speaker": "ARIA",
+          "line": "Give me a minute, Kael. This is some advanced stuff.\" VISUAL CUE: Close-up of ARIA, fingers flying across her console as her eyes scan lines of code.",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Medium shot of ARIA, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run15\\audio\\scene1\\ARIA_line002.mp3",
+          "byte_offset": 37728,
+          "byte_length": 69408
+        }
+      ]
+    },
+    {
+      "scene_id": 2,
+      "path": "data\\phase2_runs\\run15\\audio\\scene_02_run15.mp3",
+      "segments": [
+        {
+          "speaker": "ARIA",
+          "line": "I'm in. We've got a lead on the suspect's identity.",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Medium shot of ARIA, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run15\\audio\\scene2\\ARIA_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 27360
+        },
+        {
+          "speaker": "KAEL",
+          "line": "Who is it?\" VISUAL CUE: Close-up of Kael, his cybernetic eye glowing bright blue as he leans forward, eager for answers.",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of KAEL, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run15\\audio\\scene2\\KAEL_line002.mp3",
+          "byte_offset": 27360,
+          "byte_length": 50256
+        },
+        {
+          "speaker": "ARIA",
+          "line": "Someone from the highest echelons of the corporation. Name of Victor Vex.\" VISUAL CUE: Medium shot of ARIA, her expression a mix of shock and concern.",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Medium shot of ARIA, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run15\\audio\\scene2\\ARIA_line003.mp3",
+          "byte_offset": 77616,
+          "byte_length": 67680
+        }
+      ]
+    },
+    {
+      "scene_id": 3,
+      "path": "data\\phase2_runs\\run15\\audio\\scene_03_run15.mp3",
+      "segments": [
+        {
+          "speaker": "KAEL",
+          "line": "Alright, ARIA. We're going in. Time to find out what Victor Vex knows.\" VISUAL CUE: Wide shot of Kael, his cybernetic eye glowing bright blue as he scans the building's exterior.",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of KAEL, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run15\\audio\\scene3\\KAEL_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 81504
+        },
+        {
+          "speaker": "ARIA",
+          "line": "Be careful, Kael. We don't know what we're walking into.\" VISUAL CUE: Close-up of ARIA, her eyes filled with worry as she looks up at Kael.",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Medium shot of ARIA, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run15\\audio\\scene3\\ARIA_line002.mp3",
+          "byte_offset": 81504,
+          "byte_length": 64080
+        }
+      ]
+    }
+  ],
+  "music": [
+    {
+      "scene_id": 1,
+      "mood": "sad",
+      "bgm_path": "data\\phase2_runs\\run15\\bgm\\sad_scene01_freesound.mp3",
+      "bgm_source": "freesound"
+    },
+    {
+      "scene_id": 2,
+      "mood": "tense",
+      "bgm_path": "data\\phase2_runs\\run15\\bgm\\tense_scene02_freesound.mp3",
+      "bgm_source": "freesound"
+    },
+    {
+      "scene_id": 3,
+      "mood": "tense",
+      "bgm_path": "data\\phase2_runs\\run15\\bgm\\tense_scene03_freesound.mp3",
+      "bgm_source": "freesound"
+    }
+  ]
+}

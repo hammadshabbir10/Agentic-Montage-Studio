@@ -1,0 +1,82 @@
+{
+  "image_results": [
+    {
+      "scene_id": 1,
+      "image_path": "data\\phase3_runs\\run10\\images\\scene_01_e0d02a3bd7dc.png",
+      "backend": "pollinations",
+      "prompt": "Location: Detective Agency | Mood: sad | Shot: Medium shot of MAX, expression intense and focused. | Characters \u2014 Max: A rugged and weathered private investigator, likely in his mid-40s, with worn attire and a sharp, observant gaze; Luna: Luna has a rugged, no-nonsense look, perhaps with a mix of bohemian and practical attire, fitting for a detective or private investigator | cinematic still, high detail, dramatic lighting, depth of field, film grain, 35mm photography, color graded",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "scene_id": 2,
+      "image_path": "data\\phase3_runs\\run10\\images\\scene_02_c953c10ee5b4.png",
+      "backend": "pollinations",
+      "prompt": "Location: Omicron Innovations | Mood: tense | Shot: Medium shot of MAX, expression intense and focused. | Characters \u2014 Max: A rugged and weathered private investigator, likely in his mid-40s, with worn attire and a sharp, observant gaze; Luna: Luna has a rugged, no-nonsense look, perhaps with a mix of bohemian and practical attire, fitting for a detective or private investigator; Voron: Voron is a middle-aged man with a slender build and sharp features, dressed in a tailored suit that exudes a sense of sophistication and wealth | cinematic still, high detail, dramatic lighting, depth of field, film grain, 35mm photography, color graded",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "scene_id": 3,
+      "image_path": "data\\phase3_runs\\run10\\images\\scene_03_641159857100.png",
+      "backend": "pollinations",
+      "prompt": "Location: Abandoned Warehouse | Mood: tense | Shot: Medium shot of LUNA, expression intense and focused. | Characters \u2014 Luna: Luna has a rugged, no-nonsense look, perhaps with a mix of bohemian and practical attire, fitting for a detective or private investigator; Max: A rugged and weathered private investigator, likely in his mid-40s, with worn attire and a sharp, observant gaze | cinematic still, high detail, dramatic lighting, depth of field, film grain, 35mm photography, color graded",
+      "width": 1024,
+      "height": 1024
+    }
+  ],
+  "clip_results": [
+    {
+      "scene_id": 1,
+      "clip_path": "data\\phase3_runs\\run10\\clips\\scene_01_kb.mp4",
+      "duration_sec": 20.592,
+      "direction": "in"
+    },
+    {
+      "scene_id": 2,
+      "clip_path": "data\\phase3_runs\\run10\\clips\\scene_02_kb.mp4",
+      "duration_sec": 18.936,
+      "direction": "out"
+    },
+    {
+      "scene_id": 3,
+      "clip_path": "data\\phase3_runs\\run10\\clips\\scene_03_kb.mp4",
+      "duration_sec": 20.256,
+      "direction": "in"
+    }
+  ],
+  "composed_results": [
+    {
+      "scene_id": 1,
+      "composed_path": "data\\phase3_runs\\run10\\composed\\scene_01_composed.mp4",
+      "audio_file": "data\\phase2_runs\\run10\\audio\\scene_01_run10.mp3",
+      "bgm_file": "data\\phase2_runs\\run10\\bgm\\sad_scene01_freesound.mp3"
+    },
+    {
+      "scene_id": 2,
+      "composed_path": "data\\phase3_runs\\run10\\composed\\scene_02_composed.mp4",
+      "audio_file": "data\\phase2_runs\\run10\\audio\\scene_02_run10.mp3",
+      "bgm_file": "data\\phase2_runs\\run10\\bgm\\tense_scene02_freesound.mp3"
+    },
+    {
+      "scene_id": 3,
+      "composed_path": "data\\phase3_runs\\run10\\composed\\scene_03_composed.mp4",
+      "audio_file": "data\\phase2_runs\\run10\\audio\\scene_03_run10.mp3",
+      "bgm_file": "data\\phase2_runs\\run10\\bgm\\tense_scene03_freesound.mp3"
+    }
+  ],
+  "final_video_path": "data\\phase3_runs\\run10\\final_output_run10_subbed.mp4",
+  "subtitles_path": "data\\phase3_runs\\run10\\subtitles_run10.srt",
+  "options": {
+    "backend": "pollinations",
+    "quality": "balanced",
+    "seed": null,
+    "only_scene_id": null,
+    "enable_subtitles": true
+  },
+  "inputs": {
+    "scene_manifest": "data/scene_manifest_auto.json",
+    "character_db": "data/character_db_auto.json",
+    "timing_manifest": "data\\phase2_runs\\run10\\timing_manifest_run10.json"
+  }
+}

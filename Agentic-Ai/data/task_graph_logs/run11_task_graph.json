@@ -1,0 +1,104 @@
+{
+  "run_tag": "run11",
+  "run_number": 11,
+  "run_dir": "data\\phase2_runs\\run11",
+  "bgm_dir": "data\\phase2_runs\\run11\\bgm",
+  "scene_manifest": {
+    "workflow_id": "workflow_20260504_165035",
+    "timestamp": "2026-05-04T16:50:35.689006",
+    "scenes": [
+      {
+        "scene_id": 1,
+        "location": "DETECTIVE AGENCY",
+        "dialogue": [
+          {
+            "speaker": "LENA",
+            "line": "\"I've been trying to track the signal, but it's like they're ghosting us.\"",
+            "visual_cue": "Close-up of DETECTIVE Kael, eyes narrowed in frustration."
+          }
+        ],
+        "characters": [
+          "LENA"
+        ],
+        "duration": 9
+      },
+      {
+        "scene_id": 2,
+        "location": "ABANDONED WAREHOUSE",
+        "dialogue": [
+          {
+            "speaker": "LENA",
+            "line": "\"I've found something.\"",
+            "visual_cue": "Over-the-shoulder shot of DETECTIVE Kael, his eyes scanning the area."
+          }
+        ],
+        "characters": [
+          "LENA"
+        ],
+        "duration": 4
+      },
+      {
+        "scene_id": 3,
+        "location": "CITY STREET",
+        "dialogue": [
+          {
+            "speaker": "DETECTIVE KAEL",
+            "line": "\"Sounds like a trap to me.\"",
+            "visual_cue": "Wide shot of LENA, the city lights reflecting off her eyes."
+          }
+        ],
+        "characters": [
+          "DETECTIVE KAEL"
+        ],
+        "duration": 6
+      }
+    ],
+    "total_scenes": 3,
+    "total_duration_seconds": 19
+  },
+  "character_db": {
+    "workflow_id": "workflow_20260504_165038",
+    "timestamp": "2026-05-04T16:50:38.935929",
+    "characters": [
+      {
+        "name": "LENA",
+        "personality": "Lena appears to be a determined and resourceful individual driven by a sense of urgency and investigation, possibly working to uncover a mystery or track down a suspect.",
+        "appearance": "Lena is a woman in her mid-to-late 20s, dressed in functional yet practical clothing suitable for investigative work, such as a blazer and trousers, with a sense of weariness etched on her face.",
+        "role": "supporting",
+        "style_reference": "Neo-noir, dark color palette, and a hint of technological thriller elements, with a focus on gritty realism and practical lighting.",
+        "first_appearance": 1,
+        "dialogue_samples": [
+          {
+            "line": "\"I've been trying to track the signal, but it's like they're ghosting us.\"",
+            "visual_cue": "Close-up of DETECTIVE Kael, eyes narrowed in frustration."
+          },
+          {
+            "line": "\"I've found something.\"",
+            "visual_cue": "Over-the-shoulder shot of DETECTIVE Kael, his eyes scanning the area."
+          }
+        ]
+      },
+      {
+        "name": "DETECTIVE KAEL",
+        "personality": {
+          "description": "Detective Kael appears to be a cautious and skeptical individual who is wary of potential dangers and is likely driven by a desire to uncover truth and protect others.",
+          "motivation": "Their cautious nature suggests that they may be struggling with trust issues or have a traumatic experience that has made them more vigilant."
+        },
+        "appearance": {
+          "description": "Detective Kael likely wears a functional and practical outfit, possibly a suit and tie, with a hint of ruggedness that speaks to their detective work.",
+          "era": "Modern era, possibly with a slight nod to a classic detective aesthetic."
+        },
+        "role": "protagonist",
+        "style_reference": "Gritty urban thriller, dark and muted color palette, possibly with a hint of neo-noir elements.",
+        "first_appearance": 3,
+        "dialogue_samples": [
+          {
+            "line": "\"Sounds like a trap to me.\"",
+            "visual_cue": "Wide shot of LENA, the city lights reflecting off her eyes."
+          }
+        ]
+      }
+    ],
+    "total_characters": 2
+  }
+}

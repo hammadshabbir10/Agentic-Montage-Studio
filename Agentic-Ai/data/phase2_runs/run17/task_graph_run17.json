@@ -1,0 +1,89 @@
+{
+  "tasks": [
+    {
+      "scene_id": 1,
+      "location": "RAINY CITY STREET",
+      "dialogue": [
+        {
+          "speaker": "JAXON",
+          "line": "\"Another dead body, another case gone cold.\"",
+          "visual_cue": "Medium shot of JAXON, expression intense and focused."
+        },
+        {
+          "speaker": "LUNA",
+          "line": "\"Jaxon, I think we have a lead on the latest victim.\"",
+          "visual_cue": "Close-up of JAXON, his eyes squinting from the rain as he lights a cigarette."
+        },
+        {
+          "speaker": "JAXON",
+          "line": "\"What kind of lead?\"",
+          "visual_cue": "Medium shot of LUNA, her eyes gleaming with intensity as she steps into the light."
+        },
+        {
+          "speaker": "LUNA",
+          "line": "\"A cryptic message on the comms system. It reads: 'Eclipse is coming.'\"",
+          "visual_cue": "Close-up of JAXON, his eyes narrowing as he takes a drag on his cigarette."
+        },
+        {
+          "speaker": "JAXON",
+          "line": "\"Sounds like a bunch of hype to me. Eclipse is just a myth.\"",
+          "visual_cue": "Close-up of LUNA, her eyes scanning JAXON's face for a reaction."
+        }
+      ],
+      "characters": [
+        "JAXON",
+        "LUNA"
+      ]
+    },
+    {
+      "scene_id": 2,
+      "location": "ABANDONED WAREHOUSE",
+      "dialogue": [
+        {
+          "speaker": "KIARA",
+          "line": "\"I didn't mean to see it. I didn't mean to hear it.\"",
+          "visual_cue": "Medium shot of KIARA, expression intense and focused."
+        },
+        {
+          "speaker": "VICTOR",
+          "line": "\"You're the one who's been snooping around, Kiara. I should've known.\"",
+          "visual_cue": "Close-up of KIARA, her eyes welling up with tears as she whispers into her comms device."
+        }
+      ],
+      "characters": [
+        "KIARA",
+        "VICTOR"
+      ]
+    },
+    {
+      "scene_id": 3,
+      "location": "JAXON'S OFFICE",
+      "dialogue": [
+        {
+          "speaker": "LUNA",
+          "line": "\"Jaxon, I think we're looking at a bigger picture here. This Eclipse thing is more than just a myth.\"",
+          "visual_cue": "Medium shot of LUNA, expression intense and focused."
+        },
+        {
+          "speaker": "JAXON",
+          "line": "\"What are you talking about?\"",
+          "visual_cue": "Close-up of LUNA, her eyes locked intently on JAXON's face as she leans in."
+        },
+        {
+          "speaker": "LUNA",
+          "line": "\"I think it's a warning. A warning that something big is coming, something that could change the course of the city's history.\"",
+          "visual_cue": "Medium shot of JAXON, his eyes narrowing as he sets down his pen."
+        },
+        {
+          "speaker": "JAXON",
+          "line": "\"And you think this message on the comms system is the key to it all?\"",
+          "visual_cue": "Close-up of LUNA, her eyes burning with determination as she leans in closer."
+        }
+      ],
+      "characters": [
+        "LUNA",
+        "JAXON"
+      ]
+    }
+  ]
+}

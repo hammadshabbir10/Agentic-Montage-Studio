@@ -1,0 +1,200 @@
+{
+  "run_tag": "run12",
+  "run_number": 12,
+  "run_dir": "data\\phase2_runs\\run12",
+  "bgm_dir": "data\\phase2_runs\\run12\\bgm",
+  "scene_manifest": {
+    "workflow_id": "workflow_20260504_165753",
+    "timestamp": "2026-05-04T16:57:53.574515",
+    "scenes": [
+      {
+        "scene_id": 1,
+        "location": "CYBERPUNK DETECTIVE AGENCY",
+        "dialogue": [
+          {
+            "speaker": "JAX",
+            "line": "\"Alright, VEDA, what've we got on the latest case?\"",
+            "visual_cue": "Medium shot of JAX, expression intense and focused."
+          },
+          {
+            "speaker": "VEDA",
+            "line": "\"Looks like another high-society type's gone missing, Jax. This one's got connections to the upper echelons.\"",
+            "visual_cue": "Medium shot of VEDA, expression intense and focused."
+          },
+          {
+            "speaker": "VEDA",
+            "line": "\"I've got a list of suspects, but nothing concrete. Whoever did this is good.\"",
+            "visual_cue": "Close-up of JAX, eyes narrowing behind his mirrored shades."
+          },
+          {
+            "speaker": "JAX",
+            "line": "\"Good doesn't cut it in this town. Get me everything you've got on the victim.\"",
+            "visual_cue": "Medium shot of JAX, expression intense and focused."
+          }
+        ],
+        "characters": [
+          "JAX",
+          "VEDA"
+        ],
+        "duration": 30
+      },
+      {
+        "scene_id": 2,
+        "location": "ABANDONED WAREHOUSE",
+        "dialogue": [
+          {
+            "speaker": "JAX",
+            "line": "\"I've got a bad feeling about this, Veda.\"",
+            "visual_cue": "Medium shot of JAX, expression intense and focused."
+          },
+          {
+            "speaker": "VEDA",
+            "line": "\"Just what I need, your intuition. Let's focus on the facts.\"",
+            "visual_cue": "Medium shot of VEDA, expression intense and focused."
+          },
+          {
+            "speaker": "JAX",
+            "line": "\"You're not seeing the big picture, Veda. This is more than just another missing person.\"",
+            "visual_cue": "Medium shot of JAX, expression intense and focused."
+          },
+          {
+            "speaker": "VEDA",
+            "line": "\"I am seeing it, Jax. That's why I want to get in and out. We can't just barge in without a plan.\"",
+            "visual_cue": "Close-up of JAX, looking up at the warehouse with a mix of caution and curiosity."
+          },
+          {
+            "speaker": "JAX",
+            "line": "\"Fine. Let's get moving. But if anyone gets hurt, it's on you.\"",
+            "visual_cue": "Medium shot of JAX, expression intense and focused."
+          }
+        ],
+        "characters": [
+          "JAX",
+          "VEDA"
+        ],
+        "duration": 37
+      },
+      {
+        "scene_id": 3,
+        "location": "ABANDONED WAREHOUSE",
+        "dialogue": [
+          {
+            "speaker": "VEDA",
+            "line": "\"This is it, Jax. This is where they took him.\"",
+            "visual_cue": "Medium shot of VEDA, expression intense and focused."
+          },
+          {
+            "speaker": "JAX",
+            "line": "\"I don't see anything.\"",
+            "visual_cue": "Medium shot of JAX, expression intense and focused."
+          },
+          {
+            "speaker": "VEDA",
+            "line": "\"Look closer. There's a hidden compartment behind that crate.\"",
+            "visual_cue": "Medium shot of VEDA, expression intense and focused."
+          },
+          {
+            "speaker": "JAX",
+            "line": "\"You're a genius, Veda. But what's inside?\"",
+            "visual_cue": "Medium shot of JAX, expression intense and focused."
+          },
+          {
+            "speaker": "VEDA",
+            "line": "\"Let's find out.\"",
+            "visual_cue": "Medium shot of VEDA, expression intense and focused."
+          }
+        ],
+        "characters": [
+          "VEDA",
+          "JAX"
+        ],
+        "duration": 21
+      }
+    ],
+    "total_scenes": 3,
+    "total_duration_seconds": 88
+  },
+  "character_db": {
+    "workflow_id": "workflow_20260504_165756",
+    "timestamp": "2026-05-04T16:57:56.977791",
+    "characters": [
+      {
+        "name": "JAX",
+        "personality": "Jax is a driven and pragmatic individual who prioritizes results over morals, as evidenced by his willingness to push for more information despite knowing the darkness of the city. His skepticism and intuition suggest a character who has learned to trust his instincts.",
+        "appearance": "Jax likely wears functional and durable clothing, possibly with a mix of leather and synthetic materials, reflecting his occupation as a cyberpunk detective in a gritty urban environment. His attire may also incorporate elements of a utilitarian aesthetic, such as tactical gear or cybernetic enhancements.",
+        "role": "supporting",
+        "style_reference": "Cyberpunk neo-noir, dark and gritty visuals, high contrast color palette with neon accents.",
+        "first_appearance": 1,
+        "dialogue_samples": [
+          {
+            "line": "\"Alright, VEDA, what've we got on the latest case?\"",
+            "visual_cue": "Medium shot of JAX, expression intense and focused."
+          },
+          {
+            "line": "\"Good doesn't cut it in this town. Get me everything you've got on the victim.\"",
+            "visual_cue": "Medium shot of JAX, expression intense and focused."
+          },
+          {
+            "line": "\"I've got a bad feeling about this, Veda.\"",
+            "visual_cue": "Medium shot of JAX, expression intense and focused."
+          },
+          {
+            "line": "\"You're not seeing the big picture, Veda. This is more than just another missing person.\"",
+            "visual_cue": "Medium shot of JAX, expression intense and focused."
+          },
+          {
+            "line": "\"Fine. Let's get moving. But if anyone gets hurt, it's on you.\"",
+            "visual_cue": "Medium shot of JAX, expression intense and focused."
+          },
+          {
+            "line": "\"I don't see anything.\"",
+            "visual_cue": "Medium shot of JAX, expression intense and focused."
+          },
+          {
+            "line": "\"You're a genius, Veda. But what's inside?\"",
+            "visual_cue": "Medium shot of JAX, expression intense and focused."
+          }
+        ]
+      },
+      {
+        "name": "VEDA",
+        "personality": "Veda is analytical and cautious, relying on facts and intuition to guide her investigation, but may also be haunted by a deeper emotional drive to solve cases.",
+        "appearance": "Veda wears a mix of high-tech and functional clothing, possibly with a hint of elegance, fitting her background as a cyberpunk detective agency's lead investigator.",
+        "role": "supporting",
+        "style_reference": "Cyberpunk, dark neon-lit cityscapes, and a blend of high-tech and gritty, industrial elements.",
+        "first_appearance": 1,
+        "dialogue_samples": [
+          {
+            "line": "\"Looks like another high-society type's gone missing, Jax. This one's got connections to the upper echelons.\"",
+            "visual_cue": "Medium shot of VEDA, expression intense and focused."
+          },
+          {
+            "line": "\"I've got a list of suspects, but nothing concrete. Whoever did this is good.\"",
+            "visual_cue": "Close-up of JAX, eyes narrowing behind his mirrored shades."
+          },
+          {
+            "line": "\"Just what I need, your intuition. Let's focus on the facts.\"",
+            "visual_cue": "Medium shot of VEDA, expression intense and focused."
+          },
+          {
+            "line": "\"I am seeing it, Jax. That's why I want to get in and out. We can't just barge in without a plan.\"",
+            "visual_cue": "Close-up of JAX, looking up at the warehouse with a mix of caution and curiosity."
+          },
+          {
+            "line": "\"This is it, Jax. This is where they took him.\"",
+            "visual_cue": "Medium shot of VEDA, expression intense and focused."
+          },
+          {
+            "line": "\"Look closer. There's a hidden compartment behind that crate.\"",
+            "visual_cue": "Medium shot of VEDA, expression intense and focused."
+          },
+          {
+            "line": "\"Let's find out.\"",
+            "visual_cue": "Medium shot of VEDA, expression intense and focused."
+          }
+        ]
+      }
+    ],
+    "total_characters": 2
+  }
+}

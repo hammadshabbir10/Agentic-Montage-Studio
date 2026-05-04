@@ -1,43 +1,44 @@
-INT. ABANDONED RESEARCH FACILITY - DAY
+INT. HOSPITAL ROOM - DAY
 
-The walls are cracked, and the air is thick with dust. Old computers and machinery lie scattered around the room. Dr. Sofia Valencia, a brilliant but eccentric scientist, frantically searches through a stack of papers. Her hair is tied in a messy bun, and her eyes are bloodshot from lack of sleep.
+The room is dimly lit with a single beam of sunlight peeking through the blinds. Beeping machines line the walls, and a single chair sits beside the patient's bed. Dr. Ethan Thompson, a middle-aged man with a kind face, enters the room with a clipboard in hand. Nurse Sofia Valencia, a warm and caring woman in her late 20s, stands beside the patient, monitoring the machines.
 
-DR. VALANCIA: "I knew it! I knew I had it somewhere."
+DR. THOMPSON: "How's our patient doing today, Sofia?"
+VISUAL CUE: Medium shot of DR. THOMPSON, his eyes fixed on the clipboard as he speaks.
 
-VISUAL CUE: Close-up of Dr. Valencia, her eyes scanning the papers with a mix of excitement and desperation.
+NURSE VALENCIA: "Stable, doctor. The patient's vitals are looking good."
+VISUAL CUE: Close-up of NURSE VALENCIA, a gentle smile on her face as she speaks.
 
-Suddenly, her colleague, Dr. Liam Reed, enters the room with a look of concern on his face. He's tall and lean, with a shaved head and a scruffy beard.
+DR. THOMPSON: "Excellent. Let's take a look at the scans and see how the injury is healing."
+VISUAL CUE: Over-the-shoulder shot of DR. THOMPSON, his eyes scanning the clipboard as he reads.
 
-DR. REED: "Sofia, what's going on? We need to talk."
+INT. HOSPITAL ROOM - DAY (LATER)
 
-VISUAL CUE: Medium shot of Dr. Reed, his expression a mix of worry and authority.
+The patient, Jaxon Reed, a young man with a messy brown haircut and a cast on his arm, slowly opens his eyes. Dr. Thompson and Nurse Valencia stand beside him, monitoring his every move.
 
-DR. VALANCIA: "I've finally figured it out. The time loop, it's not a natural phenomenon. It's being caused by something else."
+JAXON REED: "What...what happened?"
+VISUAL CUE: Close-up of JAXON REED, confusion etched on his face as he tries to remember.
 
-VISUAL CUE: Close-up of Dr. Valencia, her eyes wide with conviction.
+NURSE VALENCIA: "You were in an accident, Jaxon. You're safe now."
+VISUAL CUE: Medium shot of NURSE VALENCIA, her hand gently stroking JAXON REED's arm as she speaks.
 
-EXT. ABANDONED RESEARCH FACILITY - DAY
+JAXON REED: "An accident? I don't remember anything."
+VISUAL CUE: Close-up of JAXON REED, his eyes squinting in concentration as he tries to recall.
 
-The two scientists stand outside the facility, looking out at the desolate landscape. Dr. Sofia Valencia is pacing back and forth, while Dr. Liam Reed stands still, his arms crossed.
+DR. THOMPSON: "Don't worry, Jaxon. You've been through a lot. We'll get you back on your feet in no time."
+VISUAL CUE: Over-the-shoulder shot of DR. THOMPSON, a reassuring smile on his face as he speaks.
 
-DR. REED: "Sofia, we need to be careful. We don't know what we're dealing with here."
+INT. HOSPITAL ROOM - NIGHT
 
-VISUAL CUE: Over-the-shoulder shot of Dr. Reed, his expression serious and cautious.
+The hospital room is dimly lit, with only a single lamp shining down on Jaxon's bed. Dr. Thompson sits in the chair beside him, monitoring the machines. Nurse Valencia stands opposite them, her eyes fixed on Jaxon's face.
 
-DR. VALANCIA: "Careful? We're not going to be careful. We're going to fix this. We're going to break the cycle and restore the timeline."
+JAXON REED: "I had a dream...I was driving, and then...and then something happened."
+VISUAL CUE: Close-up of JAXON REED, his eyes wide with fear as he recounts the dream.
 
-VISUAL CUE: Close-up of Dr. Valencia, her eyes blazing with determination.
+NURSE VALENCIA: "Try to relax, Jaxon. You're safe here."
+VISUAL CUE: Close-up of NURSE VALENCIA, her voice soothing as she speaks.
 
-Suddenly, a figure emerges from the distance. It's a woman, dressed in a long coat and a wide-brimmed hat. Her name is Dr. Maya Kosta, a mysterious scientist who has been working on a rival project.
+DR. THOMPSON: "We'll do some more tests in the morning, and we'll get to the bottom of this."
+VISUAL CUE: Over-the-shoulder shot of DR. THOMPSON, his eyes fixed on Jaxon's face as he speaks.
 
-DR. KOSTA: "Ah, Sofia. Liam. I see you've finally figured it out. Congratulations."
-
-VISUAL CUE: Close-up of Dr. Kosta, her expression enigmatic and slightly sinister.
-
-DR. REED: "What do you know about this, Maya?"
-
-VISUAL CUE: Medium shot of Dr. Kosta, her eyes glinting with a hint of mischief.
-
-DR. KOSTA: "Let's just say I've been watching you two for a while now. And I think I can help you... for a price."
-
-VISUAL CUE: Close-up of Dr. Kosta, her smile hinting at a hidden agenda.
+JAXON REED: "I just want to go home...please."
+VISUAL CUE: Close-up of JAXON REED, desperation in his eyes as he pleads with the doctor.

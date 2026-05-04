@@ -1,0 +1,140 @@
+{
+  "workflow_id": "phase2_run10",
+  "timestamp": "2026-05-04T00:54:53.937496",
+  "run_tag": "run10",
+  "total_duration_ms": 59784,
+  "scenes": [
+    {
+      "scene_id": 1,
+      "audio_file": "data\\phase2_runs\\run10\\audio\\scene_01_run10.mp3",
+      "bgm_file": "data\\phase2_runs\\run10\\bgm\\sad_scene01_freesound.mp3",
+      "mood": "sad",
+      "start_ms": 0,
+      "end_ms": 20592,
+      "duration_ms": 20592,
+      "lines": [
+        {
+          "speaker": "MAX",
+          "voice": "en-US-GuyNeural",
+          "line": "I need you to look into the disappearance of Kaida, a high-ranking exec at Omicron Innovations.",
+          "visual_cue": "Medium shot of MAX, expression intense and focused.",
+          "start_ms": 0,
+          "end_ms": 5928,
+          "duration_ms": 5928
+        },
+        {
+          "speaker": "LUNA",
+          "voice": "en-US-JennyNeural",
+          "line": "What makes you think she's involved in something shady?",
+          "visual_cue": "Close-up of MAX, his eyes squinting in focus.",
+          "start_ms": 5928,
+          "end_ms": 9264,
+          "duration_ms": 3336
+        },
+        {
+          "speaker": "MAX",
+          "voice": "en-US-GuyNeural",
+          "line": "A cryptic message from her comms device hinted at a corporate conspiracy. I need someone with your... particular skills to help me dig deeper.",
+          "visual_cue": "Medium shot of LUNA, her brow furrowed in concern.",
+          "start_ms": 9264,
+          "end_ms": 18480,
+          "duration_ms": 9216
+        },
+        {
+          "speaker": "LUNA",
+          "voice": "en-US-JennyNeural",
+          "line": "What kind of skills?",
+          "visual_cue": "Over-the-shoulder shot of MAX, his eyes scanning the room for potential listeners.",
+          "start_ms": 18480,
+          "end_ms": 20592,
+          "duration_ms": 2112
+        }
+      ]
+    },
+    {
+      "scene_id": 2,
+      "audio_file": "data\\phase2_runs\\run10\\audio\\scene_02_run10.mp3",
+      "bgm_file": "data\\phase2_runs\\run10\\bgm\\tense_scene02_freesound.mp3",
+      "mood": "tense",
+      "start_ms": 20592,
+      "end_ms": 39528,
+      "duration_ms": 18936,
+      "lines": [
+        {
+          "speaker": "MAX",
+          "voice": "en-US-GuyNeural",
+          "line": "According to the rumors, Kaida uncovered something about Omicron's latest project - codenamed 'Eclipse'. I'm guessing it's more than just a fancy new AI.",
+          "visual_cue": "Medium shot of MAX, expression intense and focused.",
+          "start_ms": 20592,
+          "end_ms": 30192,
+          "duration_ms": 9600
+        },
+        {
+          "speaker": "LUNA",
+          "voice": "en-US-JennyNeural",
+          "line": "You think it's connected to her disappearance?",
+          "visual_cue": "Close-up of MAX, his voice hushed but urgent.",
+          "start_ms": 30192,
+          "end_ms": 33264,
+          "duration_ms": 3072
+        },
+        {
+          "speaker": "VORON",
+          "voice": "en-US-AndrewNeural",
+          "line": "What brings you two to our humble abode?",
+          "visual_cue": "Medium shot of LUNA, her eyes scanning the surroundings.",
+          "start_ms": 33264,
+          "end_ms": 35808,
+          "duration_ms": 2544
+        },
+        {
+          "speaker": "LUNA",
+          "voice": "en-US-JennyNeural",
+          "line": "Just passing through, enjoying the... ambiance.",
+          "visual_cue": "Close-up of VORON, his smile faltering for a split second before regaining its composure.",
+          "start_ms": 35808,
+          "end_ms": 39528,
+          "duration_ms": 3720
+        }
+      ]
+    },
+    {
+      "scene_id": 3,
+      "audio_file": "data\\phase2_runs\\run10\\audio\\scene_03_run10.mp3",
+      "bgm_file": "data\\phase2_runs\\run10\\bgm\\tense_scene03_freesound.mp3",
+      "mood": "tense",
+      "start_ms": 39528,
+      "end_ms": 59784,
+      "duration_ms": 20256,
+      "lines": [
+        {
+          "speaker": "LUNA",
+          "voice": "en-US-JennyNeural",
+          "line": "This is it. The Eclipse project - it's not just AI, it's a neural network that can predict and manipulate human behavior.",
+          "visual_cue": "Medium shot of LUNA, expression intense and focused.",
+          "start_ms": 39528,
+          "end_ms": 48240,
+          "duration_ms": 8712
+        },
+        {
+          "speaker": "MAX",
+          "voice": "en-US-GuyNeural",
+          "line": "This changes everything. We need to get this info to the right people - people who can take down Omicron.",
+          "visual_cue": "Close-up of LUNA, her fingers flying across the keyboard.",
+          "start_ms": 48240,
+          "end_ms": 55176,
+          "duration_ms": 6936
+        },
+        {
+          "speaker": "LUNA",
+          "voice": "en-US-JennyNeural",
+          "line": "And what about Kaida? Do we even know if she's still alive?",
+          "visual_cue": "Close-up of MAX, his jaw set in determination.",
+          "start_ms": 55176,
+          "end_ms": 59784,
+          "duration_ms": 4608
+        }
+      ]
+    }
+  ]
+}

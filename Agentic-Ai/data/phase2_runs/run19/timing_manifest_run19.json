@@ -1,0 +1,185 @@
+{
+  "workflow_id": "phase2_run19",
+  "timestamp": "2026-05-04T17:52:35.008045",
+  "run_tag": "run19",
+  "total_duration_ms": 68712,
+  "scenes": [
+    {
+      "scene_id": 1,
+      "audio_file": "data\\phase2_runs\\run19\\audio\\scene_01_run19.mp3",
+      "bgm_file": "data\\phase2_runs\\run19\\bgm\\action_scene01_freesound.mp3",
+      "mood": "action",
+      "start_ms": 0,
+      "end_ms": 33792,
+      "duration_ms": 33792,
+      "lines": [
+        {
+          "speaker": "ISABELLA MARINA",
+          "voice": "en-US-JennyNeural",
+          "line": "Jenny, sweetie, can you hear me?",
+          "visual_cue": "Medium shot of ISABELLA MARINA, expression intense and focused.",
+          "start_ms": 0,
+          "end_ms": 2904,
+          "duration_ms": 2904
+        },
+        {
+          "speaker": "JENNY TORRES",
+          "voice": "en-US-GuyNeural",
+          "line": "M...mom...",
+          "visual_cue": "Close-up of ISABELLA MARINA, concern etched on her face as she looks at her daughter.",
+          "start_ms": 2904,
+          "end_ms": 4896,
+          "duration_ms": 1992
+        },
+        {
+          "speaker": "ISABELLA MARINA",
+          "voice": "en-US-JennyNeural",
+          "line": "Oh, baby, I'm here. I'm not going anywhere.",
+          "visual_cue": "Close-up of JENNY TORRES, her voice barely audible as she tries to speak.",
+          "start_ms": 4896,
+          "end_ms": 9720,
+          "duration_ms": 4824
+        },
+        {
+          "speaker": "DR. LUCAS BRODY",
+          "voice": "en-US-AndrewNeural",
+          "line": "Hi, Isabella. How's Jenny doing today?",
+          "visual_cue": "Wide shot of the room, showing ISABELLA MARINA's determined expression as she holds her daughter's hand.",
+          "start_ms": 9720,
+          "end_ms": 12504,
+          "duration_ms": 2784
+        },
+        {
+          "speaker": "ISABELLA MARINA",
+          "voice": "en-US-JennyNeural",
+          "line": "She's been...stable. But I'm worried about her brain activity. It's been fluctuating.",
+          "visual_cue": "Medium shot of DR. LUCAS BRODY, his eyes scanning the room as he listens to ISABELLA MARINA's response.",
+          "start_ms": 12504,
+          "end_ms": 19656,
+          "duration_ms": 7152
+        },
+        {
+          "speaker": "DR. LUCAS BRODY",
+          "voice": "en-US-AndrewNeural",
+          "line": "I see. Well, we'll run some more tests and see if we can pinpoint the cause. In the meantime, let's keep her comfortable and...",
+          "visual_cue": "Close-up of ISABELLA MARINA, her brow furrowed in concern as she speaks.",
+          "start_ms": 19656,
+          "end_ms": 27360,
+          "duration_ms": 7704
+        },
+        {
+          "speaker": "JENNY TORRES",
+          "voice": "en-US-GuyNeural",
+          "line": "Water...",
+          "visual_cue": "Close-up of DR. LUCAS BRODY, his expression thoughtful as he trails off.",
+          "start_ms": 27360,
+          "end_ms": 28944,
+          "duration_ms": 1584
+        },
+        {
+          "speaker": "ISABELLA MARINA",
+          "voice": "en-US-JennyNeural",
+          "line": "Oh, baby, you want water? I can get you some.",
+          "visual_cue": "Close-up of JENNY TORRES, her eyes locked on DR. LUCAS BRODY as she tries to speak.",
+          "start_ms": 28944,
+          "end_ms": 33792,
+          "duration_ms": 4848
+        }
+      ]
+    },
+    {
+      "scene_id": 2,
+      "audio_file": "data\\phase2_runs\\run19\\audio\\scene_02_run19.mp3",
+      "bgm_file": "data\\phase2_runs\\run19\\bgm\\hopeful_scene02_freesound.mp3",
+      "mood": "hopeful",
+      "start_ms": 33792,
+      "end_ms": 55800,
+      "duration_ms": 22008,
+      "lines": [
+        {
+          "speaker": "DR. LUCAS BRODY",
+          "voice": "en-US-AndrewNeural",
+          "line": "Okay, Isabella, we've got the test results. And it looks like...",
+          "visual_cue": "Medium shot of DR. LUCAS BRODY, expression intense and focused.",
+          "start_ms": 33792,
+          "end_ms": 38040,
+          "duration_ms": 4248
+        },
+        {
+          "speaker": "ISABELLA MARINA",
+          "voice": "en-US-JennyNeural",
+          "line": "What is it, Doctor? Is she going to be okay?",
+          "visual_cue": "Close-up of DR. LUCAS BRODY, his eyes scanning the chart as he prepares to deliver the news.",
+          "start_ms": 38040,
+          "end_ms": 42456,
+          "duration_ms": 4416
+        },
+        {
+          "speaker": "DR. LUCAS BRODY",
+          "voice": "en-US-AndrewNeural",
+          "line": "It's a bit complicated, but...Jenny's condition is not as severe as we thought. She's going to need some physical therapy to regain her strength, but...",
+          "visual_cue": "Close-up of ISABELLA MARINA, her eyes locked on DR. LUCAS BRODY's face, her expression tense with worry.",
+          "start_ms": 42456,
+          "end_ms": 51024,
+          "duration_ms": 8568
+        },
+        {
+          "speaker": "JENNY TORRES",
+          "voice": "en-US-GuyNeural",
+          "line": "Mom...",
+          "visual_cue": "Close-up of DR. LUCAS BRODY, a hopeful expression on his face as he delivers the news.",
+          "start_ms": 51024,
+          "end_ms": 52632,
+          "duration_ms": 1608
+        },
+        {
+          "speaker": "ISABELLA MARINA",
+          "voice": "en-US-JennyNeural",
+          "line": "Oh, baby, I'm so proud of you.",
+          "visual_cue": "Close-up of JENNY TORRES, a faint smile on her face as she looks at her mother.",
+          "start_ms": 52632,
+          "end_ms": 55800,
+          "duration_ms": 3168
+        }
+      ]
+    },
+    {
+      "scene_id": 3,
+      "audio_file": "data\\phase2_runs\\run19\\audio\\scene_03_run19.mp3",
+      "bgm_file": "data\\phase2_runs\\run19\\bgm\\tense_scene03_freesound.mp3",
+      "mood": "tense",
+      "start_ms": 55800,
+      "end_ms": 68712,
+      "duration_ms": 12912,
+      "lines": [
+        {
+          "speaker": "MARCO TORRES",
+          "voice": "en-US-GuyNeural",
+          "line": "Hey, how's Jenny doing?",
+          "visual_cue": "Medium shot of MARCO TORRES, expression intense and focused.",
+          "start_ms": 55800,
+          "end_ms": 58296,
+          "duration_ms": 2496
+        },
+        {
+          "speaker": "ISABELLA MARINA",
+          "voice": "en-US-JennyNeural",
+          "line": "She's going to be okay. The doctor says she'll need some therapy, but...",
+          "visual_cue": "Medium shot of MARCO TORRES, his eyes scanning ISABELLA MARINA's face as he waits for her response.",
+          "start_ms": 58296,
+          "end_ms": 64008,
+          "duration_ms": 5712
+        },
+        {
+          "speaker": "MARCO TORRES",
+          "voice": "en-US-GuyNeural",
+          "line": "That's fantastic news. I'm so glad to hear it.",
+          "visual_cue": "Close-up of ISABELLA MARINA, her eyes shining with tears of joy as she delivers the news.",
+          "start_ms": 64008,
+          "end_ms": 68712,
+          "duration_ms": 4704
+        }
+      ]
+    }
+  ]
+}

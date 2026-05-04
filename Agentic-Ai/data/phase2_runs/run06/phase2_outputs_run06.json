@@ -1,0 +1,123 @@
+{
+  "audio": [
+    {
+      "scene_id": 1,
+      "path": "data\\phase2_runs\\run06\\audio\\scene_01_run06.mp3",
+      "segments": [
+        {
+          "speaker": "RYKER",
+          "line": "We're running out of time, Kaida. I need you to dig deeper into the client's alibi.",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of RYKER, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run06\\audio\\scene1\\RYKER_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 37440
+        },
+        {
+          "speaker": "KALIDA",
+          "line": "I'm trying, Ryker, but every lead we follow ends in a dead-end. It's like they vanished into thin air.",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Close-up of Kaida, intensity in her eyes as she focuses on the task.",
+          "audio_file": "data\\phase2_runs\\run06\\audio\\scene1\\KALIDA_line002.mp3",
+          "byte_offset": 37440,
+          "byte_length": 43056
+        }
+      ]
+    },
+    {
+      "scene_id": 2,
+      "path": "data\\phase2_runs\\run06\\audio\\scene_02_run06.mp3",
+      "segments": [
+        {
+          "speaker": "RYKER",
+          "line": "Alright, let's get moving. We need to find out what's going on inside.",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of RYKER, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run06\\audio\\scene2\\RYKER_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 34128
+        },
+        {
+          "speaker": "KALIDA",
+          "line": "Be careful, Ryker. We don't know what we're walking into.",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Medium shot of KALIDA, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run06\\audio\\scene2\\KALIDA_line002.mp3",
+          "byte_offset": 34128,
+          "byte_length": 29520
+        },
+        {
+          "speaker": "RYKER",
+          "line": "Don't worry, I've got this. I've been in tougher spots than this.",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Close-up of Kaida, concern etched on her face as she looks at Ryker.",
+          "audio_file": "data\\phase2_runs\\run06\\audio\\scene2\\RYKER_line003.mp3",
+          "byte_offset": 63648,
+          "byte_length": 32400
+        },
+        {
+          "speaker": "KALIDA",
+          "line": "That's exactly what I'm worried about, Ryker. You always think you can handle it, but what if you can't?",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Medium shot of KALIDA, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run06\\audio\\scene2\\KALIDA_line004.mp3",
+          "byte_offset": 96048,
+          "byte_length": 42768
+        }
+      ]
+    },
+    {
+      "scene_id": 3,
+      "path": "data\\phase2_runs\\run06\\audio\\scene_03_run06.mp3",
+      "segments": [
+        {
+          "speaker": "KALIDA",
+          "line": "What's that noise?",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Medium shot of KALIDA, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run06\\audio\\scene3\\KALIDA_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 12240
+        },
+        {
+          "speaker": "RYKER",
+          "line": "Sounds like... machinery. We're getting close.",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of RYKER, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run06\\audio\\scene3\\RYKER_line002.mp3",
+          "byte_offset": 12240,
+          "byte_length": 26928
+        },
+        {
+          "speaker": "KALIDA",
+          "line": "This isn't good, Ryker. Something's off.",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Medium shot of KALIDA, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run06\\audio\\scene3\\KALIDA_line003.mp3",
+          "byte_offset": 39168,
+          "byte_length": 26208
+        }
+      ]
+    }
+  ],
+  "music": [
+    {
+      "scene_id": 1,
+      "mood": "action",
+      "bgm_path": "data\\phase2_runs\\run06\\bgm\\action_scene01_freesound.mp3",
+      "bgm_source": "freesound"
+    },
+    {
+      "scene_id": 2,
+      "mood": "sad",
+      "bgm_path": "data\\phase2_runs\\run06\\bgm\\sad_scene02_freesound.mp3",
+      "bgm_source": "freesound"
+    },
+    {
+      "scene_id": 3,
+      "mood": "tense",
+      "bgm_path": "data\\phase2_runs\\run06\\bgm\\tense_scene03_freesound.mp3",
+      "bgm_source": "freesound"
+    }
+  ]
+}

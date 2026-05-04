@@ -1,0 +1,80 @@
+{
+  "tasks": [
+    {
+      "scene_id": 1,
+      "location": "COFFEE SHOP",
+      "dialogue": [
+        {
+          "speaker": "BARISTA",
+          "line": "\"Welcome to The Daily Grind, can I get you a drink?\"",
+          "visual_cue": "Medium shot of BARISTA, expression intense and focused."
+        },
+        {
+          "speaker": "JASPER",
+          "line": "\"Just a black coffee, please. And a table by the window if it's available.\"",
+          "visual_cue": "Close-up of BARISTA, her eyes sparkling with enthusiasm."
+        },
+        {
+          "speaker": "BARISTA",
+          "line": "\"Coming right up. That'll be $2.50 please.\"",
+          "visual_cue": "Over-the-shoulder shot of JASPER, his eyes scanning the room as he waits for his coffee."
+        }
+      ],
+      "characters": [
+        "BARISTA",
+        "JASPER"
+      ]
+    },
+    {
+      "scene_id": 2,
+      "location": "COFFEE SHOP",
+      "dialogue": [
+        {
+          "speaker": "JASPER",
+          "line": "\"Mind if I join you for a minute?\"",
+          "visual_cue": "Medium shot of JASPER, expression intense and focused."
+        },
+        {
+          "speaker": "AURORA",
+          "line": "\"Not at all. I'm Aurora. I'm waiting for a friend.\"",
+          "visual_cue": "Medium shot of AURORA, her eyes lighting up with curiosity as she turns to Jasper."
+        },
+        {
+          "speaker": "JASPER",
+          "line": "\"I'm Jasper. Nice to meet you, Aurora. You look like an artist.\"",
+          "visual_cue": "Close-up of AURORA, her eyes sparkling with creativity as she speaks."
+        }
+      ],
+      "characters": [
+        "JASPER",
+        "AURORA"
+      ]
+    },
+    {
+      "scene_id": 3,
+      "location": "COFFEE SHOP",
+      "dialogue": [
+        {
+          "speaker": "AURORA",
+          "line": "\"I love to paint the cityscape. There's something about the energy of the streets that just speaks to me.\"",
+          "visual_cue": "Medium shot of AURORA, expression intense and focused."
+        },
+        {
+          "speaker": "JASPER",
+          "line": "\"I can see that. You have a real eye for light and color.\"",
+          "visual_cue": "Close-up of AURORA, her hands gesturing animatedly as she speaks."
+        },
+        {
+          "speaker": "LUNA",
+          "line": "*whispers to herself* \"I wonder what they're talking about.\"",
+          "visual_cue": "Medium shot of JASPER, his eyes locked on Aurora's face as he listens to her."
+        }
+      ],
+      "characters": [
+        "AURORA",
+        "JASPER",
+        "LUNA"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "audio": [
+    {
+      "scene_id": 1,
+      "path": "data\\phase2_runs\\run14\\audio\\scene_01_run14.mp3",
+      "segments": [
+        {
+          "speaker": "JENNA",
+          "line": "I don't know, Mike, I just feel like we're stuck in a rut. We've been doing the same thing for five years.",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Medium shot of JENNA, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run14\\audio\\scene1\\JENNA_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 43776
+        },
+        {
+          "speaker": "MIKE",
+          "line": "What are you talking about, Jenna? We've got a good thing going. We're successful, we've got a nice apartment... what more could we want?",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Close-up of JENNA, frustration etched on her face.",
+          "audio_file": "data\\phase2_runs\\run14\\audio\\scene1\\MIKE_line002.mp3",
+          "byte_offset": 43776,
+          "byte_length": 57024
+        },
+        {
+          "speaker": "JENNA",
+          "line": "A sense of adventure, maybe? A sense of purpose?",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Medium shot of MIKE, leaning back in his chair with a confident smile.",
+          "audio_file": "data\\phase2_runs\\run14\\audio\\scene1\\JENNA_line003.mp3",
+          "byte_offset": 100800,
+          "byte_length": 28224
+        }
+      ]
+    },
+    {
+      "scene_id": 2,
+      "path": "data\\phase2_runs\\run14\\audio\\scene_02_run14.mp3",
+      "segments": [
+        {
+          "speaker": "LUCIA",
+          "line": "I'm telling you, Marco, this is the perfect day for a picnic. The weather is lovely, the scenery is beautiful...",
+          "voice": "en-US-AriaNeural",
+          "visual_cue": "Medium shot of LUCIA, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run14\\audio\\scene2\\LUCIA_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 47520
+        },
+        {
+          "speaker": "MARCO",
+          "line": "I don't know, Lucia. I'm not really in the mood for a picnic. Can't we just stay home and watch TV instead?",
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Close-up of LUCIA, smile radiant as she gazes out at the park.",
+          "audio_file": "data\\phase2_runs\\run14\\audio\\scene2\\MARCO_line002.mp3",
+          "byte_offset": 47520,
+          "byte_length": 37296
+        },
+        {
+          "speaker": "LUCIA",
+          "line": "Come on, Marco. It'll be fun, I promise! We can bring a bottle of wine and some cheese, and just enjoy the day.",
+          "voice": "en-US-AriaNeural",
+          "visual_cue": "Medium shot of MARCO, slumped against a bench with a disinterested expression.",
+          "audio_file": "data\\phase2_runs\\run14\\audio\\scene2\\LUCIA_line003.mp3",
+          "byte_offset": 84816,
+          "byte_length": 56880
+        }
+      ]
+    },
+    {
+      "scene_id": 3,
+      "path": "data\\phase2_runs\\run14\\audio\\scene_03_run14.mp3",
+      "segments": [
+        {
+          "speaker": "LUCIA",
+          "line": "You know, Marco, I was thinking... maybe we should take a trip somewhere. Just the two of us. What do you think?",
+          "voice": "en-US-AriaNeural",
+          "visual_cue": "Medium shot of LUCIA, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run14\\audio\\scene3\\LUCIA_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 52416
+        },
+        {
+          "speaker": "MARCO",
+          "line": "I don't know, Lucia. That sounds like a lot of work. Can't we just stay home and be comfortable instead?",
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Close-up of LUCIA, leaning in close to Marco with a mischievous glint in her eye.",
+          "audio_file": "data\\phase2_runs\\run14\\audio\\scene3\\MARCO_line002.mp3",
+          "byte_offset": 52416,
+          "byte_length": 35424
+        },
+        {
+          "speaker": "LUCIA",
+          "line": "Come on, Marco. Don't be such a bore. It'll be an adventure! We can go anywhere you want, just the two of us.",
+          "voice": "en-US-AriaNeural",
+          "visual_cue": "Medium shot of MARCO, looking uncertain and hesitant.",
+          "audio_file": "data\\phase2_runs\\run14\\audio\\scene3\\LUCIA_line003.mp3",
+          "byte_offset": 87840,
+          "byte_length": 59760
+        }
+      ]
+    }
+  ],
+  "music": [
+    {
+      "scene_id": 1,
+      "mood": "tense",
+      "bgm_path": "data\\phase2_runs\\run14\\bgm\\tense_scene01_freesound.mp3",
+      "bgm_source": "freesound"
+    },
+    {
+      "scene_id": 2,
+      "mood": "mysterious",
+      "bgm_path": "data\\phase2_runs\\run14\\bgm\\mysterious_scene02_freesound.mp3",
+      "bgm_source": "freesound"
+    },
+    {
+      "scene_id": 3,
+      "mood": "tense",
+      "bgm_path": "data\\phase2_runs\\run14\\bgm\\tense_scene03_freesound.mp3",
+      "bgm_source": "freesound"
+    }
+  ]
+}

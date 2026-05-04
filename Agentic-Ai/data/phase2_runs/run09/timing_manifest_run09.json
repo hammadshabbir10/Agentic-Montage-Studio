@@ -1,0 +1,140 @@
+{
+  "workflow_id": "phase2_run09",
+  "timestamp": "2026-05-04T00:41:17.261416",
+  "run_tag": "run09",
+  "total_duration_ms": 23112,
+  "scenes": [
+    {
+      "scene_id": 1,
+      "audio_file": "data\\phase2_runs\\run09\\audio\\scene_01_run09.mp3",
+      "bgm_file": "data\\phase2_runs\\run09\\bgm\\sad_scene01_freesound.mp3",
+      "mood": "sad",
+      "start_ms": 0,
+      "end_ms": 7569,
+      "duration_ms": 7569,
+      "lines": [
+        {
+          "speaker": "KAEL",
+          "voice": "en-US-GuyNeural",
+          "line": "I'm looking for information on a girl named Kaida. She's been missing for three days.",
+          "visual_cue": "Medium shot of KAEL, expression intense and focused.",
+          "start_ms": 0,
+          "end_ms": 2313,
+          "duration_ms": 2313
+        },
+        {
+          "speaker": "VIKTOR",
+          "voice": "en-US-AndrewNeural",
+          "line": "Never heard of her. What's the story?",
+          "visual_cue": "Close-up of Kael, his eyes scanning the bar with a mix of desperation and determination.",
+          "start_ms": 2313,
+          "end_ms": 3177,
+          "duration_ms": 864
+        },
+        {
+          "speaker": "KAEL",
+          "voice": "en-US-GuyNeural",
+          "line": "She was last seen at this bar. I'm thinking she might have gotten mixed up with the wrong crowd.",
+          "visual_cue": "Close-up of Viktor, his face a map of wrinkles and scars.",
+          "start_ms": 3177,
+          "end_ms": 5589,
+          "duration_ms": 2412
+        },
+        {
+          "speaker": "VIKTOR",
+          "voice": "en-US-AndrewNeural",
+          "line": "You're looking for trouble, detective. This city's got more problems than just one missing girl.",
+          "visual_cue": "Medium shot of Kael, his eyes narrowing as he leans in closer to Viktor.",
+          "start_ms": 5589,
+          "end_ms": 7569,
+          "duration_ms": 1980
+        }
+      ]
+    },
+    {
+      "scene_id": 2,
+      "audio_file": "data\\phase2_runs\\run09\\audio\\scene_02_run09.mp3",
+      "bgm_file": "data\\phase2_runs\\run09\\bgm\\tense_scene02_freesound.mp3",
+      "mood": "tense",
+      "start_ms": 7569,
+      "end_ms": 15417,
+      "duration_ms": 7848,
+      "lines": [
+        {
+          "speaker": "KAEL",
+          "voice": "en-US-GuyNeural",
+          "line": "Kaida? Is that you?",
+          "visual_cue": "Medium shot of KAEL, expression intense and focused.",
+          "start_ms": 7569,
+          "end_ms": 8793,
+          "duration_ms": 1224
+        },
+        {
+          "speaker": "KAIDA",
+          "voice": "en-US-JennyNeural",
+          "line": "Kael. I thought I was done with you. What do you want?",
+          "visual_cue": "Close-up of Kael, his voice firm but concerned as he approaches the young woman.",
+          "start_ms": 8793,
+          "end_ms": 10845,
+          "duration_ms": 2052
+        },
+        {
+          "speaker": "KAEL",
+          "voice": "en-US-GuyNeural",
+          "line": "I just want to know what happened to you, Kaida. You were one of my best leads on this case.",
+          "visual_cue": "Close-up of Kaida, her eyes flashing with anger as she crosses her arms over her chest.",
+          "start_ms": 10845,
+          "end_ms": 13212,
+          "duration_ms": 2367
+        },
+        {
+          "speaker": "KAIDA",
+          "voice": "en-US-JennyNeural",
+          "line": "I got pulled into something bigger than I ever could have imagined. And now I'm in deep.",
+          "visual_cue": "Medium shot of Kaida, her expression softening slightly as she looks at Kael.",
+          "start_ms": 13212,
+          "end_ms": 15417,
+          "duration_ms": 2205
+        }
+      ]
+    },
+    {
+      "scene_id": 3,
+      "audio_file": "data\\phase2_runs\\run09\\audio\\scene_03_run09.mp3",
+      "bgm_file": "data\\phase2_runs\\run09\\bgm\\tense_scene03_freesound.mp3",
+      "mood": "tense",
+      "start_ms": 15417,
+      "end_ms": 23112,
+      "duration_ms": 7695,
+      "lines": [
+        {
+          "speaker": "KAIDA",
+          "voice": "en-US-JennyNeural",
+          "line": "I was working with a guy named Axel. He said he could help me get out of the system, but it was all just a ruse. He's been using me to get to this girl, Elara.",
+          "visual_cue": "Medium shot of KAIDA, expression intense and focused.",
+          "start_ms": 15417,
+          "end_ms": 19458,
+          "duration_ms": 4041
+        },
+        {
+          "speaker": "KAEL",
+          "voice": "en-US-GuyNeural",
+          "line": "We need to find Axel and stop him. We can't let him get away with this.",
+          "visual_cue": "Close-up of Kaida, her voice barely above a whisper as she looks at Kael with a mix of fear and determination.",
+          "start_ms": 19458,
+          "end_ms": 21537,
+          "duration_ms": 2079
+        },
+        {
+          "speaker": "KAIDA",
+          "voice": "en-US-JennyNeural",
+          "line": "I'll help you, Kael. We can do this.",
+          "visual_cue": "Medium shot of Kael, his eyes locked on Kaida as he nods in agreement.",
+          "start_ms": 21537,
+          "end_ms": 23112,
+          "duration_ms": 1575
+        }
+      ]
+    }
+  ]
+}

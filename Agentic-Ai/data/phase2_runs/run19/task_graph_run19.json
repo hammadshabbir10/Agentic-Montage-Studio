@@ -1,0 +1,116 @@
+{
+  "tasks": [
+    {
+      "scene_id": 1,
+      "location": "HOSPITAL ROOM",
+      "dialogue": [
+        {
+          "speaker": "ISABELLA MARINA",
+          "line": "Jenny, sweetie, can you hear me?",
+          "visual_cue": "Medium shot of ISABELLA MARINA, expression intense and focused."
+        },
+        {
+          "speaker": "JENNY TORRES",
+          "line": "M...mom...",
+          "visual_cue": "Close-up of ISABELLA MARINA, concern etched on her face as she looks at her daughter."
+        },
+        {
+          "speaker": "ISABELLA MARINA",
+          "line": "Oh, baby, I'm here. I'm not going anywhere.",
+          "visual_cue": "Close-up of JENNY TORRES, her voice barely audible as she tries to speak."
+        },
+        {
+          "speaker": "DR. LUCAS BRODY",
+          "line": "Hi, Isabella. How's Jenny doing today?",
+          "visual_cue": "Wide shot of the room, showing ISABELLA MARINA's determined expression as she holds her daughter's hand."
+        },
+        {
+          "speaker": "ISABELLA MARINA",
+          "line": "She's been...stable. But I'm worried about her brain activity. It's been fluctuating.",
+          "visual_cue": "Medium shot of DR. LUCAS BRODY, his eyes scanning the room as he listens to ISABELLA MARINA's response."
+        },
+        {
+          "speaker": "DR. LUCAS BRODY",
+          "line": "I see. Well, we'll run some more tests and see if we can pinpoint the cause. In the meantime, let's keep her comfortable and...",
+          "visual_cue": "Close-up of ISABELLA MARINA, her brow furrowed in concern as she speaks."
+        },
+        {
+          "speaker": "JENNY TORRES",
+          "line": "Water...",
+          "visual_cue": "Close-up of DR. LUCAS BRODY, his expression thoughtful as he trails off."
+        },
+        {
+          "speaker": "ISABELLA MARINA",
+          "line": "Oh, baby, you want water? I can get you some.",
+          "visual_cue": "Close-up of JENNY TORRES, her eyes locked on DR. LUCAS BRODY as she tries to speak."
+        }
+      ],
+      "characters": [
+        "ISABELLA MARINA",
+        "JENNY TORRES",
+        "DR. LUCAS BRODY"
+      ]
+    },
+    {
+      "scene_id": 2,
+      "location": "HOSPITAL ROOM",
+      "dialogue": [
+        {
+          "speaker": "DR. LUCAS BRODY",
+          "line": "Okay, Isabella, we've got the test results. And it looks like...",
+          "visual_cue": "Medium shot of DR. LUCAS BRODY, expression intense and focused."
+        },
+        {
+          "speaker": "ISABELLA MARINA",
+          "line": "What is it, Doctor? Is she going to be okay?",
+          "visual_cue": "Close-up of DR. LUCAS BRODY, his eyes scanning the chart as he prepares to deliver the news."
+        },
+        {
+          "speaker": "DR. LUCAS BRODY",
+          "line": "It's a bit complicated, but...Jenny's condition is not as severe as we thought. She's going to need some physical therapy to regain her strength, but...",
+          "visual_cue": "Close-up of ISABELLA MARINA, her eyes locked on DR. LUCAS BRODY's face, her expression tense with worry."
+        },
+        {
+          "speaker": "JENNY TORRES",
+          "line": "Mom...",
+          "visual_cue": "Close-up of DR. LUCAS BRODY, a hopeful expression on his face as he delivers the news."
+        },
+        {
+          "speaker": "ISABELLA MARINA",
+          "line": "Oh, baby, I'm so proud of you.",
+          "visual_cue": "Close-up of JENNY TORRES, a faint smile on her face as she looks at her mother."
+        }
+      ],
+      "characters": [
+        "DR. LUCAS BRODY",
+        "ISABELLA MARINA",
+        "JENNY TORRES"
+      ]
+    },
+    {
+      "scene_id": 3,
+      "location": "HOSPITAL PARKING LOT",
+      "dialogue": [
+        {
+          "speaker": "MARCO TORRES",
+          "line": "Hey, how's Jenny doing?",
+          "visual_cue": "Medium shot of MARCO TORRES, expression intense and focused."
+        },
+        {
+          "speaker": "ISABELLA MARINA",
+          "line": "She's going to be okay. The doctor says she'll need some therapy, but...",
+          "visual_cue": "Medium shot of MARCO TORRES, his eyes scanning ISABELLA MARINA's face as he waits for her response."
+        },
+        {
+          "speaker": "MARCO TORRES",
+          "line": "That's fantastic news. I'm so glad to hear it.",
+          "visual_cue": "Close-up of ISABELLA MARINA, her eyes shining with tears of joy as she delivers the news."
+        }
+      ],
+      "characters": [
+        "MARCO TORRES",
+        "ISABELLA MARINA"
+      ]
+    }
+  ]
+}

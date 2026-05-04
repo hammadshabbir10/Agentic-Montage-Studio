@@ -1,0 +1,173 @@
+{
+  "run_tag": "run07",
+  "run_number": 7,
+  "run_dir": "data\\phase2_runs\\run07",
+  "bgm_dir": "data\\phase2_runs\\run07\\bgm",
+  "scene_manifest": {
+    "workflow_id": "workflow_20260504_003040",
+    "timestamp": "2026-05-04T00:30:40.113133",
+    "scenes": [
+      {
+        "scene_id": 1,
+        "location": "CYBERDELIC DETECTIVE AGENCY",
+        "dialogue": [
+          {
+            "speaker": "KAI",
+            "line": "\"I'm telling you, VICTORIA, this case stinks of corporate cover-up.\"",
+            "visual_cue": "Medium shot of KAI, expression intense and focused."
+          },
+          {
+            "speaker": "VICTORIA",
+            "line": "\"Kai, we can't just jump to conclusions. We need concrete evidence.\"",
+            "visual_cue": "Medium shot of VICTORIA, expression intense and focused."
+          },
+          {
+            "speaker": "KAI",
+            "line": "\"You're not seeing the big picture, VICTORIA. This is bigger than just a simple murder.\"",
+            "visual_cue": "Close-up of VICTORIA, her brow furrowed in concern."
+          },
+          {
+            "speaker": "VICTORIA",
+            "line": "\"Okay, Kai, but we need to tread carefully. One misstep and our licenses are revoked.\"",
+            "visual_cue": "Wide shot of KAI, his eyes flashing with intensity."
+          }
+        ],
+        "characters": [
+          "KAI",
+          "VICTORIA"
+        ],
+        "duration": 28
+      },
+      {
+        "scene_id": 2,
+        "location": "CYBERDELIC DETECTIVE AGENCY",
+        "dialogue": [
+          {
+            "speaker": "KAI",
+            "line": "\"I've managed to hack into the victim's comms records. Something's not right.\"",
+            "visual_cue": "Medium shot of KAI, expression intense and focused."
+          },
+          {
+            "speaker": "VICTORIA",
+            "line": "\"What do you mean?\"",
+            "visual_cue": "Close-up of KAI, his eyes fixed on the holographic display in front of him."
+          },
+          {
+            "speaker": "KAI",
+            "line": "\"The victim was involved in some shady dealings. I think we're looking at a conspiracy.\"",
+            "visual_cue": "Over-the-shoulder shot of VICTORIA, her eyes locked on KAI."
+          }
+        ],
+        "characters": [
+          "KAI",
+          "VICTORIA"
+        ],
+        "duration": 18
+      },
+      {
+        "scene_id": 3,
+        "location": "ABANDONED WAREHOUSE",
+        "dialogue": [
+          {
+            "speaker": "VICTORIA",
+            "line": "\"Alright, Kai, what's the plan?\"",
+            "visual_cue": "Medium shot of VICTORIA, expression intense and focused."
+          },
+          {
+            "speaker": "KAI",
+            "line": "\"We sneak in, gather evidence, and get out. Simple.\"",
+            "visual_cue": "Close-up of VICTORIA, her eyes scanning the darkness."
+          },
+          {
+            "speaker": "VICTORIA",
+            "line": "\"And if we get caught?\"",
+            "visual_cue": "Medium shot of KAI, his hand on the grip of his pistol."
+          },
+          {
+            "speaker": "KAI",
+            "line": "\"We improvise. We always do.\"",
+            "visual_cue": "Close-up of VICTORIA, a hint of fear in her eyes."
+          }
+        ],
+        "characters": [
+          "VICTORIA",
+          "KAI"
+        ],
+        "duration": 16
+      }
+    ],
+    "total_scenes": 3,
+    "total_duration_seconds": 62
+  },
+  "character_db": {
+    "workflow_id": "workflow_20260504_003043",
+    "timestamp": "2026-05-04T00:30:43.296865",
+    "characters": [
+      {
+        "name": "KAI",
+        "personality": "Kai is a driven and perceptive individual with a strong sense of justice, eager to uncover the truth behind a complex case. They possess a keen analytical mind and are not afraid to challenge the status quo.",
+        "appearance": "Kai wears a worn, futuristic outfit with a cybernetic eye, hinting at their advanced technological capabilities. Their attire is functional and practical, reflecting their occupation as a detective.",
+        "role": "supporting",
+        "style_reference": "Cyberpunk, neon-drenched, high-tech gadgetry and dystopian atmosphere.",
+        "first_appearance": 1,
+        "dialogue_samples": [
+          {
+            "line": "\"I'm telling you, VICTORIA, this case stinks of corporate cover-up.\"",
+            "visual_cue": "Medium shot of KAI, expression intense and focused."
+          },
+          {
+            "line": "\"You're not seeing the big picture, VICTORIA. This is bigger than just a simple murder.\"",
+            "visual_cue": "Close-up of VICTORIA, her brow furrowed in concern."
+          },
+          {
+            "line": "\"I've managed to hack into the victim's comms records. Something's not right.\"",
+            "visual_cue": "Medium shot of KAI, expression intense and focused."
+          },
+          {
+            "line": "\"The victim was involved in some shady dealings. I think we're looking at a conspiracy.\"",
+            "visual_cue": "Over-the-shoulder shot of VICTORIA, her eyes locked on KAI."
+          },
+          {
+            "line": "\"We sneak in, gather evidence, and get out. Simple.\"",
+            "visual_cue": "Close-up of VICTORIA, her eyes scanning the darkness."
+          },
+          {
+            "line": "\"We improvise. We always do.\"",
+            "visual_cue": "Close-up of VICTORIA, a hint of fear in her eyes."
+          }
+        ]
+      },
+      {
+        "name": "VICTORIA",
+        "personality": "Victoria is a cautious and detail-oriented individual, driven to follow procedure and ensure the integrity of her investigations. Her dialogue suggests a sense of responsibility and a desire to avoid unnecessary risks.",
+        "appearance": "Victoria is a stylishly dressed woman of a futuristic era, likely with a blend of high-tech and cyberpunk fashion elements, perhaps incorporating neon accents or metallic materials.",
+        "role": "supporting",
+        "style_reference": "Cyberpunk, neon-drenched, high-tech aesthetic, with a focus on the darker and grittier side of a futuristic metropolis.",
+        "first_appearance": 1,
+        "dialogue_samples": [
+          {
+            "line": "\"Kai, we can't just jump to conclusions. We need concrete evidence.\"",
+            "visual_cue": "Medium shot of VICTORIA, expression intense and focused."
+          },
+          {
+            "line": "\"Okay, Kai, but we need to tread carefully. One misstep and our licenses are revoked.\"",
+            "visual_cue": "Wide shot of KAI, his eyes flashing with intensity."
+          },
+          {
+            "line": "\"What do you mean?\"",
+            "visual_cue": "Close-up of KAI, his eyes fixed on the holographic display in front of him."
+          },
+          {
+            "line": "\"Alright, Kai, what's the plan?\"",
+            "visual_cue": "Medium shot of VICTORIA, expression intense and focused."
+          },
+          {
+            "line": "\"And if we get caught?\"",
+            "visual_cue": "Medium shot of KAI, his hand on the grip of his pistol."
+          }
+        ]
+      }
+    ],
+    "total_characters": 2
+  }
+}

@@ -448,6 +448,64 @@ The pipeline will automatically use local files before trying Freesound.
 
 ---
 
+### Phase 3 — Video Generation & Composition
+
+Run Phase 3 once Phase 2 has produced a timing manifest and audio assets:
+```bash
+cd Agentic-Ai
+python -m src.main_phase3 \
+  --quality balanced \
+  --backend auto \
+  --enable-subtitles
+```
+
+If you need to target a specific Phase 2 run manifest:
+```bash
+python -m src.main_phase3 \
+  --quality balanced \
+  --backend auto \
+  --timing data/phase2_runs/run19/timing_manifest_run19.json
+```
+
+Phase 3 outputs are written into `data/phase3_runs/runXX/`:
+```
+data/phase3_runs/runXX/
+  images/
+  clips/
+  composed/
+  final_output_runXX.mp4
+  final_output_runXX_subbed.mp4
+  phase3_outputs_runXX.json
+```
+
+> Note: Phase 3 uses image generation backends with `auto` fallback from HF → Pollinations. If Pollinations returns `429`, the backend is rate-limiting requests; retry later or use `--backend hf` with a valid HF key.
+
+---
+
+### Phase 4 — Web App & Pipeline Orchestration
+
+Start the Phase 4 web interface from the `Agentic-Ai` folder:
+```bash
+cd Agentic-Ai
+python phase4_flask_app.py
+```
+
+Then open the app in your browser:
+```
+http://localhost:5050
+```
+
+The web app provides:
+- full pipeline control from prompt to final video
+- live SSE progress logs for Phase 1–3
+- human approval gating and phase rerun controls
+- MCP-style tool calling for dynamic capabilities
+- refresh and download of the latest generated video
+
+If the app cannot import `src`, make sure you run it from the `Agentic-Ai` directory.
+
+---
+
 ## 🎧 Sample Outputs
 
 Phase 1 and Phase 2 outputs from the Berlin spy thriller prompt are included in the `data/` directory:
