@@ -1,3 +1,0 @@
-file 'D:/AgenticAI_Project/Agentic-Montage-Studio/Agentic-Ai/data/phase3_runs/run17/composed/scene_01_composed.mp4'
-file 'D:/AgenticAI_Project/Agentic-Montage-Studio/Agentic-Ai/data/phase3_runs/run17/composed/scene_02_composed.mp4'
-file 'D:/AgenticAI_Project/Agentic-Montage-Studio/Agentic-Ai/data/phase3_runs/run17/composed/scene_03_composed.mp4'
