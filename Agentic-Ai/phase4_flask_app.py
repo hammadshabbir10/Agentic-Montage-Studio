@@ -20,6 +20,14 @@ from dotenv import load_dotenv
 
 from src.mcp.tool_client import ToolClient
 from src.mcp.tool_registry import ToolRegistry
+from src.state_versioning import StateManager
+from src.agents.edit_intent_classifier import classify_without_llm, classify, EditIntent
+from src.agents.edit_executor import (
+    execute as execute_edit,
+    collect_current_state,
+    collect_current_asset_paths,
+)
+from src.utils.image_filters import get_available_filters
 
 
 ROOT = Path(__file__).resolve().parent
@@ -36,6 +44,9 @@ app = Flask(__name__)
 RUN_EVENTS: Dict[str, "queue.Queue[Dict[str, Any]]"] = {}
 RUN_STATUS: Dict[str, Dict[str, Any]] = {}
 RUN_APPROVAL_EVENTS: Dict[str, threading.Event] = {}
+
+# Phase 5 — State Manager (singleton for the app lifetime)
+_STATE_MANAGER = StateManager(base_dir=DATA_DIR / "state_versions")
 
 
 def _safe_read_json(path: Path, fallback: Dict[str, Any] | List[Any] | None = None) -> Any:
@@ -657,6 +668,32 @@ def index() -> Response:
         <a id="downloadLink" href="{latest_download_url}" style="color:#c4b5fd">Download MP4</a>
       </div>
     </div>
+
+    <!-- ═══════ Phase 5 — Edit & Undo ═══════ -->
+    <div class="grid" style="margin-top:22px;">
+      <div class="card">
+        <h2 style="display:flex;align-items:center;gap:10px;">✏️ Edit Agent <span class="chip" style="font-size:11px;background:rgba(255,95,125,0.18);color:#ff5f7d">Phase 5</span></h2>
+        <p style="color:var(--muted);margin-top:0;font-size:0.92rem;">Type a natural-language edit command. The AI agent will classify your intent, target the correct pipeline component, and execute the change.</p>
+        <label>Edit Command</label>
+        <textarea id="editQuery" placeholder='e.g. "Make scene 1 darker", "Apply sepia filter", "Speed up scene 2", "Change voice tone to whispered"' style="min-height:80px"></textarea>
+        <div class="row" style="margin-top:10px;">
+          <button onclick="submitEdit()">Apply Edit</button>
+          <button class="secondary" onclick="loadHistory()">Refresh History</button>
+        </div>
+        <div id="editStatus" style="margin-top:14px;"></div>
+        <div id="editResult" style="font-family:Consolas,monospace;font-size:12px;white-space:pre-wrap;margin-top:10px;color:var(--muted);"></div>
+        <div style="margin-top:14px;">
+          <span style="color:var(--muted);font-size:0.85rem;">Available filters:</span>
+          <div id="filterChips" style="margin-top:6px;"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 style="display:flex;align-items:center;gap:10px;">🕐 Version History <span class="chip" style="font-size:11px;background:rgba(0,255,200,0.14);color:var(--accent2)">Undo</span></h2>
+        <p style="color:var(--muted);margin-top:0;font-size:0.92rem;">Every edit creates a snapshot. Click <strong>Revert</strong> to restore any previous state and its assets.</p>
+        <div id="versionHistory" style="max-height:420px;overflow-y:auto;"></div>
+      </div>
+    </div>
   </div>
 
   <script>
@@ -839,6 +876,101 @@ def index() -> Response:
     }}
 
     loadTools();
+
+    // ═══════ Phase 5 — Edit & Undo JS ═══════
+
+    async function submitEdit() {{
+      const query = document.getElementById('editQuery').value.trim();
+      if (!query) return alert('Enter an edit command');
+      const statusEl = document.getElementById('editStatus');
+      const resultEl = document.getElementById('editResult');
+      statusEl.innerHTML = '<span class="chip status-warn">Processing edit...</span>';
+      resultEl.textContent = '';
+      try {{
+        const res = await fetch('/api/edit', {{
+          method: 'POST',
+          headers: {{'Content-Type': 'application/json'}},
+          body: JSON.stringify({{ query, run_config: currentPayload() }})
+        }});
+        const data = await res.json();
+        if (data.ok) {{
+          const r = data.result || {{}};
+          const badge = r.success ? 'status-ok' : (r.needs_clarification ? 'status-warn' : 'status-bad');
+          statusEl.innerHTML = `<span class="chip ${{badge}}">${{r.description || r.status || 'Done'}}</span>`;
+          resultEl.textContent = JSON.stringify(r, null, 2);
+          if (r.success) {{
+            refreshLatest();
+            loadHistory();
+          }}
+        }} else {{
+          statusEl.innerHTML = `<span class="chip status-bad">${{data.error}}</span>`;
+        }}
+      }} catch (err) {{
+        statusEl.innerHTML = `<span class="chip status-bad">${{err}}</span>`;
+      }}
+    }}
+
+    async function loadHistory() {{
+      try {{
+        const res = await fetch('/api/edit/history');
+        const data = await res.json();
+        const el = document.getElementById('versionHistory');
+        if (!data.history || data.history.length === 0) {{
+          el.innerHTML = '<p style="color:var(--muted);font-size:0.9rem;">No versions yet. Run the pipeline or apply an edit to create the first snapshot.</p>';
+          return;
+        }}
+        el.innerHTML = data.history.slice().reverse().map(v => `
+          <div style="border-bottom:1px solid rgba(255,255,255,0.08);padding:12px 0;">
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <div>
+                <strong style="color:var(--accent);">v${{v.version}}</strong>
+                <span class="chip" style="font-size:10px;margin-left:8px;">${{v.target}}</span>
+                ${{v.reverted_from ? '<span class="chip" style="font-size:10px;background:rgba(255,95,125,0.14);color:#ff5f7d;">revert</span>' : ''}}
+              </div>
+              <button class="secondary" style="padding:6px 14px;font-size:11px;" onclick="revertToVersion(${{v.version}})">Revert</button>
+            </div>
+            <div style="font-size:0.85rem;color:var(--muted);margin-top:4px;">${{v.description}}</div>
+            <div style="font-size:0.8rem;color:rgba(255,255,255,0.35);margin-top:2px;">${{v.timestamp}} · ${{v.asset_count}} asset(s) · ${{v.diff_summary}}</div>
+          </div>
+        `).join('');
+      }} catch (err) {{
+        console.error('Failed to load history:', err);
+      }}
+    }}
+
+    async function revertToVersion(version) {{
+      if (!confirm(`Revert to version ${{version}}? This will restore all assets and state from that snapshot.`)) return;
+      const statusEl = document.getElementById('editStatus');
+      statusEl.innerHTML = `<span class="chip status-warn">Reverting to v${{version}}...</span>`;
+      try {{
+        const res = await fetch(`/api/edit/revert/${{version}}`, {{ method: 'POST' }});
+        const data = await res.json();
+        if (data.ok) {{
+          statusEl.innerHTML = `<span class="chip status-ok">Reverted to v${{version}}</span>`;
+          refreshLatest();
+          loadHistory();
+          addLog(`[Phase 5] Reverted to version ${{version}}`, 'status-ok');
+        }} else {{
+          statusEl.innerHTML = `<span class="chip status-bad">${{data.error}}</span>`;
+        }}
+      }} catch (err) {{
+        statusEl.innerHTML = `<span class="chip status-bad">${{err}}</span>`;
+      }}
+    }}
+
+    async function loadFilters() {{
+      try {{
+        const res = await fetch('/api/edit/filters');
+        const data = await res.json();
+        const el = document.getElementById('filterChips');
+        el.innerHTML = (data.filters || []).map(f =>
+          `<span class="chip" style="cursor:pointer;" onclick="document.getElementById('editQuery').value='Apply ${{f}} filter to scene 1'">${{f}}</span>`
+        ).join('');
+      }} catch (err) {{ console.error(err); }}
+    }}
+
+    loadHistory();
+    loadFilters();
   </script>
 </body>
 </html>
@@ -946,6 +1078,125 @@ def download_video() -> Response:
     if not file_path.exists():
         return jsonify({"ok": False, "error": "file not found"}), 404
     return send_file(file_path, mimetype="video/mp4", as_attachment=True, download_name=file_path.name)
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# Phase 5 — Edit & Undo API Endpoints
+# ═══════════════════════════════════════════════════════════════════════════
+
+@app.post("/api/edit")
+def api_edit() -> Response:
+    """
+    Submit a free-text edit command.
+    Classifies the intent, snapshots state, executes the edit, returns result.
+    """
+    body = request.get_json(silent=True) or {}
+    query = (body.get("query") or "").strip()
+    run_config = body.get("run_config", {})
+
+    if not query:
+        return jsonify({"ok": False, "error": "query is required"}), 400
+
+    try:
+        # 1. Classify intent
+        try:
+            registry = ToolRegistry()
+            client = ToolClient(registry, image_dir="data/image_assets")
+            intent = classify(query, client)
+        except Exception:
+            intent = classify_without_llm(query)
+
+        # 2. Snapshot current state before edit
+        current_state = collect_current_state()
+        asset_paths = collect_current_asset_paths()
+
+        # Auto-create initial snapshot if no versions exist
+        if _STATE_MANAGER.current_version() == 0:
+            _STATE_MANAGER.snapshot(
+                state_json=current_state,
+                asset_paths=asset_paths,
+                description="Initial pipeline output",
+                target="pipeline",
+            )
+
+        _STATE_MANAGER.snapshot(
+            state_json=current_state,
+            asset_paths=asset_paths,
+            description=f"Before edit: {intent.intent} (target: {intent.target})",
+            target=intent.target,
+        )
+
+        # 3. Execute the edit
+        result = execute_edit(intent, current_state, run_config)
+
+        # 4. Snapshot after edit if successful
+        if result.get("success"):
+            new_state = collect_current_state()
+            new_assets = collect_current_asset_paths()
+            _STATE_MANAGER.snapshot(
+                state_json=new_state,
+                asset_paths=new_assets,
+                description=(
+                    f"After edit: {intent.intent} — "
+                    + "; ".join(result.get("changes", ["no changes"]))
+                ),
+                target=intent.target,
+            )
+
+        return jsonify({
+            "ok": True,
+            "intent": intent.model_dump(),
+            "result": result,
+        })
+    except Exception as exc:
+        return jsonify({"ok": False, "error": str(exc)}), 500
+
+
+@app.get("/api/edit/history")
+def api_edit_history() -> Response:
+    """Return version history with diff summaries."""
+    history = _STATE_MANAGER.history()
+    return jsonify({"ok": True, "history": history})
+
+
+@app.post("/api/edit/revert/<int:version>")
+def api_edit_revert(version: int) -> Response:
+    """Revert to a specific version — restores state + assets."""
+    try:
+        restored = _STATE_MANAGER.revert(version)
+        return jsonify({
+            "ok": True,
+            "version": version,
+            "message": f"Reverted to version {version}",
+            "restored_keys": list(restored.keys()),
+        })
+    except FileNotFoundError as exc:
+        return jsonify({"ok": False, "error": str(exc)}), 404
+    except Exception as exc:
+        return jsonify({"ok": False, "error": str(exc)}), 500
+
+
+@app.get("/api/edit/versions/<int:version>")
+def api_edit_version_detail(version: int) -> Response:
+    """Return details for a specific version."""
+    try:
+        state = _STATE_MANAGER.get_version_state(version)
+        assets = _STATE_MANAGER.get_version_assets(version)
+        return jsonify({
+            "ok": True,
+            "version": version,
+            "state_keys": list(state.keys()),
+            "asset_count": len(assets),
+            "assets": assets,
+        })
+    except FileNotFoundError as exc:
+        return jsonify({"ok": False, "error": str(exc)}), 404
+
+
+@app.get("/api/edit/filters")
+def api_edit_filters() -> Response:
+    """Return available image filters."""
+    return jsonify({"ok": True, "filters": get_available_filters()})
 
 
 if __name__ == "__main__":

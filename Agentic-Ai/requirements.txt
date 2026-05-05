@@ -7,3 +7,4 @@ edge-tts
 flask
 pydantic
 Pillow
+opencv-python-headless

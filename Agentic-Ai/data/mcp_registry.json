@@ -50,6 +50,15 @@
         "height": 720,
         "nologo": true
       }
+    },
+    {
+      "name": "edit_intent_classifier",
+      "capability": "classify_edit_intent",
+      "type": "groq_llm",
+      "config": {
+        "model": "llama-3.1-8b-instant",
+        "temperature": 0.3
+      }
     }
   ]
 }

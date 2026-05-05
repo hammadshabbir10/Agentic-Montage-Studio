@@ -84,7 +84,7 @@ User Prompt
                        │
                        ▼
 ┌─────────────────────────────────────────────┐
-│  Phase 5 — Intelligent Edit & Undo Agent    │  🔜 In Progress
+│  Phase 5 — Intelligent Edit & Undo Agent    │  ✅ Complete
 │  LangGraph edit intent classifier           │
 │  State versioning + full undo/revert        │
 └─────────────────────────────────────────────┘
@@ -98,9 +98,9 @@ User Prompt
 |-------|-------------|--------|
 | **Phase 1** | Story, Script & Character Design | ✅ Complete |
 | **Phase 2** | Audio Generation & Integration | ✅ Complete |
-| **Phase 3** | Video Generation & Composition | 🔜 In Progress |
-| **Phase 4** | Web Interface & Orchestration | 🔜 In Progress |
-| **Phase 5** | Intelligent Edit & Undo Agent | 🔜 In Progress |
+| **Phase 3** | Video Generation & Composition | ✅ Complete |
+| **Phase 4** | Web Interface & Orchestration | ✅ Complete |
+| **Phase 5** | Intelligent Edit & Undo Agent | ✅ Complete |
 
 ---
 
@@ -159,9 +159,27 @@ CineAgent/
 │   │   ├── timing_manifest.py       # Phase 2 — A/V sync manifest builder
 │   │   └── gender_detector.py       # character gender detection utility
 │   │
-│   ├── run_manager.py               # Phase 2 run directory management
 │   ├── main.py                      # Phase 1 entry point
-│   └── main_phase2.py               # Phase 2 entry point
+│   ├── main_phase2.py               # Phase 2 entry point
+│   └── main_phase3.py               # Phase 3 entry point
+│
+├── src/agents/
+│   ├── edit_intent_classifier.py    # Phase 5 — LLM+rule edit intent classifier
+│   └── edit_executor.py             # Phase 5 — edit dispatch & execution
+│
+├── src/workflows/
+│   ├── langgraph_flow.py            # Phase 1 LangGraph pipeline
+│   ├── langgraph_phase2.py          # Phase 2 LangGraph pipeline
+│   ├── langgraph_phase3.py          # Phase 3 LangGraph pipeline
+│   └── langgraph_phase5.py          # Phase 5 LangGraph pipeline (edit & undo)
+│
+├── src/utils/
+│   ├── image_filters.py             # Phase 5 — OpenCV filter library
+│   ├── video_compose.py             # Phase 3 — FFmpeg composition
+│   └── timing_manifest.py           # Phase 2 — A/V sync manifest
+│
+├── src/
+│   └── state_versioning.py          # Phase 5 — StateManager (snapshot/revert/history)
 │
 ├── data/
 │   ├── scene_manifest_auto.json     # Phase 1 output — scenes & dialogue
@@ -503,6 +521,38 @@ The web app provides:
 - refresh and download of the latest generated video
 
 If the app cannot import `src`, make sure you run it from the `Agentic-Ai` directory.
+
+---
+
+### Phase 5 — Intelligent Edit & Undo Agent
+
+Phase 5 is integrated into the Phase 4 web app. After running a pipeline, use the **Edit Agent** panel to submit natural-language edit commands:
+
+```
+Examples:
+  "Make scene 1 darker"
+  "Apply sepia filter to scene 2"
+  "Speed up scene 3"
+  "Change voice tone to whispered"
+  "Remove the subtitles"
+  "Regenerate the script"
+```
+
+The **Version History** panel shows all snapshots. Click **Revert** on any version to restore that state and its assets.
+
+You can also run Phase 5 programmatically:
+```python
+from src.workflows.langgraph_phase5 import run_edit
+
+result = run_edit("Apply sepia filter to scene 1")
+print(result)  # {"status": "completed", "intent": ..., "result_summary": ...}
+```
+
+Run Phase 5 tests:
+```bash
+cd Agentic-Ai
+python -m pytest tests/test_phase5.py -v
+```
 
 ---
 
