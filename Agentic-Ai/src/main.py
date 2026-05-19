@@ -23,6 +23,34 @@ def _write_text(path: Path, text: str) -> None:
     path.write_text(text, encoding="utf-8")
 
 
+_PHASE1_COUNTER_FILE = Path("data/phase1_run_counter.json")
+_PHASE1_RUNS_DIR = Path("data/phase1_runs")
+
+
+def _read_phase1_counter() -> int:
+    try:
+        data = json.loads(_PHASE1_COUNTER_FILE.read_text(encoding="utf-8"))
+        return int(data.get("last_run", 0))
+    except Exception:
+        return 0
+
+
+def _write_phase1_counter(n: int) -> None:
+    _PHASE1_COUNTER_FILE.parent.mkdir(parents=True, exist_ok=True)
+    _PHASE1_COUNTER_FILE.write_text(
+        json.dumps({"last_run": n}, indent=2), encoding="utf-8"
+    )
+
+
+def _get_next_phase1_run() -> dict:
+    n = _read_phase1_counter() + 1
+    run_tag = f"run{n:02d}"
+    run_dir = _PHASE1_RUNS_DIR / run_tag
+    run_dir.mkdir(parents=True, exist_ok=True)
+    _write_phase1_counter(n)
+    return {"run_number": n, "run_tag": run_tag, "run_dir": run_dir}
+
+
 def main() -> None:
     load_dotenv()
 
@@ -76,6 +104,15 @@ def main() -> None:
         "IMPORTANT: All female character names must end with the letter 'A'. "
         "All male character names must NOT end with the letter 'A'."
     )
+
+    # Hardcoded Car/Racing awareness
+    if any(word in short_prompt.lower() for word in ["car", "race", "racing", "drive", "driving", "vehicle", "hadi", "haider"]):
+        backend_prompt += (
+            " \nCRITICAL VISUAL REQUIREMENT: Since this is a racing/car-themed story, ensure that the high-performance cars "
+            "are prominently visible in the foreground of every action and racing scene. Descriptions must include 'deep focus' "
+            "and 'sharp backgrounds' to ensure both the characters and their cars are clearly visible without background blur. "
+            "Identify the cars by color (e.g., 'Hadi's sleek blue car', 'Haider's rugged red car') in the VISUAL CUES."
+        )
 
     state = {
         "mode":       args.mode,
@@ -149,6 +186,8 @@ def main() -> None:
         raise SystemExit(2)
 
     mode_suffix = args.mode
+    run_info = _get_next_phase1_run()
+    run_dir = run_info["run_dir"]
 
     # --- Save outputs ---
     _write_json(
@@ -169,11 +208,21 @@ def main() -> None:
             result["script_text"],
         )
 
+    # Also save a per-run snapshot in data/phase1_runs/runXX
+    _write_json(run_dir / "story_manifest.json", story_manifest)
+    _write_json(run_dir / "scene_manifest.json", scene_manifest)
+    _write_json(run_dir / "character_db.json", character_db)
+    if result.get("script_text"):
+        _write_text(run_dir / "last_script.txt", result["script_text"])
+
     print(
         f"Outputs saved:\n"
         f"  data/story_manifest_{mode_suffix}.json\n"
         f"  data/scene_manifest_{mode_suffix}.json\n"
-        f"  data/character_db_{mode_suffix}.json"
+        f"  data/character_db_{mode_suffix}.json\n"
+        f"  data/phase1_runs/{run_info['run_tag']}/story_manifest.json\n"
+        f"  data/phase1_runs/{run_info['run_tag']}/scene_manifest.json\n"
+        f"  data/phase1_runs/{run_info['run_tag']}/character_db.json"
     )
 
 

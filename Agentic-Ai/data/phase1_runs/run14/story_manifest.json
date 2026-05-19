@@ -1,0 +1,42 @@
+{
+  "workflow_id": "workflow_20260507_130835",
+  "timestamp": "2026-05-07T13:08:35.050072",
+  "story": {
+    "title": "Flight Risk",
+    "logline": "When a bumbling duo accidentally boards a commercial flight with a rogue pilot, they must navigate a deadly game of cat and mouse to survive.",
+    "genre": "Action Thriller",
+    "tone": "tense and gritty",
+    "setting": "Inside a commercial airliner",
+    "time_period": "Present Day",
+    "themes": [
+      "Survival",
+      "Trust",
+      "Control"
+    ],
+    "acts": [
+      {
+        "act": 1,
+        "label": "Introduction",
+        "description": "We meet our protagonists, Sam and Leo, as they board a commercial flight, unaware of the danger that lies ahead. Meanwhile, we are introduced to the enigmatic pilot, Ali, who has a hidden agenda. As the flight takes off, tensions rise between Sam and Leo, who begin to realize they are in over their heads."
+      },
+      {
+        "act": 2,
+        "label": "Rising Action",
+        "description": "As the flight hits turbulence, Sam and Leo's antics become more and more erratic, causing Ali to take drastic measures to regain control. Meanwhile, Abeeha, the charming flight hostess, tries to keep the passengers calm and distracted from the chaos unfolding in the cockpit."
+      },
+      {
+        "act": 3,
+        "label": "Climax",
+        "description": "As the situation spirals out of control, Sam and Leo must put aside their differences and work together to stop Ali's sinister plans. But will they be able to overcome their own flaws and trust each other in time to save the plane and its passengers?"
+      },
+      {
+        "act": 4,
+        "label": "Resolution",
+        "description": "In the aftermath of the chaos, Sam and Leo must come to terms with their roles in the disaster and the consequences of their actions. Meanwhile, Abeeha must confront the reality of her own complicity in Ali's plans and decide where her loyalties truly lie."
+      }
+    ],
+    "protagonist": "SAM",
+    "antagonist": "ALI",
+    "world": "In this high-stakes thriller, the world of commercial air travel is turned on its head as a group of passengers must fight for their lives against a formidable foe."
+  }
+}

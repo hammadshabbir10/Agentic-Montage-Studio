@@ -1,0 +1,95 @@
+{
+  "workflow_id": "workflow_20260507_131320",
+  "timestamp": "2026-05-07T13:13:20.468322",
+  "characters": [
+    {
+      "name": "ALI",
+      "personality": "Ali appears to be a calm and reassuring individual who prioritizes passenger safety and comfort, likely a seasoned pilot with a strong sense of responsibility.",
+      "appearance": "Ali is a middle-aged man with a clean-shaven face, receding hairline, and a pair of glasses, dressed in a crisp airline uniform.",
+      "role": "supporting",
+      "style_reference": "Modern commercial airliner, minimalist aesthetic, emphasis on safety and professionalism",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"Ladies and gentlemen, welcome aboard. We're expecting a smooth flight today.\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused."
+        },
+        {
+          "line": "\"We're experiencing some turbulence. Nothing to worry about.\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused."
+        },
+        {
+          "line": "\"We're going to be okay. Just hold on.\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused."
+        }
+      ]
+    },
+    {
+      "name": "SAM",
+      "personality": "SAM is a nervous and anxious individual, likely prone to panic in high-pressure situations, with a tendency to catastrophize and lose control. Despite this, he may be driven by a desire for control and a need to understand the world around him.",
+      "appearance": "SAM likely wears a standard airline pilot uniform, comprising a crisp white shirt, navy blue pants, and a flight jacket, possibly with a few telltale signs of wear and tear from frequent flying.",
+      "role": "supporting",
+      "style_reference": "Tension-driven thriller, stark lighting, and a focus on cramped, claustrophobic spaces to amplify the sense of unease and panic.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"Smooth flight? We're flying a plane, not a rollercoaster!\"",
+          "visual_cue": "Close-up of ALI, a hint of amusement in his eyes."
+        },
+        {
+          "line": "\"Turbulence? You call this turbulence? We're going to crash!\"",
+          "visual_cue": "Close-up of ALI, his eyes darting between the instruments."
+        },
+        {
+          "line": "\"What's going on? Why is this happening?\"",
+          "visual_cue": "Close-up of ALI, a hint of strain visible in his voice."
+        }
+      ]
+    },
+    {
+      "name": "LEO",
+      "personality": "Confident and somewhat reckless, Leo is driven by a desire to prove himself and others wrong, often downplaying risks and urging his peers to push through challenging situations.",
+      "appearance": "Leo is a ruggedly handsome young pilot with short, messy brown hair and a scattering of stubble, dressed in a crisp airline uniform.",
+      "role": "supporting",
+      "style_reference": "1950s-60s aviation adventure, warm color palette, emphasis on dynamic camera movements and high-octane action sequences.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"Hey, we can handle it. We're not exactly beginners.\"",
+          "visual_cue": "Close-up of SAM, brow furrowed in concern."
+        },
+        {
+          "line": "\"Come on, Sam, it's just a little bump. We're fine.\"",
+          "visual_cue": "Close-up of SAM, his face pale with fear."
+        },
+        {
+          "line": "\"Shut up, Sam. We're fine.\"",
+          "visual_cue": "Close-up of SAM, his eyes wide with fear."
+        }
+      ]
+    },
+    {
+      "name": "ABEERA",
+      "personality": "Abeera appears to be a calm and collected individual who prioritizes safety and reassurance, likely driven by a strong sense of responsibility.",
+      "appearance": "Abeera is a mid-30s to early 40s woman with a professional and put-together demeanor, likely dressed in a crisp airline uniform.",
+      "role": "supporting",
+      "style_reference": "1980s-90s thriller, clean and modern aesthetic with a focus on functionality and safety features.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"I'm sure you're both perfectly capable. But just to put your minds at ease, we have state-of-the-art navigation systems.\"",
+          "visual_cue": "Close-up of LEO, a smug grin spreading across his face."
+        },
+        {
+          "line": "\"Sir, ma'am, please fasten your seatbelts. This may get a bit bumpy.\"",
+          "visual_cue": "Close-up of LEO, his voice steady but his eyes betraying a hint of worry."
+        },
+        {
+          "line": "\"Everyone, please stay calm. We're doing our best to stabilize the plane.\"",
+          "visual_cue": "Close-up of LEO, his voice firm but his eyes darting towards the controls."
+        }
+      ]
+    }
+  ],
+  "total_characters": 4
+}

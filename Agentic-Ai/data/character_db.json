@@ -1,17 +1,71 @@
 {
+  "workflow_id": "workflow_20260508_car_race",
+  "timestamp": "2026-05-08T14:30:00.000Z",
   "characters": [
     {
-      "id": "char_1",
-      "name": "JACK",
-      "traits": [
-        "consistent",
-        "focused"
-      ],
-      "appearance": "Describe appearance based on story context.",
-      "reference_style": "cinematic concept art",
-      "visual_refs": [
-        "data\\image_assets\\JACK.svg"
+      "name": "HAIDER",
+      "personality": "Aggressive and cocky, values brute force over skill. A hot-headed rival who underestimates others.",
+      "appearance": "A young man with sharp features, wearing a red leather racing jacket and dark jeans. He has a determined, angry look.",
+      "role": "antagonist",
+      "style_reference": "Cinematic street racing, deep focus, sharp backgrounds, intense lighting, focus on red high-performance sports cars.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"Hadi needs to learn his place. He won't know what hit him.\"",
+          "visual_cue": "Close-up of HAIDER in a dimly lit alley, his face lit by the red glow of his car's taillights."
+        },
+        {
+          "line": "\"You're dead meat at the starting line, Hadi!\"",
+          "visual_cue": "Medium shot of HAIDER leaning against his red sports car, pointing aggressively."
+        }
+      ]
+    },
+    {
+      "name": "IQRASH",
+      "personality": "Haider's loyal but equally arrogant friend. He follows Haider's lead and enjoys intimidation.",
+      "appearance": "Slightly taller than Haider, wearing a black racing hoodie and cargo pants. He has a smirk that rarely leaves his face.",
+      "role": "antagonist",
+      "style_reference": "Street racing aesthetic, deep focus, sharp backgrounds, gritty urban environment, detailed car interiors.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"Let's just settle this now. Why wait?\"",
+          "visual_cue": "Medium shot of IQRASH standing beside Haider, arms crossed, looking menacing."
+        }
+      ]
+    },
+    {
+      "name": "HAMMAD",
+      "personality": "Wise, calm, and strategic. He prefers competition over street brawls and acts as a mediator.",
+      "appearance": "A calm-looking man with glasses and a grey sweater. He has a mature presence and looks older than the others.",
+      "role": "supporting",
+      "style_reference": "Cinematic drama, deep focus, sharp backgrounds, soft lighting in shadows, detailed character expressions.",
+      "first_appearance": 2,
+      "dialogue_samples": [
+        {
+          "line": "\"Fighting is for amateurs. If you really want to humiliate him, beat him in the annual race.\"",
+          "visual_cue": "Medium shot of HAMMAD stepping out from the shadows into the light, a knowing smile on his face."
+        }
+      ]
+    },
+    {
+      "name": "HADI",
+      "personality": "The underdog with incredible talent. He is humble, focused, and determined to prove his skill.",
+      "appearance": "A lean young man with a focused gaze, wearing a blue racing suit. He looks calm even under pressure.",
+      "role": "protagonist",
+      "style_reference": "Heroic cinematic shots, deep focus, sharp backgrounds, neon city lights, focus on a sleek blue high-performance racing car.",
+      "first_appearance": 3,
+      "dialogue_samples": [
+        {
+          "line": "\"The race will decide everything. See you at the finish line.\"",
+          "visual_cue": "Medium shot of HADI checking the engine of his sleek blue racing car, wiping grease from his hands."
+        },
+        {
+          "line": "\"I knew I could do it. Skill beats anger every time.\"",
+          "visual_cue": "Close-up of HADI in the driver's seat, the city lights reflecting in his eyes as he crosses the finish line."
+        }
       ]
     }
-  ]
+  ],
+  "total_characters": 4
 }

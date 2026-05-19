@@ -1,0 +1,155 @@
+{
+  "tasks": [
+    {
+      "scene_id": 1,
+      "location": "AIRPLANE CABIN",
+      "dialogue": [
+        {
+          "speaker": "ALI",
+          "line": "\"We're going to be fine, guys. Just a little turbulence.\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "SAM",
+          "line": "\"Ali, what's going on? We're falling or something!\"",
+          "visual_cue": "Close-up of ALI, firm jawline, reassuring smile.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "LEO",
+          "line": "\"Dude, relax. It's just a bump. We'll be fine.\"",
+          "visual_cue": "Medium shot of SAM, wild-eyed, hands grasping for his seatbelt.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "ABEEHA",
+          "line": "\"Everyone, please fasten your seatbelts and return to your seats. We apologize for the inconvenience.\"",
+          "visual_cue": "Over-the-shoulder shot of LEO, casual shrug, and a confident smirk.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "ALI",
+          "line": "\"Abeeha, can you please get the passengers to calm down? We don't need a panic.\"",
+          "visual_cue": "Wide shot of ABEEHA, friendly smile, and a reassuring hand gesture.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "ABEEHA",
+          "line": "\"Of course, Ali. I'm on it.\"",
+          "visual_cue": "Close-up of ALI, stern expression, eyes locked on Abeeha.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "ALI",
+        "SAM",
+        "LEO",
+        "ABEEHA"
+      ]
+    },
+    {
+      "scene_id": 2,
+      "location": "AIRPLANE WING",
+      "dialogue": [
+        {
+          "speaker": "ALI",
+          "line": "\"Hold on, guys. This is going to get bumpy.\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "SAM",
+          "line": "\"Ali, what's happening? We're going to crash or something!\"",
+          "visual_cue": "Close-up of ALI, clenched teeth, and a focused gaze.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "LEO",
+          "line": "\"Ali, tell us what's going on. We need to know what's happening.\"",
+          "visual_cue": "Point-of-view shot of SAM, looking out the window, and the landscape blurring by.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "ABEEHA",
+          "line": "\"Everyone, please return to your seats and fasten your seatbelts. We're experiencing some turbulence.\"",
+          "visual_cue": "Over-the-shoulder shot of LEO, demanding gaze, and a tense posture.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "ALI",
+        "SAM",
+        "LEO",
+        "ABEEHA"
+      ]
+    },
+    {
+      "scene_id": 3,
+      "location": "COCKPIT",
+      "dialogue": [
+        {
+          "speaker": "ALI",
+          "line": "\"Abeeha, I need to level the plane. Can you get the passengers to calm down?\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "ABEEHA",
+          "line": "\"Ali, I'm trying, but they're getting scared. What can I do to help?\"",
+          "visual_cue": "Close-up of ALI, sweat beading on his forehead, and a fierce concentration.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "ALI",
+          "line": "\"Just keep them calm. I need to focus on flying this thing.\"",
+          "visual_cue": "Medium shot of ABEEHA, worried expression, and a gentle touch on Ali's arm.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "ALI",
+        "ABEEHA"
+      ]
+    }
+  ]
+}

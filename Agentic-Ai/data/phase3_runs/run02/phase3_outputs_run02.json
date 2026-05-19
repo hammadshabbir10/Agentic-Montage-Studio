@@ -1,0 +1,43 @@
+{
+  "image_results": [],
+  "clip_results": [
+    {
+      "scene_id": 1,
+      "clip_path": "data\\phase3_runs\\run02\\clips\\scene_01_kb.mp4",
+      "duration_sec": 19.584,
+      "motion_preset": "per_line",
+      "cinematic": true
+    }
+  ],
+  "composed_results": [
+    {
+      "scene_id": 1,
+      "composed_path": "data\\phase3_runs\\run02\\composed\\scene_01_composed.mp4",
+      "audio_file": "data\\phase2_runs\\run02\\audio\\scene_01_run02.mp3",
+      "bgm_file": "data\\phase2_runs\\run02\\bgm\\mysterious_scene01_freesound.mp3"
+    }
+  ],
+  "final_video_path": "data\\phase3_runs\\run02\\final_output_run02_subbed.mp4",
+  "subtitles_path": "data\\phase3_runs\\run02\\subtitles_run02.srt",
+  "options": {
+    "backend": "auto",
+    "quality": "balanced",
+    "seed": null,
+    "only_scene_id": 1,
+    "enable_subtitles": true,
+    "transition_sec": 0.35,
+    "speaker_focus": true,
+    "cinematic": true,
+    "enable_title_card": true,
+    "enable_end_card": true,
+    "title_card_sec": 3.0,
+    "end_card_sec": 3.0,
+    "motion_engine": "auto",
+    "strict_character_consistency": true
+  },
+  "inputs": {
+    "scene_manifest": "data/scene_manifest_auto.json",
+    "character_db": "data/character_db_auto.json",
+    "timing_manifest": "data\\phase2_runs\\run02\\timing_manifest_run02.json"
+  }
+}

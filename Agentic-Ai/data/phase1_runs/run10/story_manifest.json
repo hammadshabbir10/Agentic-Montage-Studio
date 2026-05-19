@@ -1,0 +1,42 @@
+{
+  "workflow_id": "workflow_20260507_125215",
+  "timestamp": "2026-05-07T12:52:15.792347",
+  "story": {
+    "title": "Neon Vortex",
+    "logline": "In a dystopian cyberpunk world, private investigator Axel Vashin must unravel a complex web of conspiracies to uncover the truth behind his sister's mysterious disappearance.",
+    "genre": "Cyberpunk Thriller",
+    "tone": "tense and gritty",
+    "setting": "New Erebo City, a sprawling metropolis of towering skyscrapers and neon-lit streets",
+    "time_period": "near-future",
+    "themes": [
+      "identity",
+      "rebellion",
+      "power corruption"
+    ],
+    "acts": [
+      {
+        "act": 1,
+        "label": "Introduction",
+        "description": "We meet Axel Vashin, a tough and resourceful private investigator, as he navigates the dark underbelly of New Erebo City. He receives a cryptic message from an unknown source hinting at his sister's disappearance. Axel's investigation begins in earnest as he delves into the world of high-stakes hacking and corporate espionage."
+      },
+      {
+        "act": 2,
+        "label": "The Investigation Deepens",
+        "description": "Axel's inquiry leads him to encounter the enigmatic and seductive hacker, Kaida. As they work together to uncover the truth, they must evade the ruthless agents of the megacorporation, Omicron Innovations. Meanwhile, Axel's troubled past begins to surface, threatening to derail his quest for answers."
+      },
+      {
+        "act": 3,
+        "label": "The Convergence",
+        "description": "The stakes escalate as Axel and Kaida close in on the truth behind his sister's disappearance. They find themselves caught in a deadly game of cat and mouse between Omicron Innovations and a rogue group of rebels. Axel must confront his demons and make a choice between his loyalty to Kaida and his duty to uncover the truth."
+      },
+      {
+        "act": 4,
+        "label": "Resolution",
+        "description": "Axel's investigation culminates in a heart-pumping showdown with the mastermind behind his sister's disappearance. With the fate of New Erebo City hanging in the balance, Axel must choose between redemption and revenge. The city's future hangs in the balance as the consequences of Axel's actions unfold."
+      }
+    ],
+    "protagonist": "KAELIN",
+    "antagonist": null,
+    "world": "In the near-future metropolis of New Erebo City, corporations have replaced governments, and cybernetic enhancements have become the norm."
+  }
+}

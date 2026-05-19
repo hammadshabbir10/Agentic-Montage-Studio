@@ -1,0 +1,141 @@
+{
+  "audio": [
+    {
+      "scene_id": 1,
+      "path": "data\\phase2_runs\\run02\\audio\\scene_01_run02.mp3",
+      "segments": [
+        {
+          "speaker": "OWAI",
+          "line": "Ladies and gentlemen, welcome aboard. We'll be landing in about an hour.",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of OWAI, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run02\\audio\\scene1\\OWAI_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 35712
+        },
+        {
+          "speaker": "TOM",
+          "line": "This is taking forever.",
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Wide shot of OWAI, smiling at the passengers.",
+          "audio_file": "data\\phase2_runs\\run02\\audio\\scene1\\TOM_line002.mp3",
+          "byte_offset": 35712,
+          "byte_length": 9504
+        },
+        {
+          "speaker": "JERRY",
+          "line": "I'm starving.",
+          "voice": "en-US-BrianNeural",
+          "visual_cue": "Close-up of TOM, frustration etched on his face.",
+          "audio_file": "data\\phase2_runs\\run02\\audio\\scene1\\JERRY_line003.mp3",
+          "byte_offset": 45216,
+          "byte_length": 7200
+        },
+        {
+          "speaker": "AREEBA",
+          "line": "Would you like a snack, sir? We have peanuts or pretzels.",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Close-up of JERRY, rummaging through his pocket for snacks.",
+          "audio_file": "data\\phase2_runs\\run02\\audio\\scene1\\AREEBA_line004.mp3",
+          "byte_offset": 52416,
+          "byte_length": 30096
+        },
+        {
+          "speaker": "OWAI",
+          "line": "Remember, please fasten your seatbelts. We'll be hitting some turbulence.",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Close-up of AREEBA, smiling at Jerry.",
+          "audio_file": "data\\phase2_runs\\run02\\audio\\scene1\\OWAI_line005.mp3",
+          "byte_offset": 82512,
+          "byte_length": 34992
+        }
+      ]
+    },
+    {
+      "scene_id": 2,
+      "path": "data\\phase2_runs\\run02\\audio\\scene_02_run02.mp3",
+      "segments": [
+        {
+          "speaker": "OWAI",
+          "line": "Don't worry, folks. We're going through a bit of turbulence. Just keep your seats and-",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of OWAI, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run02\\audio\\scene2\\OWAI_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 43632
+        },
+        {
+          "speaker": "JERRY",
+          "line": "Ahh! This is crazy!",
+          "voice": "en-US-BrianNeural",
+          "visual_cue": "Medium shot of JERRY, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run02\\audio\\scene2\\JERRY_line002.mp3",
+          "byte_offset": 43632,
+          "byte_length": 11664
+        },
+        {
+          "speaker": "TOM",
+          "line": "Stay calm, Jerry. We'll be fine.",
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Close-up of JERRY, eyes wide with fear.",
+          "audio_file": "data\\phase2_runs\\run02\\audio\\scene2\\TOM_line003.mp3",
+          "byte_offset": 55296,
+          "byte_length": 14256
+        },
+        {
+          "speaker": "AREEBA",
+          "line": "Can I get you a blanket, sir? Or a cup of water?",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Close-up of TOM, attempting to reassure Jerry.",
+          "audio_file": "data\\phase2_runs\\run02\\audio\\scene2\\AREEBA_line004.mp3",
+          "byte_offset": 69552,
+          "byte_length": 26928
+        }
+      ]
+    },
+    {
+      "scene_id": 3,
+      "path": "data\\phase2_runs\\run02\\audio\\scene_03_run02.mp3",
+      "segments": [
+        {
+          "speaker": "OWAI",
+          "line": "How's it looking, Areeba? Any signs of trouble?",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of OWAI, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run02\\audio\\scene3\\OWAI_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 28224
+        },
+        {
+          "speaker": "AREEBA",
+          "line": "No, Captain. Everything's looking good. Just a bit of turbulence.",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Close-up of OWAI, focused on the controls.",
+          "audio_file": "data\\phase2_runs\\run02\\audio\\scene3\\AREEBA_line002.mp3",
+          "byte_offset": 28224,
+          "byte_length": 39600
+        }
+      ]
+    }
+  ],
+  "music": [
+    {
+      "scene_id": 1,
+      "mood": "mysterious",
+      "bgm_path": "data\\phase2_runs\\run02\\bgm\\mysterious_scene01_freesound.mp3",
+      "bgm_source": "freesound"
+    },
+    {
+      "scene_id": 2,
+      "mood": "mysterious",
+      "bgm_path": "data\\phase2_runs\\run02\\bgm\\mysterious_scene02_freesound.mp3",
+      "bgm_source": "freesound"
+    },
+    {
+      "scene_id": 3,
+      "mood": "mysterious",
+      "bgm_path": "data\\phase2_runs\\run02\\bgm\\mysterious_scene03_freesound.mp3",
+      "bgm_source": "freesound"
+    }
+  ]
+}

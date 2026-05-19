@@ -82,6 +82,7 @@ class Phase3State(TypedDict, total=False):
     end_card_sec:      float
     motion_engine:     str  # auto | pil | zoompan
     strict_character_consistency: bool
+    use_cache:         bool
 
 
 def _print_section(title: str) -> None:
@@ -135,6 +136,7 @@ def image_gen_node(state: Phase3State) -> Phase3State:
     images_dir = Path(state["images_dir"])
     portraits_dir = images_dir / "character_bank"
     speaker_focus = bool(state.get("speaker_focus", True))
+    use_cache = bool(state.get("use_cache", True))
     active_speakers: set[str] = set()
     for plan in plans:
         if state.get("only_scene_id") is not None and plan.scene_id != state["only_scene_id"]:
@@ -150,6 +152,7 @@ def image_gen_node(state: Phase3State) -> Phase3State:
         quality=state.get("quality", "balanced"),
         seed=state.get("seed"),
         speaker_names=active_speakers,
+        use_cache=use_cache,
     )
     state["portrait_bank"] = portrait_bank
 
@@ -163,6 +166,7 @@ def image_gen_node(state: Phase3State) -> Phase3State:
             quality=state.get("quality", "balanced"),
             seed=state.get("seed"),
             only_scene_id=state.get("only_scene_id"),
+            use_cache=use_cache,
         )
     state["image_results"] = results
     line_images_by_scene: Dict[int, List[Dict[str, Any]]] = {}
@@ -178,6 +182,7 @@ def image_gen_node(state: Phase3State) -> Phase3State:
                 backend=state.get("backend", "auto"),
                 quality=state.get("quality", "balanced"),
                 seed=state.get("seed"),
+                use_cache=use_cache,
                 portrait_bank=portrait_bank,
                 strict_character_consistency=bool(
                     state.get("strict_character_consistency", True)
@@ -255,11 +260,12 @@ def motion_node(state: Phase3State) -> Phase3State:
     for plan in plans:
         if only is not None and plan.scene_id != only:
             continue
-        if not plan.image_path:
+        line_images = line_images_by_scene.get(plan.scene_id, [])
+        has_line_images = bool(speaker_focus and line_images)
+        if not plan.image_path and not has_line_images:
             raise RuntimeError(f"motion: scene {plan.scene_id} has no image")
 
         clip_path = clips_dir / f"scene_{plan.scene_id:02d}_kb.mp4"
-        line_images = line_images_by_scene.get(plan.scene_id, [])
         if speaker_focus and line_images:
             video_compose.build_scene_clip_from_line_images(
                 scene_id=plan.scene_id,

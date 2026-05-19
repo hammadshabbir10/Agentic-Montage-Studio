@@ -1,0 +1,554 @@
+{
+  "story_manifest": {
+    "workflow_id": "workflow_20260507_140208",
+    "timestamp": "2026-05-07T14:02:08.680259",
+    "story": {
+      "title": "Skybound",
+      "logline": "A rogue passenger and a rebellious co-pilot put the life of a commercial airliner in jeopardy, forcing the pilots to take drastic measures to prevent disaster.",
+      "genre": "Thriller",
+      "tone": "tense and gritty",
+      "setting": "A commercial airliner in flight",
+      "time_period": "Present Day",
+      "themes": [
+        "Survival",
+        "Authority",
+        "Redemption"
+      ],
+      "acts": [
+        {
+          "act": 1,
+          "label": "Introduction",
+          "description": "Meet Sam, a thrill-seeking adventurer, and Leo, a free-spirited artist, as they board a commercial airliner with their unique personalities. We also meet Owais, the seasoned pilot, and Areeba, the charming flight hostess, who become entangled in the chaos."
+        },
+        {
+          "act": 2,
+          "label": "Confrontation",
+          "description": "As Sam and Leo's antics escalate, Owais and Areeba must navigate the treacherous waters of air traffic control and passenger safety, all while keeping the rogue duo at bay. The stakes are raised as the plane hits turbulence, and the pilots' skills are put to the test."
+        },
+        {
+          "act": 3,
+          "label": "Climax",
+          "description": "As the plane teeters on the brink of disaster, Owais and Areeba must make a heart-pumping decision to take control of the situation and save the passengers. Sam and Leo's fate hangs in the balance, and the pilots' redemption is within reach."
+        },
+        {
+          "act": 4,
+          "label": "Resolution",
+          "description": "The aftermath of the crisis leaves its mark on the passengers and the pilots. As the plane lands safely, Owais and Areeba reflect on their ordeal, and Sam and Leo must come to terms with the consequences of their actions."
+        }
+      ],
+      "protagonist": "OWAIS",
+      "antagonist": "SAM",
+      "world": "In a world where air travel has become the norm, the lives of passengers and crew are constantly at risk, and the pilots are the ones who must make split-second decisions to ensure safety."
+    }
+  },
+  "scene_manifest": {
+    "workflow_id": "workflow_20260507_140211",
+    "timestamp": "2026-05-07T14:02:11.981902",
+    "scenes": [
+      {
+        "scene_id": 1,
+        "location": "PLANE COCKPIT",
+        "dialogue": [
+          {
+            "speaker": "SAM",
+            "line": "\"We're going to stall, Owais. We need to level out.\"",
+            "visual_cue": "Medium shot of SAM, expression intense and focused.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "OWAIS",
+            "line": "\"Hold on to your seat, Sam. We're going to make this plane fly.\"",
+            "visual_cue": "Close-up of SAM, sweat beading on his forehead.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "L",
+            "line": "\"What's going on? Why are we shaking so much?\"",
+            "visual_cue": "Medium shot of OWAIS, jaw clenched in concentration.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "ARAESA",
+            "line": "\"Everyone, please fasten your seatbelts. We're experiencing some turbulence.\"",
+            "visual_cue": "Wide shot of L\u0435\u043e, looking pale and frightened.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "OWAIS",
+            "line": "\"We're coming out of the dive. Hold on to your seats.\"",
+            "visual_cue": "Close-up of ARAESA, a calm smile on her face as she checks the safety harnesses.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "L",
+            "line": "\"This is crazy! What's happening?\"",
+            "visual_cue": "Close-up of OWAIS, eyes locked on the altimeter.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "ARAESA",
+            "line": "\"Everyone, please remain calm. This is just turbulence.\"",
+            "visual_cue": "Close-up of L\u0435\u043e, eyes wide with fear.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "OWAIS",
+            "line": "\"We're going to make it through this. Just hold on.\"",
+            "visual_cue": "Medium shot of ARAESA, her voice steady and reassuring.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          }
+        ],
+        "characters": [
+          "SAM",
+          "OWAIS",
+          "L",
+          "ARAESA"
+        ],
+        "duration": 42,
+        "start_ms": null,
+        "end_ms": null,
+        "duration_ms": null,
+        "audio_file": null,
+        "bgm_file": null,
+        "mood": null,
+        "lines": null
+      },
+      {
+        "scene_id": 2,
+        "location": "PLANE",
+        "dialogue": [
+          {
+            "speaker": "SAM",
+            "line": "\"Owais, I think we're crashing. We need to do something.\"",
+            "visual_cue": "Medium shot of SAM, expression intense and focused.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "ARAESA",
+            "line": "\"Everyone, please stay calm. We're experiencing a minor storm.\"",
+            "visual_cue": "Close-up of SAM, desperation in his voice.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "L",
+            "line": "\"This is insane! We're going to die!\"",
+            "visual_cue": "Close-up of ARAESA, her hands steady as she checks the instruments.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "OWAIS",
+            "line": "\"We're not going to crash. We're going to make it through this.\"",
+            "visual_cue": "Wide shot of L\u0435\u043e, his face contorted in terror.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          }
+        ],
+        "characters": [
+          "SAM",
+          "ARAESA",
+          "L",
+          "OWAIS"
+        ],
+        "duration": 22,
+        "start_ms": null,
+        "end_ms": null,
+        "duration_ms": null,
+        "audio_file": null,
+        "bgm_file": null,
+        "mood": null,
+        "lines": null
+      },
+      {
+        "scene_id": 3,
+        "location": "PLANE COCKPIT",
+        "dialogue": [
+          {
+            "speaker": "SAM",
+            "line": "\"What... what just happened?\"",
+            "visual_cue": "Medium shot of SAM, expression intense and focused.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "OWAIS",
+            "line": "\"We made it through the storm. We're going to land safely.\"",
+            "visual_cue": "Close-up of SAM, his eyes wide with shock.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "ARAESA",
+            "line": "\"Everyone, please prepare for landing. We're starting our descent.\"",
+            "visual_cue": "Close-up of OWAIS, a hint of a smile on his face.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "L",
+            "line": "\"I... I think I'm going to be sick.\"",
+            "visual_cue": "Medium shot of ARAESA, her voice steady and reassuring.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          }
+        ],
+        "characters": [
+          "SAM",
+          "OWAIS",
+          "ARAESA",
+          "L"
+        ],
+        "duration": 20,
+        "start_ms": null,
+        "end_ms": null,
+        "duration_ms": null,
+        "audio_file": null,
+        "bgm_file": null,
+        "mood": null,
+        "lines": null
+      }
+    ],
+    "total_scenes": 3,
+    "total_duration_seconds": 84
+  },
+  "character_db": {
+    "workflow_id": "workflow_20260507_140220",
+    "timestamp": "2026-05-07T14:02:20.051916",
+    "characters": [
+      {
+        "name": "SAM",
+        "personality": "SAM is a level-headed and assertive individual who prioritizes stability and control, but also has moments of panic and desperation when faced with extreme situations.",
+        "appearance": "SAM is likely dressed in a practical, functional pilot uniform with a focus on utility and comfort, with a neutral, clean-cut appearance.",
+        "role": "supporting",
+        "style_reference": "Tense, realistic aviation thriller, emphasizing the claustrophobic atmosphere of the plane cockpit and the raw urgency of the situation.",
+        "first_appearance": 1,
+        "dialogue_samples": [
+          {
+            "line": "\"We're going to stall, Owais. We need to level out.\"",
+            "visual_cue": "Medium shot of SAM, expression intense and focused."
+          },
+          {
+            "line": "\"Owais, I think we're crashing. We need to do something.\"",
+            "visual_cue": "Medium shot of SAM, expression intense and focused."
+          },
+          {
+            "line": "\"What... what just happened?\"",
+            "visual_cue": "Medium shot of SAM, expression intense and focused."
+          }
+        ]
+      },
+      {
+        "name": "OWAIS",
+        "personality": "Owais appears to be a confident and assertive pilot, motivated by a strong desire to keep his passengers safe, even in the face of catastrophic circumstances.",
+        "appearance": "Given his role as a pilot, Owais likely wears a crisp, neatly-pressed flight suit, with a hint of ruggedness from years of flying.",
+        "role": "supporting",
+        "style_reference": "Airborne action, high-octane suspense, and the worn leather of vintage flight gear evoke a sense of 1960s or 1970s aviation adventure.",
+        "first_appearance": 1,
+        "dialogue_samples": [
+          {
+            "line": "\"Hold on to your seat, Sam. We're going to make this plane fly.\"",
+            "visual_cue": "Close-up of SAM, sweat beading on his forehead."
+          },
+          {
+            "line": "\"We're coming out of the dive. Hold on to your seats.\"",
+            "visual_cue": "Close-up of ARAESA, a calm smile on her face as she checks the safety harnesses."
+          },
+          {
+            "line": "\"We're going to make it through this. Just hold on.\"",
+            "visual_cue": "Medium shot of ARAESA, her voice steady and reassuring."
+          },
+          {
+            "line": "\"We're not going to crash. We're going to make it through this.\"",
+            "visual_cue": "Wide shot of L\u0435\u043e, his face contorted in terror."
+          },
+          {
+            "line": "\"We made it through the storm. We're going to land safely.\"",
+            "visual_cue": "Close-up of SAM, his eyes wide with shock."
+          }
+        ]
+      },
+      {
+        "name": "L",
+        "personality": "L\u0415\u041e is impulsive and prone to panic, struggling to cope with intense situations. Their reactions often veer from concern to desperation.",
+        "appearance": "L\u0415\u041e is dressed in standard airline attire, with a disheveled appearance that hints at their distress.",
+        "role": "supporting",
+        "style_reference": "Disaster movie, chaotic atmosphere, handheld camera work.",
+        "first_appearance": 1,
+        "dialogue_samples": [
+          {
+            "line": "\"What's going on? Why are we shaking so much?\"",
+            "visual_cue": "Medium shot of OWAIS, jaw clenched in concentration."
+          },
+          {
+            "line": "\"This is crazy! What's happening?\"",
+            "visual_cue": "Close-up of OWAIS, eyes locked on the altimeter."
+          },
+          {
+            "line": "\"This is insane! We're going to die!\"",
+            "visual_cue": "Close-up of ARAESA, her hands steady as she checks the instruments."
+          },
+          {
+            "line": "\"I... I think I'm going to be sick.\"",
+            "visual_cue": "Medium shot of ARAESA, her voice steady and reassuring."
+          }
+        ]
+      },
+      {
+        "name": "ARAESA",
+        "personality": "Araesa is a calm and collected individual who remains composed under pressure, prioritizing the safety of her passengers over her own emotions.",
+        "appearance": "Araesa is a polished and professional air traffic controller, dressed in a crisp airline uniform, with a sharp jawline and piercing eyes.",
+        "role": "supporting",
+        "style_reference": "Early 2000s commercial airliner aesthetic, emphasis on safety and modernity, crisp colors and clean lines.",
+        "first_appearance": 1,
+        "dialogue_samples": [
+          {
+            "line": "\"Everyone, please fasten your seatbelts. We're experiencing some turbulence.\"",
+            "visual_cue": "Wide shot of L\u0435\u043e, looking pale and frightened."
+          },
+          {
+            "line": "\"Everyone, please remain calm. This is just turbulence.\"",
+            "visual_cue": "Close-up of L\u0435\u043e, eyes wide with fear."
+          },
+          {
+            "line": "\"Everyone, please stay calm. We're experiencing a minor storm.\"",
+            "visual_cue": "Close-up of SAM, desperation in his voice."
+          },
+          {
+            "line": "\"Everyone, please prepare for landing. We're starting our descent.\"",
+            "visual_cue": "Close-up of OWAIS, a hint of a smile on his face."
+          }
+        ]
+      }
+    ],
+    "total_characters": 4
+  },
+  "timing_manifest": {
+    "workflow_id": "phase2_run12",
+    "timestamp": "2026-05-07T14:03:13.604064",
+    "run_tag": "run12",
+    "total_duration_ms": 60192,
+    "scenes": [
+      {
+        "scene_id": 1,
+        "audio_file": "data\\phase2_runs\\run12\\audio\\scene_01_run12.mp3",
+        "bgm_file": "data\\phase2_runs\\run12\\bgm\\mysterious_scene01_freesound.mp3",
+        "mood": "mysterious",
+        "start_ms": 0,
+        "end_ms": 31176,
+        "duration_ms": 31176,
+        "lines": [
+          {
+            "speaker": "SAM",
+            "line": "We're going to stall, Owais. We need to level out.",
+            "start_ms": 0,
+            "end_ms": 4872,
+            "duration_ms": 4872,
+            "voice": "en-US-GuyNeural",
+            "visual_cue": "Medium shot of SAM, expression intense and focused."
+          },
+          {
+            "speaker": "OWAIS",
+            "line": "Hold on to your seat, Sam. We're going to make this plane fly.",
+            "start_ms": 4872,
+            "end_ms": 8520,
+            "duration_ms": 3648,
+            "voice": "en-US-AndrewNeural",
+            "visual_cue": "Close-up of SAM, sweat beading on his forehead."
+          },
+          {
+            "speaker": "L",
+            "line": "What's going on? Why are we shaking so much?",
+            "start_ms": 8520,
+            "end_ms": 11808,
+            "duration_ms": 3288,
+            "voice": "en-US-BrianNeural",
+            "visual_cue": "Medium shot of OWAIS, jaw clenched in concentration."
+          },
+          {
+            "speaker": "ARAESA",
+            "line": "Everyone, please fasten your seatbelts. We're experiencing some turbulence.",
+            "start_ms": 11808,
+            "end_ms": 18000,
+            "duration_ms": 6192,
+            "voice": "en-US-JennyNeural",
+            "visual_cue": "Wide shot of L\u0435\u043e, looking pale and frightened."
+          },
+          {
+            "speaker": "OWAIS",
+            "line": "We're coming out of the dive. Hold on to your seats.",
+            "start_ms": 18000,
+            "end_ms": 20952,
+            "duration_ms": 2952,
+            "voice": "en-US-AndrewNeural",
+            "visual_cue": "Close-up of ARAESA, a calm smile on her face as she checks the safety harnesses."
+          },
+          {
+            "speaker": "L",
+            "line": "This is crazy! What's happening?",
+            "start_ms": 20952,
+            "end_ms": 23472,
+            "duration_ms": 2520,
+            "voice": "en-US-BrianNeural",
+            "visual_cue": "Close-up of OWAIS, eyes locked on the altimeter."
+          },
+          {
+            "speaker": "ARAESA",
+            "line": "Everyone, please remain calm. This is just turbulence.",
+            "start_ms": 23472,
+            "end_ms": 28608,
+            "duration_ms": 5136,
+            "voice": "en-US-JennyNeural",
+            "visual_cue": "Close-up of L\u0435\u043e, eyes wide with fear."
+          },
+          {
+            "speaker": "OWAIS",
+            "line": "We're going to make it through this. Just hold on.",
+            "start_ms": 28608,
+            "end_ms": 31176,
+            "duration_ms": 2568,
+            "voice": "en-US-AndrewNeural",
+            "visual_cue": "Medium shot of ARAESA, her voice steady and reassuring."
+          }
+        ]
+      },
+      {
+        "scene_id": 2,
+        "audio_file": "data\\phase2_runs\\run12\\audio\\scene_02_run12.mp3",
+        "bgm_file": "data\\phase2_runs\\run12\\bgm\\mysterious_scene02_freesound.mp3",
+        "mood": "mysterious",
+        "start_ms": 31176,
+        "end_ms": 47136,
+        "duration_ms": 15960,
+        "lines": [
+          {
+            "speaker": "SAM",
+            "line": "Owais, I think we're crashing. We need to do something.",
+            "start_ms": 31176,
+            "end_ms": 36072,
+            "duration_ms": 4896,
+            "voice": "en-US-GuyNeural",
+            "visual_cue": "Medium shot of SAM, expression intense and focused."
+          },
+          {
+            "speaker": "ARAESA",
+            "line": "Everyone, please stay calm. We're experiencing a minor storm.",
+            "start_ms": 36072,
+            "end_ms": 41520,
+            "duration_ms": 5448,
+            "voice": "en-US-JennyNeural",
+            "visual_cue": "Close-up of SAM, desperation in his voice."
+          },
+          {
+            "speaker": "L",
+            "line": "This is insane! We're going to die!",
+            "start_ms": 41520,
+            "end_ms": 44160,
+            "duration_ms": 2640,
+            "voice": "en-US-BrianNeural",
+            "visual_cue": "Close-up of ARAESA, her hands steady as she checks the instruments."
+          },
+          {
+            "speaker": "OWAIS",
+            "line": "We're not going to crash. We're going to make it through this.",
+            "start_ms": 44160,
+            "end_ms": 47136,
+            "duration_ms": 2976,
+            "voice": "en-US-AndrewNeural",
+            "visual_cue": "Wide shot of L\u0435\u043e, his face contorted in terror."
+          }
+        ]
+      },
+      {
+        "scene_id": 3,
+        "audio_file": "data\\phase2_runs\\run12\\audio\\scene_03_run12.mp3",
+        "bgm_file": "data\\phase2_runs\\run12\\bgm\\mysterious_scene03_freesound.mp3",
+        "mood": "mysterious",
+        "start_ms": 47136,
+        "end_ms": 60192,
+        "duration_ms": 13056,
+        "lines": [
+          {
+            "speaker": "SAM",
+            "line": "What... what just happened?",
+            "start_ms": 47136,
+            "end_ms": 49632,
+            "duration_ms": 2496,
+            "voice": "en-US-GuyNeural",
+            "visual_cue": "Medium shot of SAM, expression intense and focused."
+          },
+          {
+            "speaker": "OWAIS",
+            "line": "We made it through the storm. We're going to land safely.",
+            "start_ms": 49632,
+            "end_ms": 52608,
+            "duration_ms": 2976,
+            "voice": "en-US-AndrewNeural",
+            "visual_cue": "Close-up of SAM, his eyes wide with shock."
+          },
+          {
+            "speaker": "ARAESA",
+            "line": "Everyone, please prepare for landing. We're starting our descent.",
+            "start_ms": 52608,
+            "end_ms": 57864,
+            "duration_ms": 5256,
+            "voice": "en-US-JennyNeural",
+            "visual_cue": "Close-up of OWAIS, a hint of a smile on his face."
+          },
+          {
+            "speaker": "L",
+            "line": "I... I think I'm going to be sick.",
+            "start_ms": 57864,
+            "end_ms": 60192,
+            "duration_ms": 2328,
+            "voice": "en-US-BrianNeural",
+            "visual_cue": "Medium shot of ARAESA, her voice steady and reassuring."
+          }
+        ]
+      }
+    ]
+  },
+  "timing_manifest_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\phase2_runs\\run12\\timing_manifest_run12.json",
+  "latest_video": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\phase3_runs\\run12\\final_output_run12_subbed.mp4"
+}

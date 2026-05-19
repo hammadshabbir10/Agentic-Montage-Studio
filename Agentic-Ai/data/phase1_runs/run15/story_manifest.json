@@ -1,0 +1,42 @@
+{
+  "workflow_id": "workflow_20260507_131247",
+  "timestamp": "2026-05-07T13:12:47.473997",
+  "story": {
+    "title": "Flight Risk",
+    "logline": "When two inexperienced passengers hijack a commercial flight, the pilot must navigate their antics while keeping the plane airborne.",
+    "genre": "Comedy Thriller",
+    "tone": "tense and absurd",
+    "setting": "A commercial airliner",
+    "time_period": "present day",
+    "themes": [
+      "chaos theory",
+      "human nature",
+      "aviation"
+    ],
+    "acts": [
+      {
+        "act": 1,
+        "label": "Introduction",
+        "description": "We meet SAM and LEO, two bumbling friends trying to escape their mundane lives. We also meet ALI, the no-nonsense pilot, and ABEESA, the charming flight hostess."
+      },
+      {
+        "act": 2,
+        "label": "Rising Action",
+        "description": "As Sam and Leo try to cause trouble on the plane, Ali must use his wits to keep the passengers safe while Abeesa tries to maintain a sense of normalcy."
+      },
+      {
+        "act": 3,
+        "label": "Climax",
+        "description": "The plane hits turbulence and Sam and Leo's antics spiral out of control, forcing Ali to make a split-second decision to save the day."
+      },
+      {
+        "act": 4,
+        "label": "Resolution",
+        "description": "The plane lands safely, but not before Sam and Leo's antics bring the passengers together in a moment of unexpected camaraderie."
+      }
+    ],
+    "protagonist": "ALI",
+    "antagonist": null,
+    "world": "The world of commercial aviation is a delicate balance of safety, efficiency, and human emotion."
+  }
+}

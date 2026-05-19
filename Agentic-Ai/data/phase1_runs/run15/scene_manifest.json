@@ -1,0 +1,163 @@
+{
+  "workflow_id": "workflow_20260507_131250",
+  "timestamp": "2026-05-07T13:12:50.576215",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "location": "COCKPIT",
+      "dialogue": [
+        {
+          "speaker": "ALI",
+          "line": "\"Alright, gentlemen, please remain seated and keep your seatbelts fastened.\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "SAM",
+          "line": "\"I don't know how you guys do this every day,\" Sam says, his voice trembling.",
+          "visual_cue": "Close-up of ALI, his eyes scanning the control panel with a hint of amusement.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "LEO",
+          "line": "\"Yeah, we're just lucky to be on this flight,\" Leo chimes in, trying to sound calm.",
+          "visual_cue": "Over-the-shoulder shot of SAM, his eyes wide with fear.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "ALI",
+          "line": "\"I've been flying for years, and I can assure you, this is a routine flight,\" Ali says, his voice reassuring.",
+          "visual_cue": "Close-up of LEO, his smile faltering for a moment before he regains composure.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "ALI",
+        "SAM",
+        "LEO"
+      ],
+      "duration": 33,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    },
+    {
+      "scene_id": 2,
+      "location": "COCKPIT WINDOW",
+      "dialogue": [
+        {
+          "speaker": "ABEEHA",
+          "line": "\"Pilots, can I get a status update for the in-flight meal service?\"",
+          "visual_cue": "Medium shot of ABEEHA, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "ALI",
+          "line": "\"Abeeha, we're still on schedule, but I'd appreciate it if you could keep an eye on our passengers. They seem a bit... anxious.\"",
+          "visual_cue": "Medium shot of ABEEHA, her eyes fixed on Ali as she waits for a response.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "ABEEHA",
+          "line": "\"Of course, Ali. I'll make sure to keep an eye on them. Would you like me to bring up some calming tea or something?\"",
+          "visual_cue": "Close-up of ALI, his expression serious for a moment.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "ABEEHA",
+        "ALI"
+      ],
+      "duration": 31,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    },
+    {
+      "scene_id": 3,
+      "location": "COCKPIT",
+      "dialogue": [
+        {
+          "speaker": "ALI",
+          "line": "\"Everyone, please remain calm. This is just a minor turbulence patch.\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "SAM",
+          "line": "\"This is not minor!\" Sam exclaims, his voice rising in panic.",
+          "visual_cue": "Wide shot of the cockpit, the instruments beeping wildly in the background.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "LEO",
+          "line": "\"Yeah, Ali, maybe you should, uh, try to, you know, stabilize the plane or something?\"",
+          "visual_cue": "Close-up of SAM, his eyes bulging with fear.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "ALI",
+          "line": "\"I've got everything under control, gentlemen. Just sit back, relax, and trust me.\"",
+          "visual_cue": "Close-up of LEO, his face scrunched up in worry.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "ALI",
+        "SAM",
+        "LEO"
+      ],
+      "duration": 28,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    }
+  ],
+  "total_scenes": 3,
+  "total_duration_seconds": 92
+}

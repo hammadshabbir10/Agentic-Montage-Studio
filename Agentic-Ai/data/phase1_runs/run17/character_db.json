@@ -1,0 +1,111 @@
+{
+  "workflow_id": "workflow_20260507_132026",
+  "timestamp": "2026-05-07T13:20:26.999855",
+  "characters": [
+    {
+      "name": "OWAIS",
+      "personality": "OWAIS is a no-nonsense, authoritative figure who values order and discipline, but also has a compassionate side as seen in his interactions with Areeba.",
+      "appearance": "OWAIS is a middle-aged man with a stern expression, dressed in a crisp airline uniform, complete with a white shirt and tie.",
+      "role": "supporting",
+      "style_reference": "A 1970s-era disaster film, think 'Airport' (1970) or 'The Poseidon Adventure' (1972), with a focus on earthy tones and practical effects.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"Gentlemen, please fasten your seatbelts. We're experiencing turbulent weather.\"",
+          "visual_cue": "Medium shot of OWAIS, expression intense and focused."
+        },
+        {
+          "line": "\"Thank you, Areeba. Please keep an eye on these gentlemen. I don't want any trouble.\"",
+          "visual_cue": "Close-up of Areeba, a warm smile on her face."
+        },
+        {
+          "line": "\"That's it. I've had enough of your nonsense. Leo, Sam, please report to the cockpit immediately.\"",
+          "visual_cue": "Medium shot of Sam, a chuckling expression."
+        },
+        {
+          "line": "\"You two are a menace. I'm going to have to sedate you if you don't behave.\"",
+          "visual_cue": "Medium shot of OWAIS, expression intense and focused."
+        },
+        {
+          "line": "\"Good. I'm going to have to rely on Areeba to keep an eye on you two. Stay out of trouble.\"",
+          "visual_cue": "Close-up of Areeba, a reassuring smile on her face."
+        }
+      ]
+    },
+    {
+      "name": "SAM",
+      "personality": "SAM is a carefree and possibly selfish individual who prioritizes relaxation and enjoyment over potential safety concerns, and may dismiss others' worries as 'buzzkill' behavior.",
+      "appearance": "SAM is likely a well-groomed, modern-day passenger in casual airline attire, possibly with a relaxed or athletic build.",
+      "role": "supporting",
+      "style_reference": "Contemporary drama, bright color palette, and a focus on everyday settings and interactions.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"Come on, Owais, lighten up. We're not going to crash.\"",
+          "visual_cue": "Close-up of Owais, a hint of annoyance on his face."
+        },
+        {
+          "line": "\"Trouble? What are you talking about, Owais? We're just trying to enjoy the flight.\"",
+          "visual_cue": "Medium shot of Owais, a stern look on his face."
+        },
+        {
+          "line": "\"Yeah, and Owais is just being a buzzkill. He needs to relax.\"",
+          "visual_cue": "Close-up of Leo, a triumphant grin on his face."
+        },
+        {
+          "line": "\"Sedate us? You can't do that. We're paying customers.\"",
+          "visual_cue": "Close-up of Owais, a hint of anger in his voice."
+        }
+      ]
+    },
+    {
+      "name": "LEO",
+      "personality": "Leo is a confident and somewhat sarcastic individual who is unphased by turbulence, possibly indicating a strong sense of self-reliance and a tendency to downplay risks.",
+      "appearance": "Leo has a rugged, no-nonsense appearance fitting for an airline pilot, possibly with a short, neatly trimmed beard and a crisp flight uniform.",
+      "role": "supporting",
+      "style_reference": "Modern thriller, clean lines, and a focus on practical, realistic aesthetic.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"Yeah, I've flown in worse conditions. This is nothing.\"",
+          "visual_cue": "Medium shot of Sam, a smirk on his face."
+        },
+        {
+          "line": "\"Yeah, and I'm starting to think this plane doesn't have any turbulence at all.\"",
+          "visual_cue": "Close-up of Sam, a raised eyebrow."
+        },
+        {
+          "line": "\"See, I told you it was nothing. This is just a little bump.\"",
+          "visual_cue": "Medium shot of LEO, expression intense and focused."
+        },
+        {
+          "line": "\"Yeah, and I'm not going to calm down just because you're being a party pooper.\"",
+          "visual_cue": "Medium shot of Sam, a defiant expression."
+        }
+      ]
+    },
+    {
+      "name": "AREEBA",
+      "personality": "Areeba's tone suggests she's a professional, assertive, and detail-oriented individual who values order and safety, possibly a byproduct of her role as a flight attendant.",
+      "appearance": "Areeba is likely dressed in a 1950s-style airline uniform, with a crisp white blouse and a fitted jacket, her hair styled in a neat, low bun.",
+      "role": "supporting",
+      "style_reference": "Classic 1950s aviation drama, warm color palette, and a focus on practical, functional design.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"Pilot, I've been told to inform you that we're approaching our cruising altitude. All passengers are seated and buckled up.\"",
+          "visual_cue": "Wide shot of Leo, a confident smile on his face."
+        },
+        {
+          "line": "\"Gentlemen, please follow the pilot's instructions. We need to secure the plane.\"",
+          "visual_cue": "Close-up of Owais, a firm jawline."
+        },
+        {
+          "line": "\"Pilot, I've secured the passengers. They're safely buckled in and calm.\"",
+          "visual_cue": "Wide shot of Leo, a challenging look on his face."
+        }
+      ]
+    }
+  ],
+  "total_characters": 4
+}

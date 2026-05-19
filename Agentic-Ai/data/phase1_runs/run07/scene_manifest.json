@@ -1,0 +1,224 @@
+{
+  "workflow_id": "workflow_20260507_124001",
+  "timestamp": "2026-05-07T12:40:01.757021",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "location": "PLANE COCKPIT",
+      "dialogue": [
+        {
+          "speaker": "ALI",
+          "line": "\"Hold on, folks, we're experiencing some air pockets.\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "SAM",
+          "line": "\"What's going on?\"",
+          "visual_cue": "Close-up of ALI, brow furrowed in concentration.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "LEO",
+          "line": "\"Just the usual turbulence, Sam. Nothing to worry about.\"",
+          "visual_cue": "Close-up of SAM, eyes wide with fear.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "ALI VO",
+          "line": "\"This is your captain speaking. We'll do our best to get you to your destination safely.\"",
+          "visual_cue": "Medium shot of LEO, trying to reassure SAM with a calm demeanor.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "KATRINA",
+          "line": "\"Don't worry, folks, we'll be fine. The pilots will get us through this.\"",
+          "visual_cue": "Wide shot of the plane's interior, with ALI's voice booming from the speakers.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "ALI",
+        "SAM",
+        "LEO",
+        "ALI VO",
+        "KATRINA"
+      ],
+      "duration": 28,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    },
+    {
+      "scene_id": 2,
+      "location": "PLANE COCKPIT",
+      "dialogue": [
+        {
+          "speaker": "ALI",
+          "line": "\"Leo, Sam, I need you to keep an eye on the controls. If anything goes wrong, I need you to react quickly.\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "SAM",
+          "line": "\"Got it, Captain.\"",
+          "visual_cue": "Close-up of ALI, his eyes locking onto LEO and SAM.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "LEO",
+          "line": "\"What makes you think we can handle this, Captain? We're not exactly trained pilots.\"",
+          "visual_cue": "Close-up of SAM, trying to hide his fear.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "LEO LOOKS SKEPTICAL",
+          "line": "Katrina walks into the cockpit, a concerned expression on her face.",
+          "visual_cue": "Medium shot of LEO, his arms crossed and a hint of defiance on his face.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "KATRINA",
+          "line": "\"Captain, I'm not sure if this is a good idea. We're going to get you help on the ground.\"",
+          "visual_cue": "Medium shot of KATRINA, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "ALI",
+          "line": "\"We can't wait, Katrina. We have to get these passengers to their destination.\"",
+          "visual_cue": "Close-up of KATRINA, her brow furrowed in worry.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "ALI SHAKES HIS HEAD",
+          "line": "---",
+          "visual_cue": "Close-up of ALI, his jaw set in determination.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "ALI",
+        "SAM",
+        "LEO",
+        "LEO LOOKS SKEPTICAL",
+        "KATRINA",
+        "ALI SHAKES HIS HEAD"
+      ],
+      "duration": 45,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    },
+    {
+      "scene_id": 3,
+      "location": "PLANE COCKPIT",
+      "dialogue": [
+        {
+          "speaker": "ALI",
+          "line": "\"Hold on, this is going to be rough.\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "SAM",
+          "line": "\"Oh God, we're going to crash!\"",
+          "visual_cue": "Close-up of ALI, his knuckles white on the wheel.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "LEO",
+          "line": "\"Don't worry, Sam, we'll get through this. Ali knows what he's doing.\"",
+          "visual_cue": "Close-up of SAM, his eyes wide with fear.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "KATRINA",
+          "line": "\"Captain, we're losing altitude!\"",
+          "visual_cue": "Close-up of LEO, trying to sound calm.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "ALI",
+          "line": "\"We'll get out of this, Katrina. Just hang on.\"",
+          "visual_cue": "Close-up of KATRINA, her voice panicked.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "ALI",
+        "SAM",
+        "LEO",
+        "KATRINA"
+      ],
+      "duration": 24,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    }
+  ],
+  "total_scenes": 3,
+  "total_duration_seconds": 97
+}

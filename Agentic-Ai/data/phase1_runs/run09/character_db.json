@@ -1,0 +1,63 @@
+{
+  "workflow_id": "workflow_20260507_125211",
+  "timestamp": "2026-05-07T12:52:11.074143",
+  "characters": [
+    {
+      "name": "KYLE",
+      "personality": "Kyle is a protective and resourceful individual who prioritizes the safety of others, driven by a sense of duty and responsibility.",
+      "appearance": "Kyle is a ruggedly handsome man in his mid-30s, dressed in a worn leather jacket and jeans, with a sharp jawline and piercing eyes.",
+      "role": "supporting",
+      "style_reference": "Dark, gritty cyberpunk, neon-lit cityscapes, and a muted color palette with flashes of high-tech gadgetry.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"We're running out of time, Maya. Our source just confirmed that the data disk has been sold to a rival corporation.\"",
+          "visual_cue": "Medium shot of KYLE, expression intense and focused."
+        },
+        {
+          "line": "\"Be careful, Maya. We don't know what we're up against.\"",
+          "visual_cue": "Medium shot of MAYA, her eyes scanning the room with intensity."
+        },
+        {
+          "line": "\"And what's the plan, Maya? You're not going in alone.\"",
+          "visual_cue": "Close-up of MAYA, her voice low and confident."
+        },
+        {
+          "line": "\"You stay behind me. I've got your back.\"",
+          "visual_cue": "Close-up of MAYA, her eyes locked on the warehouse entrance."
+        }
+      ]
+    },
+    {
+      "name": "MAYA",
+      "personality": "Determined and resourceful, Maya is driven by a strong sense of justice, willing to take risks to uncover the truth and take down rival corporations.",
+      "appearance": "Maya is a tall, athletic woman in her mid-30s with short dark hair, wearing functional and versatile clothing suitable for her detective work.",
+      "role": "supporting",
+      "style_reference": "Neon-lit, high-tech thriller, futuristic underground settings with a blend of dark and neon colors.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"Don't worry, Kyle. I'll track down that disk. I have a lead on a underground market.\"",
+          "visual_cue": "Close-up of KYLE, frustration evident on his face."
+        },
+        {
+          "line": "\"Alright, I think I found the seller. He's a known associate of the rival corporation.\"",
+          "visual_cue": "Medium shot of MAYA, expression intense and focused."
+        },
+        {
+          "line": "\"I have a buyer lined up. I'll make the exchange and then we can take down the rival corporation.\"",
+          "visual_cue": "Medium shot of KYLE, his eyes scanning the market with a mixture of concern and curiosity."
+        },
+        {
+          "line": "\"Alright, Kyle. Let's get this over with.\"",
+          "visual_cue": "Medium shot of MAYA, expression intense and focused."
+        },
+        {
+          "line": "\"Looks like we have company.\"",
+          "visual_cue": "Medium shot of KYLE, his voice steady and reassuring."
+        }
+      ]
+    }
+  ],
+  "total_characters": 2
+}

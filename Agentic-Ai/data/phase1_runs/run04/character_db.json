@@ -1,0 +1,95 @@
+{
+  "workflow_id": "workflow_20260507_123646",
+  "timestamp": "2026-05-07T12:36:46.144041",
+  "characters": [
+    {
+      "name": "LEO",
+      "personality": "LEO is a determined character whose motives are not yet clear.",
+      "appearance": "Period-appropriate attire, distinctive features.",
+      "role": "supporting",
+      "style_reference": "Cinematic",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"Come on, Ali, we can fix this.\"",
+          "visual_cue": "Medium shot of LEO, expression intense and focused."
+        },
+        {
+          "line": "\"Ali, what's happening?\"",
+          "visual_cue": "Medium shot of LEO, expression intense and focused."
+        },
+        {
+          "line": "\"Thanks, Ali. I owe you one.\"",
+          "visual_cue": "Medium shot of LEO, expression intense and focused."
+        }
+      ]
+    },
+    {
+      "name": "ALI",
+      "personality": "ALI is a determined character whose motives are not yet clear.",
+      "appearance": "Period-appropriate attire, distinctive features.",
+      "role": "supporting",
+      "style_reference": "Cinematic",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"Leo, we need to stabilize the plane now. Don't panic.\"",
+          "visual_cue": "Medium shot of LEO, sweat dripping down his face."
+        },
+        {
+          "line": "\"Just get back to your seat, Leo. We've got this under control.\"",
+          "visual_cue": "Close-up of LEO, fear in his eyes."
+        },
+        {
+          "line": "\"Just get back to your seat and stay there. We're almost there.\"",
+          "visual_cue": "Close-up of LEONARD, a mix of gratitude and embarrassment on his face."
+        }
+      ]
+    },
+    {
+      "name": "SAMANTHA",
+      "personality": "Samantha appears to be a calm and composed leader who prioritizes the safety of her passengers, likely with a strong sense of responsibility and authority.",
+      "appearance": "As a pilot in a plane cockpit, Samantha is likely dressed in a crisp, professional flight suit, with short hair and a fit build.",
+      "role": "supporting",
+      "style_reference": "1980s thriller, bright colors, and a sense of high-tech futurism to represent the era's advancements in aviation.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"How's it going up there, Captain?\"",
+          "visual_cue": "Close-up of ALI, eyes fixed intently on the instruments."
+        },
+        {
+          "line": "\"Everyone, please remain calm. We're experiencing some... unexpected maneuvers.\"",
+          "visual_cue": "Medium shot of ALI, jaw set in determination."
+        },
+        {
+          "line": "\"Ladies and gentlemen, we're beginning our descent. Please return to your seats and\u2014\"",
+          "visual_cue": "Medium shot of ALI, a hint of a smile on his face."
+        }
+      ]
+    },
+    {
+      "name": "KATRINA",
+      "personality": "A calm and collected individual who prioritizes safety and order, but may also have a hint of authority and firmness in their demeanor.",
+      "appearance": "A middle-aged woman with a professional and put-together appearance, likely wearing a crisp airline uniform.",
+      "role": "supporting",
+      "style_reference": "Modern commercial airliner, clean lines, and a focus on functionality.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"We're experiencing some turbulence, ma'am. Please return to your seat and fasten your seatbelt.\"",
+          "visual_cue": "Wide shot of SAMANTHA, a poised and charming flight hostess, walking down the aisle."
+        },
+        {
+          "line": "\"We're going to be fine. Just stay seated and\u2014\"",
+          "visual_cue": "Wide shot of SAMANTHA, reassuring smile on her face as she grips the seat arms."
+        },
+        {
+          "line": "\"And don't forget to turn off your electronic devices.\"",
+          "visual_cue": "Wide shot of SAMANTHA, poised and composed as she walks back to the front of the plane."
+        }
+      ]
+    }
+  ],
+  "total_characters": 4
+}

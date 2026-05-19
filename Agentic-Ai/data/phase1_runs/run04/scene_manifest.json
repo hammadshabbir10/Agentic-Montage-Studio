@@ -1,0 +1,176 @@
+{
+  "workflow_id": "workflow_20260507_123547",
+  "timestamp": "2026-05-07T12:35:47.750019",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "location": "PLANE COCKPIT",
+      "dialogue": [
+        {
+          "speaker": "LEO",
+          "line": "\"Come on, Ali, we can fix this.\"",
+          "visual_cue": "Medium shot of LEO, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "ALI",
+          "line": "\"Leo, we need to stabilize the plane now. Don't panic.\"",
+          "visual_cue": "Medium shot of LEO, sweat dripping down his face.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "SAMANTHA",
+          "line": "\"How's it going up there, Captain?\"",
+          "visual_cue": "Close-up of ALI, eyes fixed intently on the instruments.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "KATRINA",
+          "line": "\"We're experiencing some turbulence, ma'am. Please return to your seat and fasten your seatbelt.\"",
+          "visual_cue": "Wide shot of SAMANTHA, a poised and charming flight hostess, walking down the aisle.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "LEO",
+        "ALI",
+        "SAMANTHA",
+        "KATRINA"
+      ],
+      "duration": 22,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    },
+    {
+      "scene_id": 2,
+      "location": "PLANE WING",
+      "dialogue": [
+        {
+          "speaker": "LEO",
+          "line": "\"Ali, what's happening?\"",
+          "visual_cue": "Medium shot of LEO, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "ALI",
+          "line": "\"Just get back to your seat, Leo. We've got this under control.\"",
+          "visual_cue": "Close-up of LEO, fear in his eyes.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "SAMANTHA",
+          "line": "\"Everyone, please remain calm. We're experiencing some... unexpected maneuvers.\"",
+          "visual_cue": "Medium shot of ALI, jaw set in determination.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "KATRINA",
+          "line": "\"We're going to be fine. Just stay seated and\u2014\"",
+          "visual_cue": "Wide shot of SAMANTHA, reassuring smile on her face as she grips the seat arms.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "LEO",
+        "ALI",
+        "SAMANTHA",
+        "KATRINA"
+      ],
+      "duration": 20,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    },
+    {
+      "scene_id": 3,
+      "location": "COCKPIT",
+      "dialogue": [
+        {
+          "speaker": "LEO",
+          "line": "\"Thanks, Ali. I owe you one.\"",
+          "visual_cue": "Medium shot of LEO, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "ALI",
+          "line": "\"Just get back to your seat and stay there. We're almost there.\"",
+          "visual_cue": "Close-up of LEONARD, a mix of gratitude and embarrassment on his face.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "SAMANTHA",
+          "line": "\"Ladies and gentlemen, we're beginning our descent. Please return to your seats and\u2014\"",
+          "visual_cue": "Medium shot of ALI, a hint of a smile on his face.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "KATRINA",
+          "line": "\"And don't forget to turn off your electronic devices.\"",
+          "visual_cue": "Wide shot of SAMANTHA, poised and composed as she walks back to the front of the plane.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "LEO",
+        "ALI",
+        "SAMANTHA",
+        "KATRINA"
+      ],
+      "duration": 23,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    }
+  ],
+  "total_scenes": 3,
+  "total_duration_seconds": 65
+}

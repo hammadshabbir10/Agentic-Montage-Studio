@@ -1,0 +1,189 @@
+{
+  "workflow_id": "phase2_run15",
+  "timestamp": "2026-05-08T15:37:16.868270",
+  "run_tag": "run15",
+  "total_duration_ms": 70440,
+  "scenes": [
+    {
+      "scene_id": 1,
+      "audio_file": "data\\phase2_runs\\run15\\audio\\scene_01_run15.mp3",
+      "bgm_file": "data\\phase2_runs\\run15\\bgm\\action_scene01_freesound.mp3",
+      "mood": "action",
+      "start_ms": 0,
+      "end_ms": 29256,
+      "duration_ms": 29256,
+      "lines": [
+        {
+          "speaker": "HAIDER",
+          "line": "Alright, Iqrash, we got this. Hadi's been quiet lately, he's due for a hit.",
+          "start_ms": 0,
+          "end_ms": 6312,
+          "duration_ms": 6312,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of HAIDER, expression intense and focused."
+        },
+        {
+          "speaker": "IQRASH",
+          "line": "I don't know, man. Hadi's not one to back down from a fight.",
+          "start_ms": 6312,
+          "end_ms": 9984,
+          "duration_ms": 3672,
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Close-up of HAIDER, his eyes gleaming with aggression as he cracks his knuckles."
+        },
+        {
+          "speaker": "HAIDER",
+          "line": "Don't worry, I've got a plan. We'll take him down, and then we'll be the top dogs in this city.",
+          "start_ms": 9984,
+          "end_ms": 16752,
+          "duration_ms": 6768,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of IQRASH, his brow furrowed in concern as he glances around the alleyway."
+        },
+        {
+          "speaker": "IQRASH",
+          "line": "What's the plan, again?",
+          "start_ms": 16752,
+          "end_ms": 18168,
+          "duration_ms": 1416,
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Close-up of HAIDER, his grin twisted and menacing."
+        },
+        {
+          "speaker": "HAIDER",
+          "line": "We'll set up an ambush, and then we'll take him out. Easy as that.",
+          "start_ms": 18168,
+          "end_ms": 23592,
+          "duration_ms": 5424,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Close-up of IQRASH, his eyes darting back and forth between Haider and the alleyway."
+        },
+        {
+          "speaker": "HAMMAD",
+          "line": "Hey, guys, why don't you settle this like civilized people? In the annual car race, of course.",
+          "start_ms": 23592,
+          "end_ms": 29256,
+          "duration_ms": 5664,
+          "voice": "en-US-BrianNeural",
+          "visual_cue": "Wide shot of the alleyway, with HAIDER and IQRASH standing in the center, looking confident and aggressive."
+        }
+      ]
+    },
+    {
+      "scene_id": 2,
+      "audio_file": "data\\phase2_runs\\run15\\audio\\scene_02_run15.mp3",
+      "bgm_file": "data\\phase2_runs\\run15\\bgm\\tense_scene02_freesound.mp3",
+      "mood": "tense",
+      "start_ms": 29256,
+      "end_ms": 42216,
+      "duration_ms": 12960,
+      "lines": [
+        {
+          "speaker": "HADI",
+          "line": "Alright, baby, you're going to need to bring your A-game if we're going to take down Haider and Iqrash.",
+          "start_ms": 29256,
+          "end_ms": 35616,
+          "duration_ms": 6360,
+          "voice": "en-GB-RyanNeural",
+          "visual_cue": "Medium shot of HADI, expression intense and focused."
+        },
+        {
+          "speaker": "HADI",
+          "line": "This engine's been tweaked to perfection. I can feel it in my bones, we're going to win this thing.",
+          "start_ms": 35616,
+          "end_ms": 42216,
+          "duration_ms": 6600,
+          "voice": "en-GB-RyanNeural",
+          "visual_cue": "Close-up of HADI, his eyes fixed intently on the engine as he works on it with precision and care."
+        }
+      ]
+    },
+    {
+      "scene_id": 3,
+      "audio_file": "data\\phase2_runs\\run15\\audio\\scene_03_run15.mp3",
+      "bgm_file": "data\\phase2_runs\\run15\\bgm\\tense_scene03_freesound.mp3",
+      "mood": "tense",
+      "start_ms": 42216,
+      "end_ms": 53664,
+      "duration_ms": 11448,
+      "lines": [
+        {
+          "speaker": "HAIDER",
+          "line": "You think you can take me down, Hadi? I've been waiting for this moment for years.",
+          "start_ms": 42216,
+          "end_ms": 48264,
+          "duration_ms": 6048,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of HAIDER, expression intense and focused."
+        },
+        {
+          "speaker": "HADI",
+          "line": "I'm not just looking to take you down, Haider. I'm looking to crush you.",
+          "start_ms": 48264,
+          "end_ms": 53664,
+          "duration_ms": 5400,
+          "voice": "en-GB-RyanNeural",
+          "visual_cue": "Close-up of HAIDER, his eyes blazing with aggression and competitiveness."
+        }
+      ]
+    },
+    {
+      "scene_id": 4,
+      "audio_file": "data\\phase2_runs\\run15\\audio\\scene_04_run15.mp3",
+      "bgm_file": "data\\phase2_runs\\run15\\bgm\\action_scene04_freesound.mp3",
+      "mood": "action",
+      "start_ms": 53664,
+      "end_ms": 60936,
+      "duration_ms": 7272,
+      "lines": [
+        {
+          "speaker": "HADI",
+          "line": "Come on, Haider! You can't keep up with me!",
+          "start_ms": 53664,
+          "end_ms": 58176,
+          "duration_ms": 4512,
+          "voice": "en-GB-RyanNeural",
+          "visual_cue": "Medium shot of HADI, expression intense and focused."
+        },
+        {
+          "speaker": "HAIDER",
+          "line": "I'm not going down without a fight!",
+          "start_ms": 58176,
+          "end_ms": 60936,
+          "duration_ms": 2760,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Close-up of HADI, his eyes fixed intently on the road ahead as he skillfully navigates the track."
+        }
+      ]
+    },
+    {
+      "scene_id": 5,
+      "audio_file": "data\\phase2_runs\\run15\\audio\\scene_05_run15.mp3",
+      "bgm_file": "data\\phase2_runs\\run15\\bgm\\tense_scene05_freesound.mp3",
+      "mood": "tense",
+      "start_ms": 60936,
+      "end_ms": 70440,
+      "duration_ms": 9504,
+      "lines": [
+        {
+          "speaker": "HAIDER",
+          "line": "I...I didn't think you had it in you, Hadi.",
+          "start_ms": 60936,
+          "end_ms": 64440,
+          "duration_ms": 3504,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of HAIDER, expression intense and focused."
+        },
+        {
+          "speaker": "HADI",
+          "line": "You shouldn't have underestimated me, Haider. I'm the best driver in this city.",
+          "start_ms": 64440,
+          "end_ms": 70440,
+          "duration_ms": 6000,
+          "voice": "en-GB-RyanNeural",
+          "visual_cue": "Close-up of HAIDER, his eyes downcast in defeat as he looks at Hadi's victorious car."
+        }
+      ]
+    }
+  ]
+}

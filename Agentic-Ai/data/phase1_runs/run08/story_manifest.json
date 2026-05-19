@@ -1,0 +1,42 @@
+{
+  "workflow_id": "workflow_20260507_124100",
+  "timestamp": "2026-05-07T12:41:00.107563",
+  "story": {
+    "title": "Skybound",
+    "logline": "As a former pilot now navigating a treacherous flight, Sam must confront his troubled past and trust his instincts to save the lives of everyone on board.",
+    "genre": "Thriller",
+    "tone": "tense and gritty",
+    "setting": "A commercial airliner",
+    "time_period": "Present Day",
+    "themes": [
+      "Redemption",
+      "Trust",
+      "Survival"
+    ],
+    "acts": [
+      {
+        "act": 1,
+        "label": "Introduction",
+        "description": "Meet Sam, a former pilot struggling to come to terms with his past mistakes. He boards a plane with his friend Leo, unaware of the challenges ahead."
+      },
+      {
+        "act": 2,
+        "label": "Inciting Incident",
+        "description": "As the plane hits turbulence, Sam's past and present collide, threatening to destroy the lives of everyone on board."
+      },
+      {
+        "act": 3,
+        "label": "Climax",
+        "description": "With the plane on the verge of disaster, Sam must confront his demons and trust his instincts to save the day."
+      },
+      {
+        "act": 4,
+        "label": "Resolution",
+        "description": "As the plane lands safely, Sam must come to terms with the consequences of his actions and find a way to redeem himself."
+      }
+    ],
+    "protagonist": "SAM",
+    "antagonist": null,
+    "world": "A former pilot, now haunted by his past mistakes, must confront his demons and trust his instincts to save the lives of everyone on board a commercial airliner."
+  }
+}

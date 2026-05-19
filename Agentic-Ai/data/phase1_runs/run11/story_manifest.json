@@ -1,0 +1,42 @@
+{
+  "workflow_id": "workflow_20260507_125849",
+  "timestamp": "2026-05-07T12:58:49.663088",
+  "story": {
+    "title": "Neon Requiem",
+    "logline": "A troubled cyberpunk detective must navigate the dark underbelly of the city to uncover the truth behind a string of mysterious disappearances.",
+    "genre": "Cyberpunk Thriller",
+    "tone": "tense and gritty",
+    "setting": "a dystopian metropolis",
+    "time_period": "near-future",
+    "themes": [
+      "identity",
+      "corruption",
+      "technology gone wrong"
+    ],
+    "acts": [
+      {
+        "act": 1,
+        "label": "Introduction",
+        "description": "We meet our troubled cyberpunk detective, Kael, as he navigates the dark streets of the city, haunted by his past. We also meet his new partner, Lyra, a brilliant hacker with a hidden agenda."
+      },
+      {
+        "act": 2,
+        "label": "Confrontation",
+        "description": "Kael and Lyra delve deeper into the mystery of the disappearances, uncovering a web of corruption and deceit that reaches the highest echelons of power. They must navigate treacherous alliances and rivalries to get to the truth."
+      },
+      {
+        "act": 3,
+        "label": "Climax",
+        "description": "Kael and Lyra finally uncover the shocking truth behind the disappearances, but it leads them to a devastating confrontation with the mastermind behind the sinister plot."
+      },
+      {
+        "act": 4,
+        "label": "Resolution",
+        "description": "Kael and Lyra must come to terms with the consequences of their discovery and decide whether to take down the corrupt system or protect themselves and their loved ones."
+      }
+    ],
+    "protagonist": "KAEL",
+    "antagonist": null,
+    "world": "The city is a labyrinth of neon-lit skyscrapers, cramped alleyways, and virtual reality landscapes, where the boundaries between reality and fantasy are constantly blurred."
+  }
+}

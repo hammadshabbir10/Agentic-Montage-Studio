@@ -1,0 +1,143 @@
+{
+  "workflow_id": "workflow_20260507_125202",
+  "timestamp": "2026-05-07T12:52:02.827834",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "location": "DETECTIVE AGENCY",
+      "dialogue": [
+        {
+          "speaker": "KYLE",
+          "line": "\"We're running out of time, Maya. Our source just confirmed that the data disk has been sold to a rival corporation.\"",
+          "visual_cue": "Medium shot of KYLE, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "MAYA",
+          "line": "\"Don't worry, Kyle. I'll track down that disk. I have a lead on a underground market.\"",
+          "visual_cue": "Close-up of KYLE, frustration evident on his face.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "KYLE",
+          "line": "\"Be careful, Maya. We don't know what we're up against.\"",
+          "visual_cue": "Medium shot of MAYA, her eyes scanning the room with intensity.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "KYLE",
+        "MAYA"
+      ],
+      "duration": 26,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    },
+    {
+      "scene_id": 2,
+      "location": "UNDERGROUND MARKET",
+      "dialogue": [
+        {
+          "speaker": "MAYA",
+          "line": "\"Alright, I think I found the seller. He's a known associate of the rival corporation.\"",
+          "visual_cue": "Medium shot of MAYA, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "KYLE",
+          "line": "\"And what's the plan, Maya? You're not going in alone.\"",
+          "visual_cue": "Close-up of MAYA, her voice low and confident.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "MAYA",
+          "line": "\"I have a buyer lined up. I'll make the exchange and then we can take down the rival corporation.\"",
+          "visual_cue": "Medium shot of KYLE, his eyes scanning the market with a mixture of concern and curiosity.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "MAYA",
+        "KYLE"
+      ],
+      "duration": 24,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    },
+    {
+      "scene_id": 3,
+      "location": "ABANDONED WAREHOUSE",
+      "dialogue": [
+        {
+          "speaker": "MAYA",
+          "line": "\"Alright, Kyle. Let's get this over with.\"",
+          "visual_cue": "Medium shot of MAYA, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "KYLE",
+          "line": "\"You stay behind me. I've got your back.\"",
+          "visual_cue": "Close-up of MAYA, her eyes locked on the warehouse entrance.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "MAYA",
+          "line": "\"Looks like we have company.\"",
+          "visual_cue": "Medium shot of KYLE, his voice steady and reassuring.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "MAYA",
+        "KYLE"
+      ],
+      "duration": 13,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    }
+  ],
+  "total_scenes": 3,
+  "total_duration_seconds": 63
+}

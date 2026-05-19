@@ -1,0 +1,42 @@
+{
+  "workflow_id": "workflow_20260507_123539",
+  "timestamp": "2026-05-07T12:35:39.832824",
+  "story": {
+    "title": "Flight Risk",
+    "logline": "When a hapless duo accidentally boards a commercial flight with a rogue pilot at the helm, they must navigate their way to safety amidst catastrophic turbulence.",
+    "genre": "Action Thriller",
+    "tone": "tense and suspenseful",
+    "setting": "A commercial airliner",
+    "time_period": "Present Day",
+    "themes": [
+      "Survival",
+      "Trust",
+      "Redemption"
+    ],
+    "acts": [
+      {
+        "act": 1,
+        "label": "Introduction",
+        "description": "We meet our protagonists, Leo and Sam, who are on a flight with a seasoned pilot, Ali, and a charming hostess, Katina. As the flight takes off, we realize that Ali's intentions may not be entirely pure."
+      },
+      {
+        "act": 2,
+        "label": "Rising Action",
+        "description": "Leo and Sam must navigate the treacherous world of commercial aviation, all while trying to stay one step ahead of Ali's sinister plans. Katina, the hostess, seems to be the only one who can help them, but can they trust her?"
+      },
+      {
+        "act": 3,
+        "label": "Climax",
+        "description": "As the plane hits turbulent skies, Leo and Sam must use all their wits to outsmart Ali and Katina, and make it to safety. The stakes are higher than ever, and only one of them will make it out alive."
+      },
+      {
+        "act": 4,
+        "label": "Resolution",
+        "description": "The aftermath of the ordeal leaves Leo and Sam shaken, but triumphant. They must come to terms with their ordeal and the damage it has left on their lives. Katina's true intentions are revealed, leaving the audience questioning her motives."
+      }
+    ],
+    "protagonist": "LEO",
+    "antagonist": "ALI",
+    "world": "In a world where commercial aviation is taken for granted, the passengers and crew of Flight 121 must fight for their lives against all odds."
+  }
+}

@@ -1,0 +1,442 @@
+{
+  "story_manifest": {
+    "workflow_id": "workflow_20260507_021230",
+    "timestamp": "2026-05-07T02:12:30.140853",
+    "story": {
+      "title": "Flight of Frenemies",
+      "logline": "When a mischievous cat and mouse duo hijack a commercial plane, it's up to its no-nonsense pilot Owais to keep them in line and the passengers safe.",
+      "genre": "Family Comedy",
+      "tone": "Light-hearted and Adventurous",
+      "setting": "Onboard a Commercial Airplane",
+      "time_period": "Present Day",
+      "themes": [
+        "Friendship",
+        "Trust",
+        "Determination"
+      ],
+      "acts": [
+        {
+          "act": 1,
+          "label": "Introduction",
+          "description": "Meet our unlikely heroes, Tom and Jerry, and their adversary, Owais, who must balance his duty as a pilot with the chaos caused by the duo's antics."
+        },
+        {
+          "act": 2,
+          "label": "Rising Action",
+          "description": "As the plane hits turbulence, Tom and Jerry's mischief escalates, testing Owais's patience and Ariba's hospitality skills, while also putting the passengers at risk."
+        },
+        {
+          "act": 3,
+          "label": "Climax",
+          "description": "With the plane on the verge of disaster, Owais must use his quick thinking and Ariba's help to outsmart Tom and Jerry and land the plane safely."
+        },
+        {
+          "act": 4,
+          "label": "Resolution",
+          "description": "The passengers breathe a sigh of relief as the plane touches down safely, and Owais reflects on the unexpected lessons learned from his adventure with Tom and Jerry."
+        }
+      ],
+      "protagonist": "OWAI",
+      "antagonist": null,
+      "world": "A commercial airplane is filled with passengers, hosted by the charming Ariba, while Owais tries to keep the chaotic duo of Tom and Jerry from causing a catastrophe."
+    }
+  },
+  "scene_manifest": {
+    "workflow_id": "workflow_20260507_021233",
+    "timestamp": "2026-05-07T02:12:33.428905",
+    "scenes": [
+      {
+        "scene_id": 1,
+        "location": "PLANE CABIN",
+        "dialogue": [
+          {
+            "speaker": "OWAI",
+            "line": "\"Ladies and gentlemen, welcome aboard. We'll be landing in about an hour.\"",
+            "visual_cue": "Medium shot of OWAI, expression intense and focused.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "TOM",
+            "line": "\"This is taking forever.\"",
+            "visual_cue": "Wide shot of OWAI, smiling at the passengers.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "JERRY",
+            "line": "\"I'm starving.\"",
+            "visual_cue": "Close-up of TOM, frustration etched on his face.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "AREEBA",
+            "line": "\"Would you like a snack, sir? We have peanuts or pretzels.\"",
+            "visual_cue": "Close-up of JERRY, rummaging through his pocket for snacks.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "OWAI",
+            "line": "\"Remember, please fasten your seatbelts. We'll be hitting some turbulence.\"",
+            "visual_cue": "Close-up of AREEBA, smiling at Jerry.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          }
+        ],
+        "characters": [
+          "OWAI",
+          "TOM",
+          "JERRY",
+          "AREEBA"
+        ],
+        "duration": 24,
+        "start_ms": null,
+        "end_ms": null,
+        "duration_ms": null,
+        "audio_file": null,
+        "bgm_file": null,
+        "mood": null,
+        "lines": null
+      },
+      {
+        "scene_id": 2,
+        "location": "AIRPLANE WING",
+        "dialogue": [
+          {
+            "speaker": "OWAI",
+            "line": "\"Don't worry, folks. We're going through a bit of turbulence. Just keep your seats and\u2014\"",
+            "visual_cue": "Medium shot of OWAI, expression intense and focused.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "JERRY",
+            "line": "\"Ahh! This is crazy!\"",
+            "visual_cue": "Medium shot of JERRY, expression intense and focused.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "TOM",
+            "line": "\"Stay calm, Jerry. We'll be fine.\"",
+            "visual_cue": "Close-up of JERRY, eyes wide with fear.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "AREEBA",
+            "line": "\"Can I get you a blanket, sir? Or a cup of water?\"",
+            "visual_cue": "Close-up of TOM, attempting to reassure Jerry.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          }
+        ],
+        "characters": [
+          "OWAI",
+          "JERRY",
+          "TOM",
+          "AREEBA"
+        ],
+        "duration": 22,
+        "start_ms": null,
+        "end_ms": null,
+        "duration_ms": null,
+        "audio_file": null,
+        "bgm_file": null,
+        "mood": null,
+        "lines": null
+      },
+      {
+        "scene_id": 3,
+        "location": "AIRPLANE COCKPIT",
+        "dialogue": [
+          {
+            "speaker": "OWAI",
+            "line": "\"How's it looking, Areeba? Any signs of trouble?\"",
+            "visual_cue": "Medium shot of OWAI, expression intense and focused.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "AREEBA",
+            "line": "\"No, Captain. Everything's looking good. Just a bit of turbulence.\"",
+            "visual_cue": "Close-up of OWAI, focused on the controls.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          }
+        ],
+        "characters": [
+          "OWAI",
+          "AREEBA"
+        ],
+        "duration": 12,
+        "start_ms": null,
+        "end_ms": null,
+        "duration_ms": null,
+        "audio_file": null,
+        "bgm_file": null,
+        "mood": null,
+        "lines": null
+      }
+    ],
+    "total_scenes": 3,
+    "total_duration_seconds": 58
+  },
+  "character_db": {
+    "workflow_id": "workflow_20260507_021242",
+    "timestamp": "2026-05-07T02:12:42.696259",
+    "characters": [
+      {
+        "name": "OWAI",
+        "personality": "Calm and authoritative, OWAI is a seasoned pilot who prioritizes safety and reassures others in times of uncertainty.",
+        "appearance": "OWAI is a middle-aged man with a distinguished, weathered face and a strong, commanding presence.",
+        "role": "supporting",
+        "style_reference": "Classic airline aesthetic, 1970s flight attendant attire",
+        "first_appearance": 1,
+        "dialogue_samples": [
+          {
+            "line": "\"Ladies and gentlemen, welcome aboard. We'll be landing in about an hour.\"",
+            "visual_cue": "Medium shot of OWAI, expression intense and focused."
+          },
+          {
+            "line": "\"Remember, please fasten your seatbelts. We'll be hitting some turbulence.\"",
+            "visual_cue": "Close-up of AREEBA, smiling at Jerry."
+          },
+          {
+            "line": "\"Don't worry, folks. We're going through a bit of turbulence. Just keep your seats and\u2014\"",
+            "visual_cue": "Medium shot of OWAI, expression intense and focused."
+          },
+          {
+            "line": "\"How's it looking, Areeba? Any signs of trouble?\"",
+            "visual_cue": "Medium shot of OWAI, expression intense and focused."
+          }
+        ]
+      },
+      {
+        "name": "TOM",
+        "personality": "Tom appears to be a calm and level-headed individual who tries to reassure others in times of crisis, but also shows signs of frustration and impatience.",
+        "appearance": "Tom is a mid-30s man with a rugged, weathered appearance, dressed in a pilot's uniform, likely worn from frequent travel and exposure to the elements.",
+        "role": "supporting",
+        "style_reference": "1970s-era disaster film, earthy tones, worn and practical clothing aesthetic.",
+        "first_appearance": 1,
+        "dialogue_samples": [
+          {
+            "line": "\"This is taking forever.\"",
+            "visual_cue": "Wide shot of OWAI, smiling at the passengers."
+          },
+          {
+            "line": "\"Stay calm, Jerry. We'll be fine.\"",
+            "visual_cue": "Close-up of JERRY, eyes wide with fear."
+          }
+        ]
+      },
+      {
+        "name": "JERRY",
+        "personality": "Jerry appears to be a somewhat high-strung individual, prone to outbursts of hunger or panic. He may be someone who feels out of control in chaotic situations.",
+        "appearance": "Jerry is likely dressed in casual, comfortable clothing suitable for a plane journey, possibly with a few wrinkles or disheveled strands of hair.",
+        "role": "supporting",
+        "style_reference": "Low-budget, indie thriller, with a focus on practical, in-your-face realism and muted color palette.",
+        "first_appearance": 1,
+        "dialogue_samples": [
+          {
+            "line": "\"I'm starving.\"",
+            "visual_cue": "Close-up of TOM, frustration etched on his face."
+          },
+          {
+            "line": "\"Ahh! This is crazy!\"",
+            "visual_cue": "Medium shot of JERRY, expression intense and focused."
+          }
+        ]
+      },
+      {
+        "name": "AREEBA",
+        "personality": "Areeba appears to be a friendly and attentive flight attendant, motivated by a desire to ensure passenger comfort and safety.",
+        "appearance": "Areeba is a woman in her mid-to-late 30s, dressed in a classic airline uniform from the mid-20th century, with a warm and approachable demeanor.",
+        "role": "supporting",
+        "style_reference": "Retro-futurism, 1950s-60s airline aesthetic, with a focus on clean lines, pastel colors, and a sense of nostalgia",
+        "first_appearance": 1,
+        "dialogue_samples": [
+          {
+            "line": "\"Would you like a snack, sir? We have peanuts or pretzels.\"",
+            "visual_cue": "Close-up of JERRY, rummaging through his pocket for snacks."
+          },
+          {
+            "line": "\"Can I get you a blanket, sir? Or a cup of water?\"",
+            "visual_cue": "Close-up of TOM, attempting to reassure Jerry."
+          },
+          {
+            "line": "\"No, Captain. Everything's looking good. Just a bit of turbulence.\"",
+            "visual_cue": "Close-up of OWAI, focused on the controls."
+          }
+        ]
+      }
+    ],
+    "total_characters": 4
+  },
+  "timing_manifest": {
+    "workflow_id": "phase2_run02",
+    "timestamp": "2026-05-07T02:13:32.308071",
+    "run_tag": "run02",
+    "total_duration_ms": 46967,
+    "scenes": [
+      {
+        "scene_id": 1,
+        "audio_file": "data\\phase2_runs\\run02\\audio\\scene_01_run02.mp3",
+        "bgm_file": "data\\phase2_runs\\run02\\bgm\\mysterious_scene01_freesound.mp3",
+        "mood": "mysterious",
+        "start_ms": 0,
+        "end_ms": 19584,
+        "duration_ms": 19584,
+        "lines": [
+          {
+            "speaker": "OWAI",
+            "line": "Ladies and gentlemen, welcome aboard. We'll be landing in about an hour.",
+            "start_ms": 0,
+            "end_ms": 5952,
+            "duration_ms": 5952,
+            "voice": "en-US-GuyNeural",
+            "visual_cue": "Medium shot of OWAI, expression intense and focused."
+          },
+          {
+            "speaker": "TOM",
+            "line": "This is taking forever.",
+            "start_ms": 5952,
+            "end_ms": 7536,
+            "duration_ms": 1584,
+            "voice": "en-US-AndrewNeural",
+            "visual_cue": "Wide shot of OWAI, smiling at the passengers."
+          },
+          {
+            "speaker": "JERRY",
+            "line": "I'm starving.",
+            "start_ms": 7536,
+            "end_ms": 8736,
+            "duration_ms": 1200,
+            "voice": "en-US-BrianNeural",
+            "visual_cue": "Close-up of TOM, frustration etched on his face."
+          },
+          {
+            "speaker": "AREEBA",
+            "line": "Would you like a snack, sir? We have peanuts or pretzels.",
+            "start_ms": 8736,
+            "end_ms": 13752,
+            "duration_ms": 5016,
+            "voice": "en-US-JennyNeural",
+            "visual_cue": "Close-up of JERRY, rummaging through his pocket for snacks."
+          },
+          {
+            "speaker": "OWAI",
+            "line": "Remember, please fasten your seatbelts. We'll be hitting some turbulence.",
+            "start_ms": 13752,
+            "end_ms": 19584,
+            "duration_ms": 5832,
+            "voice": "en-US-GuyNeural",
+            "visual_cue": "Close-up of AREEBA, smiling at Jerry."
+          }
+        ]
+      },
+      {
+        "scene_id": 2,
+        "audio_file": "data\\phase2_runs\\run02\\audio\\scene_02_run02.mp3",
+        "bgm_file": "data\\phase2_runs\\run02\\bgm\\mysterious_scene02_freesound.mp3",
+        "mood": "mysterious",
+        "start_ms": 19584,
+        "end_ms": 35663,
+        "duration_ms": 16079,
+        "lines": [
+          {
+            "speaker": "OWAI",
+            "line": "Don't worry, folks. We're going through a bit of turbulence. Just keep your seats and-",
+            "start_ms": 19584,
+            "end_ms": 26855,
+            "duration_ms": 7271,
+            "voice": "en-US-GuyNeural",
+            "visual_cue": "Medium shot of OWAI, expression intense and focused."
+          },
+          {
+            "speaker": "JERRY",
+            "line": "Ahh! This is crazy!",
+            "start_ms": 26855,
+            "end_ms": 28798,
+            "duration_ms": 1943,
+            "voice": "en-US-BrianNeural",
+            "visual_cue": "Medium shot of JERRY, expression intense and focused."
+          },
+          {
+            "speaker": "TOM",
+            "line": "Stay calm, Jerry. We'll be fine.",
+            "start_ms": 28798,
+            "end_ms": 31173,
+            "duration_ms": 2375,
+            "voice": "en-US-AndrewNeural",
+            "visual_cue": "Close-up of JERRY, eyes wide with fear."
+          },
+          {
+            "speaker": "AREEBA",
+            "line": "Can I get you a blanket, sir? Or a cup of water?",
+            "start_ms": 31173,
+            "end_ms": 35663,
+            "duration_ms": 4490,
+            "voice": "en-US-JennyNeural",
+            "visual_cue": "Close-up of TOM, attempting to reassure Jerry."
+          }
+        ]
+      },
+      {
+        "scene_id": 3,
+        "audio_file": "data\\phase2_runs\\run02\\audio\\scene_03_run02.mp3",
+        "bgm_file": "data\\phase2_runs\\run02\\bgm\\mysterious_scene03_freesound.mp3",
+        "mood": "mysterious",
+        "start_ms": 35663,
+        "end_ms": 46967,
+        "duration_ms": 11304,
+        "lines": [
+          {
+            "speaker": "OWAI",
+            "line": "How's it looking, Areeba? Any signs of trouble?",
+            "start_ms": 35663,
+            "end_ms": 40367,
+            "duration_ms": 4704,
+            "voice": "en-US-GuyNeural",
+            "visual_cue": "Medium shot of OWAI, expression intense and focused."
+          },
+          {
+            "speaker": "AREEBA",
+            "line": "No, Captain. Everything's looking good. Just a bit of turbulence.",
+            "start_ms": 40367,
+            "end_ms": 46967,
+            "duration_ms": 6600,
+            "voice": "en-US-JennyNeural",
+            "visual_cue": "Close-up of OWAI, focused on the controls."
+          }
+        ]
+      }
+    ]
+  },
+  "timing_manifest_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\phase2_runs\\run02\\timing_manifest_run02.json",
+  "latest_video": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\phase3_runs\\run02\\final_output_run02.mp4"
+}

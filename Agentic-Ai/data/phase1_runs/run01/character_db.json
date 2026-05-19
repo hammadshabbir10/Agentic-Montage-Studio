@@ -1,0 +1,91 @@
+{
+  "workflow_id": "workflow_20260507_021242",
+  "timestamp": "2026-05-07T02:12:42.696259",
+  "characters": [
+    {
+      "name": "OWAI",
+      "personality": "Calm and authoritative, OWAI is a seasoned pilot who prioritizes safety and reassures others in times of uncertainty.",
+      "appearance": "OWAI is a middle-aged man with a distinguished, weathered face and a strong, commanding presence.",
+      "role": "supporting",
+      "style_reference": "Classic airline aesthetic, 1970s flight attendant attire",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"Ladies and gentlemen, welcome aboard. We'll be landing in about an hour.\"",
+          "visual_cue": "Medium shot of OWAI, expression intense and focused."
+        },
+        {
+          "line": "\"Remember, please fasten your seatbelts. We'll be hitting some turbulence.\"",
+          "visual_cue": "Close-up of AREEBA, smiling at Jerry."
+        },
+        {
+          "line": "\"Don't worry, folks. We're going through a bit of turbulence. Just keep your seats and\u2014\"",
+          "visual_cue": "Medium shot of OWAI, expression intense and focused."
+        },
+        {
+          "line": "\"How's it looking, Areeba? Any signs of trouble?\"",
+          "visual_cue": "Medium shot of OWAI, expression intense and focused."
+        }
+      ]
+    },
+    {
+      "name": "TOM",
+      "personality": "Tom appears to be a calm and level-headed individual who tries to reassure others in times of crisis, but also shows signs of frustration and impatience.",
+      "appearance": "Tom is a mid-30s man with a rugged, weathered appearance, dressed in a pilot's uniform, likely worn from frequent travel and exposure to the elements.",
+      "role": "supporting",
+      "style_reference": "1970s-era disaster film, earthy tones, worn and practical clothing aesthetic.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"This is taking forever.\"",
+          "visual_cue": "Wide shot of OWAI, smiling at the passengers."
+        },
+        {
+          "line": "\"Stay calm, Jerry. We'll be fine.\"",
+          "visual_cue": "Close-up of JERRY, eyes wide with fear."
+        }
+      ]
+    },
+    {
+      "name": "JERRY",
+      "personality": "Jerry appears to be a somewhat high-strung individual, prone to outbursts of hunger or panic. He may be someone who feels out of control in chaotic situations.",
+      "appearance": "Jerry is likely dressed in casual, comfortable clothing suitable for a plane journey, possibly with a few wrinkles or disheveled strands of hair.",
+      "role": "supporting",
+      "style_reference": "Low-budget, indie thriller, with a focus on practical, in-your-face realism and muted color palette.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"I'm starving.\"",
+          "visual_cue": "Close-up of TOM, frustration etched on his face."
+        },
+        {
+          "line": "\"Ahh! This is crazy!\"",
+          "visual_cue": "Medium shot of JERRY, expression intense and focused."
+        }
+      ]
+    },
+    {
+      "name": "AREEBA",
+      "personality": "Areeba appears to be a friendly and attentive flight attendant, motivated by a desire to ensure passenger comfort and safety.",
+      "appearance": "Areeba is a woman in her mid-to-late 30s, dressed in a classic airline uniform from the mid-20th century, with a warm and approachable demeanor.",
+      "role": "supporting",
+      "style_reference": "Retro-futurism, 1950s-60s airline aesthetic, with a focus on clean lines, pastel colors, and a sense of nostalgia",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"Would you like a snack, sir? We have peanuts or pretzels.\"",
+          "visual_cue": "Close-up of JERRY, rummaging through his pocket for snacks."
+        },
+        {
+          "line": "\"Can I get you a blanket, sir? Or a cup of water?\"",
+          "visual_cue": "Close-up of TOM, attempting to reassure Jerry."
+        },
+        {
+          "line": "\"No, Captain. Everything's looking good. Just a bit of turbulence.\"",
+          "visual_cue": "Close-up of OWAI, focused on the controls."
+        }
+      ]
+    }
+  ],
+  "total_characters": 4
+}

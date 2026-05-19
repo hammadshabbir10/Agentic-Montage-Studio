@@ -45,8 +45,17 @@ RUN_EVENTS: Dict[str, "queue.Queue[Dict[str, Any]]"] = {}
 RUN_STATUS: Dict[str, Dict[str, Any]] = {}
 RUN_APPROVAL_EVENTS: Dict[str, threading.Event] = {}
 
-# Phase 5 — State Manager (singleton for the app lifetime)
-_STATE_MANAGER = StateManager(base_dir=DATA_DIR / "state_versions")
+# Phase 5 — State Manager (per-run instances)
+_STATE_MANAGERS: Dict[str, StateManager] = {}
+
+
+def _state_manager_for_run(run_id: str | None) -> StateManager:
+  # We now use a global state manager so that version history persists across runs.
+  run_key = "global"
+  if run_key not in _STATE_MANAGERS:
+    base_dir = DATA_DIR / "state_versions" / run_key
+    _STATE_MANAGERS[run_key] = StateManager(base_dir=base_dir)
+  return _STATE_MANAGERS[run_key]
 
 
 def _safe_read_json(path: Path, fallback: Dict[str, Any] | List[Any] | None = None) -> Any:
@@ -71,6 +80,16 @@ def _emit(run_id: str, event: str, payload: Dict[str, Any]) -> None:
             RUN_STATUS[run_id]["status"] = payload.get("status", RUN_STATUS[run_id].get("status"))
             if payload.get("latest_video"):
                 RUN_STATUS[run_id]["latest_video"] = payload["latest_video"]
+
+
+def _resolve_run_id(body: Dict[str, Any] | None = None) -> str:
+    if body and body.get("run_id"):
+        return str(body.get("run_id"))
+    query_run = request.args.get("run_id", "").strip()
+    if query_run:
+        return query_run
+    latest = _safe_read_json(STATE_FILE, fallback={})
+    return str(latest.get("last_run_id", "")).strip()
 
 
 def _pause_for_approval(run_id: str) -> bool:
@@ -510,6 +529,19 @@ def index() -> Response:
       white-space: pre-wrap;
       border: 1px solid rgba(255,255,255,0.08);
     }}
+    #outputJson {{
+      background: rgba(6,8,12,0.92);
+      color: #c7d2fe;
+      border-radius: 18px;
+      min-height: 220px;
+      max-height: 320px;
+      overflow: auto;
+      padding: 18px;
+      font-family: Consolas, monospace;
+      font-size: 12px;
+      white-space: pre-wrap;
+      border: 1px solid rgba(255,255,255,0.08);
+    }}
     .status-ok {{ color: var(--ok); }}
     .status-bad {{ color: var(--bad); }}
     .status-warn {{ color: var(--warn); }}
@@ -558,101 +590,131 @@ def index() -> Response:
       </div>
     </section>
 
-    <div class="grid" id="pipeline">
+    <!-- ═══ Top Row: Pipeline Controls & Phase Status ═══ -->
+    <div class="grid" id="pipeline" style="margin-top:20px; align-items:stretch;">
+      <!-- Pipeline Controls -->
       <div class="card">
         <h2>Pipeline Controls</h2>
         <label>Prompt</label>
         <textarea id="prompt" placeholder="A neon cyberpunk detective solving a mystery in 3 scenes"></textarea>
-        <div class="row">
-          <div style="flex:1">
-            <label>Scenes</label>
-            <input id="scenes" type="number" min="1" max="10" value="3" />
+        <div class="row" style="gap:10px;margin-top:12px;flex-wrap:wrap;">
+          <div style="flex:1;min-width:80px">
+            <label style="font-size:11px;margin-bottom:4px;">Scenes</label>
+            <input id="scenes" type="number" min="1" max="10" value="3" style="padding:8px 10px;font-size:13px;" />
           </div>
-          <div style="flex:1">
-            <label>Quality</label>
-            <select id="quality">
-              <option value="fast">fast</option>
-              <option value="balanced" selected>balanced</option>
-              <option value="cinematic">cinematic</option>
+          <div style="flex:1;min-width:90px">
+            <label style="font-size:11px;margin-bottom:4px;">Quality</label>
+            <select id="quality" style="padding:8px 10px;font-size:13px;">
+              <option value="fast">Fast</option>
+              <option value="balanced" selected>Balanced</option>
+              <option value="cinematic">Cinematic</option>
             </select>
           </div>
-          <div style="flex:1">
-            <label>Image Backend</label>
-            <select id="backend">
-              <option value="auto" selected>auto</option>
-              <option value="hf">hf</option>
-              <option value="pollinations">pollinations</option>
+          <div style="flex:1;min-width:90px">
+            <label style="font-size:11px;margin-bottom:4px;">Backend</label>
+            <select id="backend" style="padding:8px 10px;font-size:13px;">
+              <option value="auto" selected>Auto</option>
+              <option value="hf">HF</option>
+              <option value="pollinations">Pollinations</option>
             </select>
           </div>
         </div>
-        <div class="row">
-          <label><input id="subs" type="checkbox" checked /> Enable subtitles</label>
-          <label><input id="humanApproval" type="checkbox" /> Human approval after Phase 1</label>
+        <div class="row" style="gap:16px;margin-top:10px;">
+          <label style="font-size:12px;color:var(--muted);"><input id="subs" type="checkbox" checked /> Subtitles</label>
+          <label style="font-size:12px;color:var(--muted);"><input id="humanApproval" type="checkbox" /> Human Approval</label>
         </div>
-        <div class="row">
-          <button onclick="startPipeline()">Run Full Pipeline (P1→P3)</button>
-          <button class="secondary" onclick="rerun('phase1')">Regenerate Story/Script (Phase 1)</button>
-          <button class="secondary" onclick="rerun('phase2')">Regenerate Voice/Audio (Phase 2)</button>
-          <button class="secondary" onclick="rerun('phase3')">Recompose Video (Phase 3)</button>
+        <!-- Action buttons: compact pill style -->
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;">
+          <button onclick="startPipeline()" style="padding:9px 18px;font-size:11px;letter-spacing:0.06em;">▶ Run P1→P3</button>
+          <button class="secondary" onclick="rerun('phase1')" style="padding:9px 14px;font-size:11px;">↻ Phase 1</button>
+          <button class="secondary" onclick="rerun('phase2')" style="padding:9px 14px;font-size:11px;">↻ Phase 2</button>
+          <button class="secondary" onclick="rerun('phase3')" style="padding:9px 14px;font-size:11px;">↻ Phase 3</button>
         </div>
-        <div class="row">
-          <input id="sceneId" type="number" min="1" placeholder="Scene id for partial Phase 3 rerun" />
-          <button class="secondary" onclick="rerunScene()">Rerun Single Scene (Phase 3)</button>
+        <div style="display:flex;gap:8px;margin-top:8px;align-items:center;flex-wrap:wrap;">
+          <input id="sceneId" type="number" min="1" placeholder="Scene #" style="width:90px;padding:8px 10px;font-size:13px;" />
+          <button class="secondary" onclick="rerunScene()" style="padding:9px 14px;font-size:11px;">↻ Scene Only</button>
+          <button class="secondary" id="approveButton" onclick="approveRun()" disabled style="padding:9px 14px;font-size:11px;">✓ Approve P1</button>
+          <div id="currentTool" class="chip" style="font-size:11px;">idle</div>
         </div>
-        <div class="row" style="margin-top:14px; justify-content:space-between;">
-          <button class="secondary" id="approveButton" onclick="approveRun()" disabled>Approve Phase 1</button>
-          <div id="currentTool" class="chip">Tool: idle</div>
-        </div>
+        
+        <!-- MCP Tools Status -->
+        <div id="tools" style="margin-top:12px; display:flex; flex-wrap:wrap; gap:4px;"></div>
       </div>
 
+      <!-- Phase Status -->
       <div class="card">
-        <h3>Phase Status</h3>
+        <h3 style="margin-bottom:16px; display:flex; align-items:center; gap:10px;">
+          Phase Status
+          <span id="pipelineState" class="chip" style="font-size:11px; background:rgba(255,230,0,0.15); color:var(--accent);">idle</span>
+          <span id="runTag" class="chip" style="font-size:11px; background:rgba(255,255,255,0.05);">run: -</span>
+        </h3>
         <div class="phase-panel">
-          <div><strong>Phase 1</strong></div>
+          <div><strong>Phase 1</strong> <span style="font-size:11px;color:var(--muted);">Story & Script</span></div>
           <div id="phase1State" class="chip">waiting</div>
-          <div id="phase1Command" class="chip" style="background:rgba(255,255,255,0.05);font-size:11px;">command pending</div>
+          <div id="phase1Command" class="chip" style="background:rgba(255,255,255,0.05);font-size:11px;grid-column:1/-1;">command pending</div>
         </div>
         <div class="phase-panel">
-          <div><strong>Phase 2</strong></div>
+          <div><strong>Phase 2</strong> <span style="font-size:11px;color:var(--muted);">Voice & Audio</span></div>
           <div id="phase2State" class="chip">waiting</div>
-          <div id="phase2Command" class="chip" style="background:rgba(255,255,255,0.05);font-size:11px;">command pending</div>
+          <div id="phase2Command" class="chip" style="background:rgba(255,255,255,0.05);font-size:11px;grid-column:1/-1;">command pending</div>
         </div>
-        <div class="phase-panel">
-          <div><strong>Phase 3</strong></div>
+        <div class="phase-panel" style="border-bottom:none;">
+          <div><strong>Phase 3</strong> <span style="font-size:11px;color:var(--muted);">Video Compose</span></div>
           <div id="phase3State" class="chip">waiting</div>
-          <div id="phase3Command" class="chip" style="background:rgba(255,255,255,0.05);font-size:11px;">command pending</div>
+          <div id="phase3Command" class="chip" style="background:rgba(255,255,255,0.05);font-size:11px;grid-column:1/-1;">command pending</div>
         </div>
-        <div class="phase-panel" style="margin-top:10px;">
-          <div><strong>Pipeline</strong></div>
-          <div id="pipelineState" class="chip status-warn">idle</div>
-          <div id="runTag" class="chip" style="background:rgba(255,255,255,0.05);font-size:11px;">latest run tag</div>
+
+        <!-- Progress Bar -->
+        <div style="margin-top:20px;border-top:1px solid rgba(255,255,255,0.08);padding-top:16px;">
+          <span style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;">Overall Progress</span>
+          <div style="width:100%;height:8px;background:rgba(255,255,255,0.06);border-radius:4px;margin-top:8px;overflow:hidden;position:relative;">
+            <div id="progressBar" style="width:0%;height:100%;background:linear-gradient(90deg, #00ffc8, #ff5f7d);transition:width 0.5s ease-out;box-shadow:0 0 10px rgba(0,255,200,0.4);"></div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="grid" style="margin-top:16px; gap:14px;">
-      <div class="card">
-        <h3>Tool Calling (MCP-style)</h3>
-        <p style="color:var(--muted); margin-top:0">Loaded dynamically from <code>data/mcp_registry.json</code>.</p>
-        <div id="tools"></div>
-        <div class="row">
-          <input id="capability" placeholder="capability (e.g. generate_scene_image_fallback)" />
-        </div>
-        <textarea id="toolPayload" placeholder='{{"prompt":"sunset city skyline","output_dir":"data/image_assets","filename":"demo_city"}}'></textarea>
-        <div class="row">
-          <button class="secondary" onclick="callTool()">Call Tool</button>
-        </div>
-        <div id="toolResult" style="font-family:Consolas,monospace; font-size:12px; white-space:pre-wrap;"></div>
+    <!-- ═══ Full Width Section: Phase Outputs ═══ -->
+    <div class="card" style="margin-top:16px;">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+        <h3 style="margin:0;">Phase Outputs</h3>
+        <span class="chip" id="outputRunTag" style="font-size:10px;">run: {latest.get('run_tag','-')}</span>
       </div>
+      <div class="row" style="gap:24px;align-items:flex-start;flex-wrap:wrap;">
+        <!-- Phase 1 buttons -->
+        <div>
+          <span style="font-size:12px;color:var(--muted);display:block;margin-bottom:8px;font-weight:600;">Phase 1 <span style="font-weight:400">(Story & Script)</span></span>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <button class="secondary" onclick="showPhaseOutput('phase1','story_manifest')" style="padding:8px 16px;font-size:11px;">📖 Story Manifest</button>
+            <button class="secondary" onclick="showPhaseOutput('phase1','scene_manifest')" style="padding:8px 16px;font-size:11px;">🎬 Scene Manifest</button>
+            <button class="secondary" onclick="showPhaseOutput('phase1','character_db')" style="padding:8px 16px;font-size:11px;">👤 Character DB</button>
+          </div>
+        </div>
+        <!-- Phase 2 buttons -->
+        <div>
+          <span style="font-size:12px;color:var(--muted);display:block;margin-bottom:8px;font-weight:600;">Phase 2 <span style="font-weight:400">(Audio & Timing)</span></span>
+          <button class="secondary" onclick="showPhaseOutput('phase2','timing_manifest')" style="padding:8px 16px;font-size:11px;">🎙 Timing Manifest</button>
+        </div>
+      </div>
+      <!-- JSON Viewer Area -->
+      <div id="outputJson" style="margin-top:16px;background:rgba(2,4,8,0.9);border-radius:14px;padding:16px;font-family:Consolas,monospace;font-size:12px;color:#c7d2fe;max-height:350px;overflow:auto;white-space:pre-wrap;border:1px solid rgba(255,255,255,0.07);line-height:1.5;">Select an output above to view JSON...</div>
+    </div>
 
-      <div class="card">
-        <h3>Phase Outputs</h3>
-        <div class="row" style="flex-direction:column; align-items:flex-start; gap:6px;">
-          <span class="chip" id="outputRunTag">Latest run: {latest.get('run_tag','-')}</span>
-          <span class="chip">Latest video path:</span>
-          <code id="latestVideoPath" style="display:block; word-break:break-all; margin-top:6px; color:var(--muted);">{latest_video}</code>
+    <!-- Tool Tester Section -->
+    <div class="card" style="margin-top:16px;" id="tools">
+      <h3>🛠 Tool Tester (MCP)</h3>
+      <div class="row" style="gap:12px;">
+        <div style="flex:1;">
+          <label>Capability</label>
+          <input id="capability" placeholder="e.g. generate_image" style="padding:8px 12px; font-size:13px;" />
         </div>
+        <div style="flex:2;">
+          <label>Payload (JSON)</label>
+          <input id="toolPayload" placeholder='{{"prompt": "a cyberpunk cat"}}' style="padding:8px 12px; font-size:13px;" />
+        </div>
+        <button class="secondary" onclick="callTool()" style="margin-top:24px; padding:10px 20px; font-size:12px;">Execute</button>
       </div>
+      <div id="toolResult" style="margin-top:12px; background:rgba(0,0,0,0.3); padding:10px; border-radius:8px; font-family:monospace; font-size:11px; max-height:150px; overflow:auto; white-space:pre-wrap;"></div>
     </div>
 
     <div class="card" style="margin-top:16px">
@@ -660,34 +722,50 @@ def index() -> Response:
       <div id="log"></div>
     </div>
 
-    <div class="card" style="margin-top:16px">
-      <h3>Final Video</h3>
-      <video id="preview" controls src="{latest_video_url}"></video>
-      <div class="row">
-        <button class="secondary" onclick="refreshLatest()">Refresh Latest Output</button>
-        <a id="downloadLink" href="{latest_download_url}" style="color:#c4b5fd">Download MP4</a>
+    <!-- Final Video -->
+    <div class="grid" style="margin-top:16px;gap:16px;">
+      <div class="card">
+        <h3>🎬 Final Video</h3>
+        <div id="latestVideoPath" style="font-size:10px; color:var(--muted); margin-bottom:8px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">{latest_video}</div>
+        <video id="preview" controls src="{latest_video_url}" style="margin-top:8px;"></video>
+        <div class="row" style="margin-top:10px;gap:8px;">
+          <button class="secondary" onclick="refreshLatest()" style="padding:9px 16px;font-size:11px;">↻ Refresh</button>
+          <a id="downloadLink" href="{latest_download_url}" style="color:#c4b5fd;font-size:13px;align-self:center;">⬇ Download MP4</a>
+        </div>
+      </div>
+
+      <!-- Lipsync Video Card -->
+      <div class="card">
+        <h3 style="display:flex;align-items:center;gap:10px;">Final Video with Lipsync <span id="lipsyncRunTag" class="chip" style="font-size:10px;background:rgba(255,95,125,0.18);color:#ff5f7d;">finding...</span></h3>
+        <p style="color:var(--muted);margin-top:0;font-size:0.88rem;">High-fidelity lip-synced render with BGM and title/end cards.</p>
+        <video id="lipsyncPreview" controls src="/lipsync_video" style="margin-top:8px;"></video>
+        <div class="row" style="margin-top:10px;gap:8px;">
+          <a href="/lipsync_video_download" style="color:#ff5f7d;font-size:13px;">⬇ Download Lipsync MP4</a>
+        </div>
       </div>
     </div>
 
-    <!-- ═══════ Phase 5 — Edit & Undo ═══════ -->
+    <!-- ═══════ Phase 5: LEFT=Edit Agent, RIGHT=Phase Status+History ═══════ -->
     <div class="grid" style="margin-top:22px;">
+      <!-- LEFT: Edit Agent -->
       <div class="card">
         <h2 style="display:flex;align-items:center;gap:10px;">✏️ Edit Agent <span class="chip" style="font-size:11px;background:rgba(255,95,125,0.18);color:#ff5f7d">Phase 5</span></h2>
         <p style="color:var(--muted);margin-top:0;font-size:0.92rem;">Type a natural-language edit command. The AI agent will classify your intent, target the correct pipeline component, and execute the change.</p>
         <label>Edit Command</label>
-        <textarea id="editQuery" placeholder='e.g. "Make scene 1 darker", "Apply sepia filter", "Speed up scene 2", "Change voice tone to whispered"' style="min-height:80px"></textarea>
-        <div class="row" style="margin-top:10px;">
-          <button onclick="submitEdit()">Apply Edit</button>
-          <button class="secondary" onclick="loadHistory()">Refresh History</button>
+        <textarea id="editQuery" placeholder='e.g. "Make OWAI a black skin color", "Apply sepia filter", "Speed up scene 2"' style="min-height:80px"></textarea>
+        <div class="row" style="margin-top:10px;gap:8px;">
+          <button onclick="submitEdit()" style="padding:10px 20px;font-size:12px;">Apply Edit</button>
+          <button class="secondary" onclick="loadHistory()" style="padding:10px 16px;font-size:12px;">↻ History</button>
         </div>
         <div id="editStatus" style="margin-top:14px;"></div>
         <div id="editResult" style="font-family:Consolas,monospace;font-size:12px;white-space:pre-wrap;margin-top:10px;color:var(--muted);"></div>
         <div style="margin-top:14px;">
-          <span style="color:var(--muted);font-size:0.85rem;">Available filters:</span>
+          <span style="color:var(--muted);font-size:0.82rem;">Available filters:</span>
           <div id="filterChips" style="margin-top:6px;"></div>
         </div>
       </div>
 
+      <!-- RIGHT: Version History -->
       <div class="card">
         <h2 style="display:flex;align-items:center;gap:10px;">🕐 Version History <span class="chip" style="font-size:11px;background:rgba(0,255,200,0.14);color:var(--accent2)">Undo</span></h2>
         <p style="color:var(--muted);margin-top:0;font-size:0.92rem;">Every edit creates a snapshot. Click <strong>Revert</strong> to restore any previous state and its assets.</p>
@@ -701,10 +779,12 @@ def index() -> Response:
     let currentEventSource = null;
 
     async function loadTools() {{
-      const resp = await fetch('/api/tools');
-      const data = await resp.json();
-      const el = document.getElementById('tools');
-      el.innerHTML = (data.tools || []).map(t => `<span class="chip">${{t.capability}} -> ${{t.type}}</span>`).join('');
+      try {{
+        const resp = await fetch('/api/tools');
+        const data = await resp.json();
+        const el = document.getElementById('tools');
+        el.innerHTML = (data.tools || []).map(t => `<span class="chip">${{t.capability}} -> ${{t.type}}</span>`).join('');
+      }} catch(err) {{ console.error('loadTools error:', err); }}
     }}
 
     function addLog(msg, cls='') {{
@@ -733,6 +813,21 @@ def index() -> Response:
         document.getElementById('outputRunTag').textContent = `Latest run: ${{runTag}}`;
       }}
       if (message) addLog(`[pipeline] ${{message}}`, 'status-info');
+    }}
+
+    async function showPhaseOutput(phase, subkey) {{
+      try {{
+        const res = await fetch(`/api/output/${{phase}}`);
+        const data = await res.json();
+        // Show only the requested sub-section if specified
+        let display = data;
+        if (subkey && data[subkey] !== undefined) {{
+          display = data[subkey];
+        }}
+        document.getElementById('outputJson').textContent = JSON.stringify(display, null, 2);
+      }} catch (err) {{
+        document.getElementById('outputJson').textContent = String(err);
+      }}
     }}
 
     function currentPayload(extra={{}}) {{
@@ -805,6 +900,19 @@ def index() -> Response:
       pipelineState.className = 'chip status-warn';
       document.getElementById('approveButton').disabled = true;
       document.getElementById('currentTool').textContent = 'Tool: idle';
+      const bar = document.getElementById('progressBar');
+      if(bar) bar.style.width = '0%';
+    }}
+
+    function updateProgressBar(phase, status) {{
+      const bar = document.getElementById('progressBar');
+      if (!bar) return;
+      if (phase === 'phase1' && status === 'running') bar.style.width = '15%';
+      if (phase === 'phase1' && status === 'completed') bar.style.width = '33%';
+      if (phase === 'phase2' && status === 'running') bar.style.width = '50%';
+      if (phase === 'phase2' && status === 'completed') bar.style.width = '66%';
+      if (phase === 'phase3' && status === 'running') bar.style.width = '80%';
+      if (phase === 'phase3' && status === 'completed') bar.style.width = '100%';
     }}
 
     function connectSSE(runId) {{
@@ -823,6 +931,7 @@ def index() -> Response:
         const d = JSON.parse(e.data);
         setPhaseStatus(d.phase, d.status, d.command || 'command pending');
         addLog(`[${{d.phase}}] status=${{d.status}}`, d.status === 'completed' ? 'status-ok' : (d.status === 'failed' ? 'status-bad' : 'status-warn'));
+        updateProgressBar(d.phase, d.status);
       }});
       currentEventSource.addEventListener('pipeline_status', (e) => {{
         const d = JSON.parse(e.data);
@@ -873,8 +982,17 @@ def index() -> Response:
         document.getElementById('outputRunTag').textContent = `Latest run: ${{data.run_tag || '-'}}`;
         document.getElementById('latestVideoPath').textContent = data.latest_video;
       }}
+      
+      // Update Lipsync Tag
+      try {{
+        const lres = await fetch('/api/pipeline/latest_lipsync');
+        const ldata = await lres.json();
+        const ltag = document.getElementById('lipsyncRunTag');
+        if (ltag) ltag.textContent = ldata.tag || '-';
+      }} catch(e) {{ console.error(e); }}
     }}
 
+    refreshLatest();
     loadTools();
 
     // ═══════ Phase 5 — Edit & Undo JS ═══════
@@ -1038,6 +1156,26 @@ def list_tools() -> Response:
     return jsonify({"tools": registry.list_tools()})
 
 
+@app.get('/api/output/<phase>')
+def api_output_phase(phase: str) -> Response:
+  """Return JSON outputs for a given phase (phase1|phase2)."""
+  try:
+    if phase == 'phase1':
+      story = _safe_read_json(DATA_DIR / 'story_manifest_auto.json', fallback={})
+      scene = _safe_read_json(DATA_DIR / 'scene_manifest_auto.json', fallback={})
+      character = _safe_read_json(DATA_DIR / 'character_db_auto.json', fallback={})
+      return jsonify({"ok": True, "story_manifest": story, "scene_manifest": scene, "character_db": character})
+    if phase == 'phase2':
+      timing = _latest_phase2_timing()
+      if not timing:
+        return jsonify({"ok": False, "error": "No timing manifest found"}), 404
+      payload = _safe_read_json(Path(timing), fallback={})
+      return jsonify({"ok": True, "timing_manifest": payload, "path": timing})
+    return jsonify({"ok": False, "error": "Unknown phase"}), 400
+  except Exception as exc:
+    return jsonify({"ok": False, "error": str(exc)}), 500
+
+
 @app.post("/api/tools/call")
 def call_tool() -> Response:
     body = request.get_json(silent=True) or {}
@@ -1106,24 +1244,27 @@ def api_edit() -> Response:
         except Exception:
             intent = classify_without_llm(query)
 
-        # 2. Snapshot current state before edit
+        # 2. Snapshot current state before edit (per-run StateManager)
+        run_id = _resolve_run_id(body)
+        sm = _state_manager_for_run(run_id)
+
         current_state = collect_current_state()
         asset_paths = collect_current_asset_paths()
 
-        # Auto-create initial snapshot if no versions exist
-        if _STATE_MANAGER.current_version() == 0:
-            _STATE_MANAGER.snapshot(
-                state_json=current_state,
-                asset_paths=asset_paths,
-                description="Initial pipeline output",
-                target="pipeline",
-            )
-
-        _STATE_MANAGER.snapshot(
+        # Auto-create initial snapshot if no versions exist for this run
+        if sm.current_version() == 0:
+          sm.snapshot(
             state_json=current_state,
             asset_paths=asset_paths,
-            description=f"Before edit: {intent.intent} (target: {intent.target})",
-            target=intent.target,
+            description="Initial pipeline output",
+            target="pipeline",
+          )
+
+        sm.snapshot(
+          state_json=current_state,
+          asset_paths=asset_paths,
+          description=f"Before edit: {intent.intent} (target: {intent.target})",
+          target=intent.target,
         )
 
         # 3. Execute the edit
@@ -1131,17 +1272,17 @@ def api_edit() -> Response:
 
         # 4. Snapshot after edit if successful
         if result.get("success"):
-            new_state = collect_current_state()
-            new_assets = collect_current_asset_paths()
-            _STATE_MANAGER.snapshot(
-                state_json=new_state,
-                asset_paths=new_assets,
-                description=(
-                    f"After edit: {intent.intent} — "
-                    + "; ".join(result.get("changes", ["no changes"]))
-                ),
-                target=intent.target,
-            )
+          new_state = collect_current_state()
+          new_assets = collect_current_asset_paths()
+          sm.snapshot(
+            state_json=new_state,
+            asset_paths=new_assets,
+            description=(
+              f"After edit: {intent.intent} — "
+              + "; ".join(result.get("changes", ["no changes"]))
+            ),
+            target=intent.target,
+          )
 
         return jsonify({
             "ok": True,
@@ -1155,7 +1296,9 @@ def api_edit() -> Response:
 @app.get("/api/edit/history")
 def api_edit_history() -> Response:
     """Return version history with diff summaries."""
-    history = _STATE_MANAGER.history()
+    run_id = _resolve_run_id(None)
+    sm = _state_manager_for_run(run_id)
+    history = sm.history()
     return jsonify({"ok": True, "history": history})
 
 
@@ -1163,7 +1306,9 @@ def api_edit_history() -> Response:
 def api_edit_revert(version: int) -> Response:
     """Revert to a specific version — restores state + assets."""
     try:
-        restored = _STATE_MANAGER.revert(version)
+        run_id = _resolve_run_id(None)
+        sm = _state_manager_for_run(run_id)
+        restored = sm.revert(version)
         return jsonify({
             "ok": True,
             "version": version,
@@ -1180,8 +1325,10 @@ def api_edit_revert(version: int) -> Response:
 def api_edit_version_detail(version: int) -> Response:
     """Return details for a specific version."""
     try:
-        state = _STATE_MANAGER.get_version_state(version)
-        assets = _STATE_MANAGER.get_version_assets(version)
+        run_id = _resolve_run_id(None)
+        sm = _state_manager_for_run(run_id)
+        state = sm.get_version_state(version)
+        assets = sm.get_version_assets(version)
         return jsonify({
             "ok": True,
             "version": version,
@@ -1191,6 +1338,58 @@ def api_edit_version_detail(version: int) -> Response:
         })
     except FileNotFoundError as exc:
         return jsonify({"ok": False, "error": str(exc)}), 404
+
+
+@app.route("/lipsync_video")
+def lipsync_video() -> Response:
+    """Serve the latest available full lip-synced video."""
+    phase3_runs = DATA_DIR / "phase3_runs"
+    if not phase3_runs.exists():
+        return "No phase3 runs found", 404
+    
+    # Search from latest run folder downwards for the first available lipsync video
+    runs = sorted(phase3_runs.glob("run*"), reverse=True)
+    candidates = ["full_lipsync_video.mp4", "full_lipsync_video_with_cards_bgm.mp4"]
+    for run in runs:
+        for candidate in candidates:
+            video_path = run / candidate
+            if video_path.exists():
+                return send_file(video_path, mimetype="video/mp4")
+            
+    return "Lipsync video not found in any run folder", 404
+
+
+@app.route("/lipsync_video_download")
+def lipsync_video_download() -> Response:
+    """Download the latest available full lip-synced video."""
+    phase3_runs = DATA_DIR / "phase3_runs"
+    if not phase3_runs.exists():
+        return "No phase3 runs found", 404
+        
+    runs = sorted(phase3_runs.glob("run*"), reverse=True)
+    candidates = ["full_lipsync_video.mp4", "full_lipsync_video_with_cards_bgm.mp4"]
+    for run in runs:
+        for candidate in candidates:
+            video_path = run / candidate
+            if video_path.exists():
+                return send_file(video_path, as_attachment=True, download_name=video_path.name)
+            
+    return "Lipsync video not found in any run folder", 404
+
+
+@app.get("/api/pipeline/latest_lipsync")
+def latest_lipsync_tag() -> Response:
+    """Return the run tag of the latest available lipsync video."""
+    phase3_runs = DATA_DIR / "phase3_runs"
+    if not phase3_runs.exists():
+        return jsonify({"ok": False, "tag": "-"})
+    runs = sorted(phase3_runs.glob("run*"), reverse=True)
+    candidates = ["full_lipsync_video.mp4", "full_lipsync_video_with_cards_bgm.mp4"]
+    for run in runs:
+        for candidate in candidates:
+            if (run / candidate).exists():
+                return jsonify({"ok": True, "tag": run.name})
+    return jsonify({"ok": False, "tag": "-"})
 
 
 @app.get("/api/edit/filters")

@@ -1,0 +1,219 @@
+{
+  "audio": [
+    {
+      "scene_id": 1,
+      "path": "data\\phase2_runs\\run13\\audio\\scene_01_run13.mp3",
+      "segments": [
+        {
+          "speaker": "HAIDER",
+          "line": "We need to teach Hadi a lesson for disrespecting us.",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of HAIDER, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run13\\audio\\scene1\\HAIDER_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 22608
+        },
+        {
+          "speaker": "IQRASH",
+          "line": "Agreed, he's been pushing his luck for too long.",
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Medium shot of IQRASH, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run13\\audio\\scene1\\IQRASH_line002.mp3",
+          "byte_offset": 22608,
+          "byte_length": 18288
+        },
+        {
+          "speaker": "HAMMAD",
+          "line": "I think I have a better idea. Why not challenge him to the annual car race? If he loses, he'll know his place.",
+          "voice": "en-US-BrianNeural",
+          "visual_cue": "Medium shot of HAMMAD, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run13\\audio\\scene1\\HAMMAD_line003.mp3",
+          "byte_offset": 40896,
+          "byte_length": 43200
+        }
+      ]
+    },
+    {
+      "scene_id": 2,
+      "path": "data\\phase2_runs\\run13\\audio\\scene_02_run13.mp3",
+      "segments": [
+        {
+          "speaker": "HAIDER",
+          "line": "You think you can beat us, Hadi? We've been training for months.",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of HAIDER, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run13\\audio\\scene2\\HAIDER_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 30816
+        },
+        {
+          "speaker": "HADI",
+          "line": "I've been racing for years, you two are just amateurs.",
+          "voice": "en-GB-RyanNeural",
+          "visual_cue": "Medium shot of HADI, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run13\\audio\\scene2\\HADI_line002.mp3",
+          "byte_offset": 30816,
+          "byte_length": 23472
+        },
+        {
+          "speaker": "IQRASH",
+          "line": "We'll see about that. Let's see who's laughing at the end of the day.",
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Medium shot of IQRASH, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run13\\audio\\scene2\\IQRASH_line003.mp3",
+          "byte_offset": 54288,
+          "byte_length": 20592
+        },
+        {
+          "speaker": "HAMMAD",
+          "line": "Actually, guys, I think Hadi might have a point. We should focus on our own driving skills instead of trying to intimidate him.",
+          "voice": "en-US-BrianNeural",
+          "visual_cue": "Close-up of IQRASH, a fierce glint in her eye.",
+          "audio_file": "data\\phase2_runs\\run13\\audio\\scene2\\HAMMAD_line004.mp3",
+          "byte_offset": 74880,
+          "byte_length": 43776
+        }
+      ]
+    },
+    {
+      "scene_id": 3,
+      "path": "data\\phase2_runs\\run13\\audio\\scene_03_run13.mp3",
+      "segments": [
+        {
+          "speaker": "HAIDER",
+          "line": "I don't trust you, Hammad. You're just trying to get out of a fight.",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of HAIDER, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run13\\audio\\scene3\\HAIDER_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 31968
+        },
+        {
+          "speaker": "HAMMAD",
+          "line": "I'm trying to get us to win, Haider. And I think my plan is the best one.",
+          "voice": "en-US-BrianNeural",
+          "visual_cue": "Medium shot of HAMMAD, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run13\\audio\\scene3\\HAMMAD_line002.mp3",
+          "byte_offset": 31968,
+          "byte_length": 28656
+        },
+        {
+          "speaker": "IQRASH",
+          "line": "What makes you so sure, Hammad?",
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Medium shot of IQRASH, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run13\\audio\\scene3\\IQRASH_line003.mp3",
+          "byte_offset": 60624,
+          "byte_length": 11520
+        },
+        {
+          "speaker": "HAMMAD",
+          "line": "Because I've been studying Hadi's driving patterns. He has a weakness in his braking technique.",
+          "voice": "en-US-BrianNeural",
+          "visual_cue": "Medium shot of HAMMAD, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run13\\audio\\scene3\\HAMMAD_line004.mp3",
+          "byte_offset": 72144,
+          "byte_length": 35712
+        }
+      ]
+    },
+    {
+      "scene_id": 4,
+      "path": "data\\phase2_runs\\run13\\audio\\scene_04_run13.mp3",
+      "segments": [
+        {
+          "speaker": "HAIDER",
+          "line": "Come on, Iqrash, you can do better than this!",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of HAIDER, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run13\\audio\\scene4\\HAIDER_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 21600
+        },
+        {
+          "speaker": "IQRASH",
+          "line": "I'm trying, Haider! But Hadi's driving like a pro!",
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Medium shot of IQRASH, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run13\\audio\\scene4\\IQRASH_line002.mp3",
+          "byte_offset": 21600,
+          "byte_length": 19440
+        },
+        {
+          "speaker": "HADI",
+          "line": "Ha! You two are no match for me!",
+          "voice": "en-GB-RyanNeural",
+          "visual_cue": "Medium shot of HADI, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run13\\audio\\scene4\\HADI_line003.mp3",
+          "byte_offset": 41040,
+          "byte_length": 22608
+        }
+      ]
+    },
+    {
+      "scene_id": 5,
+      "path": "data\\phase2_runs\\run13\\audio\\scene_05_run13.mp3",
+      "segments": [
+        {
+          "speaker": "HAIDER",
+          "line": "Yes! We did it!",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of HAIDER, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run13\\audio\\scene5\\HAIDER_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 19152
+        },
+        {
+          "speaker": "IQRASH",
+          "line": "Hadi, you idiot! You should have listened to us.",
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Medium shot of IQRASH, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run13\\audio\\scene5\\IQRASH_line002.mp3",
+          "byte_offset": 19152,
+          "byte_length": 16128
+        },
+        {
+          "speaker": "HADI",
+          "line": "I... I didn't mean to lose. Congratulations, guys.",
+          "voice": "en-GB-RyanNeural",
+          "visual_cue": "Medium shot of HADI, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run13\\audio\\scene5\\HADI_line003.mp3",
+          "byte_offset": 35280,
+          "byte_length": 37152
+        }
+      ]
+    }
+  ],
+  "music": [
+    {
+      "scene_id": 1,
+      "mood": "hopeful",
+      "bgm_path": "data\\phase2_runs\\run13\\bgm\\hopeful_scene01_freesound.mp3",
+      "bgm_source": "freesound"
+    },
+    {
+      "scene_id": 2,
+      "mood": "tense",
+      "bgm_path": "data\\phase2_runs\\run13\\bgm\\tense_scene02_freesound.mp3",
+      "bgm_source": "freesound"
+    },
+    {
+      "scene_id": 3,
+      "mood": "action",
+      "bgm_path": "data\\phase2_runs\\run13\\bgm\\action_scene03_freesound.mp3",
+      "bgm_source": "freesound"
+    },
+    {
+      "scene_id": 4,
+      "mood": "hopeful",
+      "bgm_path": "data\\phase2_runs\\run13\\bgm\\hopeful_scene04_freesound.mp3",
+      "bgm_source": "freesound"
+    },
+    {
+      "scene_id": 5,
+      "mood": "tense",
+      "bgm_path": "data\\phase2_runs\\run13\\bgm\\tense_scene05_freesound.mp3",
+      "bgm_source": "freesound"
+    }
+  ]
+}

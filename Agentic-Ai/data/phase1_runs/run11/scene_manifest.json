@@ -1,0 +1,152 @@
+{
+  "workflow_id": "workflow_20260507_125903",
+  "timestamp": "2026-05-07T12:59:03.978402",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "location": "DETECTIVE AGENCY",
+      "dialogue": [
+        {
+          "speaker": "KAEL",
+          "line": "\"I'm telling you, LUNA, this case is a dead-end. Another missing person, another empty trail.\"",
+          "visual_cue": "Medium shot of KAEL, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "LUNA",
+          "line": "\"We can't give up now, Kael. We have to dig deeper.\"",
+          "visual_cue": "Medium shot of LUNA, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "KAEL",
+        "LUNA"
+      ],
+      "duration": 15,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    },
+    {
+      "scene_id": 2,
+      "location": "DETECTIVE AGENCY",
+      "dialogue": [
+        {
+          "speaker": "KAEL",
+          "line": "\"You're not listening, Luna. This case screams corruption, and I'm not talking about the usual suspects. I'm talking about someone high up, someone with connections.\"",
+          "visual_cue": "Medium shot of KAEL, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "LUNA",
+          "line": "\"I'm listening, Kael. But I need concrete evidence, not just theories.\"",
+          "visual_cue": "Medium shot of LUNA, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "KAEL",
+        "LUNA"
+      ],
+      "duration": 20,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    },
+    {
+      "scene_id": 3,
+      "location": "CITY STREET",
+      "dialogue": [
+        {
+          "speaker": "KAEL",
+          "line": "\"I've got a lead on a possible witness. Meet me at the Red Star Tavern in an hour.\"",
+          "visual_cue": "Medium shot of KAEL, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "LUNA",
+          "line": "\"Be careful, Kael. We don't know what we're dealing with.\"",
+          "visual_cue": "Medium shot of LUNA, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "KAEL",
+        "LUNA"
+      ],
+      "duration": 16,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    },
+    {
+      "scene_id": 4,
+      "location": "RED STAR TAVERN",
+      "dialogue": [
+        {
+          "speaker": "KAEL",
+          "line": "\"That's our witness. Let's get them to open up.\"",
+          "visual_cue": "Medium shot of KAEL, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "LUNA",
+          "line": "\"Not yet, Kael. Let's observe. Sometimes the best information comes from the background noise.\"",
+          "visual_cue": "Medium shot of LUNA, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "KAEL",
+        "LUNA"
+      ],
+      "duration": 14,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    }
+  ],
+  "total_scenes": 4,
+  "total_duration_seconds": 65
+}

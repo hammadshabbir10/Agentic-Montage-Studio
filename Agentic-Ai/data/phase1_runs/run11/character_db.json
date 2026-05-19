@@ -1,0 +1,59 @@
+{
+  "workflow_id": "workflow_20260507_125928",
+  "timestamp": "2026-05-07T12:59:28.455913",
+  "characters": [
+    {
+      "name": "KAEL",
+      "personality": "Kael is a determined and intuitive investigator driven by a strong sense of justice, willing to challenge conventional wisdom to uncover the truth. His skepticism and conviction make him a formidable opponent for corruption.",
+      "appearance": "Kael is a ruggedly handsome man in his mid-30s, with a sharp jawline and piercing eyes, dressed in a worn leather jacket and fedora, evoking a classic detective look.",
+      "role": "supporting",
+      "style_reference": "Film Noir, high-contrast black and white, with a focus on shadows and crime-ridden urban landscapes.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"I'm telling you, LUNA, this case is a dead-end. Another missing person, another empty trail.\"",
+          "visual_cue": "Medium shot of KAEL, expression intense and focused."
+        },
+        {
+          "line": "\"You're not listening, Luna. This case screams corruption, and I'm not talking about the usual suspects. I'm talking about someone high up, someone with connections.\"",
+          "visual_cue": "Medium shot of KAEL, expression intense and focused."
+        },
+        {
+          "line": "\"I've got a lead on a possible witness. Meet me at the Red Star Tavern in an hour.\"",
+          "visual_cue": "Medium shot of KAEL, expression intense and focused."
+        },
+        {
+          "line": "\"That's our witness. Let's get them to open up.\"",
+          "visual_cue": "Medium shot of KAEL, expression intense and focused."
+        }
+      ]
+    },
+    {
+      "name": "LUNA",
+      "personality": "Luna appears to be a determined and resourceful individual, driven by a strong sense of conviction and a desire to uncover the truth. She is a skilled investigator who values concrete evidence over speculation.",
+      "appearance": "Luna is a woman in her mid-to-late 30s, dressed in functional yet stylish clothing suitable for a detective's work, with a sharp gaze and an air of confidence.",
+      "role": "supporting",
+      "style_reference": "Film noir, high contrast lighting, and a focus on atmospheric tension in a 1940s-inspired urban setting",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"We can't give up now, Kael. We have to dig deeper.\"",
+          "visual_cue": "Medium shot of LUNA, expression intense and focused."
+        },
+        {
+          "line": "\"I'm listening, Kael. But I need concrete evidence, not just theories.\"",
+          "visual_cue": "Medium shot of LUNA, expression intense and focused."
+        },
+        {
+          "line": "\"Be careful, Kael. We don't know what we're dealing with.\"",
+          "visual_cue": "Medium shot of LUNA, expression intense and focused."
+        },
+        {
+          "line": "\"Not yet, Kael. Let's observe. Sometimes the best information comes from the background noise.\"",
+          "visual_cue": "Medium shot of LUNA, expression intense and focused."
+        }
+      ]
+    }
+  ],
+  "total_characters": 2
+}

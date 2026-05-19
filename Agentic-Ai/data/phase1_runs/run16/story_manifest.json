@@ -1,0 +1,42 @@
+{
+  "workflow_id": "workflow_20260507_131256",
+  "timestamp": "2026-05-07T13:12:56.393791",
+  "story": {
+    "title": "Skybound Skirmish",
+    "logline": "When a rookie pilot must navigate a pair of reckless passengers, he must keep his cool to prevent a catastrophic crash.",
+    "genre": "Action Thriller",
+    "tone": "tense and gritty",
+    "setting": "Commercial airliner",
+    "time_period": "Present day",
+    "themes": [
+      "Control",
+      "Risk",
+      "Human Error"
+    ],
+    "acts": [
+      {
+        "act": 1,
+        "label": "Introduction",
+        "description": "Meet Sam and Leo, a duo of thrill-seekers who have managed to get themselves on a plane by any means necessary. Rookie pilot Ali is tasked with keeping them in line, while hostess Abeeha provides a comforting presence for the nervous passengers. As the plane hits turbulence, tensions rise and the true test of Ali's abilities begins."
+      },
+      {
+        "act": 2,
+        "label": "Escalation",
+        "description": "As Sam and Leo continue to push the limits of the plane's safety, Ali's patience wears thin. Abeeha tries to intervene, but her efforts only seem to make things worse. Meanwhile, the passengers begin to panic, and Ali must find a way to regain control before it's too late."
+      },
+      {
+        "act": 3,
+        "label": "Climax",
+        "description": "With the plane careening out of control, Ali must make a desperate decision to save the lives of everyone on board. Sam and Leo, realizing the gravity of their actions, must confront the consequences of their recklessness."
+      },
+      {
+        "act": 4,
+        "label": "Resolution",
+        "description": "In the aftermath of the crisis, Ali's skills are put to the ultimate test. Abeeha provides a beacon of hope, and the passengers begin to rebuild and reflect on their harrowing experience. As the plane lands safely, Ali can finally breathe a sigh of relief, but the memory of the ordeal will stay with him forever."
+      }
+    ],
+    "protagonist": "ALI",
+    "antagonist": "SAM",
+    "world": "In a world where human error can have catastrophic consequences, the thin line between safety and disaster is constantly being pushed."
+  }
+}

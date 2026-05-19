@@ -1,0 +1,41 @@
+{
+  "workflow_id": "workflow_20260507_123550",
+  "timestamp": "2026-05-07T12:35:50.620480",
+  "story": {
+    "title": "Untitled Story",
+    "logline": "Story details could not be parsed.",
+    "genre": "Drama",
+    "tone": "Dramatic",
+    "setting": "Unknown",
+    "time_period": "Contemporary",
+    "themes": [
+      "conflict",
+      "survival"
+    ],
+    "acts": [
+      {
+        "act": 1,
+        "label": "Introduction",
+        "description": "The story begins."
+      },
+      {
+        "act": 2,
+        "label": "Rising Conflict",
+        "description": "Tension escalates."
+      },
+      {
+        "act": 3,
+        "label": "Climax",
+        "description": "The crisis peaks."
+      },
+      {
+        "act": 4,
+        "label": "Resolution",
+        "description": "The conflict resolves."
+      }
+    ],
+    "protagonist": "ALI",
+    "antagonist": null,
+    "world": "Details unavailable."
+  }
+}

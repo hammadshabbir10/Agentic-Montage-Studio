@@ -1,0 +1,42 @@
+{
+  "workflow_id": "workflow_20260507_140208",
+  "timestamp": "2026-05-07T14:02:08.680259",
+  "story": {
+    "title": "Skybound",
+    "logline": "A rogue passenger and a rebellious co-pilot put the life of a commercial airliner in jeopardy, forcing the pilots to take drastic measures to prevent disaster.",
+    "genre": "Thriller",
+    "tone": "tense and gritty",
+    "setting": "A commercial airliner in flight",
+    "time_period": "Present Day",
+    "themes": [
+      "Survival",
+      "Authority",
+      "Redemption"
+    ],
+    "acts": [
+      {
+        "act": 1,
+        "label": "Introduction",
+        "description": "Meet Sam, a thrill-seeking adventurer, and Leo, a free-spirited artist, as they board a commercial airliner with their unique personalities. We also meet Owais, the seasoned pilot, and Areeba, the charming flight hostess, who become entangled in the chaos."
+      },
+      {
+        "act": 2,
+        "label": "Confrontation",
+        "description": "As Sam and Leo's antics escalate, Owais and Areeba must navigate the treacherous waters of air traffic control and passenger safety, all while keeping the rogue duo at bay. The stakes are raised as the plane hits turbulence, and the pilots' skills are put to the test."
+      },
+      {
+        "act": 3,
+        "label": "Climax",
+        "description": "As the plane teeters on the brink of disaster, Owais and Areeba must make a heart-pumping decision to take control of the situation and save the passengers. Sam and Leo's fate hangs in the balance, and the pilots' redemption is within reach."
+      },
+      {
+        "act": 4,
+        "label": "Resolution",
+        "description": "The aftermath of the crisis leaves its mark on the passengers and the pilots. As the plane lands safely, Owais and Areeba reflect on their ordeal, and Sam and Leo must come to terms with the consequences of their actions."
+      }
+    ],
+    "protagonist": "OWAIS",
+    "antagonist": "SAM",
+    "world": "In a world where air travel has become the norm, the lives of passengers and crew are constantly at risk, and the pilots are the ones who must make split-second decisions to ensure safety."
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "workflow_id": "workflow_20260508_153558",
+  "timestamp": "2026-05-08T15:35:58.826566",
+  "story": {
+    "title": "RPM",
+    "logline": "Hadi must outmaneuver his ruthless rival, Haider, in the high-stakes world of street racing, where the winner takes everything.",
+    "genre": "High Octane Racing Drama",
+    "tone": "tense and gritty",
+    "setting": "a gritty urban city",
+    "time_period": "present day",
+    "themes": [
+      "Ambition",
+      "Rivalry",
+      "Redemption"
+    ],
+    "acts": [
+      {
+        "act": 1,
+        "label": "Introduction",
+        "description": "We meet our protagonist, Hadi, a skilled street racing driver, and his rivals, Haider and Iqrash, in a tense showdown in a gritty urban alleyway. Hadi's calm friend, Hammad, suggests a high-stakes solution to the conflict: the annual street racing championship. Hadi accepts the challenge, but we sense a deeper rivalry brewing between him and Haider."
+      },
+      {
+        "act": 2,
+        "label": "The Stakes",
+        "description": "As the annual street racing championship approaches, Hadi and Haider engage in a series of intense training sessions, pushing their skills to the limit. Meanwhile, Iqrash becomes increasingly reckless, testing the limits of her own abilities and pushing Haider to extreme measures. Hadi's calm demeanor is put to the test as the competition heats up."
+      },
+      {
+        "act": 3,
+        "label": "The Confrontation",
+        "description": "The day of the championship arrives, and Hadi and Haider face off in a high-tech garage, their sleek sports cars revving in anticipation. As the green light flashes, the two drivers engage in a high-speed battle, with Hadi skillfully drifting past Haider on a sharp corner. The crowd gasps in awe as the two drivers push their cars to the limit."
+      },
+      {
+        "act": 4,
+        "label": "The Resolution",
+        "description": "In a heart-stopping finish, Hadi crosses the finish line in a blur of blue and light, leaving Haider and Iqrash stunned in his wake. As the dust settles, Hadi's calm friend, Hammad, congratulates him on his victory, and we sense a deep satisfaction in Hadi's eyes, knowing that he has outmaneuvered his rival and proven his skills."
+      }
+    ],
+    "protagonist": "HADI",
+    "antagonist": "HAIDER",
+    "world": "In this gritty urban city, street racing is a high-stakes game where the winner takes everything, and the loser faces ruin and shame."
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "workflow_id": "workflow_20260507_123606",
+  "timestamp": "2026-05-07T12:36:06.901036",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "location": "AIRPLANE COCKPIT",
+      "dialogue": [
+        {
+          "speaker": "ALI",
+          "line": "\"Hold on, guys, this is going to get bumpy.\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "SAM",
+          "line": "\"Whoa, this is crazy! I've never been on a plane that's shaken like this before!\"",
+          "visual_cue": "Close-up of ALI, his expression stern and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "LEO",
+          "line": "\"Yeah, because this is exactly what I wanted to do with my Saturday - take a plane ride with two amateurs.\"",
+          "visual_cue": "Wide shot of SAM, his eyes wide with excitement.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "KATRINA",
+          "line": "\"Good morning, gentlemen. I'll be passing out snacks and drinks shortly. Buckle up, please.\"",
+          "visual_cue": "Medium shot of LEO, his arms crossed and a smirk on his face.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "ALI",
+        "SAM",
+        "LEO",
+        "KATRINA"
+      ],
+      "duration": 32,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    },
+    {
+      "scene_id": 2,
+      "location": "AIRPLANE COCKPIT",
+      "dialogue": [
+        {
+          "speaker": "ALI",
+          "line": "\"Thanks, Katrina. We're trying to get through this patch of rough air.\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "SAM",
+          "line": "\"Ali, what's going on? Why is the plane shaking so much?\"",
+          "visual_cue": "Close-up of ALI, his eyes scanning the instruments as he talks.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "KATRINA",
+          "line": "\"Don't worry, gentlemen. Ali's an expert. This will pass soon.\"",
+          "visual_cue": "Close-up of SAM, his brow furrowed in concern.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "LEO",
+          "line": "\"Yeah, because experts always fly planes like this. I'm sure it's perfectly normal.\"",
+          "visual_cue": "Medium shot of KATRINA, her reassuring smile putting Sam at ease.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "ALI",
+        "SAM",
+        "KATRINA",
+        "LEO"
+      ],
+      "duration": 26,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    },
+    {
+      "scene_id": 3,
+      "location": "AIRPLANE COCKPIT",
+      "dialogue": [
+        {
+          "speaker": "ALI",
+          "line": "\"We're clear of the turbulence now. Thanks for your patience, guys.\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "SAM",
+          "line": "\"Wow, that was crazy! Thanks for getting us through that, Ali.\"",
+          "visual_cue": "Wide shot of ALI, a look of relief on his face.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "KATRINA",
+          "line": "\"I'll be passing out lunch soon. Please make yourselves comfortable.\"",
+          "visual_cue": "Close-up of SAM, his eyes shining with gratitude.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "LEO",
+          "line": "\"Yeah, because lunch is exactly what I'm thinking about right now. Not the fact that we almost crashed.\"",
+          "visual_cue": "Close-up of KATRINA, her bright smile and friendly demeanor a welcome sight after the turbulence.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "ALI",
+        "SAM",
+        "KATRINA",
+        "LEO"
+      ],
+      "duration": 28,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    }
+  ],
+  "total_scenes": 3,
+  "total_duration_seconds": 86
+}

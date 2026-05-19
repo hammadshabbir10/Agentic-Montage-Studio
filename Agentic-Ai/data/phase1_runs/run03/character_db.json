@@ -1,0 +1,111 @@
+{
+  "workflow_id": "workflow_20260507_123530",
+  "timestamp": "2026-05-07T12:35:30.713286",
+  "characters": [
+    {
+      "name": "ALI",
+      "personality": "ALI is a determined character whose motives are not yet clear.",
+      "appearance": "Period-appropriate attire, distinctive features.",
+      "role": "supporting",
+      "style_reference": "Cinematic",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"Alright, guys, let's review the safety procedures one more time. We're cruising at 30,000 feet, and I need you to stay seated and follow my instructions.\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused."
+        },
+        {
+          "line": "\"I'll be keeping an eye on you two. Don't think about making any sudden movements.\"",
+          "visual_cue": "Wide shot of KATINA, walking away with a kind smile on her face."
+        },
+        {
+          "line": "\"We're experiencing some turbulence, but don't worry, everything is under control. Just keep your seatbelts fastened and stay seated.\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused."
+        },
+        {
+          "line": "\"Listen, guys, I need you to take this seriously. We're not out of the woods yet. Stay focused and follow my instructions.\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused."
+        }
+      ]
+    },
+    {
+      "name": "LEONARD",
+      "personality": "Leonard appears to be a confident and assertive individual who is assertively trying to convey calmness and control, possibly to reassure himself or others in a stressful situation.",
+      "appearance": "Leonard wears a standard issue pilot's uniform, with a crisp white shirt and navy blue pants, likely with some insignia or rank on his chest.",
+      "role": "supporting",
+      "style_reference": "1980s airline drama, bright colors and sleek designs, inspired by the era's commercial airline aesthetic.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"Yeah, yeah, we get it. We're not going to crash.\"",
+          "visual_cue": "Close-up of ALI, calm and collected, with a hint of a smile."
+        },
+        {
+          "line": "\"Hey, we're not going to do anything crazy. We just want to get to our destination.\"",
+          "visual_cue": "Close-up of ALI, eyes fixed intently on LEONARD and SAM."
+        },
+        {
+          "line": "\"Yeah, yeah, we're good. We can handle it.\"",
+          "visual_cue": "Close-up of ALI, speaking into the intercom microphone, his voice steady and reassuring."
+        },
+        {
+          "line": "\"Yeah, yeah, we get it. We'll behave.\"",
+          "visual_cue": "Close-up of ALI, his eyes locked intently on LEONARD and SAM."
+        }
+      ]
+    },
+    {
+      "name": "SAM",
+      "personality": "SAM appears to be anxious and easily irritated, possibly due to a lack of control or freedom, leading to a desire to escape or distract himself.",
+      "appearance": "SAM wears casual, possibly worn-out clothing suitable for a plane ride, with a somewhat disheveled look.",
+      "role": "supporting",
+      "style_reference": "Turbulent, handheld, in-flight drama, with a focus on claustrophobic close-ups and uneasy camera movements.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"Hey, we're trying to stay safe here. Can we just relax?\"",
+          "visual_cue": "Medium shot of LEONARD, rolling his eyes and tapping his foot impatiently."
+        },
+        {
+          "line": "\"Look, can we just talk about something else? This is getting really boring.\"",
+          "visual_cue": "Medium shot of LEONARD, attempting to reason with ALI."
+        },
+        {
+          "line": "\"I don't like this. Can we turn back?\"",
+          "visual_cue": "Medium shot of LEONARD, looking out the window at the turbulent sky."
+        },
+        {
+          "line": "\"Can we at least get some Wi-Fi? I need to check my email.\"",
+          "visual_cue": "Medium shot of LEONARD, looking sheepish and contrite."
+        }
+      ]
+    },
+    {
+      "name": "KATINA",
+      "personality": "KATINA appears to be a compassionate and reassuring individual who prioritizes the safety and comfort of others, likely driven by a sense of responsibility and duty.",
+      "appearance": "As a flight attendant, KATINA is likely dressed in a crisp, professional uniform with a friendly smile and warm demeanor",
+      "role": "supporting",
+      "style_reference": "Modern, low-budget drama with a focus on real-world locations and practical effects",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"I'm going to go check on the other passengers. If you need anything, just press the call button.\"",
+          "visual_cue": "Close-up of SAM, looking nervous and unsure."
+        },
+        {
+          "line": "\"I'll bring you some snacks and drinks to pass the time. Maybe that'll help.\"",
+          "visual_cue": "Close-up of SAM, fidgeting with his seatbelt and looking around the cockpit."
+        },
+        {
+          "line": "\"I'll check on the other passengers and make sure everyone is secure. Don't worry, we'll get through this.\"",
+          "visual_cue": "Close-up of SAM, looking anxious and scared."
+        },
+        {
+          "line": "\"I'll see what I can do, but first, let's get through this flight safely. Okay, everyone?\"",
+          "visual_cue": "Close-up of SAM, looking hopeful and pleading."
+        }
+      ]
+    }
+  ],
+  "total_characters": 4
+}

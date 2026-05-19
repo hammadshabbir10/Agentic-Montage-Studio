@@ -1,0 +1,95 @@
+{
+  "workflow_id": "workflow_20260507_123659",
+  "timestamp": "2026-05-07T12:36:59.549368",
+  "characters": [
+    {
+      "name": "ALI",
+      "personality": "A seasoned pilot, ALI is calm and collected under pressure, prioritizing the safety of their passengers.",
+      "appearance": "ALI wears a practical pilot uniform, with a hint of ruggedness in their worn features, suggesting years of flying experience.",
+      "role": "supporting",
+      "style_reference": "Modern aviation thriller, sleek cockpit design, and a focus on functional lighting.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"Hold on, guys, this is going to get bumpy.\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused."
+        },
+        {
+          "line": "\"Thanks, Katrina. We're trying to get through this patch of rough air.\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused."
+        },
+        {
+          "line": "\"We're clear of the turbulence now. Thanks for your patience, guys.\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused."
+        }
+      ]
+    },
+    {
+      "name": "SAM",
+      "personality": "SAM appears to be a calm and level-headed individual who seeks reassurance and guidance in times of crisis, suggesting a desire for stability and security.",
+      "appearance": "SAM has a clean-cut, professional appearance, likely dressed in a crisp pilot's uniform, with a neutral expression that conveys a sense of focus and control.",
+      "role": "supporting",
+      "style_reference": "Modern air disaster drama, utilitarian color palette, cockpit instrumentation aesthetic.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"Whoa, this is crazy! I've never been on a plane that's shaken like this before!\"",
+          "visual_cue": "Close-up of ALI, his expression stern and focused."
+        },
+        {
+          "line": "\"Ali, what's going on? Why is the plane shaking so much?\"",
+          "visual_cue": "Close-up of ALI, his eyes scanning the instruments as he talks."
+        },
+        {
+          "line": "\"Wow, that was crazy! Thanks for getting us through that, Ali.\"",
+          "visual_cue": "Wide shot of ALI, a look of relief on his face."
+        }
+      ]
+    },
+    {
+      "name": "LEO",
+      "personality": "Leo appears to be confident, possibly arrogant, and a bit dismissive, implying that he may not be a fan of authority or rules, with a dash of sarcasm.",
+      "appearance": "Leo is a well-dressed, possibly older man, with a keen sense of style that fits his role as a passenger on a commercial airliner.",
+      "role": "supporting",
+      "style_reference": "Classic Hollywood drama, sophisticated attire, and a hint of 1950s charm.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"Yeah, because this is exactly what I wanted to do with my Saturday - take a plane ride with two amateurs.\"",
+          "visual_cue": "Wide shot of SAM, his eyes wide with excitement."
+        },
+        {
+          "line": "\"Yeah, because experts always fly planes like this. I'm sure it's perfectly normal.\"",
+          "visual_cue": "Medium shot of KATRINA, her reassuring smile putting Sam at ease."
+        },
+        {
+          "line": "\"Yeah, because lunch is exactly what I'm thinking about right now. Not the fact that we almost crashed.\"",
+          "visual_cue": "Close-up of KATRINA, her bright smile and friendly demeanor a welcome sight after the turbulence."
+        }
+      ]
+    },
+    {
+      "name": "KATRINA",
+      "personality": "Katrina appears to be a friendly, professional, and reassuring flight attendant who prioritizes the comfort and safety of her passengers, possibly motivated by a desire to provide excellent customer service.",
+      "appearance": "She likely wears a standard airline uniform of the era, consisting of a neat dress or skirt, blouse, and hat, possibly with a name tag and ID badge.",
+      "role": "supporting",
+      "style_reference": "Retro-futuristic, 1950s-60s airline aesthetic, bright colors, and cheery typography.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"Good morning, gentlemen. I'll be passing out snacks and drinks shortly. Buckle up, please.\"",
+          "visual_cue": "Medium shot of LEO, his arms crossed and a smirk on his face."
+        },
+        {
+          "line": "\"Don't worry, gentlemen. Ali's an expert. This will pass soon.\"",
+          "visual_cue": "Close-up of SAM, his brow furrowed in concern."
+        },
+        {
+          "line": "\"I'll be passing out lunch soon. Please make yourselves comfortable.\"",
+          "visual_cue": "Close-up of SAM, his eyes shining with gratitude."
+        }
+      ]
+    }
+  ],
+  "total_characters": 4
+}

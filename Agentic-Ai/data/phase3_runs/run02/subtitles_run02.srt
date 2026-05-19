@@ -1,0 +1,43 @@
+1
+00:00:03,000 --> 00:00:08,952
+OWAI: Ladies and gentlemen, welcome aboard. We'll be landing in about an hour.
+
+2
+00:00:08,952 --> 00:00:10,536
+TOM: This is taking forever.
+
+3
+00:00:10,536 --> 00:00:11,736
+JERRY: I'm starving.
+
+4
+00:00:11,736 --> 00:00:16,752
+AREEBA: Would you like a snack, sir? We have peanuts or pretzels.
+
+5
+00:00:16,752 --> 00:00:22,584
+OWAI: Remember, please fasten your seatbelts. We'll be hitting some turbulence.
+
+6
+00:00:22,584 --> 00:00:29,505
+OWAI: Don't worry, folks. We're going through a bit of turbulence. Just keep your seats and-
+
+7
+00:00:29,505 --> 00:00:31,448
+JERRY: Ahh! This is crazy!
+
+8
+00:00:31,448 --> 00:00:33,823
+TOM: Stay calm, Jerry. We'll be fine.
+
+9
+00:00:33,823 --> 00:00:38,313
+AREEBA: Can I get you a blanket, sir? Or a cup of water?
+
+10
+00:00:38,313 --> 00:00:42,667
+OWAI: How's it looking, Areeba? Any signs of trouble?
+
+11
+00:00:42,667 --> 00:00:49,267
+AREEBA: No, Captain. Everything's looking good. Just a bit of turbulence.

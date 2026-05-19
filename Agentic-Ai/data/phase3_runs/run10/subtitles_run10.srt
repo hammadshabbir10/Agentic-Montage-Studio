@@ -1,0 +1,51 @@
+1
+00:00:03,000 --> 00:00:08,040
+ALI: We're going to be fine, guys. Just a little turbulence.
+
+2
+00:00:08,040 --> 00:00:10,800
+SAM: Ali, what's going on? We're falling or something!
+
+3
+00:00:10,800 --> 00:00:14,856
+LEO: Dude, relax. It's just a bump. We'll be fine.
+
+4
+00:00:14,856 --> 00:00:22,272
+ABEEHA: Everyone, please fasten your seatbelts and return to your seats. We apologize for the inconvenience.
+
+5
+00:00:22,272 --> 00:00:28,272
+ALI: Abeeha, can you please get the passengers to calm down? We don't need a panic.
+
+6
+00:00:28,272 --> 00:00:31,920
+ABEEHA: Of course, Ali. I'm on it.
+
+7
+00:00:31,920 --> 00:00:36,226
+ALI: Hold on, guys. This is going to get bumpy.
+
+8
+00:00:36,226 --> 00:00:39,178
+SAM: Ali, what's happening? We're going to crash or something!
+
+9
+00:00:39,178 --> 00:00:43,306
+LEO: Ali, tell us what's going on. We need to know what's happening.
+
+10
+00:00:43,306 --> 00:00:50,578
+ABEEHA: Everyone, please return to your seats and fasten your seatbelts. We're experiencing some turbulence.
+
+11
+00:00:50,578 --> 00:00:56,396
+ALI: Abeeha, I need to level the plane. Can you get the passengers to calm down?
+
+12
+00:00:56,396 --> 00:01:01,868
+ABEEHA: Ali, I'm trying, but they're getting scared. What can I do to help?
+
+13
+00:01:01,868 --> 00:01:06,884
+ALI: Just keep them calm. I need to focus on flying this thing.

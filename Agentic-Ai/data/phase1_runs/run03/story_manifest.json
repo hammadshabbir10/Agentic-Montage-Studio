@@ -1,0 +1,42 @@
+{
+  "workflow_id": "workflow_20260507_123450",
+  "timestamp": "2026-05-07T12:34:50.158135",
+  "story": {
+    "title": "Flight of Fate",
+    "logline": "When rogue passengers threaten the safety of a commercial flight, the pilot must navigate a delicate balance between security and reason to prevent catastrophe.",
+    "genre": "Thriller",
+    "tone": "tense and gripping",
+    "setting": "A commercial airliner in mid-air",
+    "time_period": "Present day",
+    "themes": [
+      "Survival",
+      "Redemption",
+      "Control"
+    ],
+    "acts": [
+      {
+        "act": 1,
+        "label": "Introduction",
+        "description": "We meet our protagonist, the experienced pilot Ali, as she prepares for a routine flight. However, her passengers Sam and Leo are not what they seem, and Ali senses a growing threat to the safety of the plane. As the flight takes off, Ali's instincts are put to the test."
+      },
+      {
+        "act": 2,
+        "label": "Conflict",
+        "description": "As tensions rise, Ali must use all her skills and cunning to keep Sam and Leo in check, while also navigating the complexities of her own past and the motivations of her co-pilot, Katrina. Meanwhile, the innocent passengers on board are caught in the crossfire."
+      },
+      {
+        "act": 3,
+        "label": "Climax",
+        "description": "In a heart-pumping climax, Ali must make a desperate bid to regain control of the plane, while Sam and Leo's true intentions are finally revealed. Will Ali be able to save the day, or will the passengers pay the ultimate price?"
+      },
+      {
+        "act": 4,
+        "label": "Resolution",
+        "description": "In the aftermath of the crisis, Ali must come to terms with what has happened and find a way to move forward. Meanwhile, Sam and Leo's fate is decided, and the passengers are left to pick up the pieces and rebuild."
+      }
+    ],
+    "protagonist": "ALI",
+    "antagonist": "SAM",
+    "world": "A world where the thin line between safety and chaos is constantly tested, and the passengers on a commercial airliner are at the mercy of those at the controls."
+  }
+}

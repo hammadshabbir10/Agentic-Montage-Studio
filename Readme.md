@@ -70,14 +70,14 @@ User Prompt
                        │  audio + sync map
                        ▼
 ┌─────────────────────────────────────────────┐
-│  Phase 3 — Video Generation & Composition   │  🔜 In Progress
+│  Phase 3 — Video Generation & Composition   │  
 │  Stable Diffusion / DALL-E visuals          │
 │  FFmpeg / MoviePy → final_output.mp4        │
 └──────────────────────┬──────────────────────┘
                        │  rendered MP4
                        ▼
 ┌─────────────────────────────────────────────┐
-│  Phase 4 — Web Interface & Orchestration    │  🔜 In Progress
+│  Phase 4 — Web Interface & Orchestration    │  
 │  FastAPI backend + React frontend           │
 │  Real-time progress via WebSocket/SSE       │
 └──────────────────────┬──────────────────────┘

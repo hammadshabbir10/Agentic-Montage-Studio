@@ -1,0 +1,111 @@
+{
+  "workflow_id": "workflow_20260507_140220",
+  "timestamp": "2026-05-07T14:02:20.051916",
+  "characters": [
+    {
+      "name": "SAM",
+      "personality": "SAM is a level-headed and assertive individual who prioritizes stability and control, but also has moments of panic and desperation when faced with extreme situations.",
+      "appearance": "SAM is likely dressed in a practical, functional pilot uniform with a focus on utility and comfort, with a neutral, clean-cut appearance.",
+      "role": "supporting",
+      "style_reference": "Tense, realistic aviation thriller, emphasizing the claustrophobic atmosphere of the plane cockpit and the raw urgency of the situation.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"We're going to stall, Owais. We need to level out.\"",
+          "visual_cue": "Medium shot of SAM, expression intense and focused."
+        },
+        {
+          "line": "\"Owais, I think we're crashing. We need to do something.\"",
+          "visual_cue": "Medium shot of SAM, expression intense and focused."
+        },
+        {
+          "line": "\"What... what just happened?\"",
+          "visual_cue": "Medium shot of SAM, expression intense and focused."
+        }
+      ]
+    },
+    {
+      "name": "OWAIS",
+      "personality": "Owais appears to be a confident and assertive pilot, motivated by a strong desire to keep his passengers safe, even in the face of catastrophic circumstances.",
+      "appearance": "Given his role as a pilot, Owais likely wears a crisp, neatly-pressed flight suit, with a hint of ruggedness from years of flying.",
+      "role": "supporting",
+      "style_reference": "Airborne action, high-octane suspense, and the worn leather of vintage flight gear evoke a sense of 1960s or 1970s aviation adventure.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"Hold on to your seat, Sam. We're going to make this plane fly.\"",
+          "visual_cue": "Close-up of SAM, sweat beading on his forehead."
+        },
+        {
+          "line": "\"We're coming out of the dive. Hold on to your seats.\"",
+          "visual_cue": "Close-up of ARAESA, a calm smile on her face as she checks the safety harnesses."
+        },
+        {
+          "line": "\"We're going to make it through this. Just hold on.\"",
+          "visual_cue": "Medium shot of ARAESA, her voice steady and reassuring."
+        },
+        {
+          "line": "\"We're not going to crash. We're going to make it through this.\"",
+          "visual_cue": "Wide shot of L\u0435\u043e, his face contorted in terror."
+        },
+        {
+          "line": "\"We made it through the storm. We're going to land safely.\"",
+          "visual_cue": "Close-up of SAM, his eyes wide with shock."
+        }
+      ]
+    },
+    {
+      "name": "L",
+      "personality": "L\u0415\u041e is impulsive and prone to panic, struggling to cope with intense situations. Their reactions often veer from concern to desperation.",
+      "appearance": "L\u0415\u041e is dressed in standard airline attire, with a disheveled appearance that hints at their distress.",
+      "role": "supporting",
+      "style_reference": "Disaster movie, chaotic atmosphere, handheld camera work.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"What's going on? Why are we shaking so much?\"",
+          "visual_cue": "Medium shot of OWAIS, jaw clenched in concentration."
+        },
+        {
+          "line": "\"This is crazy! What's happening?\"",
+          "visual_cue": "Close-up of OWAIS, eyes locked on the altimeter."
+        },
+        {
+          "line": "\"This is insane! We're going to die!\"",
+          "visual_cue": "Close-up of ARAESA, her hands steady as she checks the instruments."
+        },
+        {
+          "line": "\"I... I think I'm going to be sick.\"",
+          "visual_cue": "Medium shot of ARAESA, her voice steady and reassuring."
+        }
+      ]
+    },
+    {
+      "name": "ARAESA",
+      "personality": "Araesa is a calm and collected individual who remains composed under pressure, prioritizing the safety of her passengers over her own emotions.",
+      "appearance": "Araesa is a polished and professional air traffic controller, dressed in a crisp airline uniform, with a sharp jawline and piercing eyes.",
+      "role": "supporting",
+      "style_reference": "Early 2000s commercial airliner aesthetic, emphasis on safety and modernity, crisp colors and clean lines.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"Everyone, please fasten your seatbelts. We're experiencing some turbulence.\"",
+          "visual_cue": "Wide shot of L\u0435\u043e, looking pale and frightened."
+        },
+        {
+          "line": "\"Everyone, please remain calm. This is just turbulence.\"",
+          "visual_cue": "Close-up of L\u0435\u043e, eyes wide with fear."
+        },
+        {
+          "line": "\"Everyone, please stay calm. We're experiencing a minor storm.\"",
+          "visual_cue": "Close-up of SAM, desperation in his voice."
+        },
+        {
+          "line": "\"Everyone, please prepare for landing. We're starting our descent.\"",
+          "visual_cue": "Close-up of OWAIS, a hint of a smile on his face."
+        }
+      ]
+    }
+  ],
+  "total_characters": 4
+}

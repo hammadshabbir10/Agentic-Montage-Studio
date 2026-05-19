@@ -1,0 +1,42 @@
+{
+  "workflow_id": "workflow_20260507_125159",
+  "timestamp": "2026-05-07T12:51:59.758041",
+  "story": {
+    "title": "Neon Requiem",
+    "logline": "When a powerful tech mogul's daughter is kidnapped, a hard-boiled cyberpunk detective must navigate the dark underbelly of the city to rescue her and uncover the truth behind the sinister forces driving the crime.",
+    "genre": "Cyberpunk Thriller",
+    "tone": "tense and gritty",
+    "setting": "Neo-Tokyo, 2090",
+    "time_period": "late 21st century",
+    "themes": [
+      "corruption",
+      "power",
+      "redemption"
+    ],
+    "acts": [
+      {
+        "act": 1,
+        "label": "Introduction",
+        "description": "We meet our protagonist, JACKSON, a grizzled cyberpunk detective with a troubled past, as he takes on a new case from the wealthy and influential TEODORA, whose daughter has been kidnapped."
+      },
+      {
+        "act": 2,
+        "label": "Rising Action",
+        "description": "As Jackson delves deeper into the case, he uncovers a web of corruption and deceit that leads him to a powerful tech mogul with a hidden agenda."
+      },
+      {
+        "act": 3,
+        "label": "Climax",
+        "description": "Jackson faces off against the tech mogul's henchmen in a tense showdown to rescue Teodora's daughter and prevent a catastrophic event that could destroy the city."
+      },
+      {
+        "act": 4,
+        "label": "Resolution",
+        "description": "The dust settles, and Jackson must come to terms with the consequences of his actions and the true nature of the forces he has been battling."
+      }
+    ],
+    "protagonist": "KYLE",
+    "antagonist": "MAYA",
+    "world": "In the neon-lit underbelly of Neo-Tokyo, corruption and greed have created a city on the brink of collapse, where the divide between the haves and the have-nots has grown insurmountable."
+  }
+}

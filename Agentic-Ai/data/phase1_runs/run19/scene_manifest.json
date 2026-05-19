@@ -1,0 +1,257 @@
+{
+  "workflow_id": "workflow_20260507_172521",
+  "timestamp": "2026-05-07T17:25:21.634833",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "location": "LOCAL TEA SHOP",
+      "dialogue": [
+        {
+          "speaker": "HAIDER",
+          "line": "\"We need to teach Hadi a lesson for disrespecting us.\"",
+          "visual_cue": "Medium shot of HAIDER, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "IQRASH",
+          "line": "\"Agreed, he's been pushing his luck for too long.\"",
+          "visual_cue": "Medium shot of IQRASH, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "HAMMAD",
+          "line": "\"I think I have a better idea. Why not challenge him to the annual car race? If he loses, he'll know his place.\"",
+          "visual_cue": "Medium shot of HAMMAD, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "HAIDER",
+        "IQRASH",
+        "HAMMAD"
+      ],
+      "duration": 23,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    },
+    {
+      "scene_id": 2,
+      "location": "ABANDONED RACING TRACK",
+      "dialogue": [
+        {
+          "speaker": "HAIDER",
+          "line": "\"You think you can beat us, Hadi? We've been training for months.\"",
+          "visual_cue": "Medium shot of HAIDER, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "HADI",
+          "line": "\"I've been racing for years, you two are just amateurs.\"",
+          "visual_cue": "Medium shot of HADI, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "IQRASH",
+          "line": "\"We'll see about that. Let's see who's laughing at the end of the day.\"",
+          "visual_cue": "Medium shot of IQRASH, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "HAMMAD",
+          "line": "\"Actually, guys, I think Hadi might have a point. We should focus on our own driving skills instead of trying to intimidate him.\"",
+          "visual_cue": "Close-up of IQRASH, a fierce glint in her eye.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "HAIDER",
+        "HADI",
+        "IQRASH",
+        "HAMMAD"
+      ],
+      "duration": 32,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    },
+    {
+      "scene_id": 3,
+      "location": "HAMMAD'S GARAGE",
+      "dialogue": [
+        {
+          "speaker": "HAIDER",
+          "line": "\"I don't trust you, Hammad. You're just trying to get out of a fight.\"",
+          "visual_cue": "Medium shot of HAIDER, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "HAMMAD",
+          "line": "\"I'm trying to get us to win, Haider. And I think my plan is the best one.\"",
+          "visual_cue": "Medium shot of HAMMAD, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "IQRASH",
+          "line": "\"What makes you so sure, Hammad?\"",
+          "visual_cue": "Medium shot of IQRASH, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "HAMMAD",
+          "line": "\"Because I've been studying Hadi's driving patterns. He has a weakness in his braking technique.\"",
+          "visual_cue": "Medium shot of HAMMAD, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "HAIDER",
+        "HAMMAD",
+        "IQRASH"
+      ],
+      "duration": 29,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    },
+    {
+      "scene_id": 4,
+      "location": "ABANDONED RACING TRACK",
+      "dialogue": [
+        {
+          "speaker": "HAIDER",
+          "line": "\"Come on, Iqrash, you can do better than this!\"",
+          "visual_cue": "Medium shot of HAIDER, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "IQRASH",
+          "line": "\"I'm trying, Haider! But Hadi's driving like a pro!\"",
+          "visual_cue": "Medium shot of IQRASH, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "HADI",
+          "line": "\"Ha! You two are no match for me!\"",
+          "visual_cue": "Medium shot of HADI, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "HAIDER",
+        "IQRASH",
+        "HADI"
+      ],
+      "duration": 16,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    },
+    {
+      "scene_id": 5,
+      "location": "ABANDONED RACING TRACK",
+      "dialogue": [
+        {
+          "speaker": "HAIDER",
+          "line": "\"Yes! We did it!\"",
+          "visual_cue": "Medium shot of HAIDER, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "IQRASH",
+          "line": "\"Hadi, you idiot! You should have listened to us.\"",
+          "visual_cue": "Medium shot of IQRASH, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "HADI",
+          "line": "\"I... I didn't mean to lose. Congratulations, guys.\"",
+          "visual_cue": "Medium shot of HADI, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "HAIDER",
+        "IQRASH",
+        "HADI"
+      ],
+      "duration": 14,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    }
+  ],
+  "total_scenes": 5,
+  "total_duration_seconds": 114
+}

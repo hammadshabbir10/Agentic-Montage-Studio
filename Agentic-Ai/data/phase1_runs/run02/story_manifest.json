@@ -1,0 +1,42 @@
+{
+  "workflow_id": "workflow_20260507_123449",
+  "timestamp": "2026-05-07T12:34:49.235086",
+  "story": {
+    "title": "Skybound Mayhem",
+    "logline": "As a rogue pilot takes control of a commercial airliner, a desperate security expert must outwit the hostile captain and save the lives of the passengers.",
+    "genre": "Thriller",
+    "tone": "tense and gritty",
+    "setting": "A commercial airliner at cruising altitude",
+    "time_period": "Present Day",
+    "themes": [
+      "Survival",
+      "Control",
+      "Redemption"
+    ],
+    "acts": [
+      {
+        "act": 1,
+        "label": "Introduction",
+        "description": "We meet our protagonist, a former military pilot turned security expert, as he tries to protect the passengers from the rogue pilot. Meanwhile, the passengers are unaware of the danger lurking in the cockpit. The stakes are raised when the pilot begins to take control of the plane."
+      },
+      {
+        "act": 2,
+        "label": "Conflict",
+        "description": "As the situation spirals out of control, our protagonist must use his skills to try and regain control of the plane. The passengers are panicked, and the pilot is becoming increasingly erratic. The security expert's efforts are hindered by the hostile captain, who will stop at nothing to crash the plane."
+      },
+      {
+        "act": 3,
+        "label": "Climax",
+        "description": "The tension builds as the security expert makes a final attempt to save the passengers. The pilot's plan is revealed, and our hero must use all his wits to outmaneuver him. The fate of the passengers hangs in the balance as the two men engage in a heart-stopping battle for control of the plane."
+      },
+      {
+        "act": 4,
+        "label": "Resolution",
+        "description": "The outcome of the struggle is decided, and the passengers are safe. Our protagonist reflects on the events of the flight, realizing that he has found redemption in the face of adversity. The plane lands safely, and the passengers breathe a sigh of relief."
+      }
+    ],
+    "protagonist": "SAM",
+    "antagonist": "ALI",
+    "world": "In a world where air travel is the norm, the thought of a rogue pilot taking control of a commercial airliner is the ultimate nightmare."
+  }
+}

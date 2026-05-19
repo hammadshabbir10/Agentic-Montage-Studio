@@ -1,0 +1,185 @@
+{
+  "workflow_id": "phase2_run12",
+  "timestamp": "2026-05-07T14:03:13.604064",
+  "run_tag": "run12",
+  "total_duration_ms": 60192,
+  "scenes": [
+    {
+      "scene_id": 1,
+      "audio_file": "data\\phase2_runs\\run12\\audio\\scene_01_run12.mp3",
+      "bgm_file": "data\\phase2_runs\\run12\\bgm\\mysterious_scene01_freesound.mp3",
+      "mood": "mysterious",
+      "start_ms": 0,
+      "end_ms": 31176,
+      "duration_ms": 31176,
+      "lines": [
+        {
+          "speaker": "SAM",
+          "line": "We're going to stall, Owais. We need to level out.",
+          "start_ms": 0,
+          "end_ms": 4872,
+          "duration_ms": 4872,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of SAM, expression intense and focused."
+        },
+        {
+          "speaker": "OWAIS",
+          "line": "Hold on to your seat, Sam. We're going to make this plane fly.",
+          "start_ms": 4872,
+          "end_ms": 8520,
+          "duration_ms": 3648,
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Close-up of SAM, sweat beading on his forehead."
+        },
+        {
+          "speaker": "L",
+          "line": "What's going on? Why are we shaking so much?",
+          "start_ms": 8520,
+          "end_ms": 11808,
+          "duration_ms": 3288,
+          "voice": "en-US-BrianNeural",
+          "visual_cue": "Medium shot of OWAIS, jaw clenched in concentration."
+        },
+        {
+          "speaker": "ARAESA",
+          "line": "Everyone, please fasten your seatbelts. We're experiencing some turbulence.",
+          "start_ms": 11808,
+          "end_ms": 18000,
+          "duration_ms": 6192,
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Wide shot of L\u0435\u043e, looking pale and frightened."
+        },
+        {
+          "speaker": "OWAIS",
+          "line": "We're coming out of the dive. Hold on to your seats.",
+          "start_ms": 18000,
+          "end_ms": 20952,
+          "duration_ms": 2952,
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Close-up of ARAESA, a calm smile on her face as she checks the safety harnesses."
+        },
+        {
+          "speaker": "L",
+          "line": "This is crazy! What's happening?",
+          "start_ms": 20952,
+          "end_ms": 23472,
+          "duration_ms": 2520,
+          "voice": "en-US-BrianNeural",
+          "visual_cue": "Close-up of OWAIS, eyes locked on the altimeter."
+        },
+        {
+          "speaker": "ARAESA",
+          "line": "Everyone, please remain calm. This is just turbulence.",
+          "start_ms": 23472,
+          "end_ms": 28608,
+          "duration_ms": 5136,
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Close-up of L\u0435\u043e, eyes wide with fear."
+        },
+        {
+          "speaker": "OWAIS",
+          "line": "We're going to make it through this. Just hold on.",
+          "start_ms": 28608,
+          "end_ms": 31176,
+          "duration_ms": 2568,
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Medium shot of ARAESA, her voice steady and reassuring."
+        }
+      ]
+    },
+    {
+      "scene_id": 2,
+      "audio_file": "data\\phase2_runs\\run12\\audio\\scene_02_run12.mp3",
+      "bgm_file": "data\\phase2_runs\\run12\\bgm\\mysterious_scene02_freesound.mp3",
+      "mood": "mysterious",
+      "start_ms": 31176,
+      "end_ms": 47136,
+      "duration_ms": 15960,
+      "lines": [
+        {
+          "speaker": "SAM",
+          "line": "Owais, I think we're crashing. We need to do something.",
+          "start_ms": 31176,
+          "end_ms": 36072,
+          "duration_ms": 4896,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of SAM, expression intense and focused."
+        },
+        {
+          "speaker": "ARAESA",
+          "line": "Everyone, please stay calm. We're experiencing a minor storm.",
+          "start_ms": 36072,
+          "end_ms": 41520,
+          "duration_ms": 5448,
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Close-up of SAM, desperation in his voice."
+        },
+        {
+          "speaker": "L",
+          "line": "This is insane! We're going to die!",
+          "start_ms": 41520,
+          "end_ms": 44160,
+          "duration_ms": 2640,
+          "voice": "en-US-BrianNeural",
+          "visual_cue": "Close-up of ARAESA, her hands steady as she checks the instruments."
+        },
+        {
+          "speaker": "OWAIS",
+          "line": "We're not going to crash. We're going to make it through this.",
+          "start_ms": 44160,
+          "end_ms": 47136,
+          "duration_ms": 2976,
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Wide shot of L\u0435\u043e, his face contorted in terror."
+        }
+      ]
+    },
+    {
+      "scene_id": 3,
+      "audio_file": "data\\phase2_runs\\run12\\audio\\scene_03_run12.mp3",
+      "bgm_file": "data\\phase2_runs\\run12\\bgm\\mysterious_scene03_freesound.mp3",
+      "mood": "mysterious",
+      "start_ms": 47136,
+      "end_ms": 60192,
+      "duration_ms": 13056,
+      "lines": [
+        {
+          "speaker": "SAM",
+          "line": "What... what just happened?",
+          "start_ms": 47136,
+          "end_ms": 49632,
+          "duration_ms": 2496,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of SAM, expression intense and focused."
+        },
+        {
+          "speaker": "OWAIS",
+          "line": "We made it through the storm. We're going to land safely.",
+          "start_ms": 49632,
+          "end_ms": 52608,
+          "duration_ms": 2976,
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Close-up of SAM, his eyes wide with shock."
+        },
+        {
+          "speaker": "ARAESA",
+          "line": "Everyone, please prepare for landing. We're starting our descent.",
+          "start_ms": 52608,
+          "end_ms": 57864,
+          "duration_ms": 5256,
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Close-up of OWAIS, a hint of a smile on his face."
+        },
+        {
+          "speaker": "L",
+          "line": "I... I think I'm going to be sick.",
+          "start_ms": 57864,
+          "end_ms": 60192,
+          "duration_ms": 2328,
+          "voice": "en-US-BrianNeural",
+          "visual_cue": "Medium shot of ARAESA, her voice steady and reassuring."
+        }
+      ]
+    }
+  ]
+}

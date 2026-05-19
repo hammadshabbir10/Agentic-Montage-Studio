@@ -1,0 +1,17 @@
+{
+  "status": "completed",
+  "audio": [
+    "data\\phase2_runs\\run13\\audio\\scene_01_run13.mp3",
+    "data\\phase2_runs\\run13\\audio\\scene_02_run13.mp3",
+    "data\\phase2_runs\\run13\\audio\\scene_03_run13.mp3",
+    "data\\phase2_runs\\run13\\audio\\scene_04_run13.mp3",
+    "data\\phase2_runs\\run13\\audio\\scene_05_run13.mp3"
+  ],
+  "bgm": [
+    "data\\phase2_runs\\run13\\bgm\\hopeful_scene01_freesound.mp3",
+    "data\\phase2_runs\\run13\\bgm\\tense_scene02_freesound.mp3",
+    "data\\phase2_runs\\run13\\bgm\\action_scene03_freesound.mp3",
+    "data\\phase2_runs\\run13\\bgm\\hopeful_scene04_freesound.mp3",
+    "data\\phase2_runs\\run13\\bgm\\tense_scene05_freesound.mp3"
+  ]
+}

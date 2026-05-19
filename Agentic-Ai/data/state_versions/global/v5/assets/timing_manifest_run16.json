@@ -1,0 +1,171 @@
+{
+  "workflow_id": "phase2_run16",
+  "timestamp": "2026-05-08T16:19:34.966518",
+  "run_tag": "run16",
+  "total_duration_ms": 53544,
+  "scenes": [
+    {
+      "scene_id": 1,
+      "audio_file": "data\\phase2_runs\\run16\\audio\\scene_01_run16.mp3",
+      "bgm_file": "data\\phase2_runs\\run16\\bgm\\mysterious_scene01_freesound.mp3",
+      "mood": "mysterious",
+      "start_ms": 0,
+      "end_ms": 28584,
+      "duration_ms": 28584,
+      "lines": [
+        {
+          "speaker": "HAIDER",
+          "line": "We've been planning this for weeks, Iqrash. Hadi's got a reputation for being untouchable on the track.",
+          "start_ms": 0,
+          "end_ms": 7224,
+          "duration_ms": 7224,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of HAIDER, expression intense and focused."
+        },
+        {
+          "speaker": "IQRASH",
+          "line": "We're not just going to take him down on the track, Haider. We're going to make it personal.",
+          "start_ms": 7224,
+          "end_ms": 11688,
+          "duration_ms": 4464,
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Medium shot of IQRASH, expression intense and focused."
+        },
+        {
+          "speaker": "HADI OFFSCREEN",
+          "line": "I'm not afraid of you two.",
+          "start_ms": 11688,
+          "end_ms": 13560,
+          "duration_ms": 1872,
+          "voice": "en-US-BrianNeural",
+          "visual_cue": "Wide shot of Haider, his red racing jacket highlighted by the alleyway lights, Iqrash's black hoodie blending into the shadows."
+        },
+        {
+          "speaker": "HAIDER",
+          "line": "Oh, I think you should be.",
+          "start_ms": 13560,
+          "end_ms": 16056,
+          "duration_ms": 2496,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of HAIDER, expression intense and focused."
+        },
+        {
+          "speaker": "HAMMAD",
+          "line": "Wait, let's not do this. There's an annual car race coming up. Why don't we settle it there?",
+          "start_ms": 16056,
+          "end_ms": 23592,
+          "duration_ms": 7536,
+          "voice": "en-GB-RyanNeural",
+          "visual_cue": "Hadi steps into the light, his face set with a determined expression, Hadi's sleek blue car parked behind him, the metallic blue paint gleaming in the alleyway lights."
+        },
+        {
+          "speaker": "HAIDER",
+          "line": "And put ourselves at the mercy of the judges? No way.",
+          "start_ms": 23592,
+          "end_ms": 28584,
+          "duration_ms": 4992,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Hammad's glasses and grey sweater make him stand out against the dark alleyway, Hadi and Haider exchange a skeptical look."
+        }
+      ]
+    },
+    {
+      "scene_id": 2,
+      "audio_file": "data\\phase2_runs\\run16\\audio\\scene_02_run16.mp3",
+      "bgm_file": "data\\phase2_runs\\run16\\bgm\\tense_scene02_freesound.mp3",
+      "mood": "tense",
+      "start_ms": 28584,
+      "end_ms": 36912,
+      "duration_ms": 8328,
+      "lines": [
+        {
+          "speaker": "HADI",
+          "line": "I've got the edge I need. Time to take these guys down.",
+          "start_ms": 28584,
+          "end_ms": 32664,
+          "duration_ms": 4080,
+          "voice": "en-AU-WilliamNeural",
+          "visual_cue": "Medium shot of HADI, expression intense and focused."
+        },
+        {
+          "speaker": "HAMMAD",
+          "line": "Good luck, Hadi. I'll be rooting for you.",
+          "start_ms": 32664,
+          "end_ms": 36912,
+          "duration_ms": 4248,
+          "voice": "en-GB-RyanNeural",
+          "visual_cue": "Hadi's gloved hands tighten the engine bolts, his blue racing suit a stark contrast to the metallic blue car, the garage lights shining down on the car's sleek lines."
+        }
+      ]
+    },
+    {
+      "scene_id": 3,
+      "audio_file": "data\\phase2_runs\\run16\\audio\\scene_03_run16.mp3",
+      "bgm_file": "data\\phase2_runs\\run16\\bgm\\tense_scene03_freesound.mp3",
+      "mood": "tense",
+      "start_ms": 36912,
+      "end_ms": 46608,
+      "duration_ms": 9696,
+      "lines": [
+        {
+          "speaker": "ANNOUNCER VO",
+          "line": "Welcome to the annual city car race! Your drivers include Hadi in the sleek blue car, Haider in the rugged red car, and many more!",
+          "start_ms": 36912,
+          "end_ms": 46608,
+          "duration_ms": 9696,
+          "voice": "en-US-ChristopherNeural",
+          "visual_cue": "Medium shot of ANNOUNCER (V.O.), expression intense and focused."
+        }
+      ]
+    },
+    {
+      "scene_id": 4,
+      "audio_file": "data\\phase2_runs\\run16\\audio\\scene_04_run16.mp3",
+      "bgm_file": "data\\phase2_runs\\run16\\bgm\\tense_scene04_freesound.mp3",
+      "mood": "tense",
+      "start_ms": 46608,
+      "end_ms": 52296,
+      "duration_ms": 5688,
+      "lines": [
+        {
+          "speaker": "HADI",
+          "line": "I'm taking the lead!",
+          "start_ms": 46608,
+          "end_ms": 48288,
+          "duration_ms": 1680,
+          "voice": "en-AU-WilliamNeural",
+          "visual_cue": "Medium shot of HADI, expression intense and focused."
+        },
+        {
+          "speaker": "HAIDER",
+          "line": "No way! I'm not letting you win!",
+          "start_ms": 48288,
+          "end_ms": 52296,
+          "duration_ms": 4008,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Close-up of Hadi's hands on the wheel, his blue racing suit a blur as the car drifts around the corner, Haider's rugged red car close behind."
+        }
+      ]
+    },
+    {
+      "scene_id": 5,
+      "audio_file": "data\\phase2_runs\\run16\\audio\\scene_05_run16.mp3",
+      "bgm_file": "data\\phase2_runs\\run16\\bgm\\tense_scene05_freesound.mp3",
+      "mood": "tense",
+      "start_ms": 52296,
+      "end_ms": 53544,
+      "duration_ms": 1248,
+      "lines": [
+        {
+          "speaker": "HADI",
+          "line": "I did it!",
+          "start_ms": 52296,
+          "end_ms": 53544,
+          "duration_ms": 1248,
+          "voice": "en-AU-WilliamNeural",
+          "visual_cue": "Medium shot of HADI, expression intense and focused."
+        }
+      ]
+    }
+  ]
+}

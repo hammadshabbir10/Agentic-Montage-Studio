@@ -1,0 +1,6 @@
+file 'C:/Users/Crown Tech/Documents/Agenitc Final Proj/Agentic-Montage-Studio/Agentic-Ai/data/phase3_runs/run10/clips/scene_01_line_clips/line_001.mp4'
+file 'C:/Users/Crown Tech/Documents/Agenitc Final Proj/Agentic-Montage-Studio/Agentic-Ai/data/phase3_runs/run10/clips/scene_01_line_clips/line_002.mp4'
+file 'C:/Users/Crown Tech/Documents/Agenitc Final Proj/Agentic-Montage-Studio/Agentic-Ai/data/phase3_runs/run10/clips/scene_01_line_clips/line_003.mp4'
+file 'C:/Users/Crown Tech/Documents/Agenitc Final Proj/Agentic-Montage-Studio/Agentic-Ai/data/phase3_runs/run10/clips/scene_01_line_clips/line_004.mp4'
+file 'C:/Users/Crown Tech/Documents/Agenitc Final Proj/Agentic-Montage-Studio/Agentic-Ai/data/phase3_runs/run10/clips/scene_01_line_clips/line_005.mp4'
+file 'C:/Users/Crown Tech/Documents/Agenitc Final Proj/Agentic-Montage-Studio/Agentic-Ai/data/phase3_runs/run10/clips/scene_01_line_clips/line_006.mp4'

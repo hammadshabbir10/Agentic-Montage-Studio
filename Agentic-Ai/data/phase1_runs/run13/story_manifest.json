@@ -1,0 +1,42 @@
+{
+  "workflow_id": "workflow_20260507_130500",
+  "timestamp": "2026-05-07T13:05:00.327073",
+  "story": {
+    "title": "Neon Requiem",
+    "logline": "In a dystopian metropolis where memories can be hacked and sold, a hard-boiled detective must unravel the mystery behind a string of murders linked to a powerful tech mogul.",
+    "genre": "Cyberpunk Thriller",
+    "tone": "Gritty and intense",
+    "setting": "Neo-Tokyo, 2090",
+    "time_period": "Late 21st century",
+    "themes": [
+      "Memory and Identity",
+      "Power and Corruption",
+      "Redemption and Justice"
+    ],
+    "acts": [
+      {
+        "act": 1,
+        "label": "Introduction",
+        "description": "Meet Kaito Yamato, a grizzled cyberpunk detective struggling to make a living in the neon-lit underbelly of Neo-Tokyo. He's hired by a mysterious woman, Alessia, to investigate a series of murders linked to a powerful tech mogul, Ryker. The case will lead Kaito down a rabbit hole of corruption and conspiracy."
+      },
+      {
+        "act": 2,
+        "label": "Inciting Incident",
+        "description": "Kaito discovers a cryptic message on the victim's computer, hinting at a deeper conspiracy involving Ryker's company. He must navigate the treacherous world of corporate espionage and underground hacking to uncover the truth. Meanwhile, Alessia's true motives remain unclear, adding to the tension."
+      },
+      {
+        "act": 3,
+        "label": "Climax",
+        "description": "Kaito confronts Ryker in a high-stakes showdown, but the truth behind the murders remains elusive. In a shocking twist, Alessia's true identity is revealed, and Kaito must choose between his duty as a detective and his loyalty to his new ally."
+      },
+      {
+        "act": 4,
+        "label": "Resolution",
+        "description": "The truth behind the murders is finally revealed, and Kaito must face the consequences of his actions. The fate of Neo-Tokyo hangs in the balance, and the line between right and wrong is blurred. The city's dark future is set in motion, leaving Kaito to ponder the cost of his redemption."
+      }
+    ],
+    "protagonist": "KAELIN",
+    "antagonist": null,
+    "world": "In Neo-Tokyo, memories can be hacked, sold, and manipulated, blurring the lines between reality and fantasy."
+  }
+}

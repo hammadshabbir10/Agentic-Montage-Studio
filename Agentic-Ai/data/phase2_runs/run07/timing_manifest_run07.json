@@ -1,0 +1,140 @@
+{
+  "workflow_id": "phase2_run07",
+  "timestamp": "2026-05-07T13:00:14.436591",
+  "run_tag": "run07",
+  "total_duration_ms": 38376,
+  "scenes": [
+    {
+      "scene_id": 1,
+      "audio_file": "data\\phase2_runs\\run07\\audio\\scene_01_run07.mp3",
+      "bgm_file": "data\\phase2_runs\\run07\\bgm\\sad_scene01_freesound.mp3",
+      "mood": "sad",
+      "start_ms": 0,
+      "end_ms": 12072,
+      "duration_ms": 12072,
+      "lines": [
+        {
+          "speaker": "SOFIA LAURENTA",
+          "line": "Ethan, we got a hit on the encrypted data.",
+          "start_ms": 0,
+          "end_ms": 3360,
+          "duration_ms": 3360,
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Medium shot of SOFIA LAURENTA, expression intense and focused."
+        },
+        {
+          "speaker": "ETHAN WOLFE",
+          "line": "What's the ID?",
+          "start_ms": 3360,
+          "end_ms": 5352,
+          "duration_ms": 1992,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of Sofia, a determined look etched on her face."
+        },
+        {
+          "speaker": "SOFIA LAURENTA",
+          "line": "Belongs to a high-ranking executive from Omicron Innovations.",
+          "start_ms": 5352,
+          "end_ms": 9768,
+          "duration_ms": 4416,
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Close-up of Ethan, his eyes narrowing in focus."
+        },
+        {
+          "speaker": "ETHAN WOLFE",
+          "line": "Let's pay him a visit.",
+          "start_ms": 9768,
+          "end_ms": 12072,
+          "duration_ms": 2304,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Wide shot of Sofia, her eyes scanning the room as she hands the folder to Ethan."
+        }
+      ]
+    },
+    {
+      "scene_id": 2,
+      "audio_file": "data\\phase2_runs\\run07\\audio\\scene_02_run07.mp3",
+      "bgm_file": "data\\phase2_runs\\run07\\bgm\\tense_scene02_freesound.mp3",
+      "mood": "tense",
+      "start_ms": 12072,
+      "end_ms": 23688,
+      "duration_ms": 11616,
+      "lines": [
+        {
+          "speaker": "SOFIA LAURENTA",
+          "line": "I've got a bad feeling about this.",
+          "start_ms": 12072,
+          "end_ms": 14832,
+          "duration_ms": 2760,
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Medium shot of SOFIA LAURENTA, expression intense and focused."
+        },
+        {
+          "speaker": "ETHAN WOLFE",
+          "line": "We're just here to ask questions, Sof. Don't get your hackles up.",
+          "start_ms": 14832,
+          "end_ms": 20256,
+          "duration_ms": 5424,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Close-up of Sofia, a hint of unease in her voice."
+        },
+        {
+          "speaker": "SOFIA LAURENTA",
+          "line": "You know I've got a history with these people, Ethan.",
+          "start_ms": 20256,
+          "end_ms": 23688,
+          "duration_ms": 3432,
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Medium shot of Ethan, a confident stride as he leads Sofia towards the elevators."
+        }
+      ]
+    },
+    {
+      "scene_id": 3,
+      "audio_file": "data\\phase2_runs\\run07\\audio\\scene_03_run07.mp3",
+      "bgm_file": "data\\phase2_runs\\run07\\bgm\\sad_scene03_freesound.mp3",
+      "mood": "sad",
+      "start_ms": 23688,
+      "end_ms": 38376,
+      "duration_ms": 14688,
+      "lines": [
+        {
+          "speaker": "ETHAN WOLFE",
+          "line": "Victor, we're not here to play games. Where is the encrypted data?",
+          "start_ms": 23688,
+          "end_ms": 29040,
+          "duration_ms": 5352,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of ETHAN WOLFE, expression intense and focused."
+        },
+        {
+          "speaker": "VICTOR MORRELL",
+          "line": "I don't know what you're talking about.",
+          "start_ms": 29040,
+          "end_ms": 30744,
+          "duration_ms": 1704,
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Close-up of Victor, his eyes darting between Ethan and Sofia."
+        },
+        {
+          "speaker": "SOFIA LAURENTA",
+          "line": "Don't lie to us, Victor. We have evidence.",
+          "start_ms": 30744,
+          "end_ms": 35208,
+          "duration_ms": 4464,
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Medium shot of Victor, his voice shaking slightly."
+        },
+        {
+          "speaker": "VICTOR MORRELL",
+          "line": "Fine... I'll tell you. But you have to protect me.",
+          "start_ms": 35208,
+          "end_ms": 38376,
+          "duration_ms": 3168,
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Close-up of Sofia, her eyes narrowing in intensity."
+        }
+      ]
+    }
+  ]
+}

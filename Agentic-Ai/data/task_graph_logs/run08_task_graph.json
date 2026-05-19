@@ -1,0 +1,249 @@
+{
+  "run_tag": "run08",
+  "run_number": 8,
+  "run_dir": "data\\phase2_runs\\run08",
+  "bgm_dir": "data\\phase2_runs\\run08\\bgm",
+  "scene_manifest": {
+    "workflow_id": "workflow_20260507_125912",
+    "timestamp": "2026-05-07T12:59:12.775117",
+    "scenes": [
+      {
+        "scene_id": 1,
+        "location": "DETECTIVE AGENCY",
+        "dialogue": [
+          {
+            "speaker": "SOFIA LAURENTA",
+            "line": "\"Ethan, we got a hit on the encrypted data.\"",
+            "visual_cue": "Medium shot of SOFIA LAURENTA, expression intense and focused.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "ETHAN WOLFE",
+            "line": "\"What's the ID?\"",
+            "visual_cue": "Medium shot of Sofia, a determined look etched on her face.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "SOFIA LAURENTA",
+            "line": "\"Belongs to a high-ranking executive from Omicron Innovations.\"",
+            "visual_cue": "Close-up of Ethan, his eyes narrowing in focus.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "ETHAN WOLFE",
+            "line": "\"Let's pay him a visit.\"",
+            "visual_cue": "Wide shot of Sofia, her eyes scanning the room as she hands the folder to Ethan.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          }
+        ],
+        "characters": [
+          "SOFIA LAURENTA",
+          "ETHAN WOLFE"
+        ],
+        "duration": 17,
+        "start_ms": null,
+        "end_ms": null,
+        "duration_ms": null,
+        "audio_file": null,
+        "bgm_file": null,
+        "mood": null,
+        "lines": null
+      },
+      {
+        "scene_id": 2,
+        "location": "OMICRON INNOVATIONS",
+        "dialogue": [
+          {
+            "speaker": "SOFIA LAURENTA",
+            "line": "\"I've got a bad feeling about this.\"",
+            "visual_cue": "Medium shot of SOFIA LAURENTA, expression intense and focused.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "ETHAN WOLFE",
+            "line": "\"We're just here to ask questions, Sof. Don't get your hackles up.\"",
+            "visual_cue": "Close-up of Sofia, a hint of unease in her voice.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "SOFIA LAURENTA",
+            "line": "\"You know I've got a history with these people, Ethan.\"",
+            "visual_cue": "Medium shot of Ethan, a confident stride as he leads Sofia towards the elevators.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          }
+        ],
+        "characters": [
+          "SOFIA LAURENTA",
+          "ETHAN WOLFE"
+        ],
+        "duration": 18,
+        "start_ms": null,
+        "end_ms": null,
+        "duration_ms": null,
+        "audio_file": null,
+        "bgm_file": null,
+        "mood": null,
+        "lines": null
+      },
+      {
+        "scene_id": 3,
+        "location": "OMICRON INNOVATIONS EXECUTIVE OFFICE",
+        "dialogue": [
+          {
+            "speaker": "ETHAN WOLFE",
+            "line": "\"Victor, we're not here to play games. Where is the encrypted data?\"",
+            "visual_cue": "Medium shot of ETHAN WOLFE, expression intense and focused.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "VICTOR MORRELL",
+            "line": "\"I don't know what you're talking about.\"",
+            "visual_cue": "Close-up of Victor, his eyes darting between Ethan and Sofia.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "SOFIA LAURENTA",
+            "line": "\"Don't lie to us, Victor. We have evidence.\"",
+            "visual_cue": "Medium shot of Victor, his voice shaking slightly.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "VICTOR MORRELL",
+            "line": "\"Fine... I'll tell you. But you have to protect me.\"",
+            "visual_cue": "Close-up of Sofia, her eyes narrowing in intensity.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          }
+        ],
+        "characters": [
+          "ETHAN WOLFE",
+          "VICTOR MORRELL",
+          "SOFIA LAURENTA"
+        ],
+        "duration": 22,
+        "start_ms": null,
+        "end_ms": null,
+        "duration_ms": null,
+        "audio_file": null,
+        "bgm_file": null,
+        "mood": null,
+        "lines": null
+      }
+    ],
+    "total_scenes": 3,
+    "total_duration_seconds": 57
+  },
+  "character_db": {
+    "workflow_id": "workflow_20260507_125941",
+    "timestamp": "2026-05-07T12:59:41.536073",
+    "characters": [
+      {
+        "name": "SOFIA LAURENTA",
+        "personality": "Sofia Laurenta is a driven and perhaps troubled individual with a personal connection to Omicron Innovations, which motivates her to take risks in her work.",
+        "appearance": "As a detective in the early 21st century, Sofia has a professional yet understated style, with a focus on functional yet stylish clothing.",
+        "role": "supporting",
+        "style_reference": "Neo-noir thriller, dark color palette, and a sense of unease and tension.",
+        "first_appearance": 1,
+        "dialogue_samples": [
+          {
+            "line": "\"Ethan, we got a hit on the encrypted data.\"",
+            "visual_cue": "Medium shot of SOFIA LAURENTA, expression intense and focused."
+          },
+          {
+            "line": "\"Belongs to a high-ranking executive from Omicron Innovations.\"",
+            "visual_cue": "Close-up of Ethan, his eyes narrowing in focus."
+          },
+          {
+            "line": "\"I've got a bad feeling about this.\"",
+            "visual_cue": "Medium shot of SOFIA LAURENTA, expression intense and focused."
+          },
+          {
+            "line": "\"You know I've got a history with these people, Ethan.\"",
+            "visual_cue": "Medium shot of Ethan, a confident stride as he leads Sofia towards the elevators."
+          },
+          {
+            "line": "\"Don't lie to us, Victor. We have evidence.\"",
+            "visual_cue": "Medium shot of Victor, his voice shaking slightly."
+          }
+        ]
+      },
+      {
+        "name": "ETHAN WOLFE",
+        "personality": "A tough, no-nonsense individual driven by a desire for answers and willing to take direct action, with a hint of caution and diplomacy.",
+        "appearance": "A rugged, middle-aged man with a strong jawline and sharp features, dressed in a suit and tie that exudes a sense of authority.",
+        "role": "supporting",
+        "style_reference": "Gritty, investigative drama, think 1970s-style detective film with a focus on practical lighting and shadowy settings.",
+        "first_appearance": 1,
+        "dialogue_samples": [
+          {
+            "line": "\"What's the ID?\"",
+            "visual_cue": "Medium shot of Sofia, a determined look etched on her face."
+          },
+          {
+            "line": "\"Let's pay him a visit.\"",
+            "visual_cue": "Wide shot of Sofia, her eyes scanning the room as she hands the folder to Ethan."
+          },
+          {
+            "line": "\"We're just here to ask questions, Sof. Don't get your hackles up.\"",
+            "visual_cue": "Close-up of Sofia, a hint of unease in her voice."
+          },
+          {
+            "line": "\"Victor, we're not here to play games. Where is the encrypted data?\"",
+            "visual_cue": "Medium shot of ETHAN WOLFE, expression intense and focused."
+          }
+        ]
+      },
+      {
+        "name": "VICTOR MORRELL",
+        "personality": "Victor Morrell appears to be evasive and possibly deceitful, but beneath his guarded exterior may be driven by a desire for protection or reassurance.",
+        "appearance": "Victor Morrell is likely a middle-aged man with a sharp suit and clean shave, possibly dressed in attire fitting for a corporate executive or high-stakes businessperson.",
+        "role": "supporting",
+        "style_reference": "Corporate thriller, sleek offices, and intense boardroom settings.",
+        "first_appearance": 3,
+        "dialogue_samples": [
+          {
+            "line": "\"I don't know what you're talking about.\"",
+            "visual_cue": "Close-up of Victor, his eyes darting between Ethan and Sofia."
+          },
+          {
+            "line": "\"Fine... I'll tell you. But you have to protect me.\"",
+            "visual_cue": "Close-up of Sofia, her eyes narrowing in intensity."
+          }
+        ]
+      }
+    ],
+    "total_characters": 3
+  }
+}

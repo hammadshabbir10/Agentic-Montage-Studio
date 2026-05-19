@@ -1,0 +1,150 @@
+{
+  "audio": [
+    {
+      "scene_id": 1,
+      "path": "data\\phase2_runs\\run06\\audio\\scene_01_run06.mp3",
+      "segments": [
+        {
+          "speaker": "KAELIN",
+          "line": "This case is going cold, Zephyra. I need something, anything to crack it.",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of KAELIN, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run06\\audio\\scene1\\KAELIN_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 36000
+        },
+        {
+          "speaker": "ZEPHYRA",
+          "line": "I've been going over the security footage, Kaelin. I think I found something.",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Medium shot of Kaelin, eyes scanning the room with a mix of frustration and desperation.",
+          "audio_file": "data\\phase2_runs\\run06\\audio\\scene1\\ZEPHYRA_line002.mp3",
+          "byte_offset": 36000,
+          "byte_length": 35136
+        },
+        {
+          "speaker": "KAELIN",
+          "line": "What is it?",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Close-up of Zephyra, eyes locked on the holographic display, a hint of a smile playing on her lips.",
+          "audio_file": "data\\phase2_runs\\run06\\audio\\scene1\\KAELIN_line003.mp3",
+          "byte_offset": 71136,
+          "byte_length": 10080
+        },
+        {
+          "speaker": "ZEPHYRA",
+          "line": "A figure, tall and slender, entered the building the night of the murder. They wore a black cloak and a mask.",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Close-up of Kaelin, leaning in, intense interest in his eyes.",
+          "audio_file": "data\\phase2_runs\\run06\\audio\\scene1\\ZEPHYRA_line004.mp3",
+          "byte_offset": 81216,
+          "byte_length": 44064
+        },
+        {
+          "speaker": "KAELIN",
+          "line": "That's our guy. Let's get to work, Zephyra. We need to track down this...figure.",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of Zephyra, her hands gesturing animatedly as she speaks.",
+          "audio_file": "data\\phase2_runs\\run06\\audio\\scene1\\KAELIN_line005.mp3",
+          "byte_offset": 125280,
+          "byte_length": 43776
+        }
+      ]
+    },
+    {
+      "scene_id": 2,
+      "path": "data\\phase2_runs\\run06\\audio\\scene_02_run06.mp3",
+      "segments": [
+        {
+          "speaker": "KAELIN",
+          "line": "This is a dead end, Zephyra. We've been canvassing the entire city, and no one's seen anything.",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of KAELIN, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run06\\audio\\scene2\\KAELIN_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 42624
+        },
+        {
+          "speaker": "ZEPHYRA",
+          "line": "That's not true, Kaelin. I've been talking to some of the locals, and they've heard rumors of a hidden underground club. Maybe our guy is hiding there.",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Over-the-shoulder shot of Kaelin, Zephyra standing beside him, a look of concern on her face.",
+          "audio_file": "data\\phase2_runs\\run06\\audio\\scene2\\ZEPHYRA_line002.mp3",
+          "byte_offset": 42624,
+          "byte_length": 62208
+        },
+        {
+          "speaker": "KAELIN",
+          "line": "I don't know, Zephyra. That sounds like a wild goose chase.",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Close-up of Zephyra, eyes sparkling with excitement.",
+          "audio_file": "data\\phase2_runs\\run06\\audio\\scene2\\KAELIN_line003.mp3",
+          "byte_offset": 104832,
+          "byte_length": 30672
+        },
+        {
+          "speaker": "ZEPHYRA",
+          "line": "It's worth a shot, Kaelin. We have nothing else to lose.",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Close-up of Kaelin, a hint of skepticism in his eyes.",
+          "audio_file": "data\\phase2_runs\\run06\\audio\\scene2\\ZEPHYRA_line004.mp3",
+          "byte_offset": 135504,
+          "byte_length": 30816
+        }
+      ]
+    },
+    {
+      "scene_id": 3,
+      "path": "data\\phase2_runs\\run06\\audio\\scene_03_run06.mp3",
+      "segments": [
+        {
+          "speaker": "KAELIN",
+          "line": "Stay close, Zephyra. We don't know what we're walking into.",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of KAELIN, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run06\\audio\\scene3\\KAELIN_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 31248
+        },
+        {
+          "speaker": "ZEPHYRA",
+          "line": "I've got a bad feeling about this, Kaelin. We should go back.",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Over-the-shoulder shot of Kaelin, Zephyra right behind him, her eyes darting back and forth.",
+          "audio_file": "data\\phase2_runs\\run06\\audio\\scene3\\ZEPHYRA_line002.mp3",
+          "byte_offset": 31248,
+          "byte_length": 31536
+        },
+        {
+          "speaker": "KAELIN",
+          "line": "Too late now. Let's keep moving.",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Close-up of Zephyra, her voice barely above a whisper, fear creeping into her eyes.",
+          "audio_file": "data\\phase2_runs\\run06\\audio\\scene3\\KAELIN_line003.mp3",
+          "byte_offset": 62784,
+          "byte_length": 23328
+        }
+      ]
+    }
+  ],
+  "music": [
+    {
+      "scene_id": 1,
+      "mood": "tense",
+      "bgm_path": "data\\phase2_runs\\run06\\bgm\\tense_scene01_freesound.mp3",
+      "bgm_source": "freesound"
+    },
+    {
+      "scene_id": 2,
+      "mood": "action",
+      "bgm_path": "data\\phase2_runs\\run06\\bgm\\action_scene02_freesound.mp3",
+      "bgm_source": "freesound"
+    },
+    {
+      "scene_id": 3,
+      "mood": "tense",
+      "bgm_path": "data\\phase2_runs\\run06\\bgm\\tense_scene03_freesound.mp3",
+      "bgm_source": "freesound"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "tasks": [
+    {
+      "scene_id": 1,
+      "location": "PLANE CABIN",
+      "dialogue": [
+        {
+          "speaker": "OWAI",
+          "line": "\"Ladies and gentlemen, welcome aboard. We'll be landing in about an hour.\"",
+          "visual_cue": "Medium shot of OWAI, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "TOM",
+          "line": "\"This is taking forever.\"",
+          "visual_cue": "Wide shot of OWAI, smiling at the passengers.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "JERRY",
+          "line": "\"I'm starving.\"",
+          "visual_cue": "Close-up of TOM, frustration etched on his face.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "AREEBA",
+          "line": "\"Would you like a snack, sir? We have peanuts or pretzels.\"",
+          "visual_cue": "Close-up of JERRY, rummaging through his pocket for snacks.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "OWAI",
+          "line": "\"Remember, please fasten your seatbelts. We'll be hitting some turbulence.\"",
+          "visual_cue": "Close-up of AREEBA, smiling at Jerry.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "OWAI",
+        "TOM",
+        "JERRY",
+        "AREEBA"
+      ]
+    },
+    {
+      "scene_id": 2,
+      "location": "AIRPLANE WING",
+      "dialogue": [
+        {
+          "speaker": "OWAI",
+          "line": "\"Don't worry, folks. We're going through a bit of turbulence. Just keep your seats and\u2014\"",
+          "visual_cue": "Medium shot of OWAI, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "JERRY",
+          "line": "\"Ahh! This is crazy!\"",
+          "visual_cue": "Medium shot of JERRY, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "TOM",
+          "line": "\"Stay calm, Jerry. We'll be fine.\"",
+          "visual_cue": "Close-up of JERRY, eyes wide with fear.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "AREEBA",
+          "line": "\"Can I get you a blanket, sir? Or a cup of water?\"",
+          "visual_cue": "Close-up of TOM, attempting to reassure Jerry.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "OWAI",
+        "JERRY",
+        "TOM",
+        "AREEBA"
+      ]
+    },
+    {
+      "scene_id": 3,
+      "location": "AIRPLANE COCKPIT",
+      "dialogue": [
+        {
+          "speaker": "OWAI",
+          "line": "\"How's it looking, Areeba? Any signs of trouble?\"",
+          "visual_cue": "Medium shot of OWAI, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "AREEBA",
+          "line": "\"No, Captain. Everything's looking good. Just a bit of turbulence.\"",
+          "visual_cue": "Close-up of OWAI, focused on the controls.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "OWAI",
+        "AREEBA"
+      ]
+    }
+  ]
+}

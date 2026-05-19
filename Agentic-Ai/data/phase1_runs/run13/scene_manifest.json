@@ -1,0 +1,125 @@
+{
+  "workflow_id": "workflow_20260507_130503",
+  "timestamp": "2026-05-07T13:05:03.643980",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "location": "DETECTIVE AGENCY",
+      "dialogue": [
+        {
+          "speaker": "KAELIN",
+          "line": "\"Aria, I need you to dig up everything on the Ryker case.\"",
+          "visual_cue": "Medium shot of KAELIN, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "ARIA",
+          "line": "\"Already on it, Kaelin. I've got a few leads, but they're going to take time.\"",
+          "visual_cue": "Close-up of ARIA, her brow furrowed in concentration.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "KAELIN",
+          "line": "\"We don't have time. Ryker's family is getting antsy, and I need something concrete to give them.\"",
+          "visual_cue": "Close-up of KAELIN, his jaw clenched in frustration.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "KAELIN",
+        "ARIA"
+      ],
+      "duration": 24,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    },
+    {
+      "scene_id": 2,
+      "location": "CITY STREET",
+      "dialogue": [
+        {
+          "speaker": "ARIA",
+          "line": "\"Vex, I need you to find out what Ryker was working on before he disappeared.\"",
+          "visual_cue": "Medium shot of ARIA, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "VEX",
+          "line": "\"Aria, I've got something. Ryker was involved in a secret project with the Oni-Kiru corporation. Meet me at the Black Hole bar at midnight to discuss further.\"",
+          "visual_cue": "Close-up of ARIA, her earpiece held to her ear, a hint of concentration on her face.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "ARIA",
+        "VEX"
+      ],
+      "duration": 23,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    },
+    {
+      "scene_id": 3,
+      "location": "BLACK HOLE BAR",
+      "dialogue": [
+        {
+          "speaker": "ARIA",
+          "line": "\"What do you know about Oni-Kiru's project?\"",
+          "visual_cue": "Medium shot of ARIA, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "VEX",
+          "line": "\"I know it's big, Aria. And I think Ryker was in over his head. Meet me outside, I've got something to show you.\"",
+          "visual_cue": "Close-up of VEX, his face inches from Aria's, his eyes locked on hers with an air of intensity.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "ARIA",
+        "VEX"
+      ],
+      "duration": 17,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    }
+  ],
+  "total_scenes": 3,
+  "total_duration_seconds": 64
+}

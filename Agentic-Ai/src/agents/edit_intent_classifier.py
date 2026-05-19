@@ -196,7 +196,10 @@ _RULES = [
 
     (r"(?:change|modify|redesign|update)\s+(?:the\s+)?character\s*(?:design)?",
      "change_character_design", "video_frame",
-     lambda m, q: {"character": _extract_character(q)}),
+     lambda m, q: {
+         "character": _extract_character(q),
+         "description": _extract_character_description(q),
+     }),
 
     (r"(?:speed\s+up|faster|accelerate)\s+(?:the\s+)?(?:scene|this)",
      "speed_up_scene", "video",
@@ -238,6 +241,15 @@ _RULES = [
     (r"(?:sharpen|crisp)\s+(?:the\s+)?(?:scene|image|frame)",
      "apply_filter", "video_frame",
      lambda m, q: {"filter": "sharpen", "scene_id": _extract_scene_id(q)}),
+
+    # Visual prompt modification: "Change the blue car to red in scene 2", "Make the sky green in scene 1"
+    (r"(?:change|make|turn|set)\s+(?:the\s+)?(.*?)\s+(?:to|into|as|changed\s+into|to\s+be)\s+(.*?)\s+in\s+scene\s*(\d+)",
+     "modify_scene_visuals", "modify_scene_visuals",
+     lambda m, q: {
+         "original": re.sub(r"^(?:a|an|the)\s+", "", m.group(1).strip(), flags=re.IGNORECASE),
+         "replacement": m.group(2).strip(),
+         "scene_id": int(m.group(3)),
+     }),
 ]
 
 
@@ -278,13 +290,68 @@ def _extract_scene_id(query: str) -> Optional[int]:
 
 
 def _extract_character(query: str) -> Optional[str]:
-    # Look for quoted names or capitalized words after "character"
-    match = re.search(r'["\']([^"\']+)["\']', query)
+    # Look for quoted names first
+    match = re.search(r'["\']([^"\' ]+)["\']', query)
     if match:
         return match.group(1).strip()
-    match = re.search(r"character\s+(?:design\s+(?:of|for)\s+)?([A-Z][a-z]+)", query)
+    # Names after the word "character"
+    match = re.search(r"character\s+(?:design\s+(?:of|for)\s+)?([A-Z][a-zA-Z]+)", query, re.IGNORECASE)
     if match:
         return match.group(1).strip()
+    # ALL-CAPS or Title-Case name after make/give/set/change/update, stops before 'a'/'an'
+    match = re.search(
+        r"(?:make|give|set|change|update)\s+([A-Z][A-Z0-9]+(?:\s+[A-Z][A-Z0-9]+)*)\s+(?:a|an)\b",
+        query,
+        re.IGNORECASE,
+    )
+    if match:
+        return match.group(1).strip()
+    return None
+
+
+def _extract_character_name_from_query(query: str) -> Optional[str]:
+    """Extract ALL-CAPS or Title-Case character name from queries like 'Make OWAI a black skin'."""
+    # Capture NAME that comes right before 'a'/'an' + trait
+    match = re.search(
+        r"(?:make|give|set|change|update)\s+([A-Z][A-Z0-9]+(?:\s+[A-Z][A-Z0-9]+)*)\s+(?:a|an)\b",
+        query,
+        re.IGNORECASE,
+    )
+    if match:
+        return match.group(1).strip()
+    return _extract_character(query)
+
+
+def _extract_appearance_description(query: str) -> Optional[str]:
+    """Extract appearance trait from queries like 'Make OWAI a black skin color'."""
+    # Match: make/give/set/change NAME [a/an/the] <trait> [in scene N]
+    # Uses \S+ for the character name token to avoid space-in-class ambiguity
+    match = re.search(
+        r"(?:make|give|set|change|update)\s+\S+\s+(?:a|an|to have|the)?\s*(.+?)(?:\s+in\s+scene\s*\d+)?$",
+        query,
+        re.IGNORECASE,
+    )
+    if match:
+        return match.group(1).strip().strip(".")
+    return _extract_character_description(query)
+
+
+def _extract_character_description(query: str) -> Optional[str]:
+    # Try to capture the design change after "to/with/as"
+    match = re.search(
+        r"(?:design|character)(?:\s+of\s+|\s+for\s+)?[^.]*?\s+(?:to|with|as)\s+(.+)$",
+        query,
+        re.IGNORECASE,
+    )
+    if match:
+        return match.group(1).strip().strip(".")
+    match = re.search(
+        r"(?:change|modify|redesign|update)\s+[^.]*?\s+(?:to|with|as)\s+(.+)$",
+        query,
+        re.IGNORECASE,
+    )
+    if match:
+        return match.group(1).strip().strip(".")
     return None
 
 

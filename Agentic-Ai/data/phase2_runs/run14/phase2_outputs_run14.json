@@ -1,0 +1,195 @@
+{
+  "audio": [
+    {
+      "scene_id": 1,
+      "path": "data\\phase2_runs\\run14\\audio\\scene_01_run14.mp3",
+      "segments": [
+        {
+          "speaker": "HAIDER",
+          "line": "We can take him down, Iqra. I've been watching Hadi's racing schedule, we know exactly when and where he'll be.",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of HAIDER, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run14\\audio\\scene1\\HAIDER_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 44928
+        },
+        {
+          "speaker": "IQRASH",
+          "line": "But are we sure he's the one we want? What if he's not as weak as he seems?",
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Close-up of HAIDER, eyes gleaming with determination.",
+          "audio_file": "data\\phase2_runs\\run14\\audio\\scene1\\IQRASH_line002.mp3",
+          "byte_offset": 44928,
+          "byte_length": 25200
+        },
+        {
+          "speaker": "HAIDER",
+          "line": "He's our only chance at redemption, Iqra. We can't let him get away.",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of IQRASH, her eyes narrowing in skepticism.",
+          "audio_file": "data\\phase2_runs\\run14\\audio\\scene1\\HAIDER_line003.mp3",
+          "byte_offset": 70128,
+          "byte_length": 33408
+        }
+      ]
+    },
+    {
+      "scene_id": 2,
+      "path": "data\\phase2_runs\\run14\\audio\\scene_02_run14.mp3",
+      "segments": [
+        {
+          "speaker": "HAMMAD",
+          "line": "Hey, guys, I couldn't help but overhear. Why don't we settle this like men, in the upcoming annual car race?",
+          "voice": "en-US-BrianNeural",
+          "visual_cue": "Medium shot of HAMMAD, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run14\\audio\\scene2\\HAMMAD_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 39888
+        },
+        {
+          "speaker": "HAIDER",
+          "line": "You think you're funny, don't you, Hammad? Trying to turn this into some joke.",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Wide shot of HAMMAD, his smile confident and inviting.",
+          "audio_file": "data\\phase2_runs\\run14\\audio\\scene2\\HAIDER_line002.mp3",
+          "byte_offset": 39888,
+          "byte_length": 35280
+        },
+        {
+          "speaker": "HAMMAD",
+          "line": "Not at all, my friend. I just think it's time we put our skills to the test.",
+          "voice": "en-US-BrianNeural",
+          "visual_cue": "Close-up of HAIDER, his eyes flashing with anger.",
+          "audio_file": "data\\phase2_runs\\run14\\audio\\scene2\\HAMMAD_line003.mp3",
+          "byte_offset": 75168,
+          "byte_length": 29664
+        }
+      ]
+    },
+    {
+      "scene_id": 3,
+      "path": "data\\phase2_runs\\run14\\audio\\scene_03_run14.mp3",
+      "segments": [
+        {
+          "speaker": "HADI",
+          "line": "Come on, baby, just a little more power...",
+          "voice": "en-GB-RyanNeural",
+          "visual_cue": "Medium shot of HADI, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run14\\audio\\scene3\\HADI_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 22032
+        },
+        {
+          "speaker": "HADI",
+          "line": "I can do this. I have to do this.",
+          "voice": "en-GB-RyanNeural",
+          "visual_cue": "Close-up of HADI, his eyes fixed on the engine.",
+          "audio_file": "data\\phase2_runs\\run14\\audio\\scene3\\HADI_line002.mp3",
+          "byte_offset": 22032,
+          "byte_length": 23472
+        }
+      ]
+    },
+    {
+      "scene_id": 4,
+      "path": "data\\phase2_runs\\run14\\audio\\scene_04_run14.mp3",
+      "segments": [
+        {
+          "speaker": "HAIDER",
+          "line": "Let's show him what we're made of, Iqra!",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Wide shot of the starting line, the cars a blur of color and light.",
+          "audio_file": "data\\phase2_runs\\run14\\audio\\scene4\\HAIDER_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 18000
+        },
+        {
+          "speaker": "IQRASH",
+          "line": "You got this, Haider. We're in this together.",
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Medium shot of HAIDER, his eyes blazing with competitiveness.",
+          "audio_file": "data\\phase2_runs\\run14\\audio\\scene4\\IQRASH_line002.mp3",
+          "byte_offset": 18000,
+          "byte_length": 15552
+        }
+      ]
+    },
+    {
+      "scene_id": 5,
+      "path": "data\\phase2_runs\\run14\\audio\\scene_05_run14.mp3",
+      "segments": [
+        {
+          "speaker": "HAIDER",
+          "line": "What the...? How did he do that?",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Close-up of HADI, his hands gripping the wheel tightly.",
+          "audio_file": "data\\phase2_runs\\run14\\audio\\scene5\\HAIDER_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 22176
+        }
+      ]
+    },
+    {
+      "scene_id": 6,
+      "path": "data\\phase2_runs\\run14\\audio\\scene_06_run14.mp3",
+      "segments": [
+        {
+          "speaker": "HAIDER",
+          "line": "Congratulations, Hadi. You won this time.",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Wide shot of the finish line, HADI's car a triumphant conqueror of the track.",
+          "audio_file": "data\\phase2_runs\\run14\\audio\\scene6\\HAIDER_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 27504
+        },
+        {
+          "speaker": "HADI",
+          "line": "Thanks, Haider. But it's not over yet.",
+          "voice": "en-GB-RyanNeural",
+          "visual_cue": "Close-up of HAIDER, his face a mask of respect.",
+          "audio_file": "data\\phase2_runs\\run14\\audio\\scene6\\HADI_line002.mp3",
+          "byte_offset": 27504,
+          "byte_length": 26352
+        }
+      ]
+    }
+  ],
+  "music": [
+    {
+      "scene_id": 1,
+      "mood": "mysterious",
+      "bgm_path": "data\\phase2_runs\\run14\\bgm\\mysterious_scene01_freesound.mp3",
+      "bgm_source": "freesound"
+    },
+    {
+      "scene_id": 2,
+      "mood": "tense",
+      "bgm_path": "data\\phase2_runs\\run14\\bgm\\tense_scene02_freesound.mp3",
+      "bgm_source": "freesound"
+    },
+    {
+      "scene_id": 3,
+      "mood": "tense",
+      "bgm_path": "data\\phase2_runs\\run14\\bgm\\tense_scene03_freesound.mp3",
+      "bgm_source": "freesound"
+    },
+    {
+      "scene_id": 4,
+      "mood": "hopeful",
+      "bgm_path": "data\\phase2_runs\\run14\\bgm\\hopeful_scene04_freesound.mp3",
+      "bgm_source": "freesound"
+    },
+    {
+      "scene_id": 5,
+      "mood": "tense",
+      "bgm_path": "data\\phase2_runs\\run14\\bgm\\tense_scene05_freesound.mp3",
+      "bgm_source": "freesound"
+    },
+    {
+      "scene_id": 6,
+      "mood": "tense",
+      "bgm_path": "data\\phase2_runs\\run14\\bgm\\tense_scene06_freesound.mp3",
+      "bgm_source": "freesound"
+    }
+  ]
+}

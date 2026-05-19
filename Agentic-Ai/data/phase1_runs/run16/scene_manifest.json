@@ -1,0 +1,176 @@
+{
+  "workflow_id": "workflow_20260507_131258",
+  "timestamp": "2026-05-07T13:12:58.881950",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "location": "AIRPLANE COCKPIT",
+      "dialogue": [
+        {
+          "speaker": "ALI",
+          "line": "\"Ladies and gentlemen, welcome aboard. We're expecting a smooth flight today.\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "SAM",
+          "line": "\"Smooth flight? We're flying a plane, not a rollercoaster!\"",
+          "visual_cue": "Close-up of ALI, a hint of amusement in his eyes.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "LEO",
+          "line": "\"Hey, we can handle it. We're not exactly beginners.\"",
+          "visual_cue": "Close-up of SAM, brow furrowed in concern.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "ABEERA",
+          "line": "\"I'm sure you're both perfectly capable. But just to put your minds at ease, we have state-of-the-art navigation systems.\"",
+          "visual_cue": "Close-up of LEO, a smug grin spreading across his face.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "ALI",
+        "SAM",
+        "LEO",
+        "ABEERA"
+      ],
+      "duration": 27,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    },
+    {
+      "scene_id": 2,
+      "location": "AIRPLANE COCKPIT",
+      "dialogue": [
+        {
+          "speaker": "ALI",
+          "line": "\"We're experiencing some turbulence. Nothing to worry about.\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "SAM",
+          "line": "\"Turbulence? You call this turbulence? We're going to crash!\"",
+          "visual_cue": "Close-up of ALI, his eyes darting between the instruments.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "LEO",
+          "line": "\"Come on, Sam, it's just a little bump. We're fine.\"",
+          "visual_cue": "Close-up of SAM, his face pale with fear.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "ABEERA",
+          "line": "\"Sir, ma'am, please fasten your seatbelts. This may get a bit bumpy.\"",
+          "visual_cue": "Close-up of LEO, his voice steady but his eyes betraying a hint of worry.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "ALI",
+        "SAM",
+        "LEO",
+        "ABEERA"
+      ],
+      "duration": 23,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    },
+    {
+      "scene_id": 3,
+      "location": "AIRPLANE",
+      "dialogue": [
+        {
+          "speaker": "ALI",
+          "line": "\"We're going to be okay. Just hold on.\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "SAM",
+          "line": "\"What's going on? Why is this happening?\"",
+          "visual_cue": "Close-up of ALI, a hint of strain visible in his voice.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "LEO",
+          "line": "\"Shut up, Sam. We're fine.\"",
+          "visual_cue": "Close-up of SAM, his eyes wide with fear.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "ABEERA",
+          "line": "\"Everyone, please stay calm. We're doing our best to stabilize the plane.\"",
+          "visual_cue": "Close-up of LEO, his voice firm but his eyes darting towards the controls.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "ALI",
+        "SAM",
+        "LEO",
+        "ABEERA"
+      ],
+      "duration": 20,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    }
+  ],
+  "total_scenes": 3,
+  "total_duration_seconds": 70
+}

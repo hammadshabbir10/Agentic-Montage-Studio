@@ -1,0 +1,103 @@
+{
+  "workflow_id": "workflow_20260507_123704",
+  "timestamp": "2026-05-07T12:37:04.716135",
+  "characters": [
+    {
+      "name": "ALI",
+      "personality": "ALI is a determined character whose motives are not yet clear.",
+      "appearance": "Period-appropriate attire, distinctive features.",
+      "role": "supporting",
+      "style_reference": "Cinematic",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"Alright, gentlemen, I need you to understand the situation. We're experiencing some engine trouble.\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused."
+        },
+        {
+          "line": "\"We're doing everything we can to stabilize the engines. Just stay seated and keep your seatbelts fastened.\"",
+          "visual_cue": "Close-up of LEO, a smug expression on his face."
+        },
+        {
+          "line": "\"We'll get through this, folks. Just hang on.\"",
+          "visual_cue": "Close-up of KATRINA, her eyes scanning the passengers."
+        },
+        {
+          "line": "\"Mayday, Mayday! We're experiencing engine failure! Requesting assistance!\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused."
+        }
+      ]
+    },
+    {
+      "name": "SAM",
+      "personality": "SAM is a determined character whose motives are not yet clear.",
+      "appearance": "Period-appropriate attire, distinctive features.",
+      "role": "supporting",
+      "style_reference": "Cinematic",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"What's going on? Why are we flying like this?\"",
+          "visual_cue": "Close-up of ALI, his brow furrowed in concern."
+        },
+        {
+          "line": "\"Emergency procedures? What's happening?\"",
+          "visual_cue": "Close-up of KATRINA, her voice calm and soothing."
+        },
+        {
+          "line": "\"What's happening? Are we going to make it?\"",
+          "visual_cue": "Close-up of ALI, his voice strained with urgency."
+        }
+      ]
+    },
+    {
+      "name": "LEO",
+      "personality": "Leo appears to be a worrisome and cautious individual who values predictability and stability, as shown by his repeated mentions of taking the train, suggesting a preference for routine and a concern for safety.",
+      "appearance": "As a pilot, Leo likely wears a crisp, classic airline uniform, complete with a white shirt, tie, and epaulets, reflecting a sense of professionalism and tradition.",
+      "role": "supporting",
+      "style_reference": "1970s disaster movie, bright colors and sterile airline aesthetics, with a focus on the claustrophobic tension of the airplane cockpit.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"I told you we should've taken the train.\"",
+          "visual_cue": "Medium shot of SAM, looking anxious."
+        },
+        {
+          "line": "\"This is ridiculous. We're going to die.\"",
+          "visual_cue": "Wide shot of the exterior of the plane, the engines roaring as it shakes and lurches through the air."
+        },
+        {
+          "line": "\"This is insane. We should've taken the train.\"",
+          "visual_cue": "Wide shot of the cockpit, the tension palpable."
+        }
+      ]
+    },
+    {
+      "name": "KATRINA",
+      "personality": "A no-nonsense, assertive individual who prioritizes safety and order, possibly with a background in aviation or emergency services.",
+      "appearance": "A mid-to-late century flight attendant, likely wearing a crisp uniform with a neat hairstyle, possibly with a hint of a 1960s or 1970s style.",
+      "role": "supporting",
+      "style_reference": "Retro-futuristic, optimistic, and slightly dated, reminiscent of classic disaster movies from the 1950s to the 1970s.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"Excuse me, gentlemen, but I need to go through the emergency procedures with you.\"",
+          "visual_cue": "Wide shot of the cockpit, Ali's hands moving swiftly across the controls."
+        },
+        {
+          "line": "\"We're going to have to make an emergency landing. Please make sure your seatbelts are securely fastened.\"",
+          "visual_cue": "Medium shot of KATRINA, expression intense and focused."
+        },
+        {
+          "line": "\"Sir, please remain calm. We're doing everything we can to ensure your safety.\"",
+          "visual_cue": "Close-up of LEO, his face pale with fear."
+        },
+        {
+          "line": "\"Everyone, please remain seated and keep your seatbelts fastened. We're going to try and land safely.\"",
+          "visual_cue": "Medium shot of SAM, his eyes fixed on Ali."
+        }
+      ]
+    }
+  ],
+  "total_characters": 4
+}

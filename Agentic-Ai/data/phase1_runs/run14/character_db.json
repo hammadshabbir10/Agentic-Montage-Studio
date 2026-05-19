@@ -1,0 +1,108 @@
+{
+  "workflow_id": "workflow_20260507_130906",
+  "timestamp": "2026-05-07T13:09:06.520248",
+  "characters": [
+    {
+      "name": "SAM",
+      "personality": "SAM is a determined character whose motives are not yet clear.",
+      "appearance": "Period-appropriate attire, distinctive features.",
+      "role": "supporting",
+      "style_reference": "Cinematic",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "We're going to be fine, guys, we just need to -",
+          "visual_cue": "Medium shot of SAM, expression intense and focused."
+        },
+        {
+          "line": "No, we're good, thanks.",
+          "visual_cue": "Medium shot of ABEEHA, walking down the aisle with a tray of snacks."
+        },
+        {
+          "line": "Okay, I think I see the map... (looks at map) wait, what's that button do?",
+          "visual_cue": "Medium shot of SAM, expression intense and focused."
+        }
+      ]
+    },
+    {
+      "name": "LEO",
+      "personality": "LEO is a determined character whose motives are not yet clear.",
+      "appearance": "Period-appropriate attire, distinctive features.",
+      "role": "supporting",
+      "style_reference": "Cinematic",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "Yeah, I think I got it, I just need to -",
+          "visual_cue": "Close-up of SAM, a hint of nervousness in his voice."
+        },
+        {
+          "line": "Yeah, we're just trying to... um... navigate.",
+          "visual_cue": "Close-up of SAM, a hint of embarrassment on his face."
+        },
+        {
+          "line": "I think it's the... uh... altitude... something.",
+          "visual_cue": "Medium shot of LEO, expression intense and focused."
+        },
+        {
+          "line": "What? Why didn't you tell me that?",
+          "visual_cue": "Close-up of ALI, a look of horror on his face."
+        }
+      ]
+    },
+    {
+      "name": "ALI",
+      "personality": "Confident and assertive, Ali is a take-charge individual who values control and competence, possibly with a hint of competitiveness or rivalry with Leo.",
+      "appearance": "A seasoned pilot with a professional demeanor, Ali has short, neat hair and a clean-shaven face, dressed in a crisp flight suit.",
+      "role": "supporting",
+      "style_reference": "A gritty, mid-century modern thriller with a focus on stark, industrial colors and functional design.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "I don't think you do, Leo. Why don't you let me take over?",
+          "visual_cue": "Close-up of LEO, his eyes darting between instruments."
+        },
+        {
+          "line": "That's the autopilot button, Leo. Don't touch it.",
+          "visual_cue": "Medium shot of ALI, expression intense and focused."
+        }
+      ]
+    },
+    {
+      "name": "ABEEHA",
+      "personality": "ABEEHA is a determined character whose motives are not yet clear.",
+      "appearance": "Period-appropriate attire, distinctive features.",
+      "role": "supporting",
+      "style_reference": "Cinematic",
+      "first_appearance": 2,
+      "dialogue_samples": [
+        {
+          "line": "Can I get you two anything? We have peanuts, pretzels, or crackers.",
+          "visual_cue": "Medium shot of ABEEHA, expression intense and focused."
+        }
+      ]
+    }
+  ],
+  "total_characters": 4
+}n formal attire suitable for an airplane cockpit, possibly with a crisp uniform or a well-tailored suit, and may have a commanding presence.",
+      "role": "supporting",
+      "style_reference": "Classic aviation, 1950s-inspired, with a focus on clean lines, neutral tones, and a sense of nostalgia.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"Gentlemen, I assure you, we're in good hands. Captain Ali has years of experience.\"",
+          "visual_cue": "Medium shot of LEO, a sly grin spreading across his face."
+        },
+        {
+          "line": "\"Gentlemen, please remain calm. The captain is doing everything he can to keep us safe.\"",
+          "visual_cue": "Medium shot of LEO, a whoop of excitement on his lips."
+        },
+        {
+          "line": "\"Gentlemen, please, no need to apologize. We're just glad to have made it through safely.\"",
+          "visual_cue": "Close-up of LEO, a contrite expression on his face."
+        }
+      ]
+    }
+  ],
+  "total_characters": 4
+}

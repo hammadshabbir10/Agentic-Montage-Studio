@@ -1,0 +1,216 @@
+{
+  "workflow_id": "phase2_run13",
+  "timestamp": "2026-05-07T17:26:41.217529",
+  "run_tag": "run13",
+  "total_duration_ms": 74448,
+  "scenes": [
+    {
+      "scene_id": 1,
+      "audio_file": "data\\phase2_runs\\run13\\audio\\scene_01_run13.mp3",
+      "bgm_file": "data\\phase2_runs\\run13\\bgm\\hopeful_scene01_freesound.mp3",
+      "mood": "hopeful",
+      "start_ms": 0,
+      "end_ms": 14016,
+      "duration_ms": 14016,
+      "lines": [
+        {
+          "speaker": "HAIDER",
+          "line": "We need to teach Hadi a lesson for disrespecting us.",
+          "start_ms": 0,
+          "end_ms": 3768,
+          "duration_ms": 3768,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of HAIDER, expression intense and focused."
+        },
+        {
+          "speaker": "IQRASH",
+          "line": "Agreed, he's been pushing his luck for too long.",
+          "start_ms": 3768,
+          "end_ms": 6816,
+          "duration_ms": 3048,
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Medium shot of IQRASH, expression intense and focused."
+        },
+        {
+          "speaker": "HAMMAD",
+          "line": "I think I have a better idea. Why not challenge him to the annual car race? If he loses, he'll know his place.",
+          "start_ms": 6816,
+          "end_ms": 14016,
+          "duration_ms": 7200,
+          "voice": "en-US-BrianNeural",
+          "visual_cue": "Medium shot of HAMMAD, expression intense and focused."
+        }
+      ]
+    },
+    {
+      "scene_id": 2,
+      "audio_file": "data\\phase2_runs\\run13\\audio\\scene_02_run13.mp3",
+      "bgm_file": "data\\phase2_runs\\run13\\bgm\\tense_scene02_freesound.mp3",
+      "mood": "tense",
+      "start_ms": 14016,
+      "end_ms": 33792,
+      "duration_ms": 19776,
+      "lines": [
+        {
+          "speaker": "HAIDER",
+          "line": "You think you can beat us, Hadi? We've been training for months.",
+          "start_ms": 14016,
+          "end_ms": 19152,
+          "duration_ms": 5136,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of HAIDER, expression intense and focused."
+        },
+        {
+          "speaker": "HADI",
+          "line": "I've been racing for years, you two are just amateurs.",
+          "start_ms": 19152,
+          "end_ms": 23064,
+          "duration_ms": 3912,
+          "voice": "en-GB-RyanNeural",
+          "visual_cue": "Medium shot of HADI, expression intense and focused."
+        },
+        {
+          "speaker": "IQRASH",
+          "line": "We'll see about that. Let's see who's laughing at the end of the day.",
+          "start_ms": 23064,
+          "end_ms": 26496,
+          "duration_ms": 3432,
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Medium shot of IQRASH, expression intense and focused."
+        },
+        {
+          "speaker": "HAMMAD",
+          "line": "Actually, guys, I think Hadi might have a point. We should focus on our own driving skills instead of trying to intimidate him.",
+          "start_ms": 26496,
+          "end_ms": 33792,
+          "duration_ms": 7296,
+          "voice": "en-US-BrianNeural",
+          "visual_cue": "Close-up of IQRASH, a fierce glint in her eye."
+        }
+      ]
+    },
+    {
+      "scene_id": 3,
+      "audio_file": "data\\phase2_runs\\run13\\audio\\scene_03_run13.mp3",
+      "bgm_file": "data\\phase2_runs\\run13\\bgm\\action_scene03_freesound.mp3",
+      "mood": "action",
+      "start_ms": 33792,
+      "end_ms": 51768,
+      "duration_ms": 17976,
+      "lines": [
+        {
+          "speaker": "HAIDER",
+          "line": "I don't trust you, Hammad. You're just trying to get out of a fight.",
+          "start_ms": 33792,
+          "end_ms": 39120,
+          "duration_ms": 5328,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of HAIDER, expression intense and focused."
+        },
+        {
+          "speaker": "HAMMAD",
+          "line": "I'm trying to get us to win, Haider. And I think my plan is the best one.",
+          "start_ms": 39120,
+          "end_ms": 43896,
+          "duration_ms": 4776,
+          "voice": "en-US-BrianNeural",
+          "visual_cue": "Medium shot of HAMMAD, expression intense and focused."
+        },
+        {
+          "speaker": "IQRASH",
+          "line": "What makes you so sure, Hammad?",
+          "start_ms": 43896,
+          "end_ms": 45816,
+          "duration_ms": 1920,
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Medium shot of IQRASH, expression intense and focused."
+        },
+        {
+          "speaker": "HAMMAD",
+          "line": "Because I've been studying Hadi's driving patterns. He has a weakness in his braking technique.",
+          "start_ms": 45816,
+          "end_ms": 51768,
+          "duration_ms": 5952,
+          "voice": "en-US-BrianNeural",
+          "visual_cue": "Medium shot of HAMMAD, expression intense and focused."
+        }
+      ]
+    },
+    {
+      "scene_id": 4,
+      "audio_file": "data\\phase2_runs\\run13\\audio\\scene_04_run13.mp3",
+      "bgm_file": "data\\phase2_runs\\run13\\bgm\\hopeful_scene04_freesound.mp3",
+      "mood": "hopeful",
+      "start_ms": 51768,
+      "end_ms": 62376,
+      "duration_ms": 10608,
+      "lines": [
+        {
+          "speaker": "HAIDER",
+          "line": "Come on, Iqrash, you can do better than this!",
+          "start_ms": 51768,
+          "end_ms": 55368,
+          "duration_ms": 3600,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of HAIDER, expression intense and focused."
+        },
+        {
+          "speaker": "IQRASH",
+          "line": "I'm trying, Haider! But Hadi's driving like a pro!",
+          "start_ms": 55368,
+          "end_ms": 58608,
+          "duration_ms": 3240,
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Medium shot of IQRASH, expression intense and focused."
+        },
+        {
+          "speaker": "HADI",
+          "line": "Ha! You two are no match for me!",
+          "start_ms": 58608,
+          "end_ms": 62376,
+          "duration_ms": 3768,
+          "voice": "en-GB-RyanNeural",
+          "visual_cue": "Medium shot of HADI, expression intense and focused."
+        }
+      ]
+    },
+    {
+      "scene_id": 5,
+      "audio_file": "data\\phase2_runs\\run13\\audio\\scene_05_run13.mp3",
+      "bgm_file": "data\\phase2_runs\\run13\\bgm\\tense_scene05_freesound.mp3",
+      "mood": "tense",
+      "start_ms": 62376,
+      "end_ms": 74448,
+      "duration_ms": 12072,
+      "lines": [
+        {
+          "speaker": "HAIDER",
+          "line": "Yes! We did it!",
+          "start_ms": 62376,
+          "end_ms": 65568,
+          "duration_ms": 3192,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of HAIDER, expression intense and focused."
+        },
+        {
+          "speaker": "IQRASH",
+          "line": "Hadi, you idiot! You should have listened to us.",
+          "start_ms": 65568,
+          "end_ms": 68256,
+          "duration_ms": 2688,
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Medium shot of IQRASH, expression intense and focused."
+        },
+        {
+          "speaker": "HADI",
+          "line": "I... I didn't mean to lose. Congratulations, guys.",
+          "start_ms": 68256,
+          "end_ms": 74448,
+          "duration_ms": 6192,
+          "voice": "en-GB-RyanNeural",
+          "visual_cue": "Medium shot of HADI, expression intense and focused."
+        }
+      ]
+    }
+  ]
+}

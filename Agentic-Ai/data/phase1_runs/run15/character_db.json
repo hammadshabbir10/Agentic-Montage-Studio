@@ -1,0 +1,91 @@
+{
+  "workflow_id": "workflow_20260507_131256",
+  "timestamp": "2026-05-07T13:12:56.972397",
+  "characters": [
+    {
+      "name": "ALI",
+      "personality": "Ali appears to be a confident and reassuring individual who values safety and stability, taking on a leadership role to calm anxious passengers.",
+      "appearance": "Ali is a middle-aged man with a clean-shaven face and neat, military-inspired attire suitable for a pilot in a bygone era.",
+      "role": "supporting",
+      "style_reference": "Classic 1950s aviation drama, warm lighting, and a focus on functional, utilitarian design.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"Alright, gentlemen, please remain seated and keep your seatbelts fastened.\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused."
+        },
+        {
+          "line": "\"I've been flying for years, and I can assure you, this is a routine flight,\" Ali says, his voice reassuring.",
+          "visual_cue": "Close-up of LEO, his smile faltering for a moment before he regains composure."
+        },
+        {
+          "line": "\"Abeeha, we're still on schedule, but I'd appreciate it if you could keep an eye on our passengers. They seem a bit... anxious.\"",
+          "visual_cue": "Medium shot of ABEEHA, her eyes fixed on Ali as she waits for a response."
+        },
+        {
+          "line": "\"Everyone, please remain calm. This is just a minor turbulence patch.\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused."
+        },
+        {
+          "line": "\"I've got everything under control, gentlemen. Just sit back, relax, and trust me.\"",
+          "visual_cue": "Close-up of LEO, his face scrunched up in worry."
+        }
+      ]
+    },
+    {
+      "name": "SAM",
+      "personality": "Sam appears to be someone who is out of their element, perhaps a civilian who has found themselves in a high-stress situation, with a strong emotional reaction to the pressure.",
+      "appearance": "Sam's appearance is likely casual, possibly in a flight attendant or pilot's uniform, with a slightly disheveled look, suitable for a character who is struggling to cope with the demands of their environment.",
+      "role": "supporting",
+      "style_reference": "Dramatic, suspenseful depiction of a high-stakes, high-pressure environment, reminiscent of classic disaster movies from the 1970s and 1980s.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"I don't know how you guys do this every day,\" Sam says, his voice trembling.",
+          "visual_cue": "Close-up of ALI, his eyes scanning the control panel with a hint of amusement."
+        },
+        {
+          "line": "\"This is not minor!\" Sam exclaims, his voice rising in panic.",
+          "visual_cue": "Wide shot of the cockpit, the instruments beeping wildly in the background."
+        }
+      ]
+    },
+    {
+      "name": "LEO",
+      "personality": "Leo appears to be a calm but concerned individual, trying to reassure others in a chaotic situation. His suggestions to Ali indicate a sense of resourcefulness and desire to take control.",
+      "appearance": "Leo is likely a pilot or flight attendant, dressed in the standard attire of the era, with a clean-cut and professional appearance.",
+      "role": "supporting",
+      "style_reference": "Air disaster film, 1970s-style cockpit and flight attendants, emphasis on the claustrophobic and anxious atmosphere of the cockpit.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"Yeah, we're just lucky to be on this flight,\" Leo chimes in, trying to sound calm.",
+          "visual_cue": "Over-the-shoulder shot of SAM, his eyes wide with fear."
+        },
+        {
+          "line": "\"Yeah, Ali, maybe you should, uh, try to, you know, stabilize the plane or something?\"",
+          "visual_cue": "Close-up of SAM, his eyes bulging with fear."
+        }
+      ]
+    },
+    {
+      "name": "ABEEHA",
+      "personality": "Ali seems to be a calm and collected individual, possibly a seasoned flight crew member, with a focus on maintaining order and ensuring passenger comfort.",
+      "appearance": "Ali likely wears a standard issue flight uniform, with a crisp white shirt and dark pants, possibly adorned with a few subtle pins or badges indicating their rank or experience.",
+      "role": "supporting",
+      "style_reference": "Modern airport, sterile and utilitarian design, with an emphasis on clean lines and functional minimalism.",
+      "first_appearance": 2,
+      "dialogue_samples": [
+        {
+          "line": "\"Pilots, can I get a status update for the in-flight meal service?\"",
+          "visual_cue": "Medium shot of ABEEHA, expression intense and focused."
+        },
+        {
+          "line": "\"Of course, Ali. I'll make sure to keep an eye on them. Would you like me to bring up some calming tea or something?\"",
+          "visual_cue": "Close-up of ALI, his expression serious for a moment."
+        }
+      ]
+    }
+  ],
+  "total_characters": 4
+}

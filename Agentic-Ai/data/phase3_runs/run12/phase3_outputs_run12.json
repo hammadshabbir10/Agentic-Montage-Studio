@@ -1,0 +1,69 @@
+{
+  "image_results": [],
+  "clip_results": [
+    {
+      "scene_id": 1,
+      "clip_path": "data\\phase3_runs\\run12\\clips\\scene_01_kb.mp4",
+      "duration_sec": 31.176,
+      "motion_preset": "per_line",
+      "cinematic": true
+    },
+    {
+      "scene_id": 2,
+      "clip_path": "data\\phase3_runs\\run12\\clips\\scene_02_kb.mp4",
+      "duration_sec": 15.96,
+      "motion_preset": "per_line",
+      "cinematic": true
+    },
+    {
+      "scene_id": 3,
+      "clip_path": "data\\phase3_runs\\run12\\clips\\scene_03_kb.mp4",
+      "duration_sec": 13.056,
+      "motion_preset": "per_line",
+      "cinematic": true
+    }
+  ],
+  "composed_results": [
+    {
+      "scene_id": 1,
+      "composed_path": "data\\phase3_runs\\run12\\composed\\scene_01_composed.mp4",
+      "audio_file": "data\\phase2_runs\\run12\\audio\\scene_01_run12.mp3",
+      "bgm_file": "data\\phase2_runs\\run12\\bgm\\mysterious_scene01_freesound.mp3"
+    },
+    {
+      "scene_id": 2,
+      "composed_path": "data\\phase3_runs\\run12\\composed\\scene_02_composed.mp4",
+      "audio_file": "data\\phase2_runs\\run12\\audio\\scene_02_run12.mp3",
+      "bgm_file": "data\\phase2_runs\\run12\\bgm\\mysterious_scene02_freesound.mp3"
+    },
+    {
+      "scene_id": 3,
+      "composed_path": "data\\phase3_runs\\run12\\composed\\scene_03_composed.mp4",
+      "audio_file": "data\\phase2_runs\\run12\\audio\\scene_03_run12.mp3",
+      "bgm_file": "data\\phase2_runs\\run12\\bgm\\mysterious_scene03_freesound.mp3"
+    }
+  ],
+  "final_video_path": "data\\phase3_runs\\run12\\final_output_run12_subbed.mp4",
+  "subtitles_path": "data\\phase3_runs\\run12\\subtitles_run12.srt",
+  "options": {
+    "backend": "auto",
+    "quality": "balanced",
+    "seed": null,
+    "only_scene_id": null,
+    "enable_subtitles": true,
+    "transition_sec": 0.35,
+    "speaker_focus": true,
+    "cinematic": true,
+    "enable_title_card": true,
+    "enable_end_card": true,
+    "title_card_sec": 3.0,
+    "end_card_sec": 3.0,
+    "motion_engine": "auto",
+    "strict_character_consistency": true
+  },
+  "inputs": {
+    "scene_manifest": "data/scene_manifest_auto.json",
+    "character_db": "data/character_db_auto.json",
+    "timing_manifest": "data\\phase2_runs\\run12\\timing_manifest_run12.json"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "workflow_id": "workflow_20260508_144047",
+  "timestamp": "2026-05-08T14:40:47.073585",
+  "story": {
+    "title": "Redline",
+    "logline": "A high-stakes racing rivalry turns deadly as Haider and Hadi engage in a no-holds-barred battle for dominance on the streets and track.",
+    "genre": "High-Octane Racing Drama",
+    "tone": "tense and gritty",
+    "setting": "Gritty urban cityscape",
+    "time_period": "Present Day",
+    "themes": [
+      "Ambition",
+      "Obsession",
+      "Revenge"
+    ],
+    "acts": [
+      {
+        "act": 1,
+        "label": "Introduction",
+        "description": "Meet Haider, a ruthless street racing kingpin, and Hadi, a driven and talented young driver, as they engage in a high-stakes game of cat and mouse."
+      },
+      {
+        "act": 2,
+        "label": "Escalation",
+        "description": "As the rivalry between Haider and Hadi intensifies, the stakes grow higher, and the two drivers find themselves in a desperate fight for survival on the streets and track."
+      },
+      {
+        "act": 3,
+        "label": "Climax",
+        "description": "The annual championship car race becomes the stage for a high-stakes showdown between Haider and Hadi, with the winner claiming not only the trophy but also the title of ultimate racing champion."
+      },
+      {
+        "act": 4,
+        "label": "Resolution",
+        "description": "In the aftermath of the championship race, the true cost of the rivalry is revealed, and Haider and Hadi must confront the consequences of their actions."
+      }
+    ],
+    "protagonist": "HADI",
+    "antagonist": "HAIDER",
+    "world": "A world where the streets and track are a battleground, where the line between victory and defeat is thin, and the stakes are always high."
+  }
+}

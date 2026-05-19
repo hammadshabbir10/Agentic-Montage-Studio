@@ -1,0 +1,196 @@
+{
+  "run_tag": "run09",
+  "run_number": 9,
+  "run_dir": "data\\phase2_runs\\run09",
+  "bgm_dir": "data\\phase2_runs\\run09\\bgm",
+  "scene_manifest": {
+    "workflow_id": "workflow_20260507_130503",
+    "timestamp": "2026-05-07T13:05:03.643980",
+    "scenes": [
+      {
+        "scene_id": 1,
+        "location": "DETECTIVE AGENCY",
+        "dialogue": [
+          {
+            "speaker": "KAELIN",
+            "line": "\"Aria, I need you to dig up everything on the Ryker case.\"",
+            "visual_cue": "Medium shot of KAELIN, expression intense and focused.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "ARIA",
+            "line": "\"Already on it, Kaelin. I've got a few leads, but they're going to take time.\"",
+            "visual_cue": "Close-up of ARIA, her brow furrowed in concentration.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "KAELIN",
+            "line": "\"We don't have time. Ryker's family is getting antsy, and I need something concrete to give them.\"",
+            "visual_cue": "Close-up of KAELIN, his jaw clenched in frustration.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          }
+        ],
+        "characters": [
+          "KAELIN",
+          "ARIA"
+        ],
+        "duration": 24,
+        "start_ms": null,
+        "end_ms": null,
+        "duration_ms": null,
+        "audio_file": null,
+        "bgm_file": null,
+        "mood": null,
+        "lines": null
+      },
+      {
+        "scene_id": 2,
+        "location": "CITY STREET",
+        "dialogue": [
+          {
+            "speaker": "ARIA",
+            "line": "\"Vex, I need you to find out what Ryker was working on before he disappeared.\"",
+            "visual_cue": "Medium shot of ARIA, expression intense and focused.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "VEX",
+            "line": "\"Aria, I've got something. Ryker was involved in a secret project with the Oni-Kiru corporation. Meet me at the Black Hole bar at midnight to discuss further.\"",
+            "visual_cue": "Close-up of ARIA, her earpiece held to her ear, a hint of concentration on her face.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          }
+        ],
+        "characters": [
+          "ARIA",
+          "VEX"
+        ],
+        "duration": 23,
+        "start_ms": null,
+        "end_ms": null,
+        "duration_ms": null,
+        "audio_file": null,
+        "bgm_file": null,
+        "mood": null,
+        "lines": null
+      },
+      {
+        "scene_id": 3,
+        "location": "BLACK HOLE BAR",
+        "dialogue": [
+          {
+            "speaker": "ARIA",
+            "line": "\"What do you know about Oni-Kiru's project?\"",
+            "visual_cue": "Medium shot of ARIA, expression intense and focused.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "VEX",
+            "line": "\"I know it's big, Aria. And I think Ryker was in over his head. Meet me outside, I've got something to show you.\"",
+            "visual_cue": "Close-up of VEX, his face inches from Aria's, his eyes locked on hers with an air of intensity.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          }
+        ],
+        "characters": [
+          "ARIA",
+          "VEX"
+        ],
+        "duration": 17,
+        "start_ms": null,
+        "end_ms": null,
+        "duration_ms": null,
+        "audio_file": null,
+        "bgm_file": null,
+        "mood": null,
+        "lines": null
+      }
+    ],
+    "total_scenes": 3,
+    "total_duration_seconds": 64
+  },
+  "character_db": {
+    "workflow_id": "workflow_20260507_130509",
+    "timestamp": "2026-05-07T13:05:09.432944",
+    "characters": [
+      {
+        "name": "KAELIN",
+        "personality": "Kaelin is driven by a sense of urgency and responsibility, likely due to the pressure of dealing with a high-stakes case and its impact on innocent lives.",
+        "appearance": "Kaelin is a stylish and put-together individual, possibly dressed in modern attire with a hint of sophistication, suggesting a high level of professionalism.",
+        "role": "supporting",
+        "style_reference": "Contemporary crime thriller, dark color palette, sharp suits and sleek hairstyles.",
+        "first_appearance": 1,
+        "dialogue_samples": [
+          {
+            "line": "\"Aria, I need you to dig up everything on the Ryker case.\"",
+            "visual_cue": "Medium shot of KAELIN, expression intense and focused."
+          },
+          {
+            "line": "\"We don't have time. Ryker's family is getting antsy, and I need something concrete to give them.\"",
+            "visual_cue": "Close-up of KAELIN, his jaw clenched in frustration."
+          }
+        ]
+      },
+      {
+        "name": "ARIA",
+        "personality": "Aria is a determined and resourceful individual driven by a desire to uncover the truth, with a hint of urgency and caution in her approach.",
+        "appearance": "Aria is a woman in her mid-to-late 20s, dressed in a blend of professional and street-smart attire, perhaps with a hint of futuristic or sci-fi elements.",
+        "role": "supporting",
+        "style_reference": "Cyberpunk, neon-drenched cityscapes, high-tech gadgetry, and a futuristic take on the classic detective agency aesthetic.",
+        "first_appearance": 1,
+        "dialogue_samples": [
+          {
+            "line": "\"Already on it, Kaelin. I've got a few leads, but they're going to take time.\"",
+            "visual_cue": "Close-up of ARIA, her brow furrowed in concentration."
+          },
+          {
+            "line": "\"Vex, I need you to find out what Ryker was working on before he disappeared.\"",
+            "visual_cue": "Medium shot of ARIA, expression intense and focused."
+          },
+          {
+            "line": "\"What do you know about Oni-Kiru's project?\"",
+            "visual_cue": "Medium shot of ARIA, expression intense and focused."
+          }
+        ]
+      },
+      {
+        "name": "VEX",
+        "personality": "Vex is driven by a sense of urgency and possibly a hidden agenda, as they're willing to share sensitive information with Aria and expect her to take action. They seem to be concerned about Ryker's well-being and the consequences of his actions.",
+        "appearance": "Vex dresses in dark, practical attire, likely consisting of a simple outfit and a coat or jacket for concealment, blending in with the shadows of the city.",
+        "role": "supporting",
+        "style_reference": "Dark, gritty, cyberpunk aesthetic with neon-lit cityscapes and a focus on shadows and contrast.",
+        "first_appearance": 2,
+        "dialogue_samples": [
+          {
+            "line": "\"Aria, I've got something. Ryker was involved in a secret project with the Oni-Kiru corporation. Meet me at the Black Hole bar at midnight to discuss further.\"",
+            "visual_cue": "Close-up of ARIA, her earpiece held to her ear, a hint of concentration on her face."
+          },
+          {
+            "line": "\"I know it's big, Aria. And I think Ryker was in over his head. Meet me outside, I've got something to show you.\"",
+            "visual_cue": "Close-up of VEX, his face inches from Aria's, his eyes locked on hers with an air of intensity."
+          }
+        ]
+      }
+    ],
+    "total_characters": 3
+  }
+}

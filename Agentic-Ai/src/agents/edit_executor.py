@@ -14,6 +14,7 @@ Before executing, the caller (LangGraph workflow) snapshots the current state.
 from __future__ import annotations
 
 import json
+import re
 import shutil
 import subprocess
 import sys
@@ -59,6 +60,7 @@ def execute(
         "audio":       _execute_audio_edit,
         "video_frame": _execute_video_frame_edit,
         "video":       _execute_video_edit,
+        "modify_scene_visuals": _execute_modify_scene_visuals,
     }
 
     handler = dispatch.get(target)
@@ -82,6 +84,77 @@ def execute(
             "changes": [],
             "errors": [str(exc)],
         }
+
+
+def _execute_modify_scene_visuals(
+    intent: EditIntent,
+    state: Dict[str, Any],
+    config: Dict[str, Any],
+) -> Dict[str, Any]:
+    """Search and replace text in scene visual cues, then re-generate images."""
+    scene_id = intent.parameters.get("scene_id")
+    original = intent.parameters.get("original", "")
+    replacement = intent.parameters.get("replacement", "")
+
+    if not scene_id or not original or not replacement:
+        return {
+            "success": False,
+            "description": "Missing parameters for visual modification",
+            "target": "modify_scene_visuals",
+            "changes": [],
+            "errors": ["scene_id, original, and replacement are required"],
+        }
+
+    scene_manifest = state.get("scene_manifest") or {}
+    scenes = scene_manifest.get("scenes") or []
+    
+    modified_count = 0
+    # Find the target scene
+    for scene in scenes:
+        if scene.get("scene_id") == scene_id:
+            # Look at action lines and visual cues in dialogue or lines
+            content_list = scene.get("lines") or scene.get("dialogue") or []
+            for line in content_list:
+                # Check action if it exists
+                if line.get("action"):
+                    new_action = re.sub(re.escape(original), replacement, line["action"], flags=re.IGNORECASE)
+                    if new_action != line["action"]:
+                        line["action"] = new_action
+                        modified_count += 1
+                
+                # Check visual_cue
+                if line.get("visual_cue"):
+                    new_cue = re.sub(re.escape(original), replacement, line["visual_cue"], flags=re.IGNORECASE)
+                    if new_cue != line["visual_cue"]:
+                        line["visual_cue"] = new_cue
+                        modified_count += 1
+
+    if modified_count > 0:
+        # Save updated manifest
+        path = DATA_DIR / "scene_manifest_auto.json"
+        path.write_text(json.dumps(scene_manifest, indent=2, default=str), encoding="utf-8")
+        
+        # Re-run Phase 3 for this scene only
+        config["force_image_regen"] = True
+        cmd3 = _build_phase3_cmd(config, scene_id=scene_id)
+        code = _run_subprocess(cmd3, f"Phase 3 (modify visual: {original}->{replacement})")
+        
+        return {
+            "success": code == 0,
+            "description": f"Modified {modified_count} visual elements in scene {scene_id}",
+            "target": "modify_scene_visuals",
+            "intent": intent.intent,
+            "changes": [f"Changed '{original}' to '{replacement}' in scene {scene_id} prompt"],
+            "errors": [] if code == 0 else [f"Phase 3 exited with code {code}"],
+        }
+
+    return {
+        "success": False,
+        "description": f"No matches found for '{original}' in scene {scene_id}",
+        "target": "modify_scene_visuals",
+        "changes": [],
+        "errors": [f"Text '{original}' not found in the manifest for scene {scene_id}"],
+    }
 
 
 # ── Script Edit (Phase 1 re-run, cascades to Phase 2 + 3) ───────────────────
@@ -254,6 +327,10 @@ def _execute_video_frame_edit(
         }
 
     elif intent.intent == "change_character_design":
+        updated = _apply_character_design_change(state, intent)
+        if updated:
+            changes.append(updated)
+        config["force_image_regen"] = True
         # Re-run Phase 3 image generation for affected character
         cmd3 = _build_phase3_cmd(config, scene_id=scene_id)
         code = _run_subprocess(cmd3, "Phase 3 (character design change)")
@@ -372,6 +449,8 @@ def _build_phase3_cmd(
     ]
     if subtitles:
         cmd.append("--enable-subtitles")
+    if config.get("force_image_regen"):
+        cmd.append("--force-image-regen")
     if scene_id is not None:
         cmd.extend(["--scene-id", str(scene_id)])
     return cmd
@@ -512,3 +591,62 @@ def collect_current_state() -> Dict[str, Any]:
             state["latest_video"] = str(videos[0])
 
     return state
+
+
+def _apply_character_design_change(state: Dict[str, Any], intent: EditIntent) -> str:
+    character_name = (intent.parameters.get("character") or "").strip()
+    description = (intent.parameters.get("description") or "").strip()
+    if not character_name or not description:
+        return "Character design edit requested but missing character name or description"
+
+    character_db = state.get("character_db") or {}
+    characters = character_db.get("characters") or []
+    updated = False
+    for character in characters:
+        if str(character.get("name", "")).strip().lower() == character_name.lower():
+            current = character.get("appearance", "")
+            # Always keep appearance as a string — append new trait
+            if isinstance(current, dict):
+                current = current.get("description", "")
+            character["appearance"] = f"{current}. {description}".strip(". ")
+            updated = True
+            break
+
+    if updated:
+        path = DATA_DIR / "character_db_auto.json"
+        path.write_text(json.dumps(character_db, indent=2, default=str), encoding="utf-8")
+
+        # Bust the image cache for this character so Phase 3 regenerates fresh images
+        _bust_character_image_cache(character_name)
+
+        return f"Updated appearance for {character_name}: {description}"
+
+    return f"Character '{character_name}' not found in character_db"
+
+
+def _bust_character_image_cache(character_name: str) -> None:
+    """Delete cached PNG images that contain the character name so Phase 3 re-generates them."""
+    import os
+    phase3_runs = DATA_DIR / "phase3_runs"
+    if not phase3_runs.exists():
+        return
+    name_upper = character_name.upper().replace(" ", "_")
+    deleted = 0
+    # Delete per-line images and character portrait PNGs
+    for img in phase3_runs.rglob("*.png"):
+        if name_upper in img.name.upper() or img.parent.name == "character_bank":
+            try:
+                os.remove(img)
+                deleted += 1
+                LOGGER.info("Cache bust: deleted %s", img)
+            except OSError:
+                pass
+    # Also clear the portrait bank for this character
+    for img in (DATA_DIR / "phase3_runs").rglob(f"character_bank/{name_upper}*.png"):
+        try:
+            os.remove(img)
+        except OSError:
+            pass
+    if deleted:
+        LOGGER.info("Busted %d cached image(s) for character %s", deleted, character_name)
+

@@ -1,0 +1,99 @@
+{
+  "workflow_id": "workflow_20260508_144101",
+  "timestamp": "2026-05-08T14:41:01.509902",
+  "characters": [
+    {
+      "name": "HAIDER",
+      "personality": "Haider is driven by a sense of redemption and is willing to take risks to achieve his goals, as shown by his determination to take down Hadi.",
+      "appearance": "Haider has a rugged, gritty appearance that fits his urban setting, with a possible scar or bruise to signify his tough persona.",
+      "role": "supporting",
+      "style_reference": "Gritty urban thriller, high-contrast lighting, dark and moody color palette.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"We can take him down, Iqra. I've been watching Hadi's racing schedule, we know exactly when and where he'll be.\"",
+          "visual_cue": "Medium shot of HAIDER, expression intense and focused."
+        },
+        {
+          "line": "\"He's our only chance at redemption, Iqra. We can't let him get away.\"",
+          "visual_cue": "Medium shot of IQRASH, her eyes narrowing in skepticism."
+        },
+        {
+          "line": "\"You think you're funny, don't you, Hammad? Trying to turn this into some joke.\"",
+          "visual_cue": "Wide shot of HAMMAD, his smile confident and inviting."
+        },
+        {
+          "line": "\"Let's show him what we're made of, Iqra!\"",
+          "visual_cue": "Wide shot of the starting line, the cars a blur of color and light."
+        },
+        {
+          "line": "\"What the...? How did he do that?\"",
+          "visual_cue": "Close-up of HADI, his hands gripping the wheel tightly."
+        },
+        {
+          "line": "\"Congratulations, Hadi. You won this time.\"",
+          "visual_cue": "Wide shot of the finish line, HADI's car a triumphant conqueror of the track."
+        }
+      ]
+    },
+    {
+      "name": "IQRASH",
+      "personality": "Iqrash appears to be a cautious and loyal individual, questioning the motivations of others and providing reassurance to those close to them.",
+      "appearance": "Iqrash has a rugged, athletic build, fitting for a racing environment, with short, dark hair and a determined expression.",
+      "role": "supporting",
+      "style_reference": "Gritty urban racing film, neon lights, and bold camera angles.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"But are we sure he's the one we want? What if he's not as weak as he seems?\"",
+          "visual_cue": "Close-up of HAIDER, eyes gleaming with determination."
+        },
+        {
+          "line": "\"You got this, Haider. We're in this together.\"",
+          "visual_cue": "Medium shot of HAIDER, his eyes blazing with competitiveness."
+        }
+      ]
+    },
+    {
+      "name": "HAMMAD",
+      "personality": "Hammad appears to be confident and competitive, driven by a desire to settle disputes through a display of skill and strength.",
+      "appearance": "Hammad is a rugged, athletic man with a rough-around-the-edges demeanor, dressed in casual, high-octane racing attire.",
+      "role": "supporting",
+      "style_reference": "Gritty, modern street racing aesthetic, think neon lights, dark alleys, and high-performance cars.",
+      "first_appearance": 2,
+      "dialogue_samples": [
+        {
+          "line": "\"Hey, guys, I couldn't help but overhear. Why don't we settle this like men, in the upcoming annual car race?\"",
+          "visual_cue": "Medium shot of HAMMAD, expression intense and focused."
+        },
+        {
+          "line": "\"Not at all, my friend. I just think it's time we put our skills to the test.\"",
+          "visual_cue": "Close-up of HAIDER, his eyes flashing with anger."
+        }
+      ]
+    },
+    {
+      "name": "HADI",
+      "personality": "Hadi is a determined and passionate individual, driven by a strong will to succeed. He may be prone to emotional outbursts when faced with challenges.",
+      "appearance": "Hadi is a young, athletic man with a lean build, dressed in a sleek racing suit, often with a confident and focused expression.",
+      "role": "protagonist",
+      "style_reference": "High-octane action film, neon-lit urban landscapes, and a focus on kinetic camera movements.",
+      "first_appearance": 3,
+      "dialogue_samples": [
+        {
+          "line": "\"Come on, baby, just a little more power...\"",
+          "visual_cue": "Medium shot of HADI, expression intense and focused."
+        },
+        {
+          "line": "\"I can do this. I have to do this.\"",
+          "visual_cue": "Close-up of HADI, his eyes fixed on the engine."
+        },
+        {
+          "line": "\"Thanks, Haider. But it's not over yet.\"",
+          "visual_cue": "Close-up of HAIDER, his face a mask of respect."
+        }
+      ]
+    }
+  ],
+  "total_characters": 4
+}

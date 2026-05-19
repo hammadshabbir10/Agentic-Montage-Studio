@@ -411,6 +411,7 @@ def generate_all_scene_images(
     quality: str = "balanced",
     seed: Optional[int] = None,
     only_scene_id: Optional[int] = None,
+    use_cache: bool = True,
 ) -> List[Dict[str, Any]]:
     results: List[Dict[str, Any]] = []
     for plan in plans:
@@ -423,6 +424,7 @@ def generate_all_scene_images(
             backend=backend,
             quality=quality,
             seed=seed,
+            use_cache=use_cache,
         )
         results.append(result)
     return results
@@ -552,6 +554,7 @@ def generate_character_portrait_bank(
     quality: str = "balanced",
     seed: Optional[int] = None,
     speaker_names: Optional[set[str]] = None,
+    use_cache: bool = True,
 ) -> Dict[str, Dict[str, Any]]:
     """
     Generate one canonical portrait per character to improve identity consistency.
@@ -580,7 +583,7 @@ def generate_character_portrait_bank(
         char_seed = _speaker_seed(seed, name)
         fp = prompt_fingerprint(prompt, width, height, char_seed)
         out_path = portraits_dir / f"{name.replace(' ', '_')}_{fp}.png"
-        if not out_path.exists() or out_path.stat().st_size == 0:
+        if not use_cache or not out_path.exists() or out_path.stat().st_size == 0:
             ok, info = _generate_with_backend_order(
                 prompt=prompt,
                 width=width,

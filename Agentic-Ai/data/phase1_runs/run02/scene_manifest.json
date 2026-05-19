@@ -1,0 +1,166 @@
+{
+  "workflow_id": "workflow_20260507_123454",
+  "timestamp": "2026-05-07T12:34:54.932557",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "location": "PLANE COCKPIT",
+      "dialogue": [
+        {
+          "speaker": "ALI",
+          "line": "\"Alright, guys, let's review the safety procedures for landing.\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "SAM",
+          "line": "\"Uh, safety procedures? I didn't know we were landing yet.\"",
+          "visual_cue": "Close-up of ALI, eyes scanning the instruments with confidence.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "LEO",
+          "line": "\"It's just routine, Sam. We're fine.\"",
+          "visual_cue": "Close-up of SAM, brow furrowed with worry, hands grasping the armrests.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "KATRINA",
+          "line": "\"And don't forget to fasten your seatbelts, everyone. We're starting our descent.\"",
+          "visual_cue": "Medium shot of LEO, a reassuring smile spreading across his face.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "ALI",
+        "SAM",
+        "LEO",
+        "KATRINA"
+      ],
+      "duration": 22,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    },
+    {
+      "scene_id": 2,
+      "location": "PLANE CABIN",
+      "dialogue": [
+        {
+          "speaker": "LEO",
+          "line": "\"I'm telling you, Sam, the turbulence is just a minor setback. We'll be on the ground in no time.\"",
+          "visual_cue": "Medium shot of LEO, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "SAM",
+          "line": "\"But what if the plane crashes? We could all die!\"",
+          "visual_cue": "Close-up of LEO, his words dripping with conviction as he gestures with his hands.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "KATRINA",
+          "line": "\"Hey, guys, don't worry. We're in good hands with Captain Ali. He's the best pilot around.\"",
+          "visual_cue": "Close-up of SAM, his voice rising in panic, eyes darting around the cabin.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "LEO",
+        "SAM",
+        "KATRINA"
+      ],
+      "duration": 25,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    },
+    {
+      "scene_id": 3,
+      "location": "PLANE",
+      "dialogue": [
+        {
+          "speaker": "ALI",
+          "line": "\"Everyone, please remain seated until we've come to a complete stop.\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "SAM",
+          "line": "\"We did it. We made it.\"",
+          "visual_cue": "Wide shot of the plane, the wheels screeching to a halt on the runway.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "LEO",
+          "line": "\"Told you we would, Sam.\"",
+          "visual_cue": "Close-up of SAM, a mix of relief and exhaustion etched on his face.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "KATRINA",
+          "line": "\"Welcome to our destination, folks! Please stay seated while the plane is being cleaned and prepared for the next flight.\"",
+          "visual_cue": "Close-up of LEO, a triumphant grin spreading across his face.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "ALI",
+        "SAM",
+        "LEO",
+        "KATRINA"
+      ],
+      "duration": 24,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    }
+  ],
+  "total_scenes": 3,
+  "total_duration_seconds": 71
+}

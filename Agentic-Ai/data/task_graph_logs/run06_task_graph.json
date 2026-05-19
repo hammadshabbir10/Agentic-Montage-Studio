@@ -1,0 +1,251 @@
+{
+  "run_tag": "run06",
+  "run_number": 6,
+  "run_dir": "data\\phase2_runs\\run06",
+  "bgm_dir": "data\\phase2_runs\\run06\\bgm",
+  "scene_manifest": {
+    "workflow_id": "workflow_20260507_125218",
+    "timestamp": "2026-05-07T12:52:18.602069",
+    "scenes": [
+      {
+        "scene_id": 1,
+        "location": "DETECTIVE AGENCY",
+        "dialogue": [
+          {
+            "speaker": "KAELIN",
+            "line": "\"This case is going cold, Zephyra. I need something, anything to crack it.\"",
+            "visual_cue": "Medium shot of KAELIN, expression intense and focused.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "ZEPHYRA",
+            "line": "\"I've been going over the security footage, Kaelin. I think I found something.\"",
+            "visual_cue": "Medium shot of Kaelin, eyes scanning the room with a mix of frustration and desperation.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "KAELIN",
+            "line": "\"What is it?\"",
+            "visual_cue": "Close-up of Zephyra, eyes locked on the holographic display, a hint of a smile playing on her lips.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "ZEPHYRA",
+            "line": "\"A figure, tall and slender, entered the building the night of the murder. They wore a black cloak and a mask.\"",
+            "visual_cue": "Close-up of Kaelin, leaning in, intense interest in his eyes.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "KAELIN",
+            "line": "\"That's our guy. Let's get to work, Zephyra. We need to track down this...figure.\"",
+            "visual_cue": "Medium shot of Zephyra, her hands gesturing animatedly as she speaks.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          }
+        ],
+        "characters": [
+          "KAELIN",
+          "ZEPHYRA"
+        ],
+        "duration": 35,
+        "start_ms": null,
+        "end_ms": null,
+        "duration_ms": null,
+        "audio_file": null,
+        "bgm_file": null,
+        "mood": null,
+        "lines": null
+      },
+      {
+        "scene_id": 2,
+        "location": "CITY STREET",
+        "dialogue": [
+          {
+            "speaker": "KAELIN",
+            "line": "\"This is a dead end, Zephyra. We've been canvassing the entire city, and no one's seen anything.\"",
+            "visual_cue": "Medium shot of KAELIN, expression intense and focused.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "ZEPHYRA",
+            "line": "\"That's not true, Kaelin. I've been talking to some of the locals, and they've heard rumors of a hidden underground club. Maybe our guy is hiding there.\"",
+            "visual_cue": "Over-the-shoulder shot of Kaelin, Zephyra standing beside him, a look of concern on her face.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "KAELIN",
+            "line": "\"I don't know, Zephyra. That sounds like a wild goose chase.\"",
+            "visual_cue": "Close-up of Zephyra, eyes sparkling with excitement.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "ZEPHYRA",
+            "line": "\"It's worth a shot, Kaelin. We have nothing else to lose.\"",
+            "visual_cue": "Close-up of Kaelin, a hint of skepticism in his eyes.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          }
+        ],
+        "characters": [
+          "KAELIN",
+          "ZEPHYRA"
+        ],
+        "duration": 35,
+        "start_ms": null,
+        "end_ms": null,
+        "duration_ms": null,
+        "audio_file": null,
+        "bgm_file": null,
+        "mood": null,
+        "lines": null
+      },
+      {
+        "scene_id": 3,
+        "location": "ABANDONED WAREHOUSE",
+        "dialogue": [
+          {
+            "speaker": "KAELIN",
+            "line": "\"Stay close, Zephyra. We don't know what we're walking into.\"",
+            "visual_cue": "Medium shot of KAELIN, expression intense and focused.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "ZEPHYRA",
+            "line": "\"I've got a bad feeling about this, Kaelin. We should go back.\"",
+            "visual_cue": "Over-the-shoulder shot of Kaelin, Zephyra right behind him, her eyes darting back and forth.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "KAELIN",
+            "line": "\"Too late now. Let's keep moving.\"",
+            "visual_cue": "Close-up of Zephyra, her voice barely above a whisper, fear creeping into her eyes.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          }
+        ],
+        "characters": [
+          "KAELIN",
+          "ZEPHYRA"
+        ],
+        "duration": 17,
+        "start_ms": null,
+        "end_ms": null,
+        "duration_ms": null,
+        "audio_file": null,
+        "bgm_file": null,
+        "mood": null,
+        "lines": null
+      }
+    ],
+    "total_scenes": 3,
+    "total_duration_seconds": 87
+  },
+  "character_db": {
+    "workflow_id": "workflow_20260507_125221",
+    "timestamp": "2026-05-07T12:52:21.598006",
+    "characters": [
+      {
+        "name": "KAELIN",
+        "personality": "Driven and determined, Kaelin is a persistent investigator who will stop at nothing to crack a case, often to the point of becoming obsessed. She is fiercely independent and values results over procedure.",
+        "appearance": "Kaelin is a stylish and athletic woman in her mid-to-late 30s, often dressed in functional yet fashionable attire that allows her to blend in with the city crowd. Her sharp features and piercing gaze give her an air of authority.",
+        "role": "supporting",
+        "style_reference": "Gritty, modern neo-noir, heavy use of shadows and neon lights to create a sense of tension and unease.",
+        "first_appearance": 1,
+        "dialogue_samples": [
+          {
+            "line": "\"This case is going cold, Zephyra. I need something, anything to crack it.\"",
+            "visual_cue": "Medium shot of KAELIN, expression intense and focused."
+          },
+          {
+            "line": "\"What is it?\"",
+            "visual_cue": "Close-up of Zephyra, eyes locked on the holographic display, a hint of a smile playing on her lips."
+          },
+          {
+            "line": "\"That's our guy. Let's get to work, Zephyra. We need to track down this...figure.\"",
+            "visual_cue": "Medium shot of Zephyra, her hands gesturing animatedly as she speaks."
+          },
+          {
+            "line": "\"This is a dead end, Zephyra. We've been canvassing the entire city, and no one's seen anything.\"",
+            "visual_cue": "Medium shot of KAELIN, expression intense and focused."
+          },
+          {
+            "line": "\"I don't know, Zephyra. That sounds like a wild goose chase.\"",
+            "visual_cue": "Close-up of Zephyra, eyes sparkling with excitement."
+          },
+          {
+            "line": "\"Stay close, Zephyra. We don't know what we're walking into.\"",
+            "visual_cue": "Medium shot of KAELIN, expression intense and focused."
+          },
+          {
+            "line": "\"Too late now. Let's keep moving.\"",
+            "visual_cue": "Close-up of Zephyra, her voice barely above a whisper, fear creeping into her eyes."
+          }
+        ]
+      },
+      {
+        "name": "ZEPHYRA",
+        "personality": "Zephyra is an intuitive and determined individual driven by a desire to uncover the truth, often relying on her instincts to guide her investigation.",
+        "appearance": "Zephyra likely wears functional clothing suitable for a detective agency, such as a fitted blazer and trousers, with an air of effortless elegance.",
+        "role": "supporting",
+        "style_reference": "Gritty urban thriller, dimly lit cityscapes, and a muted color palette that emphasizes shadows and contrast.",
+        "first_appearance": 1,
+        "dialogue_samples": [
+          {
+            "line": "\"I've been going over the security footage, Kaelin. I think I found something.\"",
+            "visual_cue": "Medium shot of Kaelin, eyes scanning the room with a mix of frustration and desperation."
+          },
+          {
+            "line": "\"A figure, tall and slender, entered the building the night of the murder. They wore a black cloak and a mask.\"",
+            "visual_cue": "Close-up of Kaelin, leaning in, intense interest in his eyes."
+          },
+          {
+            "line": "\"That's not true, Kaelin. I've been talking to some of the locals, and they've heard rumors of a hidden underground club. Maybe our guy is hiding there.\"",
+            "visual_cue": "Over-the-shoulder shot of Kaelin, Zephyra standing beside him, a look of concern on her face."
+          },
+          {
+            "line": "\"It's worth a shot, Kaelin. We have nothing else to lose.\"",
+            "visual_cue": "Close-up of Kaelin, a hint of skepticism in his eyes."
+          },
+          {
+            "line": "\"I've got a bad feeling about this, Kaelin. We should go back.\"",
+            "visual_cue": "Over-the-shoulder shot of Kaelin, Zephyra right behind him, her eyes darting back and forth."
+          }
+        ]
+      }
+    ],
+    "total_characters": 2
+  }
+}

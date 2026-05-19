@@ -1,0 +1,167 @@
+{
+  "workflow_id": "phase2_run05",
+  "timestamp": "2026-05-07T12:52:42.487811",
+  "run_tag": "run05",
+  "total_duration_ms": 69168,
+  "scenes": [
+    {
+      "scene_id": 1,
+      "audio_file": "data\\phase2_runs\\run05\\audio\\scene_01_run05.mp3",
+      "bgm_file": "data\\phase2_runs\\run05\\bgm\\mysterious_scene01_freesound.mp3",
+      "mood": "mysterious",
+      "start_ms": 0,
+      "end_ms": 28824,
+      "duration_ms": 28824,
+      "lines": [
+        {
+          "speaker": "KATRINA",
+          "line": "Ladies and gentlemen, please return to your seats and fasten your seatbelts.",
+          "start_ms": 0,
+          "end_ms": 4920,
+          "duration_ms": 4920,
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Medium shot of KATRINA, expression intense and focused."
+        },
+        {
+          "speaker": "SAM",
+          "line": "Come on, kitty, lighten up. We're just having a little fun.",
+          "start_ms": 4920,
+          "end_ms": 10104,
+          "duration_ms": 5184,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of KATRINA, her firm voice commanding respect."
+        },
+        {
+          "speaker": "LEO",
+          "line": "Yeah, we're not hurting anyone. Let the man have his fun.",
+          "start_ms": 10104,
+          "end_ms": 13704,
+          "duration_ms": 3600,
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Close-up of SAM, his goofy grin plastered on his face."
+        },
+        {
+          "speaker": "ALI",
+          "line": "Katrina, can you please ensure these passengers return to their seats immediately?",
+          "start_ms": 13704,
+          "end_ms": 18768,
+          "duration_ms": 5064,
+          "voice": "en-US-BrianNeural",
+          "visual_cue": "Over-the-shoulder shot of LEO, his eyes sparkling with mischief."
+        },
+        {
+          "speaker": "KATRINA",
+          "line": "Yes, of course, Captain. I'll take care of it.",
+          "start_ms": 18768,
+          "end_ms": 23640,
+          "duration_ms": 4872,
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Close-up of ALI, his voice firm but controlled."
+        },
+        {
+          "speaker": "SAM",
+          "line": "Aww, come on, Captain. Don't be such a party pooper.",
+          "start_ms": 23640,
+          "end_ms": 28824,
+          "duration_ms": 5184,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Wide shot of KATRINA, her eyes scanning the cabin for any signs of trouble."
+        }
+      ]
+    },
+    {
+      "scene_id": 2,
+      "audio_file": "data\\phase2_runs\\run05\\audio\\scene_02_run05.mp3",
+      "bgm_file": "data\\phase2_runs\\run05\\bgm\\mysterious_scene02_freesound.mp3",
+      "mood": "mysterious",
+      "start_ms": 28824,
+      "end_ms": 47736,
+      "duration_ms": 18912,
+      "lines": [
+        {
+          "speaker": "ALI",
+          "line": "Ladies and gentlemen, we're experiencing some turbulence. Please fasten your seatbelts and remain seated.",
+          "start_ms": 28824,
+          "end_ms": 35280,
+          "duration_ms": 6456,
+          "voice": "en-US-BrianNeural",
+          "visual_cue": "Medium shot of ALI, expression intense and focused."
+        },
+        {
+          "speaker": "SAM",
+          "line": "Whoa, this is crazy! Leo, hold on to your seat!",
+          "start_ms": 35280,
+          "end_ms": 40344,
+          "duration_ms": 5064,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Point-of-view shot through the cockpit window, the plane tilting violently."
+        },
+        {
+          "speaker": "LEO",
+          "line": "I've got it, Sam. Just ride it out.",
+          "start_ms": 40344,
+          "end_ms": 42624,
+          "duration_ms": 2280,
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Close-up of SAM, his eyes wide with fear."
+        },
+        {
+          "speaker": "KATRINA",
+          "line": "Everyone, please stay calm. This is normal turbulence.",
+          "start_ms": 42624,
+          "end_ms": 47736,
+          "duration_ms": 5112,
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Over-the-shoulder shot of LEO, his face set in a determined expression."
+        }
+      ]
+    },
+    {
+      "scene_id": 3,
+      "audio_file": "data\\phase2_runs\\run05\\audio\\scene_03_run05.mp3",
+      "bgm_file": "data\\phase2_runs\\run05\\bgm\\mysterious_scene03_freesound.mp3",
+      "mood": "mysterious",
+      "start_ms": 47736,
+      "end_ms": 69168,
+      "duration_ms": 21432,
+      "lines": [
+        {
+          "speaker": "KATRINA",
+          "line": "Captain, what's going on? Is everything okay?",
+          "start_ms": 47736,
+          "end_ms": 52320,
+          "duration_ms": 4584,
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Medium shot of KATRINA, expression intense and focused."
+        },
+        {
+          "speaker": "ALI",
+          "line": "We're experiencing a bit of a problem, Katrina. I'm trying to stabilize the plane.",
+          "start_ms": 52320,
+          "end_ms": 57696,
+          "duration_ms": 5376,
+          "voice": "en-US-BrianNeural",
+          "visual_cue": "Close-up of KATRINA, her eyes scanning the instrument panels."
+        },
+        {
+          "speaker": "KATRINA",
+          "line": "Can I help, Captain? Maybe I can assist you?",
+          "start_ms": 57696,
+          "end_ms": 61992,
+          "duration_ms": 4296,
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Point-of-view shot through the cockpit window, the plane shaking violently."
+        },
+        {
+          "speaker": "ALI",
+          "line": "No, Katrina. I've got this under control. Just get back to the cabin and make sure those passengers are secure.",
+          "start_ms": 61992,
+          "end_ms": 69168,
+          "duration_ms": 7176,
+          "voice": "en-US-BrianNeural",
+          "visual_cue": "Wide shot of KATRINA, her eyes shining with concern."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "status": "completed",
+  "audio": [
+    "data\\phase2_runs\\run15\\audio\\scene_01_run15.mp3",
+    "data\\phase2_runs\\run15\\audio\\scene_02_run15.mp3",
+    "data\\phase2_runs\\run15\\audio\\scene_03_run15.mp3",
+    "data\\phase2_runs\\run15\\audio\\scene_04_run15.mp3",
+    "data\\phase2_runs\\run15\\audio\\scene_05_run15.mp3"
+  ],
+  "bgm": [
+    "data\\phase2_runs\\run15\\bgm\\action_scene01_freesound.mp3",
+    "data\\phase2_runs\\run15\\bgm\\tense_scene02_freesound.mp3",
+    "data\\phase2_runs\\run15\\bgm\\tense_scene03_freesound.mp3",
+    "data\\phase2_runs\\run15\\bgm\\action_scene04_freesound.mp3",
+    "data\\phase2_runs\\run15\\bgm\\tense_scene05_freesound.mp3"
+  ]
+}

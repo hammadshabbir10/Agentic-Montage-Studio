@@ -1,0 +1,149 @@
+{
+  "workflow_id": "phase2_run06",
+  "timestamp": "2026-05-07T12:52:54.762991",
+  "run_tag": "run06",
+  "total_duration_ms": 70248,
+  "scenes": [
+    {
+      "scene_id": 1,
+      "audio_file": "data\\phase2_runs\\run06\\audio\\scene_01_run06.mp3",
+      "bgm_file": "data\\phase2_runs\\run06\\bgm\\tense_scene01_freesound.mp3",
+      "mood": "tense",
+      "start_ms": 0,
+      "end_ms": 28176,
+      "duration_ms": 28176,
+      "lines": [
+        {
+          "speaker": "KAELIN",
+          "line": "This case is going cold, Zephyra. I need something, anything to crack it.",
+          "start_ms": 0,
+          "end_ms": 6000,
+          "duration_ms": 6000,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of KAELIN, expression intense and focused."
+        },
+        {
+          "speaker": "ZEPHYRA",
+          "line": "I've been going over the security footage, Kaelin. I think I found something.",
+          "start_ms": 6000,
+          "end_ms": 11856,
+          "duration_ms": 5856,
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Medium shot of Kaelin, eyes scanning the room with a mix of frustration and desperation."
+        },
+        {
+          "speaker": "KAELIN",
+          "line": "What is it?",
+          "start_ms": 11856,
+          "end_ms": 13536,
+          "duration_ms": 1680,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Close-up of Zephyra, eyes locked on the holographic display, a hint of a smile playing on her lips."
+        },
+        {
+          "speaker": "ZEPHYRA",
+          "line": "A figure, tall and slender, entered the building the night of the murder. They wore a black cloak and a mask.",
+          "start_ms": 13536,
+          "end_ms": 20880,
+          "duration_ms": 7344,
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Close-up of Kaelin, leaning in, intense interest in his eyes."
+        },
+        {
+          "speaker": "KAELIN",
+          "line": "That's our guy. Let's get to work, Zephyra. We need to track down this...figure.",
+          "start_ms": 20880,
+          "end_ms": 28176,
+          "duration_ms": 7296,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of Zephyra, her hands gesturing animatedly as she speaks."
+        }
+      ]
+    },
+    {
+      "scene_id": 2,
+      "audio_file": "data\\phase2_runs\\run06\\audio\\scene_02_run06.mp3",
+      "bgm_file": "data\\phase2_runs\\run06\\bgm\\action_scene02_freesound.mp3",
+      "mood": "action",
+      "start_ms": 28176,
+      "end_ms": 55896,
+      "duration_ms": 27720,
+      "lines": [
+        {
+          "speaker": "KAELIN",
+          "line": "This is a dead end, Zephyra. We've been canvassing the entire city, and no one's seen anything.",
+          "start_ms": 28176,
+          "end_ms": 35280,
+          "duration_ms": 7104,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of KAELIN, expression intense and focused."
+        },
+        {
+          "speaker": "ZEPHYRA",
+          "line": "That's not true, Kaelin. I've been talking to some of the locals, and they've heard rumors of a hidden underground club. Maybe our guy is hiding there.",
+          "start_ms": 35280,
+          "end_ms": 45648,
+          "duration_ms": 10368,
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Over-the-shoulder shot of Kaelin, Zephyra standing beside him, a look of concern on her face."
+        },
+        {
+          "speaker": "KAELIN",
+          "line": "I don't know, Zephyra. That sounds like a wild goose chase.",
+          "start_ms": 45648,
+          "end_ms": 50760,
+          "duration_ms": 5112,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Close-up of Zephyra, eyes sparkling with excitement."
+        },
+        {
+          "speaker": "ZEPHYRA",
+          "line": "It's worth a shot, Kaelin. We have nothing else to lose.",
+          "start_ms": 50760,
+          "end_ms": 55896,
+          "duration_ms": 5136,
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Close-up of Kaelin, a hint of skepticism in his eyes."
+        }
+      ]
+    },
+    {
+      "scene_id": 3,
+      "audio_file": "data\\phase2_runs\\run06\\audio\\scene_03_run06.mp3",
+      "bgm_file": "data\\phase2_runs\\run06\\bgm\\tense_scene03_freesound.mp3",
+      "mood": "tense",
+      "start_ms": 55896,
+      "end_ms": 70248,
+      "duration_ms": 14352,
+      "lines": [
+        {
+          "speaker": "KAELIN",
+          "line": "Stay close, Zephyra. We don't know what we're walking into.",
+          "start_ms": 55896,
+          "end_ms": 61104,
+          "duration_ms": 5208,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of KAELIN, expression intense and focused."
+        },
+        {
+          "speaker": "ZEPHYRA",
+          "line": "I've got a bad feeling about this, Kaelin. We should go back.",
+          "start_ms": 61104,
+          "end_ms": 66360,
+          "duration_ms": 5256,
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Over-the-shoulder shot of Kaelin, Zephyra right behind him, her eyes darting back and forth."
+        },
+        {
+          "speaker": "KAELIN",
+          "line": "Too late now. Let's keep moving.",
+          "start_ms": 66360,
+          "end_ms": 70248,
+          "duration_ms": 3888,
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Close-up of Zephyra, her voice barely above a whisper, fear creeping into her eyes."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,327 @@
+{
+  "run_tag": "run16",
+  "run_number": 16,
+  "run_dir": "data\\phase2_runs\\run16",
+  "bgm_dir": "data\\phase2_runs\\run16\\bgm",
+  "scene_manifest": {
+    "workflow_id": "workflow_20260508_161648",
+    "timestamp": "2026-05-08T16:16:48.925773",
+    "scenes": [
+      {
+        "scene_id": 1,
+        "location": "GRITTY URBAN ALLEYWAY",
+        "dialogue": [
+          {
+            "speaker": "HAIDER",
+            "line": "\"We've been planning this for weeks, Iqrash. Hadi's got a reputation for being untouchable on the track.\"",
+            "visual_cue": "Medium shot of HAIDER, expression intense and focused.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "IQRASH",
+            "line": "\"We're not just going to take him down on the track, Haider. We're going to make it personal.\"",
+            "visual_cue": "Medium shot of IQRASH, expression intense and focused.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "HADI OFFSCREEN",
+            "line": "\"I'm not afraid of you two.\"",
+            "visual_cue": "Wide shot of Haider, his red racing jacket highlighted by the alleyway lights, Iqrash's black hoodie blending into the shadows.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "HAIDER",
+            "line": "\"Oh, I think you should be.\"",
+            "visual_cue": "Medium shot of HAIDER, expression intense and focused.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "HAMMAD",
+            "line": "\"Wait, let's not do this. There's an annual car race coming up. Why don't we settle it there?\"",
+            "visual_cue": "Hadi steps into the light, his face set with a determined expression, Hadi's sleek blue car parked behind him, the metallic blue paint gleaming in the alleyway lights.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "HAIDER",
+            "line": "\"And put ourselves at the mercy of the judges? No way.\"",
+            "visual_cue": "Hammad's glasses and grey sweater make him stand out against the dark alleyway, Hadi and Haider exchange a skeptical look.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          }
+        ],
+        "characters": [
+          "HAIDER",
+          "IQRASH",
+          "HADI OFFSCREEN",
+          "HAMMAD"
+        ],
+        "duration": 41,
+        "start_ms": null,
+        "end_ms": null,
+        "duration_ms": null,
+        "audio_file": null,
+        "bgm_file": null,
+        "mood": null,
+        "lines": null
+      },
+      {
+        "scene_id": 2,
+        "location": "HIGH",
+        "dialogue": [
+          {
+            "speaker": "HADI",
+            "line": "\"I've got the edge I need. Time to take these guys down.\"",
+            "visual_cue": "Medium shot of HADI, expression intense and focused.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "HAMMAD",
+            "line": "\"Good luck, Hadi. I'll be rooting for you.\"",
+            "visual_cue": "Hadi's gloved hands tighten the engine bolts, his blue racing suit a stark contrast to the metallic blue car, the garage lights shining down on the car's sleek lines.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          }
+        ],
+        "characters": [
+          "HADI",
+          "HAMMAD"
+        ],
+        "duration": 13,
+        "start_ms": null,
+        "end_ms": null,
+        "duration_ms": null,
+        "audio_file": null,
+        "bgm_file": null,
+        "mood": null,
+        "lines": null
+      },
+      {
+        "scene_id": 3,
+        "location": "VIBRANT NEON CITY LIGHT",
+        "dialogue": [
+          {
+            "speaker": "ANNOUNCER VO",
+            "line": "\"Welcome to the annual city car race! Your drivers include Hadi in the sleek blue car, Haider in the rugged red car, and many more!\"",
+            "visual_cue": "Medium shot of ANNOUNCER (V.O.), expression intense and focused.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          }
+        ],
+        "characters": [
+          "ANNOUNCER VO"
+        ],
+        "duration": 14,
+        "start_ms": null,
+        "end_ms": null,
+        "duration_ms": null,
+        "audio_file": null,
+        "bgm_file": null,
+        "mood": null,
+        "lines": null
+      },
+      {
+        "scene_id": 4,
+        "location": "HIGH",
+        "dialogue": [
+          {
+            "speaker": "HADI",
+            "line": "\"I'm taking the lead!\"",
+            "visual_cue": "Medium shot of HADI, expression intense and focused.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "HAIDER",
+            "line": "\"No way! I'm not letting you win!\"",
+            "visual_cue": "Close-up of Hadi's hands on the wheel, his blue racing suit a blur as the car drifts around the corner, Haider's rugged red car close behind.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          }
+        ],
+        "characters": [
+          "HADI",
+          "HAIDER"
+        ],
+        "duration": 9,
+        "start_ms": null,
+        "end_ms": null,
+        "duration_ms": null,
+        "audio_file": null,
+        "bgm_file": null,
+        "mood": null,
+        "lines": null
+      },
+      {
+        "scene_id": 5,
+        "location": "FINISH LINE",
+        "dialogue": [
+          {
+            "speaker": "HADI",
+            "line": "\"I did it!\"",
+            "visual_cue": "Medium shot of HADI, expression intense and focused.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          }
+        ],
+        "characters": [
+          "HADI"
+        ],
+        "duration": 4,
+        "start_ms": null,
+        "end_ms": null,
+        "duration_ms": null,
+        "audio_file": null,
+        "bgm_file": null,
+        "mood": null,
+        "lines": null
+      }
+    ],
+    "total_scenes": 5,
+    "total_duration_seconds": 81
+  },
+  "character_db": {
+    "workflow_id": "workflow_20260508_161659",
+    "timestamp": "2026-05-08T16:16:59.259454",
+    "characters": [
+      {
+        "name": "HAIDER",
+        "personality": "Haider is a confident and driven individual who isn't afraid to speak his mind and assert his dominance on the track. He's a natural-born leader who values independence and self-reliance.",
+        "appearance": "Haider is a lean and athletic young man with a strong jawline and piercing eyes, dressed in sleek and modern racing attire.",
+        "role": "protagonist",
+        "style_reference": "High-octane, neon-drenched urban thriller, think 'Tron' meets 'The Fast and the Furious'",
+        "first_appearance": 1,
+        "dialogue_samples": [
+          {
+            "line": "\"We've been planning this for weeks, Iqrash. Hadi's got a reputation for being untouchable on the track.\"",
+            "visual_cue": "Medium shot of HAIDER, expression intense and focused."
+          },
+          {
+            "line": "\"Oh, I think you should be.\"",
+            "visual_cue": "Medium shot of HAIDER, expression intense and focused."
+          },
+          {
+            "line": "\"And put ourselves at the mercy of the judges? No way.\"",
+            "visual_cue": "Hammad's glasses and grey sweater make him stand out against the dark alleyway, Hadi and Haider exchange a skeptical look."
+          },
+          {
+            "line": "\"No way! I'm not letting you win!\"",
+            "visual_cue": "Close-up of Hadi's hands on the wheel, his blue racing suit a blur as the car drifts around the corner, Haider's rugged red car close behind."
+          }
+        ]
+      },
+      {
+        "name": "IQRASH",
+        "personality": "Iqraash is driven by a desire for personal vendettas and is willing to take extreme measures to achieve his goals.",
+        "appearance": "Iqraash is dressed in dark, high-tech racing attire, with a focus on functional yet intimidating designs.",
+        "role": "antagonist",
+        "style_reference": "Cyberpunk, neon-drenched, high-stakes racing aesthetic with a focus on gritty urban landscapes.",
+        "first_appearance": 1,
+        "dialogue_samples": [
+          {
+            "line": "\"We're not just going to take him down on the track, Haider. We're going to make it personal.\"",
+            "visual_cue": "Medium shot of IQRASH, expression intense and focused."
+          }
+        ]
+      },
+      {
+        "name": "HADI OFFSCREEN",
+        "personality": "Confident, fearless, and possibly reckless, Hadi appears to be someone who is not easily intimidated or swayed. They seem to be driven by a strong sense of determination or conviction.",
+        "appearance": "Dressed in dark, practical clothing suitable for navigating urban environments, Hadi's appearance is functional and low-key.",
+        "role": "supporting",
+        "style_reference": "Gritty, high-octane urban action film, reminiscent of the works of Michael Mann or Guy Ritchie, with a focus on vibrant neon colors and fast-paced action sequences.",
+        "first_appearance": 1,
+        "dialogue_samples": [
+          {
+            "line": "\"I'm not afraid of you two.\"",
+            "visual_cue": "Wide shot of Haider, his red racing jacket highlighted by the alleyway lights, Iqrash's black hoodie blending into the shadows."
+          }
+        ]
+      },
+      {
+        "name": "HAMMAD",
+        "personality": "Hammad is a competitive and level-headed individual who tries to think strategically, but is also open to alternative solutions. He may be looking for a way to settle conflicts without resorting to direct confrontation.",
+        "appearance": "Hammad is a ruggedly dressed individual with a no-nonsense attitude, fitting for a gritty urban setting. His attire suggests a practical, street-smart style.",
+        "role": "supporting",
+        "style_reference": "Gritty urban thriller, neon-drenched cityscapes, high-energy soundtrack.",
+        "first_appearance": 1,
+        "dialogue_samples": [
+          {
+            "line": "\"Wait, let's not do this. There's an annual car race coming up. Why don't we settle it there?\"",
+            "visual_cue": "Hadi steps into the light, his face set with a determined expression, Hadi's sleek blue car parked behind him, the metallic blue paint gleaming in the alleyway lights."
+          },
+          {
+            "line": "\"Good luck, Hadi. I'll be rooting for you.\"",
+            "visual_cue": "Hadi's gloved hands tighten the engine bolts, his blue racing suit a stark contrast to the metallic blue car, the garage lights shining down on the car's sleek lines."
+          }
+        ]
+      },
+      {
+        "name": "HADI",
+        "personality": "Confident and assertive, Hadi is driven by a competitive spirit and a desire to take control.",
+        "appearance": "Hadi is a ruggedly athletic individual with a bold, edgy style, fitting for a high-stakes urban environment.",
+        "role": "protagonist",
+        "style_reference": "Gritty, futuristic cyberpunk, neon-drenched cityscapes, and high-energy action sequences.",
+        "first_appearance": 2,
+        "dialogue_samples": [
+          {
+            "line": "\"I've got the edge I need. Time to take these guys down.\"",
+            "visual_cue": "Medium shot of HADI, expression intense and focused."
+          },
+          {
+            "line": "\"I'm taking the lead!\"",
+            "visual_cue": "Medium shot of HADI, expression intense and focused."
+          },
+          {
+            "line": "\"I did it!\"",
+            "visual_cue": "Medium shot of HADI, expression intense and focused."
+          }
+        ]
+      },
+      {
+        "name": "ANNOUNCER VO",
+        "personality": "The announcer appears to be enthusiastic and energetic, motivated by the excitement of the car race.",
+        "appearance": "The announcer is likely dressed in a vibrant and eye-catching outfit, fitting for a high-energy event like a car race.",
+        "role": "minor",
+        "style_reference": "Fast-paced, high-octane action, think retro-futurism with neon lights and bold typography.",
+        "first_appearance": 3,
+        "dialogue_samples": [
+          {
+            "line": "\"Welcome to the annual city car race! Your drivers include Hadi in the sleek blue car, Haider in the rugged red car, and many more!\"",
+            "visual_cue": "Medium shot of ANNOUNCER (V.O.), expression intense and focused."
+          }
+        ]
+      }
+    ],
+    "total_characters": 6
+  }
+}

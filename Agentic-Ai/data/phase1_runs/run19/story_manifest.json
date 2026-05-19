@@ -1,0 +1,42 @@
+{
+  "workflow_id": "workflow_20260507_172518",
+  "timestamp": "2026-05-07T17:25:18.063949",
+  "story": {
+    "title": "Racing Reckoning",
+    "logline": "When two friends plot to humiliate their rival, they're outmaneuvered by a cunning ally, forcing them to confront their own pride and the true cost of victory.",
+    "genre": "Coming-of-Age Drama",
+    "tone": "tense and gritty",
+    "setting": "A small desert town in the Middle East",
+    "time_period": "Contemporary era",
+    "themes": [
+      "Pride and Ego",
+      "Loyalty and Friendship",
+      "Redemption and Growth"
+    ],
+    "acts": [
+      {
+        "act": 1,
+        "label": "Introduction",
+        "description": "We meet Haider, Iqrash, and Hammad, three friends from different walks of life, as they navigate their daily lives in a small desert town. Haider, a hot-headed and confident young man, frequently clashes with his friends, causing tension and resentment. Meanwhile, Hammad, a quiet and observant ally, watches and waits for the perfect moment to intervene."
+      },
+      {
+        "act": 2,
+        "label": "Rising Action",
+        "description": "Haider's behavior becomes increasingly erratic and hurtful, causing Iqrash and Hammad to plot against him. However, Hammad secretly suggests they use the annual car race as a means to humiliate Haider, rather than engaging in a physical confrontation. Iqrash, still seething with anger, agrees to the plan."
+      },
+      {
+        "act": 3,
+        "label": "Climax",
+        "description": "The day of the car race arrives, and tensions are running high. Haider, determined to prove himself, takes his car out for a spin, unaware of the plan against him. As the race begins, Iqrash and Hammad take their positions, waiting for Haider to make a mistake."
+      },
+      {
+        "act": 4,
+        "label": "Resolution",
+        "description": "In a stunning upset, Haider emerges as the winner of the car race, leaving Iqrash and Hammad stunned and humbled. As they process their emotions, they begin to see Haider in a new light, and the true cost of their pride and ego become clear."
+      }
+    ],
+    "protagonist": "IQRASH",
+    "antagonist": null,
+    "world": "In this small desert town, where tradition and pride run deep, the annual car race is a revered event that brings the community together, but also serves as a catalyst for conflict and growth."
+  }
+}

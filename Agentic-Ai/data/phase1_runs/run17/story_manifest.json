@@ -1,0 +1,42 @@
+{
+  "workflow_id": "workflow_20260507_132017",
+  "timestamp": "2026-05-07T13:20:17.105877",
+  "story": {
+    "title": "Flight of Deceit",
+    "logline": "Two rookie thieves inadvertently hijack a commercial airliner, putting the lives of everyone on board in danger.",
+    "genre": "Action Thriller",
+    "tone": "tense and gritty",
+    "setting": "A commercial airliner",
+    "time_period": "present day",
+    "themes": [
+      "deception",
+      "survival",
+      "redemption"
+    ],
+    "acts": [
+      {
+        "act": 1,
+        "label": "Introduction",
+        "description": "Meet Sam and Leo, two charming but reckless thieves who get themselves into a precarious situation when they accidentally hijack a commercial airliner. They soon realize they're not the only ones on board with ulterior motives. As the plane hits turbulence, they must navigate their own web of lies and deception to survive."
+      },
+      {
+        "act": 2,
+        "label": "Conflict",
+        "description": "Pilot Owais takes matters into his own hands to protect the passengers, while hostess Areeba struggles to keep the peace between Sam and Leo. As the situation spirals out of control, the trio must confront their own demons and make impossible choices to prevent a catastrophic outcome."
+      },
+      {
+        "act": 3,
+        "label": "Climax",
+        "description": "The stakes reach a boiling point as Sam, Leo, and Owais engage in a high-stakes game of cat and mouse. Will they be able to outwit each other and bring the plane to safety, or will their combined deceptions lead to disaster?"
+      },
+      {
+        "act": 4,
+        "label": "Resolution",
+        "description": "In the aftermath of the ordeal, the survivors must come to terms with the consequences of their actions. As the dust settles, Sam and Leo are forced to confront the true costs of their deception, and Owais must live with the weight of his own heroic sacrifice."
+      }
+    ],
+    "protagonist": "SAM",
+    "antagonist": "SAM",
+    "world": "A world where deception and survival are the only currencies that matter."
+  }
+}

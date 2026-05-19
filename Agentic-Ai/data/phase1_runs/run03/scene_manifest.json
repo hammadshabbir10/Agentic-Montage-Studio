@@ -1,0 +1,212 @@
+{
+  "workflow_id": "workflow_20260507_123455",
+  "timestamp": "2026-05-07T12:34:55.449558",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "location": "COCKPIT",
+      "dialogue": [
+        {
+          "speaker": "ALI",
+          "line": "\"Alright, guys, let's review the safety procedures one more time. We're cruising at 30,000 feet, and I need you to stay seated and follow my instructions.\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "LEONARD",
+          "line": "\"Yeah, yeah, we get it. We're not going to crash.\"",
+          "visual_cue": "Close-up of ALI, calm and collected, with a hint of a smile.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "SAM",
+          "line": "\"Hey, we're trying to stay safe here. Can we just relax?\"",
+          "visual_cue": "Medium shot of LEONARD, rolling his eyes and tapping his foot impatiently.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "KATINA",
+          "line": "\"I'm going to go check on the other passengers. If you need anything, just press the call button.\"",
+          "visual_cue": "Close-up of SAM, looking nervous and unsure.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "ALI",
+          "line": "\"I'll be keeping an eye on you two. Don't think about making any sudden movements.\"",
+          "visual_cue": "Wide shot of KATINA, walking away with a kind smile on her face.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "LEONARD",
+          "line": "\"Hey, we're not going to do anything crazy. We just want to get to our destination.\"",
+          "visual_cue": "Close-up of ALI, eyes fixed intently on LEONARD and SAM.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "SAM",
+          "line": "\"Look, can we just talk about something else? This is getting really boring.\"",
+          "visual_cue": "Medium shot of LEONARD, attempting to reason with ALI.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "KATINA",
+          "line": "\"I'll bring you some snacks and drinks to pass the time. Maybe that'll help.\"",
+          "visual_cue": "Close-up of SAM, fidgeting with his seatbelt and looking around the cockpit.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "ALI",
+        "LEONARD",
+        "SAM",
+        "KATINA"
+      ],
+      "duration": 64,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    },
+    {
+      "scene_id": 2,
+      "location": "PLANE",
+      "dialogue": [
+        {
+          "speaker": "ALI",
+          "line": "\"We're experiencing some turbulence, but don't worry, everything is under control. Just keep your seatbelts fastened and stay seated.\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "LEONARD",
+          "line": "\"Yeah, yeah, we're good. We can handle it.\"",
+          "visual_cue": "Close-up of ALI, speaking into the intercom microphone, his voice steady and reassuring.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "SAM",
+          "line": "\"I don't like this. Can we turn back?\"",
+          "visual_cue": "Medium shot of LEONARD, looking out the window at the turbulent sky.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "KATINA",
+          "line": "\"I'll check on the other passengers and make sure everyone is secure. Don't worry, we'll get through this.\"",
+          "visual_cue": "Close-up of SAM, looking anxious and scared.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "ALI",
+        "LEONARD",
+        "SAM",
+        "KATINA"
+      ],
+      "duration": 29,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    },
+    {
+      "scene_id": 3,
+      "location": "COCKPIT",
+      "dialogue": [
+        {
+          "speaker": "ALI",
+          "line": "\"Listen, guys, I need you to take this seriously. We're not out of the woods yet. Stay focused and follow my instructions.\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "LEONARD",
+          "line": "\"Yeah, yeah, we get it. We'll behave.\"",
+          "visual_cue": "Close-up of ALI, his eyes locked intently on LEONARD and SAM.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "SAM",
+          "line": "\"Can we at least get some Wi-Fi? I need to check my email.\"",
+          "visual_cue": "Medium shot of LEONARD, looking sheepish and contrite.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "KATINA",
+          "line": "\"I'll see what I can do, but first, let's get through this flight safely. Okay, everyone?\"",
+          "visual_cue": "Close-up of SAM, looking hopeful and pleading.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "ALI",
+        "LEONARD",
+        "SAM",
+        "KATINA"
+      ],
+      "duration": 32,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    }
+  ],
+  "total_scenes": 3,
+  "total_duration_seconds": 125
+}

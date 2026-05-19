@@ -1,0 +1,362 @@
+[
+  {
+    "version": 1,
+    "timestamp": "2026-05-07T10:06:27.641546+00:00",
+    "description": "Initial pipeline output",
+    "target": "pipeline",
+    "state_hash": "2ba23577c75c17e0",
+    "asset_count": 6,
+    "asset_manifest": [
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\story_manifest_auto.json",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v1\\assets\\story_manifest_auto.json",
+        "filename": "story_manifest_auto.json"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\scene_manifest_auto.json",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v1\\assets\\scene_manifest_auto.json",
+        "filename": "scene_manifest_auto.json"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\character_db_auto.json",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v1\\assets\\character_db_auto.json",
+        "filename": "character_db_auto.json"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\last_script_auto.txt",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v1\\assets\\last_script_auto.txt",
+        "filename": "last_script_auto.txt"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\phase2_runs\\run12\\timing_manifest_run12.json",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v1\\assets\\timing_manifest_run12.json",
+        "filename": "timing_manifest_run12.json"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\phase3_runs\\run12\\final_output_run12_subbed.mp4",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v1\\assets\\final_output_run12_subbed.mp4",
+        "filename": "final_output_run12_subbed.mp4"
+      }
+    ]
+  },
+  {
+    "version": 2,
+    "timestamp": "2026-05-07T10:06:27.726393+00:00",
+    "description": "Before edit: apply_filter (target: video_frame)",
+    "target": "video_frame",
+    "state_hash": "2ba23577c75c17e0",
+    "asset_count": 6,
+    "asset_manifest": [
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\story_manifest_auto.json",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v2\\assets\\story_manifest_auto.json",
+        "filename": "story_manifest_auto.json"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\scene_manifest_auto.json",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v2\\assets\\scene_manifest_auto.json",
+        "filename": "scene_manifest_auto.json"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\character_db_auto.json",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v2\\assets\\character_db_auto.json",
+        "filename": "character_db_auto.json"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\last_script_auto.txt",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v2\\assets\\last_script_auto.txt",
+        "filename": "last_script_auto.txt"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\phase2_runs\\run12\\timing_manifest_run12.json",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v2\\assets\\timing_manifest_run12.json",
+        "filename": "timing_manifest_run12.json"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\phase3_runs\\run12\\final_output_run12_subbed.mp4",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v2\\assets\\final_output_run12_subbed.mp4",
+        "filename": "final_output_run12_subbed.mp4"
+      }
+    ]
+  },
+  {
+    "version": 3,
+    "timestamp": "2026-05-07T10:11:29.190302+00:00",
+    "description": "After edit: apply_filter \u2014 Applied grayscale filter to 4 image(s); Video recomposed with filtered images",
+    "target": "video_frame",
+    "state_hash": "2ba23577c75c17e0",
+    "asset_count": 6,
+    "asset_manifest": [
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\story_manifest_auto.json",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v3\\assets\\story_manifest_auto.json",
+        "filename": "story_manifest_auto.json"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\scene_manifest_auto.json",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v3\\assets\\scene_manifest_auto.json",
+        "filename": "scene_manifest_auto.json"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\character_db_auto.json",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v3\\assets\\character_db_auto.json",
+        "filename": "character_db_auto.json"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\last_script_auto.txt",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v3\\assets\\last_script_auto.txt",
+        "filename": "last_script_auto.txt"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\phase2_runs\\run12\\timing_manifest_run12.json",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v3\\assets\\timing_manifest_run12.json",
+        "filename": "timing_manifest_run12.json"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\phase3_runs\\run12\\final_output_run12_subbed.mp4",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v3\\assets\\final_output_run12_subbed.mp4",
+        "filename": "final_output_run12_subbed.mp4"
+      }
+    ]
+  },
+  {
+    "version": 4,
+    "timestamp": "2026-05-07T10:12:50.598164+00:00",
+    "description": "Before edit: apply_filter (target: video_frame)",
+    "target": "video_frame",
+    "state_hash": "2ba23577c75c17e0",
+    "asset_count": 6,
+    "asset_manifest": [
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\story_manifest_auto.json",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v4\\assets\\story_manifest_auto.json",
+        "filename": "story_manifest_auto.json"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\scene_manifest_auto.json",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v4\\assets\\scene_manifest_auto.json",
+        "filename": "scene_manifest_auto.json"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\character_db_auto.json",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v4\\assets\\character_db_auto.json",
+        "filename": "character_db_auto.json"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\last_script_auto.txt",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v4\\assets\\last_script_auto.txt",
+        "filename": "last_script_auto.txt"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\phase2_runs\\run12\\timing_manifest_run12.json",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v4\\assets\\timing_manifest_run12.json",
+        "filename": "timing_manifest_run12.json"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\phase3_runs\\run12\\final_output_run12_subbed.mp4",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v4\\assets\\final_output_run12_subbed.mp4",
+        "filename": "final_output_run12_subbed.mp4"
+      }
+    ]
+  },
+  {
+    "version": 5,
+    "timestamp": "2026-05-07T10:15:39.781050+00:00",
+    "description": "After edit: apply_filter \u2014 Applied sepia filter to 4 image(s); Video recomposed with filtered images",
+    "target": "video_frame",
+    "state_hash": "2ba23577c75c17e0",
+    "asset_count": 6,
+    "asset_manifest": [
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\story_manifest_auto.json",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v5\\assets\\story_manifest_auto.json",
+        "filename": "story_manifest_auto.json"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\scene_manifest_auto.json",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v5\\assets\\scene_manifest_auto.json",
+        "filename": "scene_manifest_auto.json"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\character_db_auto.json",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v5\\assets\\character_db_auto.json",
+        "filename": "character_db_auto.json"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\last_script_auto.txt",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v5\\assets\\last_script_auto.txt",
+        "filename": "last_script_auto.txt"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\phase2_runs\\run12\\timing_manifest_run12.json",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v5\\assets\\timing_manifest_run12.json",
+        "filename": "timing_manifest_run12.json"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\phase3_runs\\run12\\final_output_run12_subbed.mp4",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v5\\assets\\final_output_run12_subbed.mp4",
+        "filename": "final_output_run12_subbed.mp4"
+      }
+    ]
+  },
+  {
+    "version": 6,
+    "timestamp": "2026-05-07T10:17:17.343587+00:00",
+    "description": "Before edit: unknown (target: video)",
+    "target": "video",
+    "state_hash": "2ba23577c75c17e0",
+    "asset_count": 6,
+    "asset_manifest": [
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\story_manifest_auto.json",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v6\\assets\\story_manifest_auto.json",
+        "filename": "story_manifest_auto.json"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\scene_manifest_auto.json",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v6\\assets\\scene_manifest_auto.json",
+        "filename": "scene_manifest_auto.json"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\character_db_auto.json",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v6\\assets\\character_db_auto.json",
+        "filename": "character_db_auto.json"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\last_script_auto.txt",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v6\\assets\\last_script_auto.txt",
+        "filename": "last_script_auto.txt"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\phase2_runs\\run12\\timing_manifest_run12.json",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v6\\assets\\timing_manifest_run12.json",
+        "filename": "timing_manifest_run12.json"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\phase3_runs\\run12\\final_output_run12_subbed.mp4",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v6\\assets\\final_output_run12_subbed.mp4",
+        "filename": "final_output_run12_subbed.mp4"
+      }
+    ]
+  },
+  {
+    "version": 7,
+    "timestamp": "2026-05-07T10:25:50.288150+00:00",
+    "description": "After edit: unknown \u2014 Video edit: unknown; Video recomposed successfully",
+    "target": "video",
+    "state_hash": "2ba23577c75c17e0",
+    "asset_count": 6,
+    "asset_manifest": [
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\story_manifest_auto.json",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v7\\assets\\story_manifest_auto.json",
+        "filename": "story_manifest_auto.json"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\scene_manifest_auto.json",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v7\\assets\\scene_manifest_auto.json",
+        "filename": "scene_manifest_auto.json"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\character_db_auto.json",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v7\\assets\\character_db_auto.json",
+        "filename": "character_db_auto.json"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\last_script_auto.txt",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v7\\assets\\last_script_auto.txt",
+        "filename": "last_script_auto.txt"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\phase2_runs\\run12\\timing_manifest_run12.json",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v7\\assets\\timing_manifest_run12.json",
+        "filename": "timing_manifest_run12.json"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\phase3_runs\\run12\\final_output_run12_subbed.mp4",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v7\\assets\\final_output_run12_subbed.mp4",
+        "filename": "final_output_run12_subbed.mp4"
+      }
+    ]
+  },
+  {
+    "version": 8,
+    "timestamp": "2026-05-07T10:29:55.504645+00:00",
+    "description": "Before edit: change_character_design (target: video_frame)",
+    "target": "video_frame",
+    "state_hash": "2ba23577c75c17e0",
+    "asset_count": 6,
+    "asset_manifest": [
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\story_manifest_auto.json",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v8\\assets\\story_manifest_auto.json",
+        "filename": "story_manifest_auto.json"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\scene_manifest_auto.json",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v8\\assets\\scene_manifest_auto.json",
+        "filename": "scene_manifest_auto.json"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\character_db_auto.json",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v8\\assets\\character_db_auto.json",
+        "filename": "character_db_auto.json"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\last_script_auto.txt",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v8\\assets\\last_script_auto.txt",
+        "filename": "last_script_auto.txt"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\phase2_runs\\run12\\timing_manifest_run12.json",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v8\\assets\\timing_manifest_run12.json",
+        "filename": "timing_manifest_run12.json"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\phase3_runs\\run12\\final_output_run12_subbed.mp4",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v8\\assets\\final_output_run12_subbed.mp4",
+        "filename": "final_output_run12_subbed.mp4"
+      }
+    ]
+  },
+  {
+    "version": 9,
+    "timestamp": "2026-05-07T10:41:42.329611+00:00",
+    "description": "After edit: change_character_design \u2014 Updated appearance for OWAIS: black skin color; Regenerated scene images and recomposed video",
+    "target": "video_frame",
+    "state_hash": "187d34d7e4cf2e2e",
+    "asset_count": 6,
+    "asset_manifest": [
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\story_manifest_auto.json",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v9\\assets\\story_manifest_auto.json",
+        "filename": "story_manifest_auto.json"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\scene_manifest_auto.json",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v9\\assets\\scene_manifest_auto.json",
+        "filename": "scene_manifest_auto.json"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\character_db_auto.json",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v9\\assets\\character_db_auto.json",
+        "filename": "character_db_auto.json"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\last_script_auto.txt",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v9\\assets\\last_script_auto.txt",
+        "filename": "last_script_auto.txt"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\phase2_runs\\run12\\timing_manifest_run12.json",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v9\\assets\\timing_manifest_run12.json",
+        "filename": "timing_manifest_run12.json"
+      },
+      {
+        "original_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\phase3_runs\\run12\\final_output_run12_subbed.mp4",
+        "snapshot_path": "C:\\Users\\Crown Tech\\Documents\\Agenitc Final Proj\\Agentic-Montage-Studio\\Agentic-Ai\\data\\state_versions\\009458bd\\v9\\assets\\final_output_run12_subbed.mp4",
+        "filename": "final_output_run12_subbed.mp4"
+      }
+    ]
+  }
+]

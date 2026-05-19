@@ -1,0 +1,42 @@
+{
+  "workflow_id": "workflow_20260507_123958",
+  "timestamp": "2026-05-07T12:39:58.564991",
+  "story": {
+    "title": "Turbulent Skies",
+    "logline": "When two reckless passengers threaten the safety of the plane, the seasoned pilot must take drastic measures to prevent disaster.",
+    "genre": "Thriller",
+    "tone": "tense and gritty",
+    "setting": "A commercial airliner",
+    "time_period": "Present Day",
+    "themes": [
+      "Redemption",
+      "Accountability",
+      "Survival"
+    ],
+    "acts": [
+      {
+        "act": 1,
+        "label": "Introduction",
+        "description": "We meet our protagonist, the skilled and experienced pilot Ali, as he navigates the complexities of flying a commercial airliner. Meanwhile, we also meet our antagonists, the reckless passengers Sam and Leo, who are causing trouble on board. The calm and collected hostess, Kalinda, tries to keep the peace, but tensions are running high."
+      },
+      {
+        "act": 2,
+        "label": "Rising Action",
+        "description": "As the situation escalates, Ali must make a difficult decision to ensure the safety of the passengers. Sam and Leo continue to disrupt the flight, while Kalinda tries to keep them in line. The passengers begin to panic, and Ali must take drastic measures to regain control of the plane."
+      },
+      {
+        "act": 3,
+        "label": "Climax",
+        "description": "The situation reaches a boiling point as Sam and Leo cause a near-disaster. Ali must use all his skills and experience to prevent a catastrophic outcome. Kalinda must confront her own limitations as she tries to assist the pilot."
+      },
+      {
+        "act": 4,
+        "label": "Resolution",
+        "description": "The aftermath of the crisis leaves the passengers shaken, but grateful for the pilot's quick thinking. Ali reflects on the experience, realizing that it's a chance for redemption. Kalinda finds a newfound respect for the pilot's expertise and the passengers begin to appreciate the value of safety."
+      }
+    ],
+    "protagonist": "ALI",
+    "antagonist": "SAM",
+    "world": "In a world where air travel is a routine part of modern life, the stakes are high when the safety of the passengers is at risk."
+  }
+}

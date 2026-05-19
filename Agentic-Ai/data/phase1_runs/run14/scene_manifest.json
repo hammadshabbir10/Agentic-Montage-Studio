@@ -1,0 +1,197 @@
+{
+  "workflow_id": "workflow_20260507_130839",
+  "timestamp": "2026-05-07T13:08:39.045772",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "location": "AIRPLANE COCKPIT",
+      "dialogue": [
+        {
+          "speaker": "ALI",
+          "line": "\"We're approaching turbulence, gentlemen. Please fasten your seatbelts.\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "SAM",
+          "line": "\"Turbulence? No problem. I've been through worse than this.\"",
+          "visual_cue": "Close-up of ALI, eyes fixed on the controls.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "LEO",
+          "line": "\"Yeah, tell me about it, kid. I once rode a tornado through the Midwest.\"",
+          "visual_cue": "Close-up of SAM, a mischievous glint in his eye.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "ABEEHA",
+          "line": "\"Gentlemen, I assure you, we're in good hands. Captain Ali has years of experience.\"",
+          "visual_cue": "Medium shot of LEO, a sly grin spreading across his face.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "ALI",
+        "SAM",
+        "LEO",
+        "ABEEHA"
+      ],
+      "duration": 26,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    },
+    {
+      "scene_id": 2,
+      "location": "AIRPLANE COCKPIT",
+      "dialogue": [
+        {
+          "speaker": "ALI",
+          "line": "\"We're experiencing severe turbulence. Hold on, everyone!\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "SAM",
+          "line": "\"Whoa, this is crazy! I've never seen anything like it!\"",
+          "visual_cue": "Close-up of ALI, sweat beading on his forehead.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "LEO",
+          "line": "\"This is awesome! We're actually flying through a storm!\"",
+          "visual_cue": "Close-up of SAM, his eyes wide with fear and exhilaration.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "ABEEHA",
+          "line": "\"Gentlemen, please remain calm. The captain is doing everything he can to keep us safe.\"",
+          "visual_cue": "Medium shot of LEO, a whoop of excitement on his lips.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "ALI",
+        "SAM",
+        "LEO",
+        "ABEEHA"
+      ],
+      "duration": 24,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    },
+    {
+      "scene_id": 3,
+      "location": "AIRPLANE COCKPIT",
+      "dialogue": [
+        {
+          "speaker": "ALI",
+          "line": "\"We're through the worst of it, gentlemen. I think we'll be okay.\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "SAM",
+          "line": "\"Thanks, Captain. We owe you one.\"",
+          "visual_cue": "Close-up of ALI, his eyes sunken with fatigue.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "LEO",
+          "line": "\"Yeah, sorry about that. We didn't mean to cause any trouble.\"",
+          "visual_cue": "Close-up of SAM, a sheepish grin on his face.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        },
+        {
+          "speaker": "ABEEHA",
+          "line": "\"Gentlemen, please, no need to apologize. We're just glad to have made it through safely.\"",
+          "visual_cue": "Close-up of LEO, a contrite expression on his face.",
+          "start_ms": null,
+          "end_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "ALI",
+        "SAM",
+        "LEO",
+        "ABEEHA"
+      ],
+      "duration": 25,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    }
+  ],
+  "total_scenes": 3,
+  "total_duration_seconds": 75
+}_ms": null,
+          "duration_ms": null,
+          "voice": null
+        }
+      ],
+      "characters": [
+        "ALI",
+        "ABEEHA"
+      ],
+      "duration": 23,
+      "start_ms": null,
+      "end_ms": null,
+      "duration_ms": null,
+      "audio_file": null,
+      "bgm_file": null,
+      "mood": null,
+      "lines": null
+    }
+  ],
+  "total_scenes": 3,
+  "total_duration_seconds": 83
+}

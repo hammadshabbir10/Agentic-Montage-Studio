@@ -1,0 +1,186 @@
+{
+  "audio": [
+    {
+      "scene_id": 1,
+      "path": "data\\phase2_runs\\run12\\audio\\scene_01_run12.mp3",
+      "segments": [
+        {
+          "speaker": "SAM",
+          "line": "We're going to stall, Owais. We need to level out.",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of SAM, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run12\\audio\\scene1\\SAM_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 29232
+        },
+        {
+          "speaker": "OWAIS",
+          "line": "Hold on to your seat, Sam. We're going to make this plane fly.",
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Close-up of SAM, sweat beading on his forehead.",
+          "audio_file": "data\\phase2_runs\\run12\\audio\\scene1\\OWAIS_line002.mp3",
+          "byte_offset": 29232,
+          "byte_length": 21888
+        },
+        {
+          "speaker": "L",
+          "line": "What's going on? Why are we shaking so much?",
+          "voice": "en-US-BrianNeural",
+          "visual_cue": "Medium shot of OWAIS, jaw clenched in concentration.",
+          "audio_file": "data\\phase2_runs\\run12\\audio\\scene1\\L_line003.mp3",
+          "byte_offset": 51120,
+          "byte_length": 19728
+        },
+        {
+          "speaker": "ARAESA",
+          "line": "Everyone, please fasten your seatbelts. We're experiencing some turbulence.",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Wide shot of L\u0435\u043e, looking pale and frightened.",
+          "audio_file": "data\\phase2_runs\\run12\\audio\\scene1\\ARAESA_line004.mp3",
+          "byte_offset": 70848,
+          "byte_length": 37152
+        },
+        {
+          "speaker": "OWAIS",
+          "line": "We're coming out of the dive. Hold on to your seats.",
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Close-up of ARAESA, a calm smile on her face as she checks the safety harnesses.",
+          "audio_file": "data\\phase2_runs\\run12\\audio\\scene1\\OWAIS_line005.mp3",
+          "byte_offset": 108000,
+          "byte_length": 17712
+        },
+        {
+          "speaker": "L",
+          "line": "This is crazy! What's happening?",
+          "voice": "en-US-BrianNeural",
+          "visual_cue": "Close-up of OWAIS, eyes locked on the altimeter.",
+          "audio_file": "data\\phase2_runs\\run12\\audio\\scene1\\L_line006.mp3",
+          "byte_offset": 125712,
+          "byte_length": 15120
+        },
+        {
+          "speaker": "ARAESA",
+          "line": "Everyone, please remain calm. This is just turbulence.",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Close-up of L\u0435\u043e, eyes wide with fear.",
+          "audio_file": "data\\phase2_runs\\run12\\audio\\scene1\\ARAESA_line007.mp3",
+          "byte_offset": 140832,
+          "byte_length": 30816
+        },
+        {
+          "speaker": "OWAIS",
+          "line": "We're going to make it through this. Just hold on.",
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Medium shot of ARAESA, her voice steady and reassuring.",
+          "audio_file": "data\\phase2_runs\\run12\\audio\\scene1\\OWAIS_line008.mp3",
+          "byte_offset": 171648,
+          "byte_length": 15408
+        }
+      ]
+    },
+    {
+      "scene_id": 2,
+      "path": "data\\phase2_runs\\run12\\audio\\scene_02_run12.mp3",
+      "segments": [
+        {
+          "speaker": "SAM",
+          "line": "Owais, I think we're crashing. We need to do something.",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of SAM, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run12\\audio\\scene2\\SAM_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 29376
+        },
+        {
+          "speaker": "ARAESA",
+          "line": "Everyone, please stay calm. We're experiencing a minor storm.",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Close-up of SAM, desperation in his voice.",
+          "audio_file": "data\\phase2_runs\\run12\\audio\\scene2\\ARAESA_line002.mp3",
+          "byte_offset": 29376,
+          "byte_length": 32688
+        },
+        {
+          "speaker": "L",
+          "line": "This is insane! We're going to die!",
+          "voice": "en-US-BrianNeural",
+          "visual_cue": "Close-up of ARAESA, her hands steady as she checks the instruments.",
+          "audio_file": "data\\phase2_runs\\run12\\audio\\scene2\\L_line003.mp3",
+          "byte_offset": 62064,
+          "byte_length": 15840
+        },
+        {
+          "speaker": "OWAIS",
+          "line": "We're not going to crash. We're going to make it through this.",
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Wide shot of L\u0435\u043e, his face contorted in terror.",
+          "audio_file": "data\\phase2_runs\\run12\\audio\\scene2\\OWAIS_line004.mp3",
+          "byte_offset": 77904,
+          "byte_length": 17856
+        }
+      ]
+    },
+    {
+      "scene_id": 3,
+      "path": "data\\phase2_runs\\run12\\audio\\scene_03_run12.mp3",
+      "segments": [
+        {
+          "speaker": "SAM",
+          "line": "What... what just happened?",
+          "voice": "en-US-GuyNeural",
+          "visual_cue": "Medium shot of SAM, expression intense and focused.",
+          "audio_file": "data\\phase2_runs\\run12\\audio\\scene3\\SAM_line001.mp3",
+          "byte_offset": 0,
+          "byte_length": 14976
+        },
+        {
+          "speaker": "OWAIS",
+          "line": "We made it through the storm. We're going to land safely.",
+          "voice": "en-US-AndrewNeural",
+          "visual_cue": "Close-up of SAM, his eyes wide with shock.",
+          "audio_file": "data\\phase2_runs\\run12\\audio\\scene3\\OWAIS_line002.mp3",
+          "byte_offset": 14976,
+          "byte_length": 17856
+        },
+        {
+          "speaker": "ARAESA",
+          "line": "Everyone, please prepare for landing. We're starting our descent.",
+          "voice": "en-US-JennyNeural",
+          "visual_cue": "Close-up of OWAIS, a hint of a smile on his face.",
+          "audio_file": "data\\phase2_runs\\run12\\audio\\scene3\\ARAESA_line003.mp3",
+          "byte_offset": 32832,
+          "byte_length": 31536
+        },
+        {
+          "speaker": "L",
+          "line": "I... I think I'm going to be sick.",
+          "voice": "en-US-BrianNeural",
+          "visual_cue": "Medium shot of ARAESA, her voice steady and reassuring.",
+          "audio_file": "data\\phase2_runs\\run12\\audio\\scene3\\L_line004.mp3",
+          "byte_offset": 64368,
+          "byte_length": 13968
+        }
+      ]
+    }
+  ],
+  "music": [
+    {
+      "scene_id": 1,
+      "mood": "mysterious",
+      "bgm_path": "data\\phase2_runs\\run12\\bgm\\mysterious_scene01_freesound.mp3",
+      "bgm_source": "freesound"
+    },
+    {
+      "scene_id": 2,
+      "mood": "mysterious",
+      "bgm_path": "data\\phase2_runs\\run12\\bgm\\mysterious_scene02_freesound.mp3",
+      "bgm_source": "freesound"
+    },
+    {
+      "scene_id": 3,
+      "mood": "mysterious",
+      "bgm_path": "data\\phase2_runs\\run12\\bgm\\mysterious_scene03_freesound.mp3",
+      "bgm_source": "freesound"
+    }
+  ]
+}

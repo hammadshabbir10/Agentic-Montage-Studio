@@ -1,0 +1,301 @@
+{
+  "run_tag": "run04",
+  "run_number": 4,
+  "run_dir": "data\\phase2_runs\\run04",
+  "bgm_dir": "data\\phase2_runs\\run04\\bgm",
+  "scene_manifest": {
+    "workflow_id": "workflow_20260507_124102",
+    "timestamp": "2026-05-07T12:41:02.861523",
+    "scenes": [
+      {
+        "scene_id": 1,
+        "location": "PLANE",
+        "dialogue": [
+          {
+            "speaker": "KATRINA",
+            "line": "\"Ladies and gentlemen, please return to your seats and fasten your seatbelts.\"",
+            "visual_cue": "Medium shot of KATRINA, expression intense and focused.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "SAM",
+            "line": "\"Come on, kitty, lighten up. We're just having a little fun.\"",
+            "visual_cue": "Medium shot of KATRINA, her firm voice commanding respect.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "LEO",
+            "line": "\"Yeah, we're not hurting anyone. Let the man have his fun.\"",
+            "visual_cue": "Close-up of SAM, his goofy grin plastered on his face.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "ALI",
+            "line": "\"Katrina, can you please ensure these passengers return to their seats immediately?\"",
+            "visual_cue": "Over-the-shoulder shot of LEO, his eyes sparkling with mischief.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "KATRINA",
+            "line": "\"Yes, of course, Captain. I'll take care of it.\"",
+            "visual_cue": "Close-up of ALI, his voice firm but controlled.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "SAM",
+            "line": "\"Aww, come on, Captain. Don't be such a party pooper.\"",
+            "visual_cue": "Wide shot of KATRINA, her eyes scanning the cabin for any signs of trouble.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          }
+        ],
+        "characters": [
+          "KATRINA",
+          "SAM",
+          "LEO",
+          "ALI"
+        ],
+        "duration": 36,
+        "start_ms": null,
+        "end_ms": null,
+        "duration_ms": null,
+        "audio_file": null,
+        "bgm_file": null,
+        "mood": null,
+        "lines": null
+      },
+      {
+        "scene_id": 2,
+        "location": "PLANE",
+        "dialogue": [
+          {
+            "speaker": "ALI",
+            "line": "\"Ladies and gentlemen, we're experiencing some turbulence. Please fasten your seatbelts and remain seated.\"",
+            "visual_cue": "Medium shot of ALI, expression intense and focused.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "SAM",
+            "line": "\"Whoa, this is crazy! Leo, hold on to your seat!\"",
+            "visual_cue": "Point-of-view shot through the cockpit window, the plane tilting violently.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "LEO",
+            "line": "\"I've got it, Sam. Just ride it out.\"",
+            "visual_cue": "Close-up of SAM, his eyes wide with fear.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "KATRINA",
+            "line": "\"Everyone, please stay calm. This is normal turbulence.\"",
+            "visual_cue": "Over-the-shoulder shot of LEO, his face set in a determined expression.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          }
+        ],
+        "characters": [
+          "ALI",
+          "SAM",
+          "LEO",
+          "KATRINA"
+        ],
+        "duration": 23,
+        "start_ms": null,
+        "end_ms": null,
+        "duration_ms": null,
+        "audio_file": null,
+        "bgm_file": null,
+        "mood": null,
+        "lines": null
+      },
+      {
+        "scene_id": 3,
+        "location": "COCKPIT",
+        "dialogue": [
+          {
+            "speaker": "KATRINA",
+            "line": "\"Captain, what's going on? Is everything okay?\"",
+            "visual_cue": "Medium shot of KATRINA, expression intense and focused.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "ALI",
+            "line": "\"We're experiencing a bit of a problem, Katrina. I'm trying to stabilize the plane.\"",
+            "visual_cue": "Close-up of KATRINA, her eyes scanning the instrument panels.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "KATRINA",
+            "line": "\"Can I help, Captain? Maybe I can assist you?\"",
+            "visual_cue": "Point-of-view shot through the cockpit window, the plane shaking violently.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          },
+          {
+            "speaker": "ALI",
+            "line": "\"No, Katrina. I've got this under control. Just get back to the cabin and make sure those passengers are secure.\"",
+            "visual_cue": "Wide shot of KATRINA, her eyes shining with concern.",
+            "start_ms": null,
+            "end_ms": null,
+            "duration_ms": null,
+            "voice": null
+          }
+        ],
+        "characters": [
+          "KATRINA",
+          "ALI"
+        ],
+        "duration": 28,
+        "start_ms": null,
+        "end_ms": null,
+        "duration_ms": null,
+        "audio_file": null,
+        "bgm_file": null,
+        "mood": null,
+        "lines": null
+      }
+    ],
+    "total_scenes": 3,
+    "total_duration_seconds": 87
+  },
+  "character_db": {
+    "workflow_id": "workflow_20260507_124108",
+    "timestamp": "2026-05-07T12:41:08.892687",
+    "characters": [
+      {
+        "name": "KATRINA",
+        "personality": "KATRINA is a calm, authoritative figure who exudes confidence in times of crisis, motivated by a desire to maintain order and safety.",
+        "appearance": "KATRINA is a woman in her mid-40s, wearing a crisp, professional pilot's uniform with a kind but firm expression.",
+        "role": "supporting",
+        "style_reference": "Modern aviation thriller, stark lighting, and a focus on functional, high-tech flight controls.",
+        "first_appearance": 1,
+        "dialogue_samples": [
+          {
+            "line": "\"Ladies and gentlemen, please return to your seats and fasten your seatbelts.\"",
+            "visual_cue": "Medium shot of KATRINA, expression intense and focused."
+          },
+          {
+            "line": "\"Yes, of course, Captain. I'll take care of it.\"",
+            "visual_cue": "Close-up of ALI, his voice firm but controlled."
+          },
+          {
+            "line": "\"Everyone, please stay calm. This is normal turbulence.\"",
+            "visual_cue": "Over-the-shoulder shot of LEO, his face set in a determined expression."
+          },
+          {
+            "line": "\"Captain, what's going on? Is everything okay?\"",
+            "visual_cue": "Medium shot of KATRINA, expression intense and focused."
+          },
+          {
+            "line": "\"Can I help, Captain? Maybe I can assist you?\"",
+            "visual_cue": "Point-of-view shot through the cockpit window, the plane shaking violently."
+          }
+        ]
+      },
+      {
+        "name": "SAM",
+        "personality": "SAM is a free-spirited individual who thrives on excitement and fun, often disregarding authority and caution. They are a natural-born troublemaker who seeks to bring joy to those around them.",
+        "appearance": "SAM is a young adult with a casual, laid-back appearance, likely dressed in comfortable and practical clothing suitable for a cockpit environment.",
+        "role": "supporting",
+        "style_reference": "Fast-paced, action-packed, and adventurous, reminiscent of classic 80s and 90s action films with bright colors and dynamic camera movements.",
+        "first_appearance": 1,
+        "dialogue_samples": [
+          {
+            "line": "\"Come on, kitty, lighten up. We're just having a little fun.\"",
+            "visual_cue": "Medium shot of KATRINA, her firm voice commanding respect."
+          },
+          {
+            "line": "\"Aww, come on, Captain. Don't be such a party pooper.\"",
+            "visual_cue": "Wide shot of KATRINA, her eyes scanning the cabin for any signs of trouble."
+          },
+          {
+            "line": "\"Whoa, this is crazy! Leo, hold on to your seat!\"",
+            "visual_cue": "Point-of-view shot through the cockpit window, the plane tilting violently."
+          }
+        ]
+      },
+      {
+        "name": "LEO",
+        "personality": "Leo appears to be a calm and laid-back individual who is willing to take risks and challenge authority, possibly driven by a desire for freedom and spontaneity.",
+        "appearance": "Leo is likely dressed in casual, relaxed flight attire, possibly with a hint of nonconformity in his hairstyle or accessories.",
+        "role": "supporting",
+        "style_reference": "Contemporary action-thriller, sleek and modern, with an emphasis on high-stakes aerial sequences.",
+        "first_appearance": 1,
+        "dialogue_samples": [
+          {
+            "line": "\"Yeah, we're not hurting anyone. Let the man have his fun.\"",
+            "visual_cue": "Close-up of SAM, his goofy grin plastered on his face."
+          },
+          {
+            "line": "\"I've got it, Sam. Just ride it out.\"",
+            "visual_cue": "Close-up of SAM, his eyes wide with fear."
+          }
+        ]
+      },
+      {
+        "name": "ALI",
+        "personality": "Ali is a confident and authoritative figure who takes charge in times of crisis, but also has a strong sense of control and a willingness to put others at risk to maintain it.",
+        "appearance": "Ali is a male pilot in his mid-30s, with a rugged and worn appearance that suggests years of experience in the cockpit.",
+        "role": "supporting",
+        "style_reference": "1980s airline thriller, bright fluorescent lighting and sterile aircraft decor.",
+        "first_appearance": 1,
+        "dialogue_samples": [
+          {
+            "line": "\"Katrina, can you please ensure these passengers return to their seats immediately?\"",
+            "visual_cue": "Over-the-shoulder shot of LEO, his eyes sparkling with mischief."
+          },
+          {
+            "line": "\"Ladies and gentlemen, we're experiencing some turbulence. Please fasten your seatbelts and remain seated.\"",
+            "visual_cue": "Medium shot of ALI, expression intense and focused."
+          },
+          {
+            "line": "\"We're experiencing a bit of a problem, Katrina. I'm trying to stabilize the plane.\"",
+            "visual_cue": "Close-up of KATRINA, her eyes scanning the instrument panels."
+          },
+          {
+            "line": "\"No, Katrina. I've got this under control. Just get back to the cabin and make sure those passengers are secure.\"",
+            "visual_cue": "Wide shot of KATRINA, her eyes shining with concern."
+          }
+        ]
+      }
+    ],
+    "total_characters": 4
+  }
+}

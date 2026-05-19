@@ -1,0 +1,145 @@
+{
+  "workflow_id": "workflow_20260507_124016",
+  "timestamp": "2026-05-07T12:40:16.757167",
+  "characters": [
+    {
+      "name": "ALI",
+      "personality": "Ali is a no-nonsense, decisive individual who prioritizes safety and responsibility, but also has a sense of urgency and impatience.",
+      "appearance": "Ali is a middle-aged man with a rugged, weathered face and a practical, functional pilot's uniform.",
+      "role": "supporting",
+      "style_reference": "1970s aviation thriller, earthy color palette, functionalist design",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"Hold on, folks, we're experiencing some air pockets.\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused."
+        },
+        {
+          "line": "\"Leo, Sam, I need you to keep an eye on the controls. If anything goes wrong, I need you to react quickly.\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused."
+        },
+        {
+          "line": "\"We can't wait, Katrina. We have to get these passengers to their destination.\"",
+          "visual_cue": "Close-up of KATRINA, her brow furrowed in worry."
+        },
+        {
+          "line": "\"Hold on, this is going to be rough.\"",
+          "visual_cue": "Medium shot of ALI, expression intense and focused."
+        },
+        {
+          "line": "\"We'll get out of this, Katrina. Just hang on.\"",
+          "visual_cue": "Close-up of KATRINA, her voice panicked."
+        }
+      ]
+    },
+    {
+      "name": "SAM",
+      "personality": "A dutiful and obedient individual, Sam seems to be someone who follows instructions and values authority, but may also harbor a sense of panic and fear.",
+      "appearance": "A middle-aged man with a worn, practical air, likely dressed in a standard pilot uniform, with a neutral expression.",
+      "role": "supporting",
+      "style_reference": "Retro-futurism, clean lines, and minimal ornamentation, echoing the utilitarian aesthetic of 1950s and 60s aviation cinematography.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"What's going on?\"",
+          "visual_cue": "Close-up of ALI, brow furrowed in concentration."
+        },
+        {
+          "line": "\"Got it, Captain.\"",
+          "visual_cue": "Close-up of ALI, his eyes locking onto LEO and SAM."
+        },
+        {
+          "line": "\"Oh God, we're going to crash!\"",
+          "visual_cue": "Close-up of ALI, his knuckles white on the wheel."
+        }
+      ]
+    },
+    {
+      "name": "LEO",
+      "personality": "Confident and reassuring, Leo appears to be a natural leader who prioritizes the safety and well-being of others, possibly driven by a sense of responsibility.",
+      "appearance": "Leo is likely dressed in a crisp, well-fitted pilot's uniform with a commanding presence, possibly sporting a hint of a military-style haircut.",
+      "role": "supporting",
+      "style_reference": "Rough-around-the-edges, rugged aviation aesthetic with a hint of 70s nostalgia.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"Just the usual turbulence, Sam. Nothing to worry about.\"",
+          "visual_cue": "Close-up of SAM, eyes wide with fear."
+        },
+        {
+          "line": "\"What makes you think we can handle this, Captain? We're not exactly trained pilots.\"",
+          "visual_cue": "Close-up of SAM, trying to hide his fear."
+        },
+        {
+          "line": "\"Don't worry, Sam, we'll get through this. Ali knows what he's doing.\"",
+          "visual_cue": "Close-up of SAM, his eyes wide with fear."
+        }
+      ]
+    },
+    {
+      "name": "ALI VO",
+      "personality": "Ali appears to be a calm, reassuring presence, prioritizing safety and stability as he addresses his passengers during a potentially turbulent flight.",
+      "appearance": "As a 40s or 50s era airline captain, Ali has a clean-cut, professional appearance with a sharp uniform and slicked-back hair, exuding authority and trustworthiness.",
+      "role": "supporting",
+      "style_reference": "Classic 1950s/60s cinema, warm color palette, emphasis on nostalgia and reliability.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"This is your captain speaking. We'll do our best to get you to your destination safely.\"",
+          "visual_cue": "Medium shot of LEO, trying to reassure SAM with a calm demeanor."
+        }
+      ]
+    },
+    {
+      "name": "KATRINA",
+      "personality": "Katrina appears to be a calm and reassuring presence, likely taking on a leadership role in the face of crisis. Her desire to protect others and her willingness to question authority suggest a strong sense of empathy and a commitment to doing what's right.",
+      "appearance": "Katrina is likely dressed in a crisp, professional flight attendant uniform of the era, with a neat hairstyle and minimal makeup.",
+      "role": "supporting",
+      "style_reference": "Mid-century air travel, pastel colors, and sleek, modernist design elements.",
+      "first_appearance": 1,
+      "dialogue_samples": [
+        {
+          "line": "\"Don't worry, folks, we'll be fine. The pilots will get us through this.\"",
+          "visual_cue": "Wide shot of the plane's interior, with ALI's voice booming from the speakers."
+        },
+        {
+          "line": "\"Captain, I'm not sure if this is a good idea. We're going to get you help on the ground.\"",
+          "visual_cue": "Medium shot of KATRINA, expression intense and focused."
+        },
+        {
+          "line": "\"Captain, we're losing altitude!\"",
+          "visual_cue": "Close-up of LEO, trying to sound calm."
+        }
+      ]
+    },
+    {
+      "name": "LEO LOOKS SKEPTICAL",
+      "personality": "Skeptical and possibly cautious, suggesting a cautious approach to new situations.",
+      "appearance": "A seasoned pilot, likely in his late 40s or early 50s, with a rugged yet worn expression.",
+      "role": "supporting",
+      "style_reference": "Retro-futurism, utilitarian design, and warm lighting reminiscent of classic aviation films.",
+      "first_appearance": 2,
+      "dialogue_samples": [
+        {
+          "line": "Katrina walks into the cockpit, a concerned expression on her face.",
+          "visual_cue": "Medium shot of LEO, his arms crossed and a hint of defiance on his face."
+        }
+      ]
+    },
+    {
+      "name": "ALI SHAKES HIS HEAD",
+      "personality": "Reserved and possibly conflicted, with a tendency to suppress emotions.",
+      "appearance": "Casual pilot attire, weathered and worn from frequent flight.",
+      "role": "supporting",
+      "style_reference": "Rough-around-the-edges, grounded realism with muted color palette.",
+      "first_appearance": 2,
+      "dialogue_samples": [
+        {
+          "line": "---",
+          "visual_cue": "Close-up of ALI, his jaw set in determination."
+        }
+      ]
+    }
+  ],
+  "total_characters": 7
+}

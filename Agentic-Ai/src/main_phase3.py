@@ -107,6 +107,8 @@ def main() -> None:
                         help="Disable the intro title card")
     parser.add_argument("--disable-end-card", action="store_true",
                         help="Disable the closing end card")
+    parser.add_argument("--force-image-regen", action="store_true",
+                        help="Force image regeneration (ignore cached images)")
     parser.add_argument("--title-card-sec", type=float, default=3.0,
                         help="Duration of the intro title card in seconds")
     parser.add_argument("--end-card-sec", type=float, default=3.0,
@@ -210,6 +212,7 @@ def main() -> None:
         "end_card_sec":      max(1.0, args.end_card_sec),
         "motion_engine":     args.motion_engine,
         "strict_character_consistency": bool(args.strict_character_consistency),
+        "use_cache":         (not args.force_image_regen),
     }
 
     graph = build_graph()
